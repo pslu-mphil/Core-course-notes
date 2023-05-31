@@ -1,0 +1,662 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>5.11. Catchment and drainage</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/admonitions.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"loader": {"load": ["[tex]/physics", "[tex]/ams", "[tex]/mhchem", "[tex]/color"]}, "tex": {"packages": ["base", "physics", "ams", "mhchem", "color"]}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '04_biospheres/l51/l51';</script>
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="5.12. Catchment and drainage" href="../l52/l52.html" />
+    <link rel="prev" title="5.10. Catchment and drainage" href="../l50/l50.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../00_intro/intro/intro.html">1. Introduction</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../00_intro/l1/l1.html">1.1. Course Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../00_intro/l2/l2.html">1.2. Course Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../00_intro/l3/l3.html">1.3. Course Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../00_intro/l4/l4.html">1.4. Course Overview</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../01_planets/intro/intro.html">2. Groundwater</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l5/l5.html">2.1. Groundwater Systems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l6/l6.html">2.2. Why water moves beneath the surface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l7/l7.html">2.3. How we measure and understand water movement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l8/l8.html">2.4. Groundwater challenges and sustainable groundwater</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l9/l9.html">2.5. Groundwater Systems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l10/l10.html">2.6. Groundwater Systems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l11/l11.html">2.7. Groundwater Systems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l12/l12.html">2.8. Groundwater Systems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l13/l13.html">2.9. Groundwater Systems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l14/l14.html">2.10. Groundwater Systems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l15/l15.html">2.11. Groundwater Systems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l16/l16.html">2.12. Groundwater Systems</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../02_environments/intro/intro.html">3. Cryosphere</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l17/l17.html">3.1. The extent of sea ice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l18/l18.html">3.2. Ice sheets and the flow of glacial ice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l19/l19.html">3.3. Ice sheets and the flow of glacial ice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l20/l20.html">3.4. Ice sheets and the flow of glacial ice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l21/l21.html">3.5. Ice sheets and the flow of glacial ice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l22/l22.html">3.6. Ice sheets and the flow of glacial ice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l23/l23.html">3.7. Ice sheets and the flow of glacial ice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l24/l24.html">3.8. Ice sheets and the flow of glacial ice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l25/l25.html">3.9. Ice sheets and the flow of glacial ice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l26/l26.html">3.10. Ice sheets and the flow of glacial ice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l27/l27.html">3.11. Ice sheets and the flow of glacial ice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l28/l28.html">3.12. Ice sheets and the flow of glacial ice</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../03_detection/intro/intro.html">4. Surface water and Flooding</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l29/l29.html">4.1. Catchment and drainage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l30/l30.html">4.2. Catchment and drainage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l31/l31.html">4.3. Catchment and drainage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l32/l32.html">4.4. Catchment and drainage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l33/l33.html">4.5. Catchment and drainage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l34/l34.html">4.6. Catchment and drainage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l35/l35.html">4.7. Catchment and drainage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l36/l36.html">4.8. Catchment and drainage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l37/l37.html">4.9. Catchment and drainage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l38/l38.html">4.10. Catchment and drainage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l39/l39.html">4.11. Catchment and drainage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l40/l40.html">4.12. Catchment and drainage</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../intro/intro.html">5. Surface water and Flooding</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../l41/l41.html">5.1. Catchment and drainage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l42/l42.html">5.2. Catchment and drainage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l43/l43.html">5.3. Catchment and drainage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l44/l44.html">5.4. Catchment and drainage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l45/l45.html">5.5. Catchment and drainage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l46/l46.html">5.6. Catchment and drainage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l47/l47.html">5.7. Catchment and drainage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l48/l48.html">5.8. Catchment and drainage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l49/l49.html">5.9. Catchment and drainage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l50/l50.html">5.10. Catchment and drainage</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">5.11. Catchment and drainage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l52/l52.html">5.12. Catchment and drainage</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference/glossary.html">6. Glossary</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/04_biospheres/l51/l51.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Catchment and drainage</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rainfall-and-drainage-systems">Rainfall and drainage systems</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-model-of-drainage">0D model of drainage</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="catchment-and-drainage">
+<span id="lecture-13"></span><h1><span class="section-number">5.11. </span>Catchment and drainage<a class="headerlink" href="#catchment-and-drainage" title="Permalink to this heading">#</a></h1>
+<section id="background">
+<h2>Background<a class="headerlink" href="#background" title="Permalink to this heading">#</a></h2>
+<figure class="margin-caption align-default" id="loss-events">
+<img alt="../../_images/figure13.122.png" src="../../_images/figure13.122.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 5.91 </span><span class="caption-text">Illustration of the number of major loss events by natural processes, showing the very large proportion of such events associated with flooding.</span><a class="headerlink" href="#loss-events" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Intense floods often lead to severe damage to property, land and infrastructure,
+and they are becoming one of the main destructive consequences of the more intense rainfall.
+This is a characteristic of global warming and is compounded by rapid land development which has not maintained adequate water drainage pathways, leading to under-capacity and flooding.
+Heavy rainfall events have been increasing up over time owing to the higher atmospheric temperatures and the associated capacity for the air to carry more moisture (<a class="reference internal" href="../l52/l52.html#water-capacity"><span class="std std-numref">Fig. 5.101</span></a>).</p>
+<figure class="margin-caption align-default" id="water-capacity">
+<a class="reference internal image-reference" href="../../_images/figure13.222.png"><img alt="../../_images/figure13.222.png" src="../../_images/figure13.222.png" style="width: 60%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 5.92 </span><span class="caption-text">Plot of the water carrying capacity of air at <span class="math notranslate nohighlight">\(100 \ \%\)</span> humidity, as a function of temperature. From <a class="reference external" href="https://www.engineeringtoolbox.com/maximum-moisture-content-air-d_1403.html">The Engineering ToolBox, (2008)</a>.</span><a class="headerlink" href="#water-capacity" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="margin-caption align-default" id="heavy-rain-land">
+<img alt="../../_images/figure13.322.png" src="../../_images/figure13.322.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 5.93 </span><span class="caption-text">The area of land subjected to heavy rain events every year in the US over time.</span><a class="headerlink" href="#heavy-rain-land" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="margin-caption align-default" id="rain-anom">
+<img alt="../../_images/figure13.422.png" src="../../_images/figure13.422.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 5.94 </span><span class="caption-text">The change in the total annual amount of precipitation in the contiguous 48 states of the USA since 1901. This uses the 1901-2000 average as a baseline for depicted change. Choosing a different baseline period would not change the shape of the pattern over time, but would change the absolute value.</span><a class="headerlink" href="#rain-anom" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>In the USA, this increase in carrying capacity has led to an increase in land area subject to heavy rainfall (<a class="reference internal" href="../l52/l52.html#heavy-rain-land"><span class="std std-numref">Fig. 5.102</span></a>),
+and an overall increase in the average precipitation over the last 90 years (<a class="reference internal" href="../l52/l52.html#rain-anom"><span class="std std-numref">Fig. 5.103</span></a>)
+There is a clear trend towards heavier more intense rain and also of increasing annual rainfall.</p>
+<p>Rainfall provides the source for much of the flooding inshore, and occurs when the drainage system is unable to accommodate the water flux associated with rain.
+However, sea level rise will also lead to flooding of near coastal areas,
+and the two maps below illustrate some predictions of those areas of East Anglia and London which may be submerged by 2100 AD with sea level rise predicted by some climate forecasts (<a class="reference internal" href="../l52/l52.html#ea-flooding"><span class="std std-numref">Fig. 5.104</span></a>).</p>
+<figure class="margin-caption align-default" id="ea-flooding">
+<img alt="../../_images/figure13.522.png" src="../../_images/figure13.522.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 5.95 </span><span class="caption-text">Flooding in East Anglia and London associated with some predictions of sea level rise in the latter part of the present century.</span><a class="headerlink" href="#ea-flooding" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="rainfall-and-drainage-systems">
+<h2>Rainfall and drainage systems<a class="headerlink" href="#rainfall-and-drainage-systems" title="Permalink to this heading">#</a></h2>
+<aside class="units margin sidebar">
+<p class="sidebar-title">Units!</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+S, I, T &amp;= \mathrm{m^3~s^{-1}~m^{-2}} \\
+&amp;= \mathrm{m~s^{-1}}
+\end{split}\]</div>
+</aside>
+<p>Rainfall typically accumulates on the ground and disperses through three pathways.
+First the rain may run over the land surface downhill towards drainage channels, a process we will call surface run-off, <span class="math notranslate nohighlight">\(S\)</span>, with a flux per unit area.
+Second the rain may infiltrate into the ground, flowing into the subsurface aquifers, a process we label with a flux, <span class="math notranslate nohighlight">\(I\)</span>, per unit area.
+Third, some rainfall is taken up by crops and then returned to the atmosphere by the process of evapotranspiration, with a flux, <span class="math notranslate nohighlight">\(T\)</span>, per unit area of the land.
+The controls on these three fluxes are associated with the type of vegetation, the slope of the land and the type of soil which will be more or less permeable, and hence will regulate the flux of water into the ground.
+If the surface run-off if too large, then this may lead to overspilling of drainage gullies and channels, and a flood may develop.</p>
+<p>Eventually, the drainage and surface run off may reach a river where the flow is localised and moves downstream.
+If the flow exceeds the river capacity, the flow will overtop the river banks and flood to the flanks of the river, possibly spreading over the flood plain.</p>
+<figure class="margin-caption align-default" id="catchment-schematic">
+<img alt="../../_images/figure13.622.png" src="../../_images/figure13.622.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 5.96 </span><span class="caption-text">A schmatic showing the flow of water through a watershed scale system.</span><a class="headerlink" href="#catchment-schematic" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Typically, the upstream topography of the land determines the boundaries between different drainage basins,
+along lines of maximum elevation known as the watershed.
+An example of the Missouri and Mississippi river watersheds in the US is shown in <code class="xref std std-numref docutils literal notranslate"><span class="pre">US_river_basins</span></code>.</p>
+<figure class="align-default" id="id1">
+<img alt="../../_images/figure13.722.png" src="../../_images/figure13.722.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 5.97 </span><span class="caption-text">Map showing the watersheds that flow into the Missouri (in yellow) and Mississippi rivers.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>To set the scene for modelling runoff, it is important to assess the volume flux involved in different types of rain event.
+Light rain may lead to <span class="math notranslate nohighlight">\(0.1 \ \mathrm{mm \ hour^{-1}}\)</span>; moderate rain <span class="math notranslate nohighlight">\(1 \ \mathrm{mm \ hour^{-1}}\)</span> and heavy rain may be <span class="math notranslate nohighlight">\(10 \ \mathrm{mm \ hour^{-1}}\)</span>.
+If a river has a catchment area of <span class="math notranslate nohighlight">\(100 \times 100 \ \mathrm{km}\)</span>, corresponding to <span class="math notranslate nohighlight">\(10^{10} \ \mathrm{m}^2\)</span> then the volume of rain which falls in 1 hour may range from <span class="math notranslate nohighlight">\(10^7 – 10^9 \ \mathrm{m}^3\)</span>.
+The surface run-off and some drainage fraction of this volume will flow into the river.
+If the rain fall were to flow directly into the river, it would require a flow rate capacity of about <span class="math notranslate nohighlight">\(3 \times 10^3 - 3 \times 10^5 \ \mathrm{m^3s^{-1}}\)</span>.
+A large river may have a width of <span class="math notranslate nohighlight">\(1000 \ \mathrm{m}\)</span> and depth of <span class="math notranslate nohighlight">\(10 \ \mathrm{m}\)</span>, and so the smaller flux could be carried down the river at a speed of about <span class="math notranslate nohighlight">\(0.3 \ \mathrm{m s^{-1}}\)</span> but the larger rainfall event would require a flow rate of <span class="math notranslate nohighlight">\(30 \ \mathrm{m s^{-1}}\)</span> if the rain directly entered the river.
+Fortunately the drainage system is large and leads to very significant delays in the rain fall reaching the river, as we will now explore.
+This delay is key to preventing flooding in many cases.</p>
+</section>
+<section id="d-model-of-drainage">
+<h2>0D model of drainage<a class="headerlink" href="#d-model-of-drainage" title="Permalink to this heading">#</a></h2>
+<p>Modelling the drainage of water throughout a catchment area is very complicated.
+We need to know the capacity of the system to store water and how water flows in and out.
+On real terrain, the ground may be irregular and so the way in which water flows through it and is stored will be difficult to model.</p>
+<p>Given this heterogeneity in the terrain typical in many catchments, it is helpful to first develop an averaged description of the run-off flow from a localised area of the catchment.
+Eventually, we can add these together as shown in the figure of the multiple drainage zones which flow into the main river.</p>
+<p>But first, we therefore work with an integrated picture of the volume of surface water, and relate this to the net run-off flow with a 0D model, with no spatial component.
+We can consider this a “bucket model” of the drainage basin, as shown in <a class="reference internal" href="../l52/l52.html#bucket-model"><span class="std std-numref">Fig. 5.107</span></a>.</p>
+<figure class="margin-caption align-default" id="bucket-model">
+<a class="reference internal image-reference" href="../../_images/figure13.822.png"><img alt="../../_images/figure13.822.png" src="../../_images/figure13.822.png" style="width: 60%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 5.98 </span><span class="caption-text">Schematic of the 0D (or “bucket”) model of surface water drainage, over an area <span class="math notranslate nohighlight">\(A\)</span>, with an average water depth of <span class="math notranslate nohighlight">\(S\)</span>,
+an input of water due to rainfall at a rate <span class="math notranslate nohighlight">\(R\)</span> per unit area, and fluxes out due to flow into a stream and infiltration (per unit area), <span class="math notranslate nohighlight">\(Q\)</span> and <span class="math notranslate nohighlight">\(I\)</span> respectively.</span><a class="headerlink" href="#bucket-model" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>In this model we will consider the catchment area as a single bucket that accounts for the surface water stored in the area.
+This bucket has a single input of water due to rainfall, <span class="math notranslate nohighlight">\(F_{in} = RA\)</span>, where <span class="math notranslate nohighlight">\(R\)</span> is the (constant) rainfall rate, and <span class="math notranslate nohighlight">\(A\)</span> is the surface area of the watershed.
+The volume of water stored in the bucket will be <span class="math notranslate nohighlight">\(V = SA\)</span> where <span class="math notranslate nohighlight">\(S\)</span> is the (averaged) depth of water stored in our conceptual bucket.</p>
+<p>The fluxes out of the box will be due to infiltration (per unit area) into the soil, a constant <span class="math notranslate nohighlight">\(I\)</span>,
+and a flux out proportional to the amount stored in the bucket <span class="math notranslate nohighlight">\(Q = \lambda V\)</span>, where we have not yet identified our constant of proportionality <span class="math notranslate nohighlight">\(\lambda\)</span>.</p>
+<aside class="units margin sidebar">
+<p class="sidebar-title">Units!</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\lambda &amp;= \mathrm{unitless} \\
+\end{split}\]</div>
+</aside>
+<p>Balancing the fluxes in and out of the system, we can develop an expression for how the volume stored in the system varies with time</p>
+<div class="math notranslate nohighlight" id="equation-flux-balance">
+<span class="eqno">(5.41)<a class="headerlink" href="#equation-flux-balance" title="Permalink to this equation">#</a></span>\[\dv{V}{t} = RA – IA – \lambda V \]</div>
+<p>and if we recognise that the surface area of our catchment is constant with time, and dividing through by a factor of that area we get</p>
+<div class="math notranslate nohighlight" id="equation-flow-sum">
+<span class="eqno">(5.42)<a class="headerlink" href="#equation-flow-sum" title="Permalink to this equation">#</a></span>\[\dv{S}{t} = (R – I) – \lambda S\]</div>
+<p>We have ignored losses due to evapotranspiration, however we could readily include this in the model, provided we have a relation between evapotranspiration and the rain fall.
+In heavily vegetated zones this would be a significant process, and the vegetation would also impact the value of <span class="math notranslate nohighlight">\(\lambda S\)</span>, the surface run-off rate, since it baffles the surface runoff.</p>
+<p>We expect that the water flows from the surface into a network of small drainage channels which then coalesce into larger channels, and eventually flow into a tributary.
+The simple parameterisation is designed to capture the flow over the surface in a simple fashion including the roughness of the surface, the slope and the vegetation.
+In the example sheet we explore a nonlinear flux law, but the simple model provides a useful framework for interpreting how a simple drainage system operates.</p>
+<p>We now develop our simple, 0D model further to find a solution describing how the water stored <span class="math notranslate nohighlight">\(S\)</span>, varies in time.
+Assuming a constant rainfall and infiltration rate, we can apply an integrating factor <span class="math notranslate nohighlight">\(e^{\lambda t}\)</span> to get the solution</p>
+<aside class="units margin sidebar">
+<p class="sidebar-title">Units!</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+R &amp;= \mathrm{m~s^{-1}} \\
+\end{split}\]</div>
+</aside>
+<div class="math notranslate nohighlight" id="equation-s-of-time">
+<span class="eqno">(5.43)<a class="headerlink" href="#equation-s-of-time" title="Permalink to this equation">#</a></span>\[S(t) = S(0) e^{-\lambda t} + \frac{R-I}{\lambda} \left(1 - e^{-\lambda t} \right) dt\]</div>
+<p>where the term <span class="math notranslate nohighlight">\(S(0)\)</span> accounts for the initial volume of water stored in the system.</p>
+<p>If the rain is finite in duration (a duration <span class="math notranslate nohighlight">\(T\)</span>, for example) then the above solution applies for <span class="math notranslate nohighlight">\(0&lt;t&lt;T\)</span>.
+When the rain stops (i.e. for <span class="math notranslate nohighlight">\(t&lt;T\)</span>), we loose the rainfall term, and are just left with the infiltration and flux out,
+giving us the form</p>
+<div class="math notranslate nohighlight" id="equation-no-rain-sln">
+<span class="eqno">(5.44)<a class="headerlink" href="#equation-no-rain-sln" title="Permalink to this equation">#</a></span>\[S(t) = S(T) e^{-\lambda (T-t)} - \frac{I}{\lambda} \left(1 - e^{-\lambda (T-t)} \right)\]</div>
+<p>and in this expression <span class="math notranslate nohighlight">\(S(T)\)</span> is evaluated as in <a class="reference internal" href="../l52/l52.html#equation-s-of-time">(5.47)</a>.
+Since we have prescribed the surface runoff flow from the land to the river to be <span class="math notranslate nohighlight">\(\lambda S\)</span>,
+by assessing the value of <span class="math notranslate nohighlight">\(S\)</span> at any given time we can evaluate the runoff rate.</p>
+<figure class="margin-caption align-default" id="runoff-response">
+<img alt="../../_images/figure13.922.png" src="../../_images/figure13.922.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 5.99 </span><span class="caption-text">Plot showing the response of the run-off rate to constant rainfall.</span><a class="headerlink" href="#runoff-response" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./04_biospheres/l51"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../l50/l50.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">5.10. </span>Catchment and drainage</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../l52/l52.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">5.12. </span>Catchment and drainage</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rainfall-and-drainage-systems">Rainfall and drainage systems</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-model-of-drainage">0D model of drainage</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By the QES Team
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

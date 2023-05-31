@@ -1,0 +1,661 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>2.2. Why water moves beneath the surface</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/admonitions.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"loader": {"load": ["[tex]/physics", "[tex]/ams", "[tex]/mhchem", "[tex]/color"]}, "tex": {"packages": ["base", "physics", "ams", "mhchem", "color"]}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '01_planets/l6/l6';</script>
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="2.3. How we measure and understand water movement" href="../l7/l7.html" />
+    <link rel="prev" title="2.1. Groundwater Systems" href="../l5/l5.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../00_intro/intro/intro.html">1. Introduction</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../00_intro/l1/l1.html">1.1. Course Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../00_intro/l2/l2.html">1.2. Course Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../00_intro/l3/l3.html">1.3. Course Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../00_intro/l4/l4.html">1.4. Course Overview</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../intro/intro.html">2. Groundwater</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../l5/l5.html">2.1. Groundwater Systems</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">2.2. Why water moves beneath the surface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l7/l7.html">2.3. How we measure and understand water movement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l8/l8.html">2.4. Groundwater challenges and sustainable groundwater</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l9/l9.html">2.5. Groundwater Systems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l10/l10.html">2.6. Groundwater Systems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l11/l11.html">2.7. Groundwater Systems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l12/l12.html">2.8. Groundwater Systems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l13/l13.html">2.9. Groundwater Systems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l14/l14.html">2.10. Groundwater Systems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l15/l15.html">2.11. Groundwater Systems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l16/l16.html">2.12. Groundwater Systems</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../02_environments/intro/intro.html">3. Cryosphere</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l17/l17.html">3.1. The extent of sea ice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l18/l18.html">3.2. Ice sheets and the flow of glacial ice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l19/l19.html">3.3. Ice sheets and the flow of glacial ice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l20/l20.html">3.4. Ice sheets and the flow of glacial ice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l21/l21.html">3.5. Ice sheets and the flow of glacial ice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l22/l22.html">3.6. Ice sheets and the flow of glacial ice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l23/l23.html">3.7. Ice sheets and the flow of glacial ice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l24/l24.html">3.8. Ice sheets and the flow of glacial ice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l25/l25.html">3.9. Ice sheets and the flow of glacial ice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l26/l26.html">3.10. Ice sheets and the flow of glacial ice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l27/l27.html">3.11. Ice sheets and the flow of glacial ice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l28/l28.html">3.12. Ice sheets and the flow of glacial ice</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../03_detection/intro/intro.html">4. Surface water and Flooding</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l29/l29.html">4.1. Catchment and drainage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l30/l30.html">4.2. Catchment and drainage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l31/l31.html">4.3. Catchment and drainage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l32/l32.html">4.4. Catchment and drainage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l33/l33.html">4.5. Catchment and drainage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l34/l34.html">4.6. Catchment and drainage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l35/l35.html">4.7. Catchment and drainage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l36/l36.html">4.8. Catchment and drainage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l37/l37.html">4.9. Catchment and drainage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l38/l38.html">4.10. Catchment and drainage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l39/l39.html">4.11. Catchment and drainage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l40/l40.html">4.12. Catchment and drainage</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../04_biospheres/intro/intro.html">5. Surface water and Flooding</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l41/l41.html">5.1. Catchment and drainage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l42/l42.html">5.2. Catchment and drainage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l43/l43.html">5.3. Catchment and drainage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l44/l44.html">5.4. Catchment and drainage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l45/l45.html">5.5. Catchment and drainage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l46/l46.html">5.6. Catchment and drainage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l47/l47.html">5.7. Catchment and drainage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l48/l48.html">5.8. Catchment and drainage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l49/l49.html">5.9. Catchment and drainage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l50/l50.html">5.10. Catchment and drainage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l51/l51.html">5.11. Catchment and drainage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l52/l52.html">5.12. Catchment and drainage</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference/glossary.html">6. Glossary</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/01_planets/l6/l6.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Why water moves beneath the surface</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <p><br><div style="page-break-before:always;"></div></p>
+<section class="tex2jax_ignore mathjax_ignore" id="why-water-moves-beneath-the-surface">
+<span id="lecture-5"></span><h1><span class="section-number">2.2. </span>Why water moves beneath the surface<a class="headerlink" href="#why-water-moves-beneath-the-surface" title="Permalink to this heading">#</a></h1>
+<p>Inherent to the idea of a groundwater system is the idea that groundwater moves from a point of <span class="xref std std-term">recharge</span> to a point of <span class="xref std std-term">discharge</span>.
+If the total volume stored is a function of the <span class="xref std std-term">porosity</span>, then we can ask ourselves what controls how groundwater moves from one point to another point?</p>
+<p>This was first explored in the 1850s by <strong>Henri D’Arcy</strong>, a French civil engineer, who set up a pipe filled with sand and played around with how fast water moved through the pipe.</p>
+<figure class="margin-caption align-default" id="darcy-pipe">
+<a class="reference internal image-reference" href="../../_images/figure5.1.png"><img alt="../../_images/figure5.1.png" src="../../_images/figure5.1.png" style="width: 70%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 2.7 </span><span class="caption-text">A schematic of the original experiment by Henri D’Arcy.</span><a class="headerlink" href="#darcy-pipe" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<aside class="units margin sidebar">
+<p class="sidebar-title">Units!</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+l, h &amp;= \mathrm{m} \\
+Q &amp;= \mathrm{m^3~s^{-1}} \\
+\end{split}\]</div>
+</aside>
+<p>Here the pipe (length <span class="math notranslate nohighlight">\(l\)</span> and cross-sectional area <span class="math notranslate nohighlight">\(A\)</span>) was put at various angles to the horizontal
+(determined by <span class="math notranslate nohighlight">\(\Delta h\)</span> – or the height difference between one end of the pipe to the other end of the pipe)
+and the flow rate, <span class="math notranslate nohighlight">\(Q\)</span>, was measured (in units of volume-per-time).</p>
+<p>Specifically, we will call <span class="math notranslate nohighlight">\(\frac{\Delta h}{\Delta l}\)</span> – that is the change in height over a distance along the pipe - the <strong><span class="xref std std-term">hydraulic gradient</span></strong>.</p>
+<figure class="margin-caption align-default" id="hyd-grad">
+<img alt="../../_images/figure5.2.jpeg" src="../../_images/figure5.2.jpeg" />
+<figcaption>
+<p><span class="caption-number">Fig. 2.8 </span><span class="caption-text">Plot of Flow Rate <span class="math notranslate nohighlight">\((Q)\)</span> against <span class="math notranslate nohighlight">\(-\dv{h}{l}\)</span>. The gradient gives <span class="math notranslate nohighlight">\(K\)</span>, the <span class="xref std std-term">hydraulic conductivity</span>.</span><a class="headerlink" href="#hyd-grad" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>What Darcy found was that <span class="math notranslate nohighlight">\(Q\)</span> is proportional to <span class="math notranslate nohighlight">\(\Delta h\)</span> and inversely proportional to <span class="math notranslate nohighlight">\(l\)</span>.
+That is the steeper the pipe is held, the larger the volumetric flow rate, and the longer the pipe is the lower the volumetric flow rate.
+He also found that <span class="math notranslate nohighlight">\(Q\)</span> is proportional to <span class="math notranslate nohighlight">\(A\)</span>, that is the larger the pipe, the larger the flow rate.
+When he filled the pipe with different material, he found that the slope (in a plot of <span class="math notranslate nohighlight">\(Q\)</span> versus <span class="math notranslate nohighlight">\(\frac{\Delta h}{\Delta l}\)</span>, <a class="reference internal" href="#hyd-grad"><span class="std std-numref">Fig. 2.8</span></a>) changed.
+He called this slope <span class="math notranslate nohighlight">\(K\)</span> and called it <strong><span class="xref std std-term">hydraulic conductivity</span></strong>.</p>
+<p>Therefore, <span class="math notranslate nohighlight">\(Q \propto - A \frac{\Delta h}{\Delta l}\)</span>, which we can turn into an equation using <span class="math notranslate nohighlight">\(K\)</span>:  <span class="math notranslate nohighlight">\(Q = - K A \frac{\Delta h}{\Delta l}\)</span>.
+Or more generally:</p>
+<aside class="units margin sidebar">
+<p class="sidebar-title">Units!</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+K &amp;= \mathrm{m~s^{-1}} \\
+A &amp;= \mathrm{m^2} \\
+q &amp;= \mathrm{m~s^{-1}} \\
+\end{split}\]</div>
+</aside>
+<div class="math notranslate nohighlight" id="equation-darcys-law">
+<span class="eqno">(2.3)<a class="headerlink" href="#equation-darcys-law" title="Permalink to this equation">#</a></span>\[Q = -KA \dv{h}{l}\]</div>
+<p>which is known as <strong>Darcy’s law</strong>.
+Note that often you will see <span class="math notranslate nohighlight">\(q\)</span> rather than <span class="math notranslate nohighlight">\(Q\)</span> used where <span class="math notranslate nohighlight">\(q\)</span> is <span class="xref std std-term">specific discharge</span>, or ‘Darcy velocity’ and is the flow rate (<span class="math notranslate nohighlight">\(Q\)</span>) divided by the area (<span class="math notranslate nohighlight">\(A\)</span>):</p>
+<div class="math notranslate nohighlight" id="equation-darcys-vel">
+<span class="eqno">(2.4)<a class="headerlink" href="#equation-darcys-vel" title="Permalink to this equation">#</a></span>\[q = \frac{Q}{A}\]</div>
+<p>Let’s learn more about this <strong><span class="xref std std-term">hydraulic conductivity</span></strong> – <span class="math notranslate nohighlight">\(K\)</span>.
+We can derive that the units are length-per-time, or often <span class="math notranslate nohighlight">\(\mathrm{m \ s^{-1}}\)</span>.
+Studies of actual groundwater systems have shown that it can range over 12 orders of magnitude in various materials below the subsurface (<a class="reference internal" href="#fluxes"><span class="std std-numref">Fig. 2.9</span></a>).</p>
+<figure class="margin-caption align-default" id="fluxes">
+<img alt="../../_images/figure5.3.jpg" src="../../_images/figure5.3.jpg" />
+<figcaption>
+<p><span class="caption-number">Fig. 2.9 </span><span class="caption-text">Comparing <span class="xref std std-term">hydraulic conductivity</span> values from (A) Freeze and Cherry (1979) and
+(B) calibrayted regional scale hydrogeologic models.
+Each open square is an optimised or mean value from a part of a model domain that is larger than <span class="math notranslate nohighlight">\(5 \ \mathrm{km}\)</span> horizontally.
+Values are grouped into hydrolithogic categories that are typical for regioonal-scale modeling
+(i.e. fine grained, unconsolidated).
+The geometric meanis shown as a red square with <span class="math notranslate nohighlight">\(1\sigma\)</span> standard deviation for each hydrolithogic category is also shown.</span><a class="headerlink" href="#fluxes" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>In general, <span class="xref std std-term">hydraulic conductivity</span> is a function of both the medium (what groundwater flows through)
+and the fluid that is going through the medium (usually water, in the case of groundwater).
+<span class="math notranslate nohighlight">\(K\)</span> is:</p>
+<aside class="units margin sidebar">
+<p class="sidebar-title">Units!</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+C &amp;= \mathrm{unitless} \\
+\rho &amp;= \mathrm{kg~m^{-3}} \\
+g &amp;= \mathrm{m~s^{-2}} \\
+\mu &amp;= \mathrm{N~s~m^{-2}} = \mathrm{Pa~s} = \mathrm{kg~m^{-1}~s^{-1}}\\
+\end{split}\]</div>
+</aside>
+<div class="math notranslate nohighlight" id="equation-hyd-conductivity">
+<span class="eqno">(2.5)<a class="headerlink" href="#equation-hyd-conductivity" title="Permalink to this equation">#</a></span>\[K = Cd^2 \frac{\rho g}{\mu}\]</div>
+<p>Here, <span class="math notranslate nohighlight">\(Cd^2\)</span> is a property of the medium – where <span class="math notranslate nohighlight">\(d\)</span> is the diameter of the grains, and <span class="math notranslate nohighlight">\(C\)</span> is a constant of proportionality,
+which covers grain packing, how round the grains are, how much cement is around.
+Meanwhile, <span class="math notranslate nohighlight">\(\frac{\rho g}{\mu}\)</span> is a property of the fluid,
+with <span class="math notranslate nohighlight">\(\rho g\)</span> being the specific weight of the fluid (<span class="math notranslate nohighlight">\(9800 \ \mathrm{N \ m^3}\)</span>) in the case of water
+and <span class="math notranslate nohighlight">\(\mu\)</span> being the dynamic viscosity of the fluid (<span class="math notranslate nohighlight">\(1.386 \times 10^{-3} \ \mathrm{N \ s \ m^{-2}}\)</span> for water).</p>
+<p>While <span class="xref std std-term">hydraulic conductivity</span> is a function of the medium and the fluid (imagine trying to put honey through a groundwater system!),
+in reality, as for most groundwaters the specific weight and dynamic viscosity vary little,
+what is important is the soil/rock/subsurface (medium) through which you are trying to push groundwater.
+Mathematically, we call this <span class="math notranslate nohighlight">\(k\)</span> – and it is known as <strong><span class="xref std std-term">permeability</span></strong>.</p>
+<aside class="units margin sidebar">
+<p class="sidebar-title">Units!</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+k &amp;= \mathrm{m^2} \\
+\end{split}\]</div>
+</aside>
+<div class="math notranslate nohighlight" id="equation-permeability">
+<span class="eqno">(2.6)<a class="headerlink" href="#equation-permeability" title="Permalink to this equation">#</a></span>\[k = Cd^2\]</div>
+<p>We can see that we can relate <span class="xref std std-term">hydraulic conductivity</span> (units <span class="math notranslate nohighlight">\(\mathrm{m \ s^{-1}}\)</span>) to <span class="xref std std-term">permeability</span> (units <span class="math notranslate nohighlight">\(\mathrm{m^2}\)</span>) quite easily, if we assume that the fluid flowing through the groundwater is water.
+This is usually a safe assumption (even really salty brines in groundwater systems have a specific weight and dynamic viscosity that means they behave more or less as water).
+If you read around a bit you will also find that a unit for <span class="xref std std-term">Permeability</span> of a ‘Darcy’ is sometimes used (but not often).</p>
+<p><a class="reference internal" href="#fluxes"><span class="std std-numref">Fig. 2.9</span></a> shows a comparison of <span class="xref std std-term">hydraulic conductivity</span> from experiments, versus those from hydrology models.
+This gives you a sense of the <span class="xref std std-term">hydraulic conductivity</span> associated with different types of material that we find on the surface of the planet.
+<a class="reference internal" href="#global-perm"><span class="std std-numref">Fig. 2.10</span></a> shows a map of the global distribution of <span class="xref std std-term">permeability</span> which often relates to the underlying rock type.
+In the lecture we will introduce the concept of <strong><span class="xref std std-term">Transmissivity</span></strong>, which is the <span class="xref std std-term">permeability</span> over a particular depth of the aquifer.</p>
+<figure class="margin-caption align-default" id="global-perm">
+<img alt="../../_images/figure5.4.png" src="../../_images/figure5.4.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 2.10 </span><span class="caption-text">The global distribution of <span class="xref std std-term">permeability</span> in <span class="math notranslate nohighlight">\(\log(k \ / \ \mathrm{m^2})\)</span>.
+The regional scale <span class="xref std std-term">permeability</span> will be much lower in the regions north of the dashed continuous permafrost line.
+Smaller continous permafrost areas in mountainous terrain are not shown.</span><a class="headerlink" href="#global-perm" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Darcy’s Law provides us with a nice study of what controls the rate that water flows through porous media.
+But like all laws it rests on a few assumptions.
+We need to understand these assumptions before we take the flow through the pipe and translate it to the flow through an actual groundwater system.
+One of the big assumptions is that flow is <strong>laminar</strong>, and not <strong>turbulent</strong>.</p>
+<figure class="margin-caption align-default" id="turb-laminar">
+<a class="reference internal image-reference" href="../../_images/figure5.5.png"><img alt="../../_images/figure5.5.png" src="../../_images/figure5.5.png" style="width: 60%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 2.11 </span><span class="caption-text">Cartoon of the difference between turbulent and laminar flow.</span><a class="headerlink" href="#turb-laminar" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Laminar means that water is moving in the same direction, like a line, while turbulence occurs when there are deviations from this linearity of movement.</p>
+<p>What was seen was that the nice linear relationship inherent to Darcy’s law broke down at high <span class="xref std std-term">hydraulic gradient</span>s, such that <span class="math notranslate nohighlight">\(Q\)</span> no longer scaled linearly with <span class="xref std std-term">hydraulic gradient</span>.</p>
+<p>This is because turbulence has begun in the flow through the porous medium.
+Turbulence causes pressure loss and thus changes the flow rate.</p>
+<figure class="margin-caption align-default" id="q-vs-dh-dl">
+<a class="reference internal image-reference" href="../../_images/figure5.6.png"><img alt="../../_images/figure5.6.png" src="../../_images/figure5.6.png" style="width: 50%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 2.12 </span><span class="caption-text">Plot of flow against <span class="xref std std-term">hydraulic gradient</span> showing the branching of the flow regime.
+The lower branch represents the turbulent regime, where pressure is lost.</span><a class="headerlink" href="#q-vs-dh-dl" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>We know if we are in a laminar versus a turbulent flow regime by calculating the <strong>Reynolds Number</strong>.</p>
+<aside class="units margin sidebar">
+<p class="sidebar-title">Units!</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\Re &amp;= \mathrm{unitless} \\
+\end{split}\]</div>
+</aside>
+<div class="math notranslate nohighlight" id="equation-reynolds-num">
+<span class="eqno">(2.7)<a class="headerlink" href="#equation-reynolds-num" title="Permalink to this equation">#</a></span>\[\Re = \frac{\rho v d}{\mu}\]</div>
+<p>Where <span class="math notranslate nohighlight">\(r\)</span> is the density of the fluid, <span class="math notranslate nohighlight">\(v\)</span> is the velocity of the fluid, <span class="math notranslate nohighlight">\(d\)</span> is a length term, typically the grain size, and <span class="math notranslate nohighlight">\(\mu\)</span> is the dynamic viscosity of the fluid.
+If <span class="math notranslate nohighlight">\(\mathrm{Re} &lt; 10\)</span> then the flow is laminar, while is <span class="math notranslate nohighlight">\(\mathrm{Re} &gt; 10\)</span> then it is turbulent.
+Lucky for us, most groundwater systems fall in the category of laminar flow.</p>
+<figure class="margin-caption align-default" id="grain-sizes">
+<a class="reference internal image-reference" href="../../_images/figure5.7.png"><img alt="../../_images/figure5.7.png" src="../../_images/figure5.7.png" style="width: 70%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 2.13 </span><span class="caption-text">Cartoon showing of different <span class="xref std std-term">porosity</span> materials.</span><a class="headerlink" href="#grain-sizes" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Remember that the grains in the porous media, more generally, provide frictional resistance to the flow.
+Thus, the velocity of groundwater will be near zero at the interface between the flowing groundwater and the grains, and will be fastest in the middle between the grains.
+This just means that fundamental properties of the rock/soil/sand have a massive impact on the overall operation of the groundwater system!</p>
+<p>Let’s return to groundwater flow.
+What comes out of Darcy’s law is that the <span class="xref std std-term">hydraulic gradient</span>, that is <span class="math notranslate nohighlight">\(\frac{\Delta h}{\Delta l}\)</span> drives the flow of water through the pipe, or in case of the real world, the groundwater system.
+The porous medium (the grains of sand, or sides of the minerals in the rock) resist the flow, providing frictional resistance to the movement of water.
+The average groundwater velocity is given by <span class="math notranslate nohighlight">\(v = \frac{q}{n}\)</span> where <span class="math notranslate nohighlight">\(q\)</span> is the <span class="xref std std-term">specific discharge</span> (<span class="math notranslate nohighlight">\(\frac{Q}{A}\)</span>) and <span class="math notranslate nohighlight">\(n\)</span> is the average <span class="xref std std-term">porosity</span>.
+The average groundwater velocity <span class="math notranslate nohighlight">\((v)\)</span> is always greater than the <span class="xref std std-term">specific discharge</span> (remember that <span class="xref std std-term">porosity</span> is a percentage of void space in the rock!).</p>
+<p>We can now think about how this might look in the real world.</p>
+<figure class="margin-caption align-default" id="hydraulic-head">
+<img alt="../../_images/figure5.8.png" src="../../_images/figure5.8.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 2.14 </span><span class="caption-text">Schematic showing the calculation of <span class="xref std std-term">hydraulic head</span>.</span><a class="headerlink" href="#hydraulic-head" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>If we think about a groundwater system, where there are two wells, the pressure of the water at a particular depth in the well is a function of both the pressure exerted by the water above it, and the gravitational pull.
+Together these are called the <strong><span class="xref std std-term">hydraulic head</span></strong>.
+The change in the <span class="xref std std-term">hydraulic head</span> (<span class="math notranslate nohighlight">\(\dd{h}\)</span> or <span class="math notranslate nohighlight">\(\Delta h\)</span>) over a fixed distance (<span class="math notranslate nohighlight">\(\dd{l}\)</span>, or <span class="math notranslate nohighlight">\(\Delta{l}\)</span>) is the <strong><span class="xref std std-term">hydraulic gradient</span></strong>.
+This is what drives the water to flow through the porous media (in this case, the rock).</p>
+<p>In the lecture we will go through several conceptual models where water flows from high pressure to low pressure, or low pressure to high pressure (canonically flowing ‘up’ or flowing ‘down’) because it is following the gradient of total change in <strong><span class="xref std std-term">hydraulic head</span></strong>.
+This means there is a loss of head along the flow-path in a groundwater system.
+This loss of head amounts to a loss of mechanical energy from the system.
+But remember, energy must be conserved, it cannot be either created or destroyed.
+This energy is lost through frictional resistance of the porous media.
+Here, the loss of energy is lost as heat, as the water squeezes through the rock matrix.
+The high specific heat capacity of water, however, means that we can’t always measure a change in temperature associated with this conservation of energy!</p>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./01_planets/l6"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../l5/l5.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">2.1. </span>Groundwater Systems</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../l7/l7.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">2.3. </span>How we measure and understand water movement</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By the QES Team
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

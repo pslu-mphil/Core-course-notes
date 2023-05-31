@@ -14,117 +14,51 @@ Select an item from the menu on the left or the grid below to get started.
 Course Overview 🧭
 ^^^
 
-The global context of Environmental Sciences
+A story of origins.
 :::
 
 :::{grid-item-card}
-:link: 01_groundwater/intro/intro
+:link: 01_planets/intro/intro
 :link-type: doc
 :class-header: bg-light
 
-Groundwater 🌧
+Planets 🪐
 ^^^
 
-How water flows through the Earth.
+How the universe made planets.
 :::
 
 :::{grid-item-card}
-:link: 02_cryosphere/intro/intro
+:link: 02_environments/intro/intro
 :link-type: doc
 :class-header: bg-light
 
-Cryosphere 🧊
+Environments 🌦
 ^^^
 
-How ice forms, moves and melts.
+How habitable environments emerged.
 :::
 
 :::{grid-item-card}
-:link: 03_rivers/intro/intro
+:link: 03_detection/intro/intro
 :link-type: doc
 :class-header: bg-light
 
-Rivers and Flooding 🏞
+Origin and detection of life 🧬
 ^^^
 
-How water flows on the surface.
+Life's origins and impact on planets.
 :::
 
 :::{grid-item-card}
-:link: 04_atmosphere/intro/intro
+:link: 04_biospheres/intro/intro
 :link-type: doc
 :class-header: bg-light
 
-Atmosphere 💨
+Biospheres 🦕
 ^^^
 
-Movement, pollution and aerosols.
-:::
-
-:::{grid-item-card}
-:link: 05_globalenvironment/intro/intro
-:link-type: doc
-:class-header: bg-light
-
-Global Environment 🌍
-^^^
-
-Fluids on a rotating planet
-:::
-
-:::{grid-item-card}
-:link: 06_oceancarbon/intro
-:link-type: doc
-:class-header: bg-light
-
-Ocean Carbon 🌊
-^^^
-
-How carbon moves around the ocean
-:::
-
-:::{grid-item-card}
-:link: 07_landcarbon/intro/intro
-:link-type: doc
-:class-header: bg-light
-
-Terrestrial Carbon 🌲
-^^^
-
-Carbon on land
-:::
-
-<!-- :::{grid-item-card}
-:link: 09_globalclimate/intro/intro
-:link-type: doc
-:class-header: bg-light
-
-Global Climate 🌍
-^^^
-
-Climate change, IPCC and policy
-::: -->
-
-:::{grid-item-card}
-:link: 10_energytransitions/intro/intro
-:link-type: doc
-:class-header: bg-light
-
-Energy Transitions 🏭
-^^^
-
-Towards a sustainable future
-:::
-
-:::{grid-item-card}
-:link: 08_polarcasestudy/intro/intro
-:link-type: doc
-:class-header: bg-light
-
-Polar Case Study 🐧
-^^^
-
-Land-ocean-atmosphere-ice interactions
+Lessons from life.
 :::
 
 ::::

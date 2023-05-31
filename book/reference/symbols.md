@@ -1,6 +1,6 @@
 # Symbols
 
-A list of key mathematical symbols used in the QES course.
+A list of key mathematical symbols used in the PSLU course.
 
 ```{glossary}
 Q

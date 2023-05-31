@@ -1,0 +1,50 @@
+title: 
+author: the QES Team
+logo: logo.png
+
+# Force re-execution of notebooks on each build.
+execute:
+  execute_notebooks: force
+
+# Define the name of the latex output file for PDF builds
+latex:
+  latex_documents:
+    targetname: book.tex
+  latex_engine: xelatex
+
+# Add a bibtex file so that we can create citations
+bibtex_bibfiles:
+  - references.bib
+
+# Information about where the book exists on the web
+repository:
+  url: https://quantitative-environmental-science.github.io/Notes/  # Online location of your book
+  branch: gh_pages  # Which branch of the repository should be used when creating links (optional)
+
+html:
+  favicon: favicon.png
+  home_page_in_navbar: false
+  navbar_number_sections: true
+
+sphinx:
+  recursive_update: true
+  config:
+    html_theme_options:
+      repository_provider: github
+    language: en
+    mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+    mathjax3_config:
+      loader:
+        load: ['[tex]/physics', '[tex]/ams', '[tex]/mhchem', '[tex]/color']
+      tex:
+        packages: ['base', 'physics', 'ams', 'mhchem', color]
+    latex_elements:
+      preamble: |
+        \newcommand{\dv}[2]{\frac{\mathrm{d}#1}{\mathrm{d}#2}}  % replaces physics.sty \dv
+        \newcommand{\dd}{\mathrm{d}}  % replaces physics.sty \dd
+        \newcommand{\pdv}[2]{\frac{\partial #1}{\partial #2}}  % partial derivative
+      pointsize: 11pt
+      papersize: a4paper
+    latex_logo: ./logo.png
+
+# Look at including mhchem here - https://mhchem.github.io/MathJax-mhchem/

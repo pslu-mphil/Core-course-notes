@@ -1,0 +1,19 @@
+# local files for raw lecture material
+material/
+raw/
+/book/_build
+
+# Dev env
+.idea/
+
+# OSX
+.DS_Store
+
+# Build files
+._*.md
+._*.png
+._*.jpg
+._*.tif
+
+# ignore PDF build directory
+**/pdf/*

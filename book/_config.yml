@@ -44,8 +44,7 @@ sphinx:
         \newcommand{\dd}{\mathrm{d}}  % replaces physics.sty \dd
         \newcommand{\pdv}[2]{\frac{\partial #1}{\partial #2}}  % partial derivative
       pointsize: 11pt
-      paper
-      size: a4paper
+      papersize: a4paper
     latex_logo: ./logo.png
 
 # Look at including mhchem here - https://mhchem.github.io/MathJax-mhchem/

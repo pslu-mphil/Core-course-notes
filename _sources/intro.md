@@ -1,4 +1,4 @@
-# Planetary Sciences and Life in the Universe (MPhil)
+# Planetary Sciences and Life in the Universe
 
 Select an item from the menu on the left or the grid below to get started.
 
@@ -22,7 +22,7 @@ A story of origins.
 :link-type: doc
 :class-header: bg-light
 
-Planets 🪐
+C1: Planets 🪐
 ^^^
 
 How the universe made planets.
@@ -33,7 +33,7 @@ How the universe made planets.
 :link-type: doc
 :class-header: bg-light
 
-Environments 🌦
+C2: Environments 🌦
 ^^^
 
 How habitable environments emerged.
@@ -44,7 +44,7 @@ How habitable environments emerged.
 :link-type: doc
 :class-header: bg-light
 
-Origin and detection of life 🧬
+C3: Origin and detection of life 🧬
 ^^^
 
 Life's origins and impact on planets.
@@ -55,7 +55,7 @@ Life's origins and impact on planets.
 :link-type: doc
 :class-header: bg-light
 
-Biospheres 🦕
+C4: Biospheres 🦕
 ^^^
 
 Lessons from life.

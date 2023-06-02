@@ -1,10 +1,10 @@
 <div align="right">
-<a href="https://github.com/pslu-mphil/Notes/actions/workflows/book.yml"><img src="https://github.com/pslu-mphil/Notes/actions/workflows/book.yml/badge.svg" alt="live status" height="18"></a>
+<a href="https://github.com/pslu-mphil/Core-course-notes/actions/workflows/book.yml"><img src="https://github.com/pslu-mphil/Core-course-notes/actions/workflows/book.yml/badge.svg" alt="live status" height="18"></a>
 </div>
 
 # Notes
 
-Lecture notes for the course, available online [here](https://pslu-mphil.github.io/Notes).
+Lecture notes for the course, available online [here](https://pslu-mphil.github.io/Core-course-notes).
 
 ## IMPORTANT
 
@@ -34,7 +34,7 @@ pip install jupyter-book
 
 ## Build Instructions
 
-From the `/Notes` directory, either use the `makefile`:
+From the `/Core-course-notes` directory, either use the `makefile`:
 
 ```bash
 make html
@@ -46,4 +46,4 @@ or call `jupyter-book` directly:
 jupyter-book build book/
 ```
 
-The compiled HTML files can then be viewed by opening in `Notes/book/_build/index.html` in your browser.
+The compiled HTML files can then be viewed by opening in `Core-course-notes/book/_build/index.html` in your browser.

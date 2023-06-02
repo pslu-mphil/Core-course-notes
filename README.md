@@ -16,7 +16,7 @@ You should not be making anything more than minor typo corrections using the onl
 
 ### Reporting Problems
 
-If you find a problem you're not sure how to fix, either contact us directly or [create an Issue](https://github.com/pslu-mphil/Notes/issues/new/choose), which we'll get to ASAP.
+If you find a problem you're not sure how to fix, either contact us directly or [create an Issue](https://github.com/pslu-mphil/Core-course-notes/issues/new), which we'll get to ASAP.
 
 ## Installing Dependencies
 

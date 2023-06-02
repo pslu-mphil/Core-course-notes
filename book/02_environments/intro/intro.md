@@ -1,4 +1,4 @@
-# C2: Environments
+# Environments (C2)
 
 In these lectures we are going to discuss the growth and retreat of sea
 ice in the polar oceans, how snow accumulates to form ice in the worlds

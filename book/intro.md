@@ -22,7 +22,7 @@ A story of origins.
 :link-type: doc
 :class-header: bg-light
 
-C1: Planets 🪐
+Planets (C1) 🪐
 ^^^
 
 How the universe made planets.
@@ -33,7 +33,7 @@ How the universe made planets.
 :link-type: doc
 :class-header: bg-light
 
-C2: Environments 🌦
+Environments (C2) 🌦
 ^^^
 
 How habitable environments emerged.
@@ -44,7 +44,7 @@ How habitable environments emerged.
 :link-type: doc
 :class-header: bg-light
 
-C3: Origin and detection of life 🧬
+Origin and detection of life (C3) 🧬
 ^^^
 
 Life's origins and impact on planets.
@@ -55,7 +55,7 @@ Life's origins and impact on planets.
 :link-type: doc
 :class-header: bg-light
 
-C4: Biospheres 🦕
+Biospheres (C4) 🦕
 ^^^
 
 Lessons from life.

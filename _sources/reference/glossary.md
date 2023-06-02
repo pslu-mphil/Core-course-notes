@@ -1,11 +1,11 @@
 # Glossary
 
-A list of terms used in the QES course.
+A list of terms used in the PSLU course.
 
 ```{glossary}
 
 The word goes here
     Could provide synonym here;
-    The remember to provide a definition.
+    Then remember to provide a definition.
 
 ```

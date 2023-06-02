@@ -1,4 +1,4 @@
-# C3: Origin and detection of life
+# Origin and detection of life (C3)
 
 Flooding and impact of climate change
 

@@ -1,4 +1,4 @@
-# Quantitative Environmental Sciences
+# Planetary Sciences and Life in the Universe (MPhil)
 
 Select an item from the menu on the left or the grid below to get started.
 

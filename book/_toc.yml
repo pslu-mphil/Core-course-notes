@@ -1,7 +1,7 @@
 format: jb-book
 root: intro
 options:
-  numbered: 1
+  numbered: 2
 chapters:
 - file: 00_intro/intro/intro
   sections:

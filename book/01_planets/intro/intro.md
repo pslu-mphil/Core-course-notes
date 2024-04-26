@@ -17,7 +17,7 @@ The overarching learning outcomes for this module are below, lecture-specific le
 - The structure of planets.
 - The architectures of planetary systems.
 - How we observe planetary systems.
-- THe role of planet forming debris in early planet evolution.
+- The role of planet forming debris in early planet evolution.
 
 **Lectures**
 ```{tableofcontents}

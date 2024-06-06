@@ -2,7 +2,7 @@
 <a href="https://github.com/pslu-mphil/Core-course-notes/actions/workflows/book.yml"><img src="https://github.com/pslu-mphil/Core-course-notes/actions/workflows/book.yml/badge.svg" alt="live status" height="18"></a>
 </div>
 
-# Notes
+# README
 
 Lecture notes for the course, available online [here](https://pslu-mphil.github.io/Core-course-notes).
 

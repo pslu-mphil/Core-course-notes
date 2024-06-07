@@ -46,4 +46,4 @@ or call `jupyter-book` directly:
 jupyter-book build book/
 ```
 
-The compiled HTML files can then be viewed by opening in `Core-course-notes/book/_build/html/index.html` in your browser.
+The compiled HTML files can then be viewed by opening `Core-course-notes/book/_build/html/index.html` in your browser.

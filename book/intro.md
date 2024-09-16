@@ -42,7 +42,7 @@ How habitable environments emerged.
 :::
 
 :::{grid-item-card}
-:link: 03_detection/intro/intro
+:link: intro
 :link-type: doc
 :class-header: bg-light
 
@@ -53,7 +53,7 @@ Life's origins and impact on planets.
 :::
 
 :::{grid-item-card}
-:link: 04_biospheres/intro/intro
+:link: intro
 :link-type: doc
 :class-header: bg-light
 

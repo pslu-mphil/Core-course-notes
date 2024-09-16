@@ -37,33 +37,33 @@ chapters:
   - file: 02_environments/l10/l10
   - file: 02_environments/l11/l11
   - file: 02_environments/l12/l12
-- file: 03_detection/intro/intro
-  sections:
-  - file: 03_detection/l1/l1
-  - file: 03_detection/l2/l2
-  - file: 03_detection/l3/l3
-  - file: 03_detection/l4/l4
-  - file: 03_detection/l5/l5
-  - file: 03_detection/l6/l6
-  - file: 03_detection/l7/l7
-  - file: 03_detection/l8/l8
-  - file: 03_detection/l9/l9
-  - file: 03_detection/l10/l10
-  - file: 03_detection/l11/l11
-  - file: 03_detection/l12/l12
-- file: 04_biospheres/intro/intro
-  sections:
-  - file: 04_biospheres/l1/l1
-  - file: 04_biospheres/l2/l2
-  - file: 04_biospheres/l3/l3
-  - file: 04_biospheres/l4/l4
-  - file: 04_biospheres/l5/l5
-  - file: 04_biospheres/l6/l6
-  - file: 04_biospheres/l7/l7
-  - file: 04_biospheres/l8/l8
-  - file: 04_biospheres/l9/l9
-  - file: 04_biospheres/l10/l10
-  - file: 04_biospheres/l11/l11
-  - file: 04_biospheres/l12/l12
+# - file: 03_detection/intro/intro
+#   sections:
+#   - file: 03_detection/l1/l1
+#   - file: 03_detection/l2/l2
+#   - file: 03_detection/l3/l3
+#   - file: 03_detection/l4/l4
+#   - file: 03_detection/l5/l5
+#   - file: 03_detection/l6/l6
+#   - file: 03_detection/l7/l7
+#   - file: 03_detection/l8/l8
+#   - file: 03_detection/l9/l9
+#   - file: 03_detection/l10/l10
+#   - file: 03_detection/l11/l11
+#   - file: 03_detection/l12/l12
+# - file: 04_biospheres/intro/intro
+#   sections:
+#   - file: 04_biospheres/l1/l1
+#   - file: 04_biospheres/l2/l2
+#   - file: 04_biospheres/l3/l3
+#   - file: 04_biospheres/l4/l4
+#   - file: 04_biospheres/l5/l5
+#   - file: 04_biospheres/l6/l6
+#   - file: 04_biospheres/l7/l7
+#   - file: 04_biospheres/l8/l8
+#   - file: 04_biospheres/l9/l9
+#   - file: 04_biospheres/l10/l10
+#   - file: 04_biospheres/l11/l11
+#   - file: 04_biospheres/l12/l12
 - file: reference/glossary
 # - file: reference/symbols

@@ -5,10 +5,11 @@ options:
 chapters:
 - file: 00_intro/intro/intro
   sections:
+  - file: 00_intro/l0/l0
   - file: 00_intro/l1/l1
   - file: 00_intro/l2/l2
-  - file: 00_intro/l3/l3
-  - file: 00_intro/l4/l4
+  # - file: 00_intro/l3/l3
+  # - file: 00_intro/l4/l4
 - file: 01_planets/intro/intro
   sections:
   - file: 01_planets/l1/l1

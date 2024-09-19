@@ -1,6 +1,6 @@
 # Glossary
 
-A list of some terms used in the PSLU course.
+A list of some terms used in the PSLU course.  If you see important terms being used in the notes that you would like to see featured here, please let us know.
 
 ```{glossary}
 
@@ -12,6 +12,9 @@ Autotroph
 
 Crust
     The outer, chemically distinct, layer of a planet forms from magmas ultimately derived from the planet's mantle
+
+Habitability
+    The property of being able to host life.  Typically thought of in the context of liquid water, given the needs of life on Earth, but in principle a concept that could be generalised.  
 
 Habitable zone
     That region around a star where climatic conditions could in principle be maintained on a rocky planet such that liquid water is stable at its surface.

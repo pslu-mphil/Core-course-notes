@@ -4,14 +4,32 @@ A list of some terms used in the PSLU course.
 
 ```{glossary}
 
+Abiotic
+    Deriving from physical/chemical processes without the involvement of life.
+
+Autotroph
+    An organism using inorganic energy sources (sunlight, energy from rocks) to convert inorganic carbon compounds (e.g., CO2) to organic compounds and energy.
+
 Crust
     The outer, chemically distinct, layer of a planet forms from magmas ultimately derived from the planet's mantle
+
+Habitable zone
+    That region around a star where climatic conditions could in principle be maintained on a rocky planet such that liquid water is stable at its surface.
+
+Heterotroph
+    An organism that runs its metabolic processes using input, e.g., reduced organic carbon, from other organisms.  Contrast with autotroph.
 
 Igneous
     A rock that formed by solidification of a magma.
 
+Instellation
+    The amount of light received by a planet from its host star.  Units of $\text{Wm}^{-2}$.
+
 Magma
     A molten silicate liquid, possibly containing crystals and gas bubbles.
+
+Magma ocean
+    When there is an extensive and sustained body of magma at a planet's surface.  Such as is created from a giant impact, from the heat of accretion early in a planet's life, or may be sustained permanently on irradiated exoplanets.
 
 Mantle
     The rocky interior to a planet beneath its crust, typically comprising most of the non-metal mass of a rocky planet.
@@ -21,6 +39,9 @@ Metamorphosed
 
 Mid-ocean ridge
     The topographic expression of two tectonic plates pulling apart
+
+Reducing
+    A substance that has a propensity to donate electrons to another material, thereby 'reducing' it.  E.g., in placing iron metal, Fe, next to water, H$_2$O, the iron metal can reduce the water by the reaction $\text{Fe} + \text{H}_2\text{O} = \text{H}_2 + \text{FeO}$.
 
 Silicate
     A mineral whose major structural unit comprises Si-O bonds.

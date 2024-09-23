@@ -361,14 +361,11 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-use-this-website">How to use this Website</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#course-structure">Course Structure</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exam-30">Exam (30%)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#computational-exam-20">Computational Exam (20%)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#policy-paper-25">Policy Paper (25%)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-report-25">Lab Report (25%)</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-thermal-structure-of-discs-and-the-location-of-snowlines">The thermal structure of discs and the location of snowlines</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transport-of-disc-gas-accretion">Transport of disc gas: accretion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transport-of-disc-dust-radial-drift">Transport of disc dust: radial drift</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dust-traps-and-the-streaming-instability">Dust traps and the streaming instability</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">SUMMARY</a></li>
 </ul>
             </nav>
         </div>
@@ -404,105 +401,95 @@ document.write(`
 </li>
 </ul>
 </div></blockquote>
-<p>Introduce the lecture in a couple of sentences.</p>
-<section id="how-to-use-this-website">
-<h2>How to use this Website<a class="headerlink" href="#how-to-use-this-website" title="Link to this heading">#</a></h2>
-<p>This website contains summary notes to accompany each lecture of the course.
-These are divided into thematic blocks, corresponding to the four lecture blocks of the course.</p>
-<p>These notes are intended to complement the lectures; they will not contain all the material you are given in lectures and are not intended as a replacement for the lectures.
-It is essential to attend the course lectures and complete the practical components of the course if you want to do well.</p>
-</section>
-<section id="course-structure">
-<h2>Course Structure<a class="headerlink" href="#course-structure" title="Link to this heading">#</a></h2>
-<p>The course has four modules, which are here to give an example of a list:</p>
-<ul class="simple">
-<li><p>C1: The origin of planets</p></li>
-<li><p>C2: The origin of habitable environments</p></li>
-<li><p>C3: The origin and detection of life</p></li>
-<li><p>C4: Biospheres</p></li>
-</ul>
-<section id="exam-30">
-<h3>Exam (30%)<a class="headerlink" href="#exam-30" title="Link to this heading">#</a></h3>
-<p>Here we discuss the figure below, serving as a useful example <code class="xref std std-numref docutils literal notranslate"><span class="pre">fig:test_figure</span></code> of linking text to figures.</p>
-<figure class="margin-caption align-default" id="fig-test-figure">
-<img alt="../../_images/trappist_14.jpg" src="../../_images/trappist_14.jpg" />
+<section id="the-thermal-structure-of-discs-and-the-location-of-snowlines">
+<h2>The thermal structure of discs and the location of snowlines<a class="headerlink" href="#the-thermal-structure-of-discs-and-the-location-of-snowlines" title="Link to this heading">#</a></h2>
+<p>Discs are formed from well-mixed gas and small dust grains inherited from their parent dense molecular cores. As material settles into the disc, an outwardly decreasing temperature profile is established:  thermal balance involves a number of heating and cooling processes for both dust and gas but a major effect is dust heating by irradiation by optical light from the central star balanced against  the dust’s  thermal re-emission of this energy in the <strong>infrared</strong> and <strong>submillimetre</strong> domain. In the limit that the dust grains are large compared with the wavelength of the incident light, one can estimate the temperature of a dust grain of size a located at distance r from a star of luminosity <span class="math notranslate nohighlight">\(L_*\)</span>  as follows. The rate of energy intercepted by the grain is:</p>
+<p><span class="math notranslate nohighlight">\({\rm{Heating}} = \left(\frac{\pi a^2}{4 \pi a^2}\right) L_*\)</span></p>
+<p><span class="math notranslate nohighlight">\( {\rm{Cooling}} = 4 \pi a^2 \sigma T^4 \)</span></p>
+<p>where we have assumed that the grain re-emits as a black body and σ is the Stefan Boltzmann constant. Consequently</p>
+<p><span class="math notranslate nohighlight">\( T \propto L_*^{0.25} r^{-0.5} \)</span></p>
+<p>If we substitute in numbers for the Sun’s luminosity and the location of the Earth, our estimate is of order 300 K, so surprisingly close to the Earth temperature despite the neglect of many important atmospheric processes.</p>
+<figure class="align-default" id="fig-cool">
+<a class="reference internal image-reference" href="01_planets/l5/figures/cool.png"><img alt="01_planets/l5/figures/cool.png" src="01_planets/l5/figures/cool.png" style="height: 500px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 2.21 </span><span class="caption-text">A test figure to be replaced with real course content.</span><a class="headerlink" href="#fig-test-figure" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 2.21 </span><span class="caption-text">Schematic of heating and cooling processes in protoplanetary discs</span><a class="headerlink" href="#fig-cool" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>This temperature profile has obvious consequences for the physical state of chemical species in protoplanetary discs as depicted below where the snowlines for three molecular species are shown schematically. (Note that in the case of the young embedded disc on the right, the rapid release of accretion energy during the initial collapse of the molecular core results in a higher <span class="math notranslate nohighlight">\(L_*\)</span>  and hence the snowlines are at larger radii). Within each snowline, the corresponding species is in the gas phase, while outside the snowline it is in the form of ices which form mantles on dust grains. Note that this diagram only shows relatively volatile species where the snowlines are beyond an AU from the star: important refractory species such as silicates and carbon have sublimation lines well within this radius.</p>
+<figure class="align-default" id="fig-snowlines">
+<a class="reference internal image-reference" href="01_planets/l5/figures/snowlines.png"><img alt="01_planets/l5/figures/snowlines.png" src="01_planets/l5/figures/snowlines.png" style="height: 500px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 2.22 </span><span class="caption-text">Schematic showing location of snowlines and consequences for the radial profile of the C/O ratio (Credit: van’t Hoff).</span><a class="headerlink" href="#fig-snowlines" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The diagram also shows a schematic depiction of the expected ratios of C to O in both the solid and gaseous phase depending on whether molecules that are significant carriers of these elements exist as ices or gas at each location. The C/O ratio is a quantity that can in principle be inferred from high resolution spectroscopy of exoplanets, giving rise to the prospect of using this diagnostic to probe where a planet was formed in the disc.</p>
+<p>Nevertheless there are numerous reasons why this approach cannot be applied in the simple form shown here. The principal reason is that both dust and gas move radially through the disc and if dust and gas are dynamically distinct, this means that the dust to gas ratio (and hence the ratios of species on dust to those in the gas phase) will vary with radius.</p>
+</section>
+<section id="transport-of-disc-gas-accretion">
+<h2>Transport of disc gas: accretion<a class="headerlink" href="#transport-of-disc-gas-accretion" title="Link to this heading">#</a></h2>
+<p>In this lecture we consider the dynamical effects that move both dust and gas radially through the disc during the its few Myr lifetime. Starting with the gas, we noted when discussing the Laplace Nebula hypothesis that dissipation in the disc tends to lower the energy of the system by redistributing mass and angular momentum:  this results, for the bulk of material in the disc, in an inward accretion flow of gas on to the star. This prediction was vindicated in the 1970s when the International Ultraviolet Explorer satellite detected a bright ultraviolet  component in the spectra of young stars which also possessed the  infrared emission indicating the presence of  discs. The ultraviolet luminosity of these stars far exceeds what is expected given the relatively low temperatures of their stellar photospheres: instead this ultraviolet excess was interpreted as arising from where streams of accreting gas impact the star. This explanation still holds but the mechanism that drives accretion (i.e. inward radial flow of gas) throughout the whole disc is still hotly debated.    Despite these controversies,  the magnitude of the accretion flow is well constrained observationally</p>
+<figure class="align-default" id="fig-nidhi">
+<a class="reference internal image-reference" href="01_planets/l5/figures/nidhi.png"><img alt="01_planets/l5/figures/nidhi.png" src="01_planets/l5/figures/nidhi.png" style="height: 500px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 2.23 </span><span class="caption-text">Some observational determinations of the accretion rate of gas on to the star as a function of stellar mass, inferred from the luminosity generated when accreting gas impacts the stellar surface. (Credit S. Nidhi).</span><a class="headerlink" href="#fig-nidhi" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>and corresponds to a typical timescale for gas to traverse the radial extent of the disc (10-100 AU)  of about a Myr. This is the basis for concluding that species in the gas phase traverse a large region of the disc and will – if not incorporated into planets (and in the absence of other processes that might disperse the disc) – accrete onto the central star.</p>
+</section>
+<section id="transport-of-disc-dust-radial-drift">
+<h2>Transport of disc dust: radial drift<a class="headerlink" href="#transport-of-disc-dust-radial-drift" title="Link to this heading">#</a></h2>
+<p>The transport of solid material (dust grains or larger rocky bodies) depends on how tightly the material is dynamically coupled by drag to the gas motion. This depends on the size of solid particles since the deceleration of particles by drag scales as the ratio of their area to their mass and hence inversely with the particle size, a.  When the disc first forms, its grains are directly inherited from the ISM and are small, i.e. sub-micron scale. The efficiency of gas drag is described by the Stokes number, St ,which is the product of the `stopping time’ (<span class="math notranslate nohighlight">\(t_s\)</span>) and the orbital angular velocity <span class="math notranslate nohighlight">\(\Omega\)</span>  i.e.</p>
+<p><span class="math notranslate nohighlight">\( St = \Omega t_s\)</span></p>
+<p>The stopping time is defined as the ratio of the relative velocity between the gas and the dust and the drag force per unit mass experienced by a dust grain.</p>
+<p>The reason that the drag of gas on dust grains has such a significant effect on their dynamics is because the gas itself is not quite rotating at a Keplerian speed. This is because gas experiences an acceleration due to radial pressure gradients and this affects radial force balance :</p>
+<p><span class="math notranslate nohighlight">\( \frac{v_c^2}{r} = \frac{G M_*}{r^2} + \frac{1}{\rho}\frac{dP}{dR}\)</span></p>
+<p>If the pressure in the disc decreases outwards, this acceleration opposes the inward gravitational force on the dust and therefore the gas rotates at a slightly sub-Keplerian speed (i.e. because the inward force is slightly weakened, the magnitude of the centrifugal acceleration required to balance this is reduced). We denote the small difference in orbital speed of the gas and the dust due to pressure effects on the gas by <span class="math notranslate nohighlight">\(\Delta v\)</span>. The dust grains do not experience pressure forces and they therefore `want’ to rotate at the Keplerian rate so:</p>
+<p><span class="math notranslate nohighlight">\( \Delta v = v_{Kep} – v_c\)</span></p>
+<p>The dust is thus decelerated in its orbit by drag exerted by the slightly sub-Keplerian gas and experience a spin- down torque. This causes itto drift inwards. An important thing to note here is that a drifting grain is subject to drag force in two directions: a) the tangential drag force described above and b) (once the grain is moving inwards) an opposing drag force in the outward radial direction.</p>
+<p>If St≫1 then drag is very ineffective: nevertheless, on long timescales the effect of this weak azimuthal drag does cause the grain to spiral inwards, although so slowly that drag in the radial direction can be ignored.  In this case the rate of inward drift just scales with the strength of the azimuthal drag force, i.e <span class="math notranslate nohighlight">\(\propto St^{-1}\)</span>.  This is the regime that applies to large bodies because the small ratio of area to mass implies weak drag.</p>
+<p>If St≪1 then the azimuthal drag is so strong that the grains are torqued down on less than an orbital time. This might suggest that the grains travel inwards very quickly but in this case drag in the radial direction (effect b) above) becomes important and limits the radial velocity to a terminal velocity value that scales <span class="math notranslate nohighlight">\(\propto St\)</span>.  Therefore in the limit of very small grains (large surface area to mass ratio) the radial drift of the dust relative to the gas is very low.  Thus small dust grains essentially move with the gas, sharing in their accretion flow. If grains remained at their initial sizes inherited from the ISM, St would be very low and, since the motion of dust and gas would be the same, the dust to gas ratio would remain at its initial value (1:100).</p>
+<p>A more interesting possibility is when St ~1 (i.e. the case of intermediate sized solid particles, known as `pebbles’).  This is a sweet spot in terms of achieving maximal radial drift – the drag is strong enough that the particles experience significant azimuthal drag but not so strong that the resulting radial motion is damped. We can quickly estimate the speed of pebbles with St ~1 since we know that every orbit  (i.e. time <span class="math notranslate nohighlight">\(\sim \Omega^{-1}\)</span>  ) a grain loses a fraction <span class="math notranslate nohighlight">\(\Delta v/v_c\)</span>   of its orbital angular momentum per unit mass. The timescale on which the grain loses all its angular momentum can be estimated as <span class="math notranslate nohighlight">\((v_c/\Delta v) \Omega^{-1}\)</span> . For typical disc temperatures and pressures, this is ~  a few hundred times the orbital period. Hence a dust grain with St ~1 originally located in the outer part of the disc ( ~  100 A.U.) ends up drifting in to the star on a timescale of only about 0.1 Myr, i.e. around ten times faster than the gas accreting on to the star.</p>
+<p>Thus if grains can grow to the scale of pebbles  (roughly cm size) and become partially decoupled from the gas, they start to spiral inwards rapidly. Models suggest that the initially small grains in the disc can grow quickly, especially if their stickiness is increased by being coated in ice:  radial drift is expected to become important within ~ 0.5 Myr.</p>
+<p>The differential motion of dust and gas means that the dust to gas  ratio in the disc can vary both in space and time. This affects the chemical mix in the disc at different locations. For example, chemical species that exist in the form of icy mantles on pebbles are fast-tracked inwards towards the star compared with those that are in the gas phase. When these fast-tracked particles reach the snowline of a particular ice species, this ice sublimes and creates a high concentration of that species in the gas phase just inside the snowline. In addition, this vapour can diffuse outwards and recondense on solid particles just outside the snowline, so that the abundance of this species in the ice phase also increases just outside the snowline (see schematic in left panel of Fig.&#64;ref(fig:booth).  The right hand panel depicts the  results of chemodynamical modeling ,  illustrating ting the radial variation of the C/O ratio in the gas as a result of radial drift. It is notable that between the CO and the 〖CO〗_2  snowlines (i.e. between ~ 6 and 50 AU) the C/O ratio is ~ 1 because of the high abundance of CO liberated in the gas phase as a result of radial drift of pebbles covered in CO ice from the outermost disc. On the other hand, this inward flux of pebbles also lowers the C/O ratio inward of the water snowline at ~2 AU , because here it liberates water molecules that add to the oxygen but not the carbon budget. Note that these abundance profiles evolve with time as gradually the supply of icy pebbles from large radii is exhausted.</p>
+<p>.</p>
+<figure class="align-default" id="fig-booth">
+<a class="reference internal image-reference" href="01_planets/l5/figures/booth.png"><img alt="01_planets/l5/figures/booth.png" src="01_planets/l5/figures/booth.png" style="height: 300px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 2.24 </span><span class="caption-text">Left panel: schematic of how the concentration of species in the gas is affected by radial drift of ice bearing solids across snowlines. Right panel: the evolution of the resulting C/O ratio in the gas according to chemodynamical modeling (Credit R. Booth).</span><a class="headerlink" href="#fig-booth" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="computational-exam-20">
-<h3>Computational Exam (20%)<a class="headerlink" href="#computational-exam-20" title="Link to this heading">#</a></h3>
-<p>Here is an example of putting a margin note in, with some useful additional info</p>
-<aside class="units margin sidebar">
-<p class="sidebar-title">Units!</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-n &amp;= \mathrm{concentration} \\
-t &amp;= \mathrm{time} \\
-a &amp;= \mathrm{concentration~time^{-1}} \\
-k &amp;= \mathrm{time^{-1}}
-\end{split}\]</div>
-</aside>
+<section id="dust-traps-and-the-streaming-instability">
+<h2>Dust traps and the streaming instability<a class="headerlink" href="#dust-traps-and-the-streaming-instability" title="Link to this heading">#</a></h2>
+<p>So far we have considered the case that radial drift is always inwards, i.e. that the gas motion is sub-Keplerian  (because the pressure in the disc decreases outwards.) If the pressure gradient were reversed however, the gas would be super-Keplerian and grains would drift outwards. Therefore if there is a pressure maximum in the disc, it can readily be seen that dust grains drift towards the pressure maximum and this provides a mechanism for accumulating dust in localized regions of the disc (see left panel of Fig.&#64;ref(fig:pinilla). It is commonly believed that annular structures seen in high resolution ALMA images are the result of `dust trapping’ in localized pressure maxima in the disc. Note that if discs are not smooth but contain such dust traps, radial drift does not result in the loss of solid material onto the central star but instead produces regions of locally enhanced dust to gas ratio which can be important for  planet formation.</p>
+<figure class="align-default" id="fig-pinilla">
+<a class="reference internal image-reference" href="01_planets/l5/figures/pinilla.png"><img alt="01_planets/l5/figures/pinilla.png" src="01_planets/l5/figures/pinilla.png" style="height: 300px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 2.25 </span><span class="caption-text">Schematic of the radial pressure profile of a disc, showing how radial drift can trap dust at pressure maxima  (Credit: P. Pinilla).</span><a class="headerlink" href="#fig-pinilla" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="fig-images">
+<a class="reference internal image-reference" href="01_planets/l5/figures/images.png"><img alt="01_planets/l5/figures/images.png" src="01_planets/l5/figures/images.png" style="height: 500px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 2.26 </span><span class="caption-text">ALMA images of discs with  ring-like structures which may be interpreted as result from dust traps associated with pressure maxima (Credit: C. Dullemond).</span><a class="headerlink" href="#fig-images" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Indeed such dust concentrations provide a promising mechanism for triggering the formation of rocky planets (as opposed to the gas giant planets previously discussed in the context of gravitational instability). This is because situations where there is significant radial drift of dust are subject to the so-called streaming instability if the dust to gas ratio is sufficiently high. This can be understood as follows. Dust drifts because of a difference in azimuthal velocity between the dust and the gas. If the dust to gas ratio is high, the gas motion starts to be affected by the drag of the dust and consequently this differential is reduced. This slows down radial drift and consequently (by analogy with a traffic jam) drives up the dust to gas ratio. This further reduces the velocity differential and decelerates the radial drift further, thus enhancing the pile up.</p>
+<figure class="align-default" id="fig-streaming">
+<a class="reference internal image-reference" href="01_planets/l5/figures/streaming.png"><img alt="01_planets/l5/figures/streaming.png" src="01_planets/l5/figures/streaming.png" style="height: 400px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 2.27 </span><span class="caption-text">Simulations of the streaming instability in a dust rich protoplanetary disc, colour coded according to local dust to gas ratio. The white circles indicate where dust has collapsed into planetesimals. Credit: J. Simon.</span><a class="headerlink" href="#fig-streaming" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Fig.&#64;ref(fig:streaming) presents simulations  where the streaming instability produces regions of high dust to gas ratio,  manifest as the yellow streaks perpendicular to the radial direction. The panels represent a time sequence illustrating that in regions of high dust to gas ratio, the self-gravity of the dust becomes sufficient to trigger collapse in the dust. This is shown by the white circles which represent collapsed rocky objects a few hundred km across, known as planetesimals. As we shall see in the next lecture, these objects are likely an important building block of rocky planet formation.</p>
 </section>
-<section id="policy-paper-25">
-<h3>Policy Paper (25%)<a class="headerlink" href="#policy-paper-25" title="Link to this heading">#</a></h3>
-<p>We can have maths that stands apart from the text,</p>
-<div class="math notranslate nohighlight" id="equation-eq-box-eqn">
-<span class="eqno">(2.1)<a class="headerlink" href="#equation-eq-box-eqn" title="Link to this equation">#</a></span>\[\dv{n}{t} = a - k
- n.\]</div>
-<p>Equations can be referenced in the text, for example the equation above <a class="reference internal" href="../../04_biospheres/l9/l9.html#equation-eq-box-eqn">()</a>.</p>
-<p>We can also have maths that is inline with the text (<span class="math notranslate nohighlight">\(\mathrm{mol \ L^{-1}}\)</span> or <span class="math notranslate nohighlight">\(\mathrm{M}\)</span>).</p>
-</section>
-<section id="lab-report-25">
-<h3>Lab Report (25%)<a class="headerlink" href="#lab-report-25" title="Link to this heading">#</a></h3>
-<p>We can also insert tables</p>
-<div class="pst-scrollable-table-container"><table class="table" id="coagulation-coefs">
-<caption><span class="caption-number">Table 2.1 </span><span class="caption-text">Example of a table.</span><a class="headerlink" href="#coagulation-coefs" title="Link to this table">#</a></caption>
-<colgroup>
-<col style="width: 28.0%" />
-<col style="width: 18.0%" />
-<col style="width: 18.0%" />
-<col style="width: 18.0%" />
-<col style="width: 18.0%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head stub"><p><span class="math notranslate nohighlight">\(d_1 \ (\mathrm{\mu m})\)</span> \ <span class="math notranslate nohighlight">\(d_2 \ (\mathrm{\mu m})\)</span></p></th>
-<th class="head"><p>0.01</p></th>
-<th class="head"><p>0.1</p></th>
-<th class="head"><p>1.0</p></th>
-<th class="head"><p>10.0</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><th class="stub"><p>0.01</p></th>
-<td><p>67</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-odd"><th class="stub"><p>0.1</p></th>
-<td><p>180</p></td>
-<td><p>8.6</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-even"><th class="stub"><p>1.0</p></th>
-<td><p>1700</p></td>
-<td><p>24</p></td>
-<td><p>3.5</p></td>
-<td></td>
-</tr>
-<tr class="row-odd"><th class="stub"><p>10.0</p></th>
-<td><p>16000</p></td>
-<td><p>220</p></td>
-<td><p>10.3</p></td>
-<td><p>3.0</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
+<section id="summary">
+<h2>SUMMARY<a class="headerlink" href="#summary" title="Link to this heading">#</a></h2>
+<p>The different dynamical processes governing the evolution of dust and gas in discs imply that once grains grow to `pebble’ sizes, the dust and gas are no longer well mixed and the dust to gas ratio becomes a function of space and time.</p>
+<p>Gas moves inwards due to accretion, driven either by angular momentum redistribution or angular momentum removal from the disc. Pebbles move inwards due to the action of radial drift which is expected to be faster than the rate of gas accretion.</p>
+<p>Differential radial transport of chemical species in the dust and gas phase affects chemical abundances in discs so that abundance ratios (such as C/O, potentially measurable in exoplanet atmospheres) are also predicted to be a function of space and time during the period of planetary assembly.</p>
+<p>Regions of extreme dust concentration are likely sites of the streaming instability which can cause gravitational collapse of the solids and provide the building blocks for planets.</p>
+<p>Within a few Myr, the disc has thus undergone significant evolution with respect to the system of well mixed (small) dust grains and gas that originally collapsed from the parent dense core. These evolutionary processes drive compositional gradients in the disc which create mechanisms for planet formation and also  control the chemical inventory inherited by the resulting planet.  We have thus arrived at the brink of planet formation!</p>
 </section>
 </section>
 
@@ -570,14 +557,11 @@ k &amp;= \mathrm{time^{-1}}
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-use-this-website">How to use this Website</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#course-structure">Course Structure</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exam-30">Exam (30%)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#computational-exam-20">Computational Exam (20%)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#policy-paper-25">Policy Paper (25%)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-report-25">Lab Report (25%)</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-thermal-structure-of-discs-and-the-location-of-snowlines">The thermal structure of discs and the location of snowlines</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transport-of-disc-gas-accretion">Transport of disc gas: accretion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transport-of-disc-dust-radial-drift">Transport of disc dust: radial drift</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dust-traps-and-the-streaming-instability">Dust traps and the streaming instability</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">SUMMARY</a></li>
 </ul>
   </nav></div>
 

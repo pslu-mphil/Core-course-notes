@@ -361,14 +361,17 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-use-this-website">How to use this Website</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#course-structure">Course Structure</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exam-30">Exam (30%)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#computational-exam-20">Computational Exam (20%)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#policy-paper-25">Policy Paper (25%)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-report-25">Lab Report (25%)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-drake-equation">The Drake equation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#r"><span class="math notranslate nohighlight">\(R_*\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#f-p"><span class="math notranslate nohighlight">\(f_p\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#n-e"><span class="math notranslate nohighlight">\(n_e\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#f-l"><span class="math notranslate nohighlight">\(f_l\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#f-i"><span class="math notranslate nohighlight">\(f_i\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#f-c"><span class="math notranslate nohighlight">\(f_c\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#l"><span class="math notranslate nohighlight">\(L\)</span></a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-relevant-is-the-drake-equation">How relevant is the Drake equation?</a></li>
 </ul>
             </nav>
         </div>
@@ -385,111 +388,68 @@ document.write(`
 <p>Course Director: <strong><a class="reference external" href="mailto:shorttle&#37;&#52;&#48;ast&#46;cam&#46;ac&#46;uk">Oliver Shorttle</a></strong> (<a class="reference external" href="https://ast.cam.ac.uk">IoA</a>, <a class="reference external" href="https://esc.cam.ac.uk">Department of Earth Sciences</a>)</p>
 <hr class="docutils" />
 <blockquote class="highlights">
-<div><p><strong>Learning objectives:</strong></p>
+<div><p><strong>Learning objectives from the Core Course:</strong></p>
 <ul class="simple">
-<li><p>key concepts are useful</p></li>
-<li><p>use them</p></li>
+<li><p>Gain a fluency in the key topics relevant to planetary science and life in the Universe from across disciplines.  In particular:</p>
+<ul>
+<li><p>The key processes forming planets;</p></li>
+<li><p>The important processes maintaining planetary habitability;</p></li>
+<li><p>The astrochemistry and geochemistry that gave rise to life and might enable us to detect it on planets; and,</p></li>
+<li><p>How life operates at scales from the chemical to the ecological to shape environments.</p></li>
+</ul>
+</li>
+<li><p>The multitudinous factors, from the Universe’s physical constants to whether a planet has a moon, that life’s emergence may be contingent upon.</p></li>
+</ul>
+<p><strong>Learning objectives: Core course introduction</strong>x</p>
+<ul class="simple">
+<li><p>The formulation of the Drake equation (<a class="reference external" href="https://idiscover.lib.cam.ac.uk/permalink/f/t9gok8/44CAM_ALMA51671124270003606">Drake, 1965</a>).</p></li>
+<li><p>How parameters in the Drake equation have been and can be constrained, and the assumptions required to find these constraints.</p></li>
+<li><p>The limits of the Drake equation’s use.</p></li>
 </ul>
 </div></blockquote>
-<p>Introduce the lecture in a couple of sentences.</p>
-<section id="how-to-use-this-website">
-<h2>How to use this Website<a class="headerlink" href="#how-to-use-this-website" title="Link to this heading">#</a></h2>
-<p>This website contains summary notes to accompany each lecture of the course.
-These are divided into thematic blocks, corresponding to the four lecture blocks of the course.</p>
-<p>These notes are intended to complement the lectures; they will not contain all the material you are given in lectures and are not intended as a replacement for the lectures.
-It is essential to attend the course lectures and complete the practical components of the course if you want to do well.</p>
+<p>The core courses follow a narrative arc, from the formation of planets (<a class="reference internal" href="../../01_planets/intro/intro.html"><span class="std std-doc">C1</span></a>), through to the establishment of habitable environments (<a class="reference internal" href="../../02_environments/intro/intro.html"><span class="std std-doc">C2</span></a>), how the chemistry of water and atmospheres on planets might enable life to arise (<a class="reference internal" href="../../03_detection/intro/intro.html"><span class="std std-doc">C3</span></a>), and finally to life as an ecological and planetary scale phenomenon (<a class="reference internal" href="../../04_biospheres/intro/intro.html"><span class="std std-doc">C4</span></a>).</p>
+<p>We motivate some of the structure of the core course by here considering the Drake equation, that famous expression of how likely we are to find life in the Universe.</p>
+<section id="the-drake-equation">
+<h2>The Drake equation<a class="headerlink" href="#the-drake-equation" title="Link to this heading">#</a></h2>
+<p>The Drake equation is:</p>
+<div class="math notranslate nohighlight" id="equation-eq-drake">
+<span class="eqno">(1.1)<a class="headerlink" href="#equation-eq-drake" title="Link to this equation">#</a></span>\[N_c = R_* \cdot f_p \cdot n_e \cdot f_l \cdot f_i \cdot f_c \cdot L,\]</div>
+<p>where <span class="math notranslate nohighlight">\(N_c\)</span> is the \textemph{mean} number of communicative civilizations in the galaxy, <span class="math notranslate nohighlight">\(R_*\)</span> is the \textemph{rate} of start formation, <span class="math notranslate nohighlight">\(f_p\)</span> is the fraction of stars hosting planets, <span class="math notranslate nohighlight">\(n_e\)</span> is the mean number of planets per start capable of supporting life, <span class="math notranslate nohighlight">\(f_l\)</span> is the fraction of those potentially habitable planets on which life emerges, <span class="math notranslate nohighlight">\(f_i\)</span> is the fraction of those inhabited planets where intelligence develops, <span class="math notranslate nohighlight">\(f_c\)</span> is the fraction of ‘intelligent’ civilisations that develop communication, and <span class="math notranslate nohighlight">\(L\)</span> is the mean communication timescale.</p>
+<p>Now, many legitimate criticisms have been levied against the Drake equation (e.g., <a class="reference external" href="https://doi.org/10.1016/j.actaastro.2009.07.010">Alm’ar, 2011</a>; <a class="reference external" href="https://doi.org/10.1016/j.actaastro.2009.11.019">Smith</a>, 2011).  However, it remains useful for at least two reasons.  First, as an example of how we might like to combine insights from across disciplines to address a common and fundamental question; in this case, the likelihood of receiving communications from other intelligent life in the galaxy.  Second, it focusses attention on what we need to know to better understand our chances of success in searching for life.  Both of these principles are at the heart of the PSLU course.</p>
+<p>Importantly, the specific parameters the Drake equation includes are, unlike when Drake first wrote down the equation, now partially constrained by observation.  We therefore know better than ever before at least some of the relevant information to predict life’s prevalence in the galaxy.</p>
+<p>In this section we summarise some of what we know about the parameters of the Drake equation, as an introduction to material that will be covered in more detail later in the course.</p>
+<section id="r">
+<h3><span class="math notranslate nohighlight">\(R_*\)</span><a class="headerlink" href="#r" title="Link to this heading">#</a></h3>
 </section>
-<section id="course-structure">
-<h2>Course Structure<a class="headerlink" href="#course-structure" title="Link to this heading">#</a></h2>
-<p>The course has four modules, which are here to give an example of a list:</p>
-<ul class="simple">
-<li><p>C1: The origin of planets</p></li>
-<li><p>C2: The origin of habitable environments</p></li>
-<li><p>C3: The origin and detection of life</p></li>
-<li><p>C4: Biospheres</p></li>
-</ul>
-<section id="exam-30">
-<h3>Exam (30%)<a class="headerlink" href="#exam-30" title="Link to this heading">#</a></h3>
-<p>Here we discuss the figure below, serving as a useful example <code class="xref std std-numref docutils literal notranslate"><span class="pre">fig:test_figure</span></code> of linking text to figures.</p>
-<figure class="margin-caption align-default" id="fig-test-figure">
-<img alt="../../_images/trappist_1.jpg" src="../../_images/trappist_1.jpg" />
-<figcaption>
-<p><span class="caption-number">Fig. 1.2 </span><span class="caption-text">A test figure to be replaced with real course content.</span><a class="headerlink" href="#fig-test-figure" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
+<section id="f-p">
+<h3><span class="math notranslate nohighlight">\(f_p\)</span><a class="headerlink" href="#f-p" title="Link to this heading">#</a></h3>
 </section>
-<section id="computational-exam-20">
-<h3>Computational Exam (20%)<a class="headerlink" href="#computational-exam-20" title="Link to this heading">#</a></h3>
-<p>Here is an example of putting a margin note in, with some useful additional info</p>
-<aside class="units margin sidebar">
-<p class="sidebar-title">Units!</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-n &amp;= \mathrm{concentration} \\
-t &amp;= \mathrm{time} \\
-a &amp;= \mathrm{concentration~time^{-1}} \\
-k &amp;= \mathrm{time^{-1}}
-\end{split}\]</div>
-</aside>
+<section id="n-e">
+<h3><span class="math notranslate nohighlight">\(n_e\)</span><a class="headerlink" href="#n-e" title="Link to this heading">#</a></h3>
 </section>
-<section id="policy-paper-25">
-<h3>Policy Paper (25%)<a class="headerlink" href="#policy-paper-25" title="Link to this heading">#</a></h3>
-<p>We can have maths that stands apart from the text,</p>
-<div class="math notranslate nohighlight" id="equation-eq-box-eqn">
-<span class="eqno">(1.1)<a class="headerlink" href="#equation-eq-box-eqn" title="Link to this equation">#</a></span>\[\dv{n}{t} = a - k
- n.\]</div>
-<p>Equations can be referenced in the text, for example the equation above <a class="reference internal" href="../../04_biospheres/l9/l9.html#equation-eq-box-eqn">()</a>.</p>
-<p>We can also have maths that is inline with the text (<span class="math notranslate nohighlight">\(\mathrm{mol \ L^{-1}}\)</span> or <span class="math notranslate nohighlight">\(\mathrm{M}\)</span>).</p>
+<section id="f-l">
+<h3><span class="math notranslate nohighlight">\(f_l\)</span><a class="headerlink" href="#f-l" title="Link to this heading">#</a></h3>
 </section>
-<section id="lab-report-25">
-<h3>Lab Report (25%)<a class="headerlink" href="#lab-report-25" title="Link to this heading">#</a></h3>
-<p>We can also insert tables</p>
-<div class="pst-scrollable-table-container"><table class="table" id="coagulation-coefs">
-<caption><span class="caption-number">Table 1.1 </span><span class="caption-text">Example of a table.</span><a class="headerlink" href="#coagulation-coefs" title="Link to this table">#</a></caption>
-<colgroup>
-<col style="width: 28.0%" />
-<col style="width: 18.0%" />
-<col style="width: 18.0%" />
-<col style="width: 18.0%" />
-<col style="width: 18.0%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head stub"><p><span class="math notranslate nohighlight">\(d_1 \ (\mathrm{\mu m})\)</span> \ <span class="math notranslate nohighlight">\(d_2 \ (\mathrm{\mu m})\)</span></p></th>
-<th class="head"><p>0.01</p></th>
-<th class="head"><p>0.1</p></th>
-<th class="head"><p>1.0</p></th>
-<th class="head"><p>10.0</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><th class="stub"><p>0.01</p></th>
-<td><p>67</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-odd"><th class="stub"><p>0.1</p></th>
-<td><p>180</p></td>
-<td><p>8.6</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-even"><th class="stub"><p>1.0</p></th>
-<td><p>1700</p></td>
-<td><p>24</p></td>
-<td><p>3.5</p></td>
-<td></td>
-</tr>
-<tr class="row-odd"><th class="stub"><p>10.0</p></th>
-<td><p>16000</p></td>
-<td><p>220</p></td>
-<td><p>10.3</p></td>
-<td><p>3.0</p></td>
-</tr>
-</tbody>
-</table>
-</div>
+<section id="f-i">
+<h3><span class="math notranslate nohighlight">\(f_i\)</span><a class="headerlink" href="#f-i" title="Link to this heading">#</a></h3>
 </section>
+<section id="f-c">
+<h3><span class="math notranslate nohighlight">\(f_c\)</span><a class="headerlink" href="#f-c" title="Link to this heading">#</a></h3>
+</section>
+<section id="l">
+<h3><span class="math notranslate nohighlight">\(L\)</span><a class="headerlink" href="#l" title="Link to this heading">#</a></h3>
+</section>
+</section>
+<section id="how-relevant-is-the-drake-equation">
+<h2>How relevant is the Drake equation?<a class="headerlink" href="#how-relevant-is-the-drake-equation" title="Link to this heading">#</a></h2>
+<p>Given the previous sections, it is clear we are not in a position to fully evaluate the Drake equation and obtain a value of <span class="math notranslate nohighlight">\(N_c\)</span>, the mean number of communicative civilisations in the galaxy, without significant, and essentially completely unconstrained, assumptions.  However, we work with numbers like <span class="math notranslate nohighlight">\(N_c\)</span> frequently as scientists, it is just the Drake equation asks too general question we cannot fully resolve.  For example, if instead we ask ‘how large a volume of space (centred on Earth) do we need to survey to find 10 <strong><a class="reference internal" href="../../reference/glossary.html#term-Hot-Jupiter"><span class="xref std std-term">hot Jupiter</span></a>s</strong>?’, then we are asking a question much like the Drake equation, but now one that is fully tractable given present information.  What is more, this question, and ones like it, are exactly the types of questions you would ask if you were proposing an observing campaign of hot Jupiters.</p>
+<p>So, it is not that the type of question is wrong, just the amount of information required to answer it.  Even by removing some terms from the expression, it becomes more relevant to a general search for life in the Universe – we might settle in the first instance for that life not being ‘intelligent’:</p>
+<div class="math notranslate nohighlight" id="equation-eq-drake2">
+<span class="eqno">(1.2)<a class="headerlink" href="#equation-eq-drake2" title="Link to this equation">#</a></span>\[N_l = R_* \cdot f_p \cdot n_e \cdot f_l \cdot L_s.\]</div>
+<p>Here, we have dropped the most problematic terms from <a class="reference internal" href="#equation-eq-drake">(1.1)</a>: the propensity for life to become intelligent and communicative.  We are then left with an expression evaluating to give <span class="math notranslate nohighlight">\(N_l\)</span>, the number of life-hosting planets in the galaxy, and instead asking that we now know <span class="math notranslate nohighlight">\(L_s\)</span>, the mean longevity of life on a planet.</p>
+<p>The term close to being a complete unknown in this expression is <span class="math notranslate nohighlight">\(f_l\)</span>, <a class="reference internal" href="#f-l"><span class="xref myst">as before</span></a>.  However, now the final term has become something that we might venture more of an opinion on than the mean communicative timescale, <span class="math notranslate nohighlight">\(L\)</span>.  Life on Earth has shown remarkable resilience since its emergence &gt; 3.5 Ga, surviving near global glaciations, major asteroid impacts, and numerous large outpourings of magma.  Over this period, life has also been hugely diverse, evolving from single cell, to multicellular, to the macrobiota that covers most of Earth’s continents today.  All these types of life have proven resilient to large perturbations of their environments, even as species have gone extinct.</p>
+<p>Life on Earth suggests that once established, provided the planetary climate remains within habitable bounds somewhere on its surface, life will survive in that refugia, radiating outwards when conditions allow.</p>
+<p>How would you re-write the Drake equation and evaluate it for the search for life in the Universe?</p>
 </section>
 </section>
 
@@ -557,14 +517,17 @@ k &amp;= \mathrm{time^{-1}}
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-use-this-website">How to use this Website</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#course-structure">Course Structure</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exam-30">Exam (30%)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#computational-exam-20">Computational Exam (20%)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#policy-paper-25">Policy Paper (25%)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-report-25">Lab Report (25%)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-drake-equation">The Drake equation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#r"><span class="math notranslate nohighlight">\(R_*\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#f-p"><span class="math notranslate nohighlight">\(f_p\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#n-e"><span class="math notranslate nohighlight">\(n_e\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#f-l"><span class="math notranslate nohighlight">\(f_l\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#f-i"><span class="math notranslate nohighlight">\(f_i\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#f-c"><span class="math notranslate nohighlight">\(f_c\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#l"><span class="math notranslate nohighlight">\(L\)</span></a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-relevant-is-the-drake-equation">How relevant is the Drake equation?</a></li>
 </ul>
   </nav></div>
 

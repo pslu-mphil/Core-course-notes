@@ -13,6 +13,9 @@ Autotroph
 Crust
     The outer, chemically distinct, layer of a planet forms from magmas ultimately derived from the planet's mantle
 
+Equilibrium temperature
+    The blackbody temperature of an object (planet) at equilibrium between incident and emitted electromagnetic radiation.
+
 Habitability
     The property of being able to host life.  Typically thought of in the context of liquid water, given the needs of life on Earth, but in principle a concept that could be generalised.  
 
@@ -21,6 +24,9 @@ Habitable zone
 
 Heterotroph
     An organism that runs its metabolic processes using input, e.g., reduced organic carbon, from other organisms.  Contrast with autotroph.
+
+Hot Jupiter
+    A planet of roughly Jupiter's mass (~300 Earth masses) that is highly irradiated by its host star, and consequently has a high **{term}`equilibrium temperature`**.  These planets typically have orbital periods $<$10 days.
 
 Igneous
     A rock that formed by solidification of a magma.
@@ -35,7 +41,10 @@ Magma ocean
     When there is an extensive and sustained body of magma at a planet's surface.  Such as is created from a giant impact, from the heat of accretion early in a planet's life, or may be sustained permanently on irradiated exoplanets.
 
 Mantle
-    The rocky interior to a planet beneath its crust, typically comprising most of the non-metal mass of a rocky planet.
+    The rocky interior to a planet beneath its crust, typically comprising most of the non-**metal** mass of a rocky planet.
+
+Metal 
+    This is one of those words that means different things to different communities.  For astrophysicists, this can mean 'elements heavier than He', i.e., most of the periodic table.  For Earth and Planetary Scientists, this means a material like iron or iron alloys (Earth's core being a notable example), with good thermal and electrical conductivity. 
 
 Metamorphosed
     A rock transformed by pressure and/or temperature into a new mineral assemblage, with possible textural modification as well, e.g., banding, shearing.

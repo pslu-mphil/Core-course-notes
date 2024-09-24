@@ -16,6 +16,9 @@ Crust
 Equilibrium temperature
     The blackbody temperature of an object (planet) at equilibrium between incident and emitted electromagnetic radiation.
 
+Habitable
+    See **{term}`habitability`**.
+
 Habitability
     The property of being able to host life.  Typically thought of in the context of liquid water, given the needs of life on Earth, but in principle a concept that could be generalised.  
 
@@ -39,6 +42,9 @@ Magma
 
 Magma ocean
     When there is an extensive and sustained body of magma at a planet's surface.  Such as is created from a giant impact, from the heat of accretion early in a planet's life, or may be sustained permanently on irradiated exoplanets.
+
+Main sequence
+    That period of a star's life during which it is fusing H in its core into heavier elements.  The main sequence lasts for different lengths of time according to stellar mass, with more massive stars fusing H faster and so having shorter lives.  For reference, the main sequence lifetime of our Sun will be approximately 10 billion years.
 
 Mantle
     The rocky interior to a planet beneath its crust, typically comprising most of the non-**metal** mass of a rocky planet.

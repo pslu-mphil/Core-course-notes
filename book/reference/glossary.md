@@ -20,10 +20,10 @@ Equilibrium temperature
     The blackbody temperature of an object (planet) at equilibrium between incident and emitted electromagnetic radiation.
 
 Habitable
-    See **{term}`habitability`**.
+    The property of being able to host life.  Typically thought of in the context of the presence of liquid water, given the needs of life on Earth, but in principle a concept that could be generalised if more chemically physically tolerant life is discovered.  
 
 Habitability
-    The property of being able to host life.  Typically thought of in the context of liquid water, given the needs of life on Earth, but in principle a concept that could be generalised.  
+    See **{term}`habitable`**.
 
 Habitable zone
     That region around a star where climatic conditions could in principle be maintained on a rocky planet such that liquid water is stable at its surface.

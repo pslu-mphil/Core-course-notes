@@ -1,17 +1,20 @@
-# Environments (C2)
+# Origin of Habitable Environments (C2)
 
-In these lectures we are going to discuss the growth and retreat of sea
-ice in the polar oceans, how snow accumulates to form ice in the worlds
-glaciers and ice sheets, and how that ice then flows into the ocean. The
-waxing and waning of sea ice has a large impact on the albedo of the
-polar oceans, and is an important indicator of rapid climate change in
-the polar regions. Mountain glaciers, and at a much larger scale the
-polar ice sheets, store an immense quantity of fresh water. The flow of
-that grounded ice to the ocean, either as meltwater or through the
-viscous flow of ice, directly contributes to current sea level rise.
-These lectures we will construct simple models of these components of
-the cyrosphere in order to answer questions about the rate at which ice
-forms and melts, and the underlying dynamics of glacial flows.
+In these 12 lectures we will hear about those processes that on Earth have kept its climate within tight bounds for billions of years, and have failed to achieve similar climate regulation on Mars and Venus.  How planets maintain their climates is a central question in the Earth and Planetary sciences.  Understanding of these processes drives our search for life beyond Earth, as we seek planets that might host similar temperate conditions.  Whether the planets we have discovered do indeed contain temperate conditions remains an unknown: no conclusive evidence for the presence of liquid water has yet been found on a rocky exoplanet.  When such evidence is presented though, it will be of profound importance; simply knowing that another planet in the galaxy has found a path to a stable temperate climate with surface liquid water immediately alters our understanding of how likely such conditions are to arise.  
 
+This part of the course grounds our search for **{term}`habitable`** planets in an understanding of the physical and chemical processes operating on Earth, Mars, and Venus that contribute to their own climates.  A key opportunity exoplanet sciences provides is the opportunity to test how universal these models into rocky planet climates are.  
+
+**Learning outcomes**
+
+The overarching learning outcomes for this module are below, lecture-specific learning outcomes are included in the notes for each lecture.
+
+- Understand how the rock record is our archive of Earth history.
+- Recognise the basic limitations of reconstructing the past from any planet's rock record.
+- Be aware of major Earth-system transitions that have occurred, recorded in the rock record, and what has contributed to these.
+- Be familiar with the habitable zone concept and its application in the solar system and beyond.
+- Recognise the limitations of the habitable zone concept when considering the climate history.
+
+
+**Lectures**
 ```{tableofcontents}
 ```

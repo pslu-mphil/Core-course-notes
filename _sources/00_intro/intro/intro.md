@@ -4,7 +4,7 @@
 ---
 name: fig:earth_mars
 ---
-Here we are looking through the eyes of the Curiosity Rover.  Out over the rim of Gale crater through Mars's frigid atmosphere towards Earth, which is suspended in the top centre of the image.  The Moon is visible faintly below Earth.  To me, this image emphasises that our exploration of the cosmos is inevitably rooted in the understanding of physics, chemistry and biology gleaned from Earth. Credit: NASA/JPL-Caltech/MSSS/TAMU.
+Here we are looking through the eyes of the Curiosity Rover.  Out over the rim of Gale crater through Mars's frigid atmosphere towards Earth, which is suspended in the top centre of the image.  The Moon is visible faintly below Earth.  This image emphasises that our exploration of the cosmos is inevitably rooted in the understanding of physics, chemistry and biology gleaned from Earth. Credit: NASA/JPL-Caltech/MSSS/TAMU.
 ```
 
 The core course asks two major questions:

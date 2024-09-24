@@ -10,6 +10,9 @@ Abiotic
 Autotroph
     An organism using inorganic energy sources (sunlight, energy from rocks) to convert inorganic carbon compounds (e.g., CO2) to organic compounds and energy.
 
+Biosignature
+    Any observable that can be attributed to the action of life, although it may not on its own be definitive evidence of life.  In this respect fossils are a biosignature, although only thought of as such as we try and push back the earliest evidence for life on Earth.  In the context of exoplanets, trace atmospheric gasses are the most frequently considered type of biosignature.  SETI's survey for radio emission from extraterrestrial technological life also a biosignature search.   
+
 Crust
     The outer, chemically distinct, layer of a planet forms from magmas ultimately derived from the planet's mantle
 

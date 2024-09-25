@@ -2,7 +2,7 @@
 
 In these 12 lectures we will hear about those processes that on Earth have kept its climate within tight bounds for billions of years, and have failed to achieve similar climate regulation on Mars and Venus.  How planets maintain their climates is a central question in the Earth and Planetary sciences.  Understanding of these processes drives our search for life beyond Earth, as we seek planets that might host similar temperate conditions.  Whether the planets we have discovered do indeed contain temperate conditions remains an unknown: no conclusive evidence for the presence of liquid water has yet been found on a rocky exoplanet.  When such evidence is presented though, it will be of profound importance; simply knowing that another planet in the galaxy has found a path to a stable temperate climate with surface liquid water immediately alters our understanding of how likely such conditions are to arise.  
 
-This part of the course grounds our search for **{term}`habitable`** planets in an understanding of the physical and chemical processes operating on Earth, Mars, and Venus that contribute to their own climates.  A key opportunity exoplanet sciences provides is the opportunity to test how universal these models into rocky planet climates are.  
+This part of the course grounds our search for **{term}`habitable`** planets in an understanding of the physical and chemical processes that operate and have operated on Earth, Mars, and Venus to influence their climates.  A key opportunity exoplanet sciences provides is the opportunity to test how universal these models into rocky planet climates are.  
 
 **Learning outcomes**
 

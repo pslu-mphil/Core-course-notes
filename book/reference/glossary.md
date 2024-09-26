@@ -55,6 +55,9 @@ Mantle
 Metal 
     This is one of those words that means different things to different communities.  For astrophysicists, this can mean 'elements heavier than He', i.e., most of the periodic table.  For Earth and Planetary Scientists, this means a material like iron or iron alloys (Earth's core being a notable example), with good thermal and electrical conductivity. 
 
+Metallicity
+	For astronomers, the metallicity of a star, refers to the metal content of that star. Iron is the element normally used to trace metallicity, with the ratio of iron to hydrogen in the star, relative to solar, used to describe the metallicity, [Fe/H]
+
 Metamorphosed
     A rock transformed by pressure and/or temperature into a new mineral assemblage, with possible textural modification as well, e.g., banding, shearing.
 

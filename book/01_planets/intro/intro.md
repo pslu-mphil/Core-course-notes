@@ -87,7 +87,7 @@ The building blocks required to support a habitable planet were formed early in 
 
 ```{figure} ../intro/figures/originelements.jpeg
 ---
-height: 300px
+height: 500px
 name: fig:0.originelements
 ---
 The periodic table indicating the astrophysical source for each of the elements, color-coded between those formed in big bang nucleosynthesis, in exploding massive stars, exploding white dwarfs, dying low mass stars and merging neutron stars. Credit: Jennifer Johnson. 

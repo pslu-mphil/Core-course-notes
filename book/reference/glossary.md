@@ -7,6 +7,12 @@ A list of some terms used in the PSLU course.  If you see important terms being 
 Abiotic
     Deriving from physical/chemical processes without the involvement of life.
 
+Accretion
+    The process whereby an object, such as a planet, gains mass. 
+
+Astronomical unit
+    The mean Earth - Sun distance, ~150 million kilometers.
+
 Autotroph
     An organism using inorganic energy sources (sunlight, energy from rocks) to convert inorganic carbon compounds (e.g., CO2) to organic compounds and energy.
 
@@ -14,7 +20,10 @@ Biosignature
     Any observable that can be attributed to the action of life, although it may not on its own be definitive evidence of life.  In this respect fossils are a biosignature, although only thought of as such as we try and push back the earliest evidence for life on Earth.  In the context of exoplanets, trace atmospheric gasses are the most frequently considered type of biosignature.  SETI's survey for radio emission from extraterrestrial technological life also a biosignature search.   
 
 Crust
-    The outer, chemically distinct, layer of a planet forms from magmas ultimately derived from the planet's mantle
+    The outer, chemically distinct, layer of a planet forms from magmas ultimately derived from the planet's mantle undergoing incomplete (i.e., 'partial') melting and that melt moving towards the surface where it solidifies to crust.
+
+Differentiation
+    The process whereby a rocky planet segregates its internal structure into a **{term}`metal`**-rich core and **{term}`silicate`**-dominated mantle.  Can potentially proceed further to the formation of **{term}`crust`s** and atmospheres.
 
 Equilibrium temperature
     The blackbody temperature of an object (planet) at equilibrium between incident and emitted electromagnetic radiation.
@@ -31,8 +40,17 @@ Habitable zone
 Heterotroph
     An organism that runs its metabolic processes using input, e.g., reduced organic carbon, from other organisms.  Contrast with autotroph.
 
+Hill radius
+    The radial distance from a planet within which its own gravitational force is dominant, e.g., in affecting the orbit of pebble-sized material passing near it.  Defined as $R_H = a(m/(M+m))^{1/3}$, where $a$ is the semi-major axis of the planet, $M$ is the mass of the star, and $m$ is the mass of the planet.
+
 Hot Jupiter
     A planet of roughly Jupiter's mass (~300 Earth masses) that is highly irradiated by its host star, and consequently has a high **{term}`equilibrium temperature`**.  These planets typically have orbital periods $<$10 days.
+
+Ice
+    In the context of planets, 'ice' is used to refer to molecular components such as water ($\sf H_2O$), ammonia ($\sf NH_3$), and methane ($\sf CH_4$), i.e., species heavier than $\sf H_2$, the dominant gas-phase constituent of **{term}`protoplanetary disk`s**.  These species, which might be gas in the inner hot regions of a **{term}`protoplanetary disk`**, will condense beyond their respective **{term}`ice line`s**, forming part of the solid building blocks of planets.
+
+Ice line
+    The radial location in a **{term}`protoplanetary disk`** where a gas phase species condenses into a solid phase, an 'ice'.  E.g., the water ice line in the solar system is thought to have been located around the orbit of Jupiter.
 
 Igneous
     A rock that formed by solidification of a magma.
@@ -53,7 +71,7 @@ Mantle
     The rocky interior to a planet beneath its crust, typically comprising most of the non-**metal** mass of a rocky planet.
 
 Metal 
-    This is one of those words that means different things to different communities.  For astrophysicists, this can mean 'elements heavier than He', i.e., most of the periodic table.  For Earth and Planetary Scientists, this means a material like iron or iron alloys (Earth's core being a notable example), with good thermal and electrical conductivity. 
+    This is one of those words that means different things to different communities.  For astrophysicists, this can mean 'elements heavier than He', i.e., most of the periodic table.  For Earth and Planetary Scientists, 'metal' refers to material properties of matter, meaning a material like iron or iron alloys (Earth's core being a notable example), with high thermal and electrical conductivity.  
 
 Metallicity
 	For astronomers, the metallicity of a star, refers to the metal content of that star. Iron is the element normally used to trace metallicity, with the ratio of iron to hydrogen in the star, relative to solar, used to describe the metallicity, [Fe/H]
@@ -64,11 +82,23 @@ Metamorphosed
 Mid-ocean ridge
     The topographic expression of two tectonic plates pulling apart
 
+Pebble accretion
+    A regime of planetary {term}`accretion` in which aerodynamic drag enhances the rate of solid mass gain by a growing planet.  The need for aerodynamic interaction between the accreting material and the gas of the protoplanetary disk means that this accretion mechanism is only efficient for solids with a radius that moderately couples them to the flow of the gas (i.e., 'pebbles'): larger objects feel insufficient drag, whereas very small material is coupled to the gas and swept past the growing planet.
+
+Planetesimal
+    An object held together under its own self-gravity, of order kilometers to hundreds of kilometers in size.
+
+Protoplanetary disk
+    The disk-shaped annulus of gas and dust surrounding a young star out of which planets form.  The ratio of gas to dust in protoplanetary disks is roughly 100:1 by mass, and their lifetimes are of order 10 million years.  
+
+Radial drift
+    The movement towards or away from the star of solid material in a **{term}`protoplanetary disk`**.  This movement occurs due to the rotation of the gas in the protoplanetary disk being generally slower than the orbital velocity required to avoid falling inwards (due to the gas being supported by pressure as well as its orbital speed).  The result is for solids to drift inwards as they experience a headwind trying to move through the slow moving gas.  
+
 Reducing
     A substance that has a propensity to donate electrons to another material, thereby 'reducing' it.  E.g., in placing iron metal, Fe, next to water, H$_2$O, the iron metal can reduce the water by the reaction $\text{Fe} + \text{H}_2\text{O} = \text{H}_2 + \text{FeO}$.
 
 Silicate
-    A mineral whose major structural unit comprises Si-O bonds.
+    A mineral whose major structural unit comprises Si-O bonds.  E.g., quartz, or olivine, the latter being a major constituent of shallow planetary **{term}`mantle`s**.
 
 Subduction
     The process whereby a tectonic plate is pushed into the interior of a planet.  Only known to have happened on Earth.

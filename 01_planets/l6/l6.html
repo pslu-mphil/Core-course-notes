@@ -367,9 +367,14 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#solutions-to-growing-solids">Solutions(?) to growing solids</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#planetesimals-to-planets">Planetesimals to planets</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wbat-halts-planetary-growth">Wbat halts planetary growth?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#planetesimals-to-planets">Planetesimals to planets</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pebble-accretion">Pebble accretion</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#planetesimal-accretion">Planetesimal accretion</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-halts-planetary-growth">What halts planetary growth?</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gas-accretion">Gas accretion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary</a></li>
 </ul>
             </nav>
         </div>
@@ -383,7 +388,7 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="planet-formation-i-accretion">
 <span id="lecture-1"></span><h1>Planet formation I: Accretion<a class="headerlink" href="#planet-formation-i-accretion" title="Link to this heading">#</a></h1>
-<p>Professor: <strong><a class="reference external" href="mailto:shorttle&#37;&#52;&#48;ast&#46;cam&#46;ac&#46;uk">Oliver Shorttle</a></strong> (<a class="reference external" href="https://ast.cam.ac.uk">IoA</a>, <a class="reference external" href="https://esc.cam.ac.uk">Department of Earth Sciences</a>)</p>
+<p>Professor: <strong><a class="reference external" href="mailto:shorttle&#37;&#52;&#48;ast&#46;cam&#46;ac&#46;uk">Oliver Shorttle</a></strong> (<a class="reference external" href="https://www.ast.cam.ac.uk">IoA</a>, <a class="reference external" href="https://esc.cam.ac.uk">Department of Earth Sciences</a>)</p>
 <hr class="docutils" />
 <blockquote class="highlights">
 <div><p><strong>Learning objectives:</strong></p>
@@ -407,7 +412,7 @@ document.write(`
 </figcaption>
 </figure>
 <p>In this lecture we will look at how the solids in a protoplanetary disk assemble themselves into larger objects and eventually planets.  Solids in a protoplanetary disk face major barriers, and somehow overcome them, in growing to the size of planets.   This is an active area of research and one now richly informed by exoplanet observations.  Indeed, the very first discovered exoplanet 51 Peg-b, a Jupiter-mass planet with an orbital period of several days (<a class="reference external" href="https://doi.org/10.1038/378355a0">Mayor &amp; Queloz, 1995</a>) challenged our view of planet formation.  Subsequent discoveries have meant ongoing revision of the physics of planet formation, which extends from processes at the micron scale as grains collide, to millions of kilometers, as giant planets gravitationally perturb their natal protoplanetary disk.  The emergence of habitable planets is dependent on processes across all of these scales.</p>
-<p>We highlight only the major points of planet formation here, but for those with an interest in this topic much more detail (more than required for this course!) is available in some nice review articles and books.  An excellent book on this topic is <a class="reference external" href="https://doi.org/10.1017/9781108344227">Armitage “Astrophysics of planet formation”</a>, providing depth on all the topics covered here and much more.  As planet formation has undergone major developments over the last 20–30 years it is also illuminating to follow some of the review articles over this period and the physics emphasised in each, for example <a class="reference external" href="https://doi.org/10.1146/annurev.aa.31.090193.001021">Lissauer, 1993</a> and <a class="reference external" href="https://doi.org/10.1146/annurev-earth-063016-020226">Johansen, 2017</a>, the latter emphasising the <strong><span class="xref std std-term">pebble accretion</span></strong> paradigm.</p>
+<p>We highlight only the major points of planet formation here, but for those with an interest in this topic much more detail (more than required for this course!) is available in some nice review articles and books.  An excellent book on this topic is <a class="reference external" href="https://doi.org/10.1017/9781108344227">Armitage “Astrophysics of planet formation”</a>, providing depth on all the topics covered here and much more; a nice review article on the early stages of planet formation, when dust is becoming pebble-sized material is <a class="reference external" href="https://arxiv.org/abs/1402.1354">Tetsi+2014</a>.  As planet formation has undergone major developments over the last 20–30 years it is also illuminating to follow some of the review articles over this period and the physics emphasised in each, for example <a class="reference external" href="https://doi.org/10.1146/annurev.aa.31.090193.001021">Lissauer, 1993</a> and <a class="reference external" href="https://doi.org/10.1146/annurev-earth-063016-020226">Johansen, 2017</a>, the latter emphasising the <strong><a class="reference internal" href="../../reference/glossary.html#term-Pebble-accretion"><span class="xref std std-term">pebble accretion</span></a></strong> paradigm.</p>
 <section id="what-has-planet-formation-built-and-with-what">
 <h2>What has planet formation built, and with what?<a class="headerlink" href="#what-has-planet-formation-built-and-with-what" title="Link to this heading">#</a></h2>
 <p>It is important to first understand the outcomes of planet formation and the objects involved in planetary assembly: the physics we subsequently discuss undergoes important transitions according to the sizes of the objects concerned.  Table <a class="reference internal" href="#tab-01planet-facts"><span class="std std-numref">Table 2.1</span></a> lists objects by ‘size category’, loosely distinguished by the different physical regimes they accrete by in the disk.</p>
@@ -476,55 +481,142 @@ document.write(`
 </tbody>
 </table>
 </div>
-<p>It is also useful to visualise the information in Table <a class="reference internal" href="#tab-01planet-facts"><span class="std std-numref">Table 2.1</span></a>, as, in the solar system case, planets have a systematic spatial relationship: massive planets are in the outer solar system, at and beyond the orbit of Jupiter (Fig. ); opposite to the relationship between mass and location in the solar system, planets become less dense beyond the orbit of Jupiter (Fig. <a class="reference internal" href="#fig-01ss-pdensity"><span class="std std-numref">Fig. 2.32</span></a>).</p>
+<p>It is also useful to visualise the information in Table <a class="reference internal" href="#tab-01planet-facts"><span class="std std-numref">Table 2.1</span></a>, as, in the solar system case, planets have a systematic spatial relationship: massive planets are in the outer solar system, at and beyond the orbit of Jupiter (); opposite to the relationship between mass and location in the solar system, planets become less dense beyond the orbit of Jupiter (<a class="reference internal" href="#fig-01ss-pdensity"><span class="std std-numref">Fig. 2.32</span></a>).</p>
 <figure class="align-default" id="fig-01mass-r">
 <img alt="../../_images/mass_r.png" src="../../_images/mass_r.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 2.31 </span><span class="caption-text">The distribution of mass in the solar system, note the logarithmic axes and distance in <strong><span class="xref std std-term">astronomical unit</span>s</strong>.  A clear partitioning between inner and outer solar system is apparent.</span><a class="headerlink" href="#fig-01mass-r" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 2.31 </span><span class="caption-text">The distribution of mass in the solar system, note the logarithmic axes and distance in <strong><a class="reference internal" href="../../reference/glossary.html#term-Astronomical-unit"><span class="xref std std-term">astronomical unit</span></a>s</strong>.  A clear partitioning between inner and outer solar system is apparent.</span><a class="headerlink" href="#fig-01mass-r" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <figure class="align-default" id="fig-01ss-pdensity">
 <img alt="../../_images/ss_pdensity.png" src="../../_images/ss_pdensity.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 2.32 </span><span class="caption-text">The distribution of density in the solar system, note the linear y-axis in this plot.  The density distribution runs opposite to the mass distribution, providing a basic insight that large planets grow massive by gas/<strong><span class="xref std std-term">ice</span></strong> accretion, not solid accretion.  Remarkably, in the case of Saturn, this balance of gas/ice/rock has resulted in it being less dense that water.</span><a class="headerlink" href="#fig-01ss-pdensity" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 2.32 </span><span class="caption-text">The distribution of density in the solar system, note the linear y-axis in this plot.  The density distribution runs opposite to the mass distribution, providing a basic insight that large planets grow massive by gas/<strong><a class="reference internal" href="../../reference/glossary.html#term-Ice"><span class="xref std std-term">ice</span></a></strong> accretion, not solid accretion.  Remarkably, in the case of Saturn, this balance of gas/ice/rock has resulted in it being less dense that water.</span><a class="headerlink" href="#fig-01ss-pdensity" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<p>Together, these basic observations about solar system planets point to important aspects of planet formation: There is more mass to grow planets in the outer disk (i.e., at and beyond the orbit of Jupiter); this material is richer in <strong><span class="xref std std-term">ice</span>s</strong> beyond the orbit of Jupiter (i.e., water, ammonia, and methane); and if a planet grows large enough, it seems to do so be accreting nebular gas, the least dense components of all (i.e., hydrogen and helium).</p>
+<p>Together, these basic observations about solar system planets point to important aspects of planet formation: There is more mass to grow planets in the outer disk (i.e., at and beyond the orbit of Jupiter); this material is richer in <strong><a class="reference internal" href="../../reference/glossary.html#term-Ice"><span class="xref std std-term">ice</span></a>s</strong> beyond the orbit of Jupiter (i.e., water, ammonia, and methane); and if a planet grows large enough, it seems to do so be accreting nebular gas, the least dense components of all (i.e., hydrogen and helium).</p>
 <p>The distinctions we see in solar system planets alone raises major questions for planet formation processes and planetary habitability: why do some planets grow massive (Jupiter), while others remain small (Earth)?  Why do we have a continuum of objects in the solar system, all the way from boulders to planetesimals to planets?  Are all planetary system architectures as ordered as our solar system?  How long does it take to go from dust to a planet the size of Jupiter?</p>
 </section>
 <section id="dust-to-boulders">
 <h2>Dust to boulders<a class="headerlink" href="#dust-to-boulders" title="Link to this heading">#</a></h2>
-<p>Curiously, what might seem like it should be the easiest step in the planet formation process, is the one most fraught with difficulty.  Some of the barriers to growing the dust grains inherited from the molecular cloud (Fig. {fig:01orion}) are illustrated in Fig. <a class="reference internal" href="#fig-01tetsi-disk"><span class="std std-numref">Fig. 2.33</span></a>, and we look at these and potential solutions in this section.</p>
+<p>Curiously, what might seem like it should be the easiest step in the planet formation process, is the one most fraught with difficulty.  Some of the barriers to growing the dust grains inherited from the molecular cloud ({fig:01orion}) are illustrated in <a class="reference internal" href="#fig-01tetsi-disk"><span class="std std-numref">Fig. 2.33</span></a>, and we look at these and potential solutions in this section.</p>
 <figure class="align-default" id="fig-01tetsi-disk">
 <a class="reference internal image-reference" href="../../_images/tetsi_disk.png"><img alt="../../_images/tetsi_disk.png" src="../../_images/tetsi_disk.png" style="width: 70%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 2.33 </span><span class="caption-text">A nice summary of some key processes affecting dust in a protoplanetary disk.  Adapted from <a class="reference external" href="https://arxiv.org/abs/1402.1354">Tetsi+2014</a>.</span><a class="headerlink" href="#fig-01tetsi-disk" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 2.33 </span><span class="caption-text">A nice summary  some key processes affecting dust in a protoplanetary disk.  Adapted from <a class="reference external" href="https://arxiv.org/abs/1402.1354">Tetsi+2014</a>.</span><a class="headerlink" href="#fig-01tetsi-disk" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <section id="challenges-to-growing-solids">
 <h3>Challenges to growing solids<a class="headerlink" href="#challenges-to-growing-solids" title="Link to this heading">#</a></h3>
-<p>The most basic challenge is avoiding all the material falling into the star.  This <strong><span class="xref std std-term">radial drift</span></strong> was discussed in the <a class="reference internal" href="../l5/l5.html"><span class="std std-doc">previous lectures</span></a>, and is capable of moving meter-sized material inwards in less than 1000 years.  This is a problem, because protoplanetary disks are observed to have a lifetime of up to ~10 Myr.  Some mechanism must therefore be trapping material in disks and stopping it spiralling into stars; one such mechanism may be <a class="reference internal" href="../l5/l5.html"><span class="std std-doc">pressure bumps</span></a>.</p>
-<p>Even with a mechanism to solids in the disk out of the star, there is a challenge to have them grow efficiently.   What needs to happen to migrate up the mass scale from dust to boulders and beyond is for grains to stick when they collide (Fig. <a class="reference internal" href="#fig-01tetsi-disk"><span class="std std-numref">Fig. 2.33</span></a>-4a).  Instead, grains frequently bounce (Fig. <a class="reference internal" href="#fig-01tetsi-disk"><span class="std std-numref">Fig. 2.33</span></a>-4b), or worse, fragement (Fig. <a class="reference internal" href="#fig-01tetsi-disk"><span class="std std-numref">Fig. 2.33</span></a>-4c, d).  Both phenomena present serious obstacles to growing meter sized objects, as in this size range fragmentation is most efficient (Fig. <code class="xref std std-numref docutils literal notranslate"><span class="pre">fig:01fragmentation</span></code>).  This results from objects gaining fractures as they grow, but whilst they are still small lacking the self-gravity to compressionally seel these weaknesses.</p>
+<p>The most basic challenge is avoiding all the material falling into the star.  This <strong><a class="reference internal" href="../../reference/glossary.html#term-Radial-drift"><span class="xref std std-term">radial drift</span></a></strong> was discussed in the <a class="reference internal" href="../l5/l5.html"><span class="std std-doc">previous lectures</span></a>, and is capable of moving meter-sized material inwards in less than 1000 years.  This is a problem, because protoplanetary disks are observed to have a lifetime of up to ~10 Myr.  Some mechanism must therefore be trapping material in disks and stopping it spiralling into stars; one such mechanism may be <a class="reference internal" href="../l5/l5.html"><span class="std std-doc">pressure bumps</span></a>.</p>
+<p>Even with a mechanism to solids in the disk out of the star, there is a challenge to have them grow efficiently.   What needs to happen to migrate up the mass scale from dust to boulders and beyond is for grains to stick when they collide (<a class="reference internal" href="#fig-01tetsi-disk"><span class="std std-numref">Fig. 2.33</span></a>-4a).  Instead, grains frequently bounce (<a class="reference internal" href="#fig-01tetsi-disk"><span class="std std-numref">Fig. 2.33</span></a>-4b), or worse, fragement (<a class="reference internal" href="#fig-01tetsi-disk"><span class="std std-numref">Fig. 2.33</span></a>-4c, d).  Both phenomena present serious obstacles to growing meter sized objects, as in this size range fragmentation is most efficient (<a class="reference internal" href="#fig-01q-fragment"><span class="std std-numref">Fig. 2.34</span></a>).  This results from objects gaining fractures as they grow, but whilst they are still small lacking the self-gravity to compressionally seel these weaknesses.</p>
 <figure class="align-default" id="fig-01q-fragment">
 <a class="reference internal image-reference" href="../../_images/q_fragment.png"><img alt="../../_images/q_fragment.png" src="../../_images/q_fragment.png" style="width: 70%;" /></a>
 <figcaption>
 <p><span class="caption-number">Fig. 2.34 </span><span class="caption-text">A plot of the energy required to fragment an object as a function of its radius.  Lines are shown for different types of target, but the key point is the minimum in ‘strength’ at around 10–100 m for all materials, and the division of the space into ‘strength’ and ‘gravity’ dominated regimes.  Figure credit: <a class="reference external" href="https://doi.org/10.1017/9781108344227">Armitage+2020</a>.</span><a class="headerlink" href="#fig-01q-fragment" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
+<p>The specific energy of collision is given by</p>
+<div class="math notranslate nohighlight" id="equation-eq-01fragmentation">
+<span class="eqno">(2.1)<a class="headerlink" href="#equation-eq-01fragmentation" title="Link to this equation">#</a></span>\[Q = \frac{mv^2}{2M},\]</div>
+<p>which is the kinetic energy of the smaller impactor, mass <span class="math notranslate nohighlight">\(m\)</span> and velocity <span class="math notranslate nohighlight">\(v\)</span> with respect to the target, divided by the mass of the target <span class="math notranslate nohighlight">\(M\)</span>.  We can define a critical energy <span class="math notranslate nohighlight">\(Q_s\)</span> at which shattering occurs, producing a rubble pile bound under its own self gravity, above this energy collision will lead to dispersal.</p>
 </section>
 <section id="solutions-to-growing-solids">
 <h3>Solutions(?) to growing solids<a class="headerlink" href="#solutions-to-growing-solids" title="Link to this heading">#</a></h3>
-<p>Evidently, planets form and are <a class="reference internal" href="../l8/l8.html"><span class="std std-doc">extremely common</span></a>, so nature has found a way around the problems we identify from lab experiment and theory.</p>
+<p>Evidently, planets form and are <a class="reference external" href="https://exoplanetarchive.ipac.caltech.edu/">extremely common</a>, so nature has found a way around the problems we identify from lab experiment and theory.  Several ideas have been proposed to mitigate the challenges to growth discussed above:</p>
+<ul class="simple">
+<li><p><strong>Electrical charging of grains</strong>.  Grains can then stick due to electrical force, with charge created by collisions themselves, radioactive decay, or cosmic ray exposure. (e.g., <a class="reference external" href="https://doi.org/10.1038/s41567-019-0728-9">Steinpilz+2020</a>)</p></li>
+<li><p><strong>Sticky phases</strong>. Phases such as water have a different physical response on collision than silicate or metal grains.  The result is that they can experience higher velocity collisions and still stick rather than fracture.  Interestingly, given that ice covered grains will only exist beyond the <strong><a class="reference internal" href="../../reference/glossary.html#term-Ice-line"><span class="xref std std-term">ice line</span></a></strong>, this mechanism makes a prediction about how growth should proceed in different regions of the disk.</p></li>
+</ul>
+<p>Once a mechanism has been found to grow dust above its micron-sized initial state to millimetre- or centimetre-sized pebbles then the threat to further growth becomes radial drift.  Here, the (currently) favoured solution is the streaming instability.  This instability is very nicely introduced by <a class="reference external" href="https://doi.org/10.1093/mnras/stae1978">Mangan+2024</a> and also covered in previous lectures in this section of the course.  Fundamentally, the streaming instability occurs due to an over-density of dust becoming gravitationally unstable and collapsing (<a class="reference internal" href="#fig-01simon-si"><span class="std std-numref">Fig. 2.35</span></a>).</p>
+<figure class="margin-caption align-default" id="fig-01simon-si">
+<a class="reference internal image-reference" href="../../_images/simon_si.png"><img alt="../../_images/simon_si.png" src="../../_images/simon_si.png" style="width: 60%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 2.35 </span><span class="caption-text">An illustration of the streaming instability. From <a class="reference external" href="https://arxiv.org/pdf/astro-ph/0701485">Armitage, 2017</a>, <a class="reference external" href="https://doi.org/10.3847/0004-637X/822/1/55">Simon+2016</a>.</span><a class="headerlink" href="#fig-01simon-si" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>An Interesting feature of the streaming instability is that it bypasses growth of objects at the 100 m – 1 km scale, directly producing ~100 km sized <strong><span class="xref std std-term">planetesimals</span></strong> (see <a class="reference external" href="https://doi.org/10.3847/0004-637X/822/1/55">Simon+2016</a>).  This jumps over progressive growth and moves us directly into a new accretionary regime.</p>
 </section>
 </section>
 <section id="planetesimals-to-planets">
 <h2>Planetesimals to planets<a class="headerlink" href="#planetesimals-to-planets" title="Link to this heading">#</a></h2>
+<p>Two mechanisms of growth have been proposed at this stage.  The first, and classic, mechanism is planetesimal accretion.  Here, growth proceeds by the same sorts of mutual collisions that grew material to the cm-scale, albeit now aided by gravitational focussing of material towards the planetesimal.  The second mechanism, proposed more recently, is **<a class="reference internal" href="../../reference/glossary.html#term-Pebble-accretion"><span class="xref std std-term">pebble accretion</span></a>.  Here, further growth of the planet(esimal) is dominated by accretion of the same cm sized particles that it grew from in the first place.  The key physics at the heart of pebble accretion is that pebbles are small enough to be affected by gas drag, with the result that the effective capture cross section of the growing planet is larger than just its gravitational cross alone.  This can significantly enhance growth rates, especially when combined with the potential abundance of pebble-sized material in disks.</p>
+<p><a class="reference internal" href="#fig-01cross-sec"><span class="std std-numref">Fig. 2.36</span></a> illustrates these two mechanisms of planetary growth, which we explore further below.</p>
+<figure class="align-default" id="fig-01cross-sec">
+<img alt="../../_images/cross_sec.png" src="../../_images/cross_sec.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 2.36 </span><span class="caption-text">An illustration of tow modes of accretion: left, drag-enhanced accretion (e.g., <strong><a class="reference internal" href="../../reference/glossary.html#term-Pebble-accretion"><span class="xref std std-term">pebble accretion</span></a></strong>); right, planetesimal accretion (gas-free or where objects are large enough to feel insignificant gas drag). The meaning of <strong><a class="reference internal" href="../../reference/glossary.html#term-Hill-radius"><span class="xref std std-term">Hill Radius</span></a></strong> is given in the main text below.  From <a class="reference external" href="https://doi.org/10.1017/9781108344227">Armitage, 2020</a>, after <a class="reference external" href="https://link.springer.com/chapter/10.1007/978-3-319-60609-5_7">Ormell, 2017</a>.</span><a class="headerlink" href="#fig-01cross-sec" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<section id="pebble-accretion">
+<h3>Pebble accretion<a class="headerlink" href="#pebble-accretion" title="Link to this heading">#</a></h3>
+<p>In pebble accretion aerodynamic interactions between pebbles and the gas disk are key.  A characteristic interaction radius of the growing planet can be defined as</p>
+<div class="math notranslate nohighlight" id="equation-eq-01interaction-radius">
+<span class="eqno">(2.2)<a class="headerlink" href="#equation-eq-01interaction-radius" title="Link to this equation">#</a></span>\[R_g = \frac{GM_p}{\delta{v}^2},\]</div>
+<p>where <span class="math notranslate nohighlight">\(M_p\)</span> is the mass of the planet and <span class="math notranslate nohighlight">\(\delta v\)</span> the velocity difference between pebble and planet, i.e., the ‘speed of approach’.  When the (proto-)planet is small, <span class="math notranslate nohighlight">\(\delta v\)</span> is set by the radial drift velocity of pebbles and the characteristic interaction radius is referred to as the ‘Bondi radius’, <span class="math notranslate nohighlight">\(R_b\)</span>.  For small planets, the Bondi radius is <em>smaller</em> than their <strong><a class="reference internal" href="../../reference/glossary.html#term-Hill-radius"><span class="xref std std-term">Hill radius</span></a></strong>, given by</p>
+<div class="math notranslate nohighlight" id="equation-eq-01hill">
+<span class="eqno">(2.3)<a class="headerlink" href="#equation-eq-01hill" title="Link to this equation">#</a></span>\[R_H = a\left(\frac{M_p}{3(M_*+M_p)}\right)^{1/3},\]</div>
+<p>where <span class="math notranslate nohighlight">\(a\)</span> is the semi-major axis of the planet and <span class="math notranslate nohighlight">\(M_*\)</span> the mass of the star.  The Hill radius defines gravitational footprint of a planet.  That the Bondi radius lies inside the Hill radius means that drifting pebbles will be inside of the (proto)planet’s gravitational sphere of influence before their orbits are strongly deflected by its gravity.</p>
+<p>For larger (proto-)planets, the Bondi radius <em>exceeds</em> the Hill radius (look at their respective scalings with <span class="math notranslate nohighlight">\(M_p\)</span>).  Now, the (proto)planet’s ability to capture pebbles is limited by the competition between its gravity and that of the star.  The Bondi radius being larger than the (proto)planet’s gravitational footprint means that once within the Hill radius, pebbles will experience strong deflections.  In this case, the velocity of approach is defined by Keplerian shear, i.e., the differential orbital velocities of objects according to their distance from the star (see <a class="reference external" href="https://en.wikipedia.org/wiki/Kepler%27s_laws_of_planetary_motion#Third_law">Kepler’s third law</a>).  <span class="math notranslate nohighlight">\(\delta v\)</span> in this case is given by</p>
+<div class="math notranslate nohighlight" id="equation-eq-01hill-velocity">
+<span class="eqno">(2.4)<a class="headerlink" href="#equation-eq-01hill-velocity" title="Link to this equation">#</a></span>\[\delta v_H = R_H\Omega_K,\]</div>
+<p>where <span class="math notranslate nohighlight">\(\Omega_K\)</span> is the Keplerian angular velocity (<span class="math notranslate nohighlight">\(=\sqrt{GM/a^3}\)</span>).</p>
+<p>In the Bondi regime, accretion occurs if the stopping time of the particle, <span class="math notranslate nohighlight">\(t_s\)</span>, is less than the particle’s crossing time of the Bondi radius, <span class="math notranslate nohighlight">\(t_B\)</span>. Now, <span class="math notranslate nohighlight">\(t_B = R_B/\delta v\)</span> and <span class="math notranslate nohighlight">\(t_s \propto \delta v/\dot{F_d} \propto r_g\)</span>, where <span class="math notranslate nohighlight">\(\dot{F_d}\)</span> is the drag force scaling as <span class="math notranslate nohighlight">\(1/r_g\)</span>, the radius of the particle.  Given this, accretionary regimes can be defined by the ratio of timescales:</p>
+<div class="math notranslate nohighlight" id="equation-eq-01bondi-regimes">
+<span class="eqno">(2.5)<a class="headerlink" href="#equation-eq-01bondi-regimes" title="Link to this equation">#</a></span>\[\begin{split}\begin{align}
+\frac{t_s}{t_B} &amp;\gg 1, \text{no accretion}\\
+\frac{t_s}{t_B} &amp;=1, \text{optimal}\\
+\frac{t_s}{t_B} &amp;\ll 1, \text{particles coupled to gas}.\\
+\end{align}\end{split}\]</div>
+<p>The different particle trajectories under Bondi accretion for these different timescales are illustrated in <a class="reference internal" href="#fig-01bondi-illustration"><span class="std std-numref">Fig. 2.37</span></a>.</p>
+<figure class="align-default" id="fig-01bondi-illustration">
+<a class="reference internal image-reference" href="../../_images/bondi_illustration.png"><img alt="../../_images/bondi_illustration.png" src="../../_images/bondi_illustration.png" style="width: 70%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 2.37 </span><span class="caption-text">An illustration of particles accreting to a growing planet (centre) in the Bondi regime.  Horizontal coordinates are scaled to the Bondi radius of the planet <a class="reference internal" href="#equation-eq-01interaction-radius">(2.2)</a> and particles are entering from the top of the graph.  Blue lines track particles with <span class="math notranslate nohighlight">\(t_s/t_B\gg1\)</span>, i.e., large particles.  Red lines track particles with optimal stopping times, <span class="math notranslate nohighlight">\(t_s/t_B=1\)</span>.  Orange lines track particles strongly coupled to the gas, <span class="math notranslate nohighlight">\(t_s/t_b\gg1\)</span>, i.e., very small particles. From <a class="reference external" href="https://doi.org/10.1146/annurev-earth-063016-020226">Johansen &amp; Lambrechts, 2017</a>.</span><a class="headerlink" href="#fig-01bondi-illustration" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>In the Hill regime, a particle’s crossing time is now given by <span class="math notranslate nohighlight">\(t_H = R_H/\delta v_H\)</span>.  With the particle’s approach velocity determined by Keplerian shear, <span class="math notranslate nohighlight">\(\delta v_H = R_H\Omega_K\)</span>, the timescale for crossing the Hill radius is given by</p>
+<div class="math notranslate nohighlight" id="equation-eq-01hill-cross">
+<span class="eqno">(2.6)<a class="headerlink" href="#equation-eq-01hill-cross" title="Link to this equation">#</a></span>\[t_H = {\Omega_K}^{-1}.\]</div>
+<p>This timescale is independent of protoplanet mass.  As with the Bondi regime, the desired ratio of timescales is <span class="math notranslate nohighlight">\(t_s/t_H=1\)</span>.  We have <a class="reference internal" href="../l5/l5.html"><span class="std std-doc">previously seen</span></a> that a dimensionless number describing the aerodynamic interaction of a particle in the disk is the Stokes number, <span class="math notranslate nohighlight">\(St = t_s\Omega_K\)</span>.  Hence, Hill accretion is most efficient for <span class="math notranslate nohighlight">\(St=1\)</span> particles.</p>
 </section>
-<section id="wbat-halts-planetary-growth">
-<h2>Wbat halts planetary growth?<a class="headerlink" href="#wbat-halts-planetary-growth" title="Link to this heading">#</a></h2>
+<section id="planetesimal-accretion">
+<h3>Planetesimal accretion<a class="headerlink" href="#planetesimal-accretion" title="Link to this heading">#</a></h3>
+<p>Planetesimal accretion is the classic mode of growth, where similar sized objects, neither strongly affected by aerodynamic drag (<a class="reference internal" href="#fig-01cross-sec"><span class="std std-numref">Fig. 2.36</span></a>).  Instead, the capture cross-section of the (proto)planet is enhanced by gravitational interaction.  This effect can be seen from the expression for the rate of growth during planetesimal accretion:</p>
+<div class="math notranslate nohighlight" id="equation-eq-01planetesimal">
+<span class="eqno">(2.7)<a class="headerlink" href="#equation-eq-01planetesimal" title="Link to this equation">#</a></span>\[\frac{dM}{dt} = \pi R^2 \rho_{pl} \Delta{v_{pl}} \left(1+\left(\frac{v_e}{\Delta v_{pl}}\right)^2\right),\]</div>
+<p>where <span class="math notranslate nohighlight">\(M\)</span> is the mass of the (proto)planet, <span class="math notranslate nohighlight">\(R\)</span> is its radius, <span class="math notranslate nohighlight">\(\rho_{pl}\)</span> is the volume density of planetesimals in the disk, <span class="math notranslate nohighlight">\(\Delta v_{pl}\)</span> is the planetesimal approach speed, and <span class="math notranslate nohighlight">\(v_e\)</span> is the (proto)planet’s escape velocity.  The first four terms on the right, outside of parentheses, are geometric terms; what you would expect the mass accretion rate to be (for perfectly sticky collisions) simply from an object with some radius moving through a cloud of particles.  This is just a function of the physical radius of the (proto)planet.  The second term in parentheses gives the gravitational focussing factor in terms of the escape velocity of the planet, <span class="math notranslate nohighlight">\(v_e\)</span>, compared to the speed of approach of the planetesimals, <span class="math notranslate nohighlight">\(\Delta v_{pl}\)</span>.</p>
+<p>Equation <a class="reference internal" href="#equation-eq-01planetesimal">(2.7)</a> makes qualitative sense: physically larger objects are more likely to intersect each other, higher densities of planetesimals should increase the accretion rate, higher relative velocities should increase the rate of direct collisions, but decrease the effectiveness of gravitational focussing (as objects now fly past each other without time to be strongly deflected in their orbits).</p>
+</section>
+</section>
+<section id="what-halts-planetary-growth">
+<h2>What halts planetary growth?<a class="headerlink" href="#what-halts-planetary-growth" title="Link to this heading">#</a></h2>
+<p>Pebble accretion is potentially extremely efficient and growing planets.  Planetesimal accretion too can grow very large planets, especially if the planets are able to move through the disk and accrete mass over a range of orbital radii (‘migration’).  How then is it planet growth <em>stops</em>?  This seems as important to habitability as growing planets in the first place, if rocky surfaces are a requirement for life.</p>
+<p>There are two possibilities we consider here.  The first is that the growing planet exhausts its local supply of material to grow from.  This would occur by the planet reaching its ‘isolation mass’.  Two isolation masses can be defined depending on whether the planet is growing by pebble accretion or planetesimal accretion.  For pebble accretion</p>
+<div class="math notranslate nohighlight" id="equation-eq-01m-iso-pebble">
+<span class="eqno">(2.8)<a class="headerlink" href="#equation-eq-01m-iso-pebble" title="Link to this equation">#</a></span>\[M_{iso} = \left(\frac{H}{r}\right)^3\frac{\delta \ln{P}}{\delta \ln {r}}M_*,\]</div>
+<p>where <span class="math notranslate nohighlight">\(H/r\)</span> is describing the vertical geometry of the disk (<span class="math notranslate nohighlight">\(H\)</span> is the disk scale height and <span class="math notranslate nohighlight">\(r\)</span> the radial location in the disk), the differential term is describing the pressure gradient in the disk, and <span class="math notranslate nohighlight">\(M_*\)</span> is the mass of the star.  For a typical disk, where <span class="math notranslate nohighlight">\(H/r\)</span> increases outwards, i.e., the disk ‘flares’, then the pebble isolation mass increases outwards, and is around 10 Earth masses at the orbit of Jupiter.</p>
+<p>For planetesimal accretion</p>
+<div class="math notranslate nohighlight" id="equation-eq-01m-iso-planetesimal">
+<span class="eqno">(2.9)<a class="headerlink" href="#equation-eq-01m-iso-planetesimal" title="Link to this equation">#</a></span>\[M_{iso} \propto \Sigma^{3/2}r^3,\]</div>
+<p>where <span class="math notranslate nohighlight">\(\Sigma\)</span> is the surface (or, ‘area’) density of planetesimals in the disk.  Again, there is a strong radial dependence, with the isolation mass larger at larger orbital separations.</p>
+<p>Take together, consideration of isolation mass favours planets growing larger at wider orbital separations.</p>
+<p>The second consideration for stopping planet growth is disk dissipation.  We have seen in the previous sections how important the presence of gas is for planetary growth: aerodynamic interactions between particles and gas significantly enhance rates of accretion, as particles are slowed and have more time to be gravitationally deflected onto a collisional path.  For giant planets, the gas is not only dynamically important, it is their major constituent (<a class="reference internal" href="#tab-01planet-facts"><span class="std std-numref">Table 2.1</span></a>).  Typical disk lifetimes are 10 million years, but may be shorter in many cases.  A planet that starts to form late in the lifetime of the disk, or in a disk that is short lived, might therefore have its growth truncated.  This has been speculated to be the cause of Uranus and Neptune not growing to be gas giants like Saturn and Jupiter.</p>
 </section>
 <section id="gas-accretion">
 <h2>Gas accretion<a class="headerlink" href="#gas-accretion" title="Link to this heading">#</a></h2>
+<p>The final stage of planet accretion is gas accretion.  This only occurs for the most massive planets, planets that have a mass ~10 Earth masses.  In this regime, after a planet has built its rocky ‘core’ of a few Earth masses it then grows slowly by a combination of solid and gas accretion.  At some point, once a critical size has been reached, runaway gas accretion occurs; this is triggered by the envelope no longer being able to support itself and further gas addition leading to compression of the gas already there.  Accretion at this point is paced by the core’s ability to radiate the gravitational potential energy away.   A nice review of this is provided by <a class="reference external" href="https://arxiv.org/abs/1401.7559">Lissauer &amp; Stevenson, 2014</a>.</p>
+</section>
+<section id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Planet formation proceeds from small grains, some inherited from the interstellar environment, and some formed newly within the disk (e.g., chondrules).</p></li>
+<li><p>A remarkable variety of planets are produced from this simple starting point; at one end planets the size of Mars, which are embryonic of the major terrestrial planets; at the other end of the scale planets the mass of Jupiter, made predominantly of nebula gas.</p></li>
+<li><p>Planet formation is an area of major research, with significant challenges to understanding the physics of how grains grow from micron size to cm sized particles without collisions breaking particles apart or the grains being lost into the star by radial drift.</p></li>
+<li><p>Accretion can be rapid though, if the streaming instability operates to make ~100 km sized planetesimals, which can then grow by pebble accretion.</p></li>
+<li><p>Gas giants form when a rocky planet grows to ~10 Earth masses, after which gas and planetesimal accretion eventually lead to runaway gas accretion.</p></li>
+<li><p>Average disk lifetimes of 10 million years place a limit on planet growth.</p></li>
+</ul>
 </section>
 </section>
 
@@ -598,9 +690,14 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#solutions-to-growing-solids">Solutions(?) to growing solids</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#planetesimals-to-planets">Planetesimals to planets</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wbat-halts-planetary-growth">Wbat halts planetary growth?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#planetesimals-to-planets">Planetesimals to planets</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pebble-accretion">Pebble accretion</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#planetesimal-accretion">Planetesimal accretion</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-halts-planetary-growth">What halts planetary growth?</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gas-accretion">Gas accretion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary</a></li>
 </ul>
   </nav></div>
 
@@ -615,7 +712,7 @@ document.write(`
   <div class="footer-item">
     
 <p class="component-author">
-By the PSLU Team
+By The PSLU Team
 </p>
 
   </div>

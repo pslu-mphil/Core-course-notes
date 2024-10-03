@@ -47,12 +47,12 @@ sphinx:
         packages: ['base', 'physics', 'ams', 'amsmath', 'mhchem', 'color', 'newcommand']
     latex_elements:
       preamble: |
-        $$\newcommand{\dv}[2]{\frac{\mathrm{d}#1}{\mathrm{d}#2}}  % replaces physics.sty \dv
+        \newcommand{\dv}[2]{\frac{\mathrm{d}#1}{\mathrm{d}#2}}  % replaces physics.sty \dv
         \newcommand{\dd}{\mathrm{d}}  % replaces physics.sty \dd
         \newcommand{\pdv}[2]{\frac{\partial #1}{\partial #2}}  % partial derivative
         \newcommand{\ee}{\mathrm{e}} % 
         \newcommand{\ii}{\mathrm{i}} % 
-        \newcommand{\ddns}{\,\mathrm{d}} % $$
+        \newcommand{\ddns}{\,\mathrm{d}} %
       pointsize: 11pt
       papersize: a4paper
     latex_logo: ./logo.png

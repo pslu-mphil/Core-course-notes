@@ -20,7 +20,9 @@ If you find a problem you're not sure how to fix, either contact us directly or 
 
 ## Installing Dependencies
 
-Install `jupyter-book`, for example with `conda`, which can be [downloaded from this site](https://www.anaconda.com/download/success):
+You will need a local Python install on your computer.  If you don't already have a Python install you are managing then it is best to install it via `conda`, downloading it [from this website](https://www.anaconda.com/download/success).
+
+Once you have a Python distribution installed, it will likely need `jupyter-book` installed separately.  To do this via `conda`:
 
 ```bash
 conda install -c conda-forge jupyter-book

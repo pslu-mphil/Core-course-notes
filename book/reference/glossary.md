@@ -97,6 +97,9 @@ Radial drift
 Reducing
     A substance that has a propensity to donate electrons to another material, thereby 'reducing' it.  E.g., in placing iron metal, Fe, next to water, H$_2$O, the iron metal can reduce the water by the reaction $\text{Fe} + \text{H}_2\text{O} = \text{H}_2 + \text{FeO}$.
 
+Semi-major axis
+	  An orbital property of elliptical orbit. For circular orbits, the semi-major axis is equal to the orbital radius. For elliptical orbits, the semi-major axis is the distance from the centre of the ellipse to the longest end of the ellipse. 
+
 Silicate
     A mineral whose major structural unit comprises Si-O bonds.  E.g., quartz, or olivine, the latter being a major constituent of shallow planetary **{term}`mantle`s**.
 

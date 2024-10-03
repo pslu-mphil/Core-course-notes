@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>3.4. Course Overview &#8212; PSLU MPhil</title>
+    <title>3.4. Mantle Convection &#8212; PSLU MPhil</title>
   
   
   
@@ -58,13 +58,13 @@
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>window.MathJax = {"loader": {"load": ["[tex]/physics", "[tex]/ams", "[tex]/mhchem", "[tex]/color"]}, "tex": {"packages": ["base", "physics", "ams", "mhchem", "color"]}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script>window.MathJax = {"loader": {"load": ["[tex]/physics", "[tex]/ams", "[tex]/mhchem", "[tex]/color", "[tex]/newcommand"]}, "tex": {"packages": ["base", "physics", "ams", "amsmath", "mhchem", "color", "newcommand"]}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = '02_environments/l4/l4';</script>
     <link rel="icon" href="../../_static/favicon.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="3.5. Course Overview" href="../l5/l5.html" />
+    <link rel="next" title="3.5. Plate tectonics" href="../l5/l5.html" />
     <link rel="prev" title="3.3. Course Overview" href="../l3/l3.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -201,8 +201,8 @@
 <li class="toctree-l2"><a class="reference internal" href="../l1/l1.html">3.1. Course Overview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../l2/l2.html">3.2. Course Overview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../l3/l3.html">3.3. Course Overview</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">3.4. Course Overview</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../l5/l5.html">3.5. Course Overview</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">3.4. Mantle Convection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l5/l5.html">3.5. Plate tectonics</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../l6/l6.html">3.6. Course Overview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../l7/l7.html">3.7. Course Overview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../l8/l8.html">3.8. Course Overview</a></li>
@@ -351,7 +351,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Course Overview</h1>
+    <h1>Mantle Convection</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -361,14 +361,34 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-use-this-website">How to use this Website</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#course-structure">Course Structure</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exam-30">Exam (30%)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#computational-exam-20">Computational Exam (20%)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#policy-paper-25">Policy Paper (25%)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-report-25">Lab Report (25%)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mantle-rheology">Mantle rheology</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#end-member-behaviour">End member behaviour</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#maxwell-solids">Maxwell solids</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#more-general-viscoelastic-rheologies">More general viscoelastic rheologies</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#estimates-mantle-viscosity">Estimates mantle viscosity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#temperature-and-pressure-dependence-of-viscosity">Temperature and pressure dependence of viscosity</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#physical-principles-governing-mantle-convection">Physical principles governing mantle convection</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conservation-of-mass">Conservation of mass</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conservation-of-momentum">Conservation of momentum</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conservation-of-energy">Conservation of energy</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scaling-analysis-of-convection-in-the-mantle">Scaling analysis of convection in the mantle</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-reynolds-number">The Reynolds number</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-peclet-number">The Peclet number</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-rayleigh-number">The Rayleigh number</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#consequences-of-convection-at-the-earth-s-surface">Consequences of convection at the Earth’s surface</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gravity-anomalies">Gravity anomalies</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dynamic-topography">Dynamic topography</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#further-reading">Further reading</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
 </ul>
             </nav>
         </div>
@@ -380,114 +400,747 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="course-overview">
-<span id="lecture-1"></span><h1><span class="section-number">3.4. </span>Course Overview<a class="headerlink" href="#course-overview" title="Link to this heading">#</a></h1>
-<blockquote class="highlights">
-<div><p><strong>Key Concepts:</strong></p>
+  <section class="tex2jax_ignore mathjax_ignore" id="mantle-convection">
+<span id="lecture-1"></span><h1><span class="section-number">3.4. </span>Mantle Convection<a class="headerlink" href="#mantle-convection" title="Link to this heading">#</a></h1>
+<p><strong>Key Concepts:</strong></p>
 <ul class="simple">
-<li><p>key concepts are useful</p></li>
-<li><p>use them</p></li>
+<li><p>The Earth’s mantle exhibits a time-dependent rheology. Over time-scales of millions of years, it behaves like a viscous fluid.</p></li>
+<li><p>Viscosity is a strongly decreasing function of temperature. The cool outer part of the Earth is known as the lithosphere, and is responds elastic over geological time. It is the warmer regions below the lithosphere that undergo convection.</p></li>
+<li><p>Mantle convection can be understood using standard equations of fluid mechanics, with balance laws
+stated  for mass, linear momentum and energy.</p></li>
+<li><p>Scaling analysis helps us to understand the relative magnitudes of the terms within the governing equations, and hence
+which physical processes are most important.</p></li>
+<li><p>The Earth’s mantle has a high Rayleigh number, and so must undergo vigorous time-dependent convection over a range
+of length-scales.</p></li>
+<li><p>Convection in the mantle contributes to long-wavelength gravity anomalies and dynamic topography at the Earth’s surface.</p></li>
 </ul>
-</div></blockquote>
-<p>Introduce the lecture in a couple of sentences.</p>
-<section id="how-to-use-this-website">
-<h2>How to use this Website<a class="headerlink" href="#how-to-use-this-website" title="Link to this heading">#</a></h2>
-<p>This website contains summary notes to accompany each lecture of the course.
-These are divided into thematic blocks, corresponding to the four lecture blocks of the course.</p>
-<p>These notes are intended to complement the lectures; they will not contain all the material you are given in lectures and are not intended as a replacement for the lectures.
-It is essential to attend the course lectures and complete the practical components of the course if you want to do well.</p>
-</section>
-<section id="course-structure">
-<h2>Course Structure<a class="headerlink" href="#course-structure" title="Link to this heading">#</a></h2>
-<p>The course has four modules, which are here to give an example of a list:</p>
-<ul class="simple">
-<li><p>C1: The origin of planets</p></li>
-<li><p>C2: The origin of habitable environments</p></li>
-<li><p>C3: The origin and detection of life</p></li>
-<li><p>C4: Biospheres</p></li>
-</ul>
-<section id="exam-30">
-<h3>Exam (30%)<a class="headerlink" href="#exam-30" title="Link to this heading">#</a></h3>
-<p>Here we discuss the figure below, serving as a useful example <code class="xref std std-numref docutils literal notranslate"><span class="pre">fig:test_figure</span></code> of linking text to figures.</p>
-<figure class="margin-caption align-default" id="fig-test-figure">
-<img alt="../../_images/trappist_19.jpg" src="../../_images/trappist_19.jpg" />
-<figcaption>
-<p><span class="caption-number">Fig. 3.5 </span><span class="caption-text">A test figure to be replaced with real course content.</span><a class="headerlink" href="#fig-test-figure" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</section>
-<section id="computational-exam-20">
-<h3>Computational Exam (20%)<a class="headerlink" href="#computational-exam-20" title="Link to this heading">#</a></h3>
-<p>Here is an example of putting a margin note in, with some useful additional info</p>
-<aside class="units margin sidebar">
-<p class="sidebar-title">Units!</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}
-n &amp;= \mathrm{concentration} \\
-t &amp;= \mathrm{time} \\
-a &amp;= \mathrm{concentration~time^{-1}} \\
-k &amp;= \mathrm{time^{-1}}
-\end{split}\]</div>
-</aside>
+\[\newcommand{\ee}{\mathrm{e}}\newcommand{\ii}{\mathrm{i}}\newcommand{\ddns}{\,\mathrm{d}}\]</div>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
+<p>The aim of this lecture is to summarise the key physical principles governing convection within the Earth’s mantle. Though our focus is on the Earth, the same rules, presumably, apply within other Earth-like planets.</p>
 </section>
-<section id="policy-paper-25">
-<h3>Policy Paper (25%)<a class="headerlink" href="#policy-paper-25" title="Link to this heading">#</a></h3>
-<p>We can have maths that stands apart from the text,</p>
-<div class="math notranslate nohighlight" id="equation-eq-box-eqn">
-<span class="eqno">(3.4)<a class="headerlink" href="#equation-eq-box-eqn" title="Link to this equation">#</a></span>\[\dv{n}{t} = a - k
- n.\]</div>
-<p>Equations can be referenced in the text, for example the equation above <a class="reference internal" href="../../04_biospheres/l9/l9.html#equation-eq-box-eqn">()</a>.</p>
-<p>We can also have maths that is inline with the text (<span class="math notranslate nohighlight">\(\mathrm{mol \ L^{-1}}\)</span> or <span class="math notranslate nohighlight">\(\mathrm{M}\)</span>).</p>
+<section id="mantle-rheology">
+<h2>Mantle rheology<a class="headerlink" href="#mantle-rheology" title="Link to this heading">#</a></h2>
+<p>Mantle convection  can be understood in terms
+of fluid mechanics. But the Earth’s mantle is very much a solid.
+To understand this, we need to consider the rheological behaviour
+of the mantle. By the  <strong>rheology</strong> of a material we mean the quantitative
+relationship between deformation and stress. The key idea is that the mantle exhibits a
+<strong>time-dependent</strong> rheology, this meaning, roughly, that the
+response to forcing depends on the time-scale over which
+it is applied.</p>
+<p>Within the following discussion we will write <span class="math notranslate nohighlight">\(\sigma\)</span> for the stress
+and <span class="math notranslate nohighlight">\(\epsilon\)</span> for the strain. Strictly, these are
+tensor-fields, but this is not important for the moment.</p>
+<section id="end-member-behaviour">
+<h3>End member behaviour<a class="headerlink" href="#end-member-behaviour" title="Link to this heading">#</a></h3>
+<p>To begin, we consider two simple rheologies that
+describe the end-member behaviour of the mantle.
+Within an <strong>elastic solid</strong>, stress and strain are
+related by <strong>Hooke’s law</strong> which we write as</p>
+<div class="math notranslate nohighlight">
+\[\sigma = \mu \epsilon, \]</div>
+<p>with <span class="math notranslate nohighlight">\(\mu\)</span> an elastic modulus. Here we see that the
+application of a constant force (and hence stress) results
+in a constant strain. If the force is removed, the strain
+then returns to zero.</p>
+<p>In a <strong>Newtonian fluid</strong> stress is proportional to the
+time-derivative of the strain (usually called the <strong>strain-rate</strong>),
+and hence we can write</p>
+<div class="math notranslate nohighlight">
+\[\sigma = \eta \dot{\epsilon}, \]</div>
+<p>where <span class="math notranslate nohighlight">\(\eta\)</span> is the viscosity and a dot is used to
+denote time-differentiation. If a constant force is
+applied to such a material, there is a constant strain-rate, and hence the strain grows linearly with time.
+If the force is removed the strain-rate goes to zero, but
+there will be an accumulated strain. Within a fluid, transient
+forces can result in permanent deformation.</p>
 </section>
-<section id="lab-report-25">
-<h3>Lab Report (25%)<a class="headerlink" href="#lab-report-25" title="Link to this heading">#</a></h3>
-<p>We can also insert tables</p>
-<div class="pst-scrollable-table-container"><table class="table" id="coagulation-coefs">
-<caption><span class="caption-number">Table 3.4 </span><span class="caption-text">Example of a table.</span><a class="headerlink" href="#coagulation-coefs" title="Link to this table">#</a></caption>
-<colgroup>
-<col style="width: 28.0%" />
-<col style="width: 18.0%" />
-<col style="width: 18.0%" />
-<col style="width: 18.0%" />
-<col style="width: 18.0%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head stub"><p><span class="math notranslate nohighlight">\(d_1 \ (\mathrm{\mu m})\)</span> \ <span class="math notranslate nohighlight">\(d_2 \ (\mathrm{\mu m})\)</span></p></th>
-<th class="head"><p>0.01</p></th>
-<th class="head"><p>0.1</p></th>
-<th class="head"><p>1.0</p></th>
-<th class="head"><p>10.0</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><th class="stub"><p>0.01</p></th>
-<td><p>67</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-odd"><th class="stub"><p>0.1</p></th>
-<td><p>180</p></td>
-<td><p>8.6</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-even"><th class="stub"><p>1.0</p></th>
-<td><p>1700</p></td>
-<td><p>24</p></td>
-<td><p>3.5</p></td>
-<td></td>
-</tr>
-<tr class="row-odd"><th class="stub"><p>10.0</p></th>
-<td><p>16000</p></td>
-<td><p>220</p></td>
-<td><p>10.3</p></td>
-<td><p>3.0</p></td>
-</tr>
-</tbody>
-</table>
-</div>
+<section id="maxwell-solids">
+<h3>Maxwell solids<a class="headerlink" href="#maxwell-solids" title="Link to this heading">#</a></h3>
+<p>The simplest working model for the mantle’s rheology is that
+of a <strong>Maxwell solid</strong>. In this case, the relation between
+stress and strain can be written</p>
+<div class="math notranslate nohighlight">
+\[\dot{\sigma} + \tau^{-1} \sigma = \mu \dot{\epsilon}\]</div>
+<p>Here <span class="math notranslate nohighlight">\(\tau\)</span> is a constant known as the  <strong>relaxation time</strong> and <span class="math notranslate nohighlight">\(\mu\)</span>
+is an elastic modulus.</p>
+<p>To gain insight into the behaviour of such a material, suppose
+that the strain is initially zero, that at time <span class="math notranslate nohighlight">\(0\)</span>
+it jumps to a finite value <span class="math notranslate nohighlight">\(\epsilon_{0}\)</span>, then is
+held constant. If we integrate the above relation
+over the interval <span class="math notranslate nohighlight">\((-\delta,\delta)\)</span> and let <span class="math notranslate nohighlight">\(\delta \rightarrow 0\)</span>,
+we find that the stress at time <span class="math notranslate nohighlight">\(t=0\)</span> undergoes a finite-jump
+to the value <span class="math notranslate nohighlight">\(\sigma_{0} = \mu \epsilon_{0}\)</span>. Note that
+the stress generated is equal to that that would be
+seen within an elastic material with modulus <span class="math notranslate nohighlight">\(\mu\)</span>.
+Using this  initial elastic value for the stress, we can then solve the ODE for <span class="math notranslate nohighlight">\(t&gt; 0\)</span>
+to obtain</p>
+<div class="math notranslate nohighlight">
+\[\sigma(t) = \sigma_{0} \ee^{-t/\tau}, \]</div>
+<p>This shows that the initial stress decreases exponentially at a rate set by the relaxation time.</p>
+<p>Such behaviour is representative of that occurring within crystalline materials. The
+initial elastic response to the applied strain can be understood
+in terms of deformation of the crystal lattice. Subsequently,
+stresses are relaxed through the movement of lattice defects,
+with these motions occurring over a characteristic relaxation time.
+In fact, within a real crystal there will
+typically be a host of different mechanisms, and so it is
+more correct to think of a <strong>spectrum of relaxation times</strong>
+and not just the single value present within the Maxwell model.
+An important example of such a mechanism is the migration of
+lattice vacancies in response to an applied stress. This process, which is  known as <strong>diffusion creep</strong>, is thought to be the pricinple
+mechanism by which the mantle flows over geological time.</p>
+<p><img alt="image info" src="../../_images/creep.gif" /></p>
+<p><em>Fig 1. A schematic representation of diffusion creep within crystals
+in response to an applied stress. As the vacancies move,
+the overall stress is lowered, and further macroscopic
+deformation occurs. There are several
+mechanisms by which vacancies can move, including
+diffusion through the crystal interior (Nabarro-Herring Creep)
+or along grain boundaries (Coble Creep). Figure taken from
+Bhadeshia (2003)</em></p>
+<p>To gain further insight into the behaviour of a Maxwell
+solid, we can consider its response to a time-harmonic
+forcing. In this case, we can express the stress and
+strain as in the form</p>
+<div class="math notranslate nohighlight">
+\[\sigma(t) = \tilde{\sigma} \mathrm{e}^{\mathrm{i}\omega t}, \quad 
+\epsilon(t) = \tilde{\epsilon} \mathrm{e}^{\mathrm{i}\omega t}, \]</div>
+<p>with <span class="math notranslate nohighlight">\(\omega\)</span> the oscillation frequency, and tilded terms
+the amplitudes. Note that the use of complex numbers is for convenience, and it is the real parts that are physically meaningful. Putting the
+above expressions into the governing relation for a Maxwell
+solid, we obtain</p>
+<div class="math notranslate nohighlight">
+\[\tilde{\sigma} = \tilde{\mu}(\omega) \tilde{\epsilon}, \]</div>
+<p>where we have introduced a frequency-dependent <strong>viscoelastic
+modulus</strong></p>
+<div class="math notranslate nohighlight">
+\[\tilde{\mu}(\omega) = \frac{\mathrm{i}\omega\tau }{\mathrm{i}\omega\tau + 1} \mu.\]</div>
+<p>This shows that the constant of proportionality  between the stress and strain amplitudes is
+both frequency-dependent and complex valued. The latter feature is associated with a phase delay between forcing and response, though
+this property is not crucial to our present discussion. It is this
+frequency-dependence, however, that makes precise the idea of
+a time-dependent rheology. In particular, we can now examine
+quantitatively the  low and high-frequency limiting behaviour
+of a Maxwell solid.</p>
+<p>High-frequencies are those for which <span class="math notranslate nohighlight">\(\omega \tau \gg 1\)</span>, and in such
+cases we have the approximate relation</p>
+<div class="math notranslate nohighlight">
+\[\tilde{\sigma} \approx \mu \tilde{\epsilon}, \]</div>
+<p>this being identical to what would be seen within an
+elastic solid. Thus, when the material is deformed at a rate
+that is fast relative to the relaxation time, it behaves like
+an elastic solid.  Conversely, at low-frequencies, we have
+<span class="math notranslate nohighlight">\(\omega \tau \ll 1\)</span>, in which case</p>
+<div class="math notranslate nohighlight">
+\[\tilde{\sigma} \approx \mathrm{i}\omega \mu \tau \tilde{\epsilon}. \]</div>
+<p>Noting that <span class="math notranslate nohighlight">\(\mathrm{i}\omega \tilde{\epsilon}\)</span> is the amplitude of the
+strain-rate, we see that the behaviour is that of a Newtonian
+fluid with viscosity</p>
+<div class="math notranslate nohighlight">
+\[\eta = \mu \tau.\]</div>
 </section>
+<section id="more-general-viscoelastic-rheologies">
+<h3>More general viscoelastic rheologies<a class="headerlink" href="#more-general-viscoelastic-rheologies" title="Link to this heading">#</a></h3>
+<p>We have now shown that a Maxwell solid has the correct limiting
+behaviours seen within the Earth’s mantle. More detailed observations
+make clear that the mantle’s rheology is more complicated.
+Indeed, we noted above that within real crystals there will
+typically be a whole spectrum of relaxation times associated with
+different microscopic mechanisms. Nonetheless, the same
+form of low-frequency limiting behaviour of a Newtonian fluid
+can be expected under reasonable assumptions. To see this, suppose that the
+viscoelastic modulus for a Maxwell solid is generalised to</p>
+<div class="math notranslate nohighlight">
+\[\tilde{\mu}(\omega) = \int_{\tau_{1}}^{\tau_{2}} \frac{\mathrm{i}\omega\tau }{\mathrm{i}\omega\tau + 1} m(\tau) \dd \tau, \]</div>
+<p>with <span class="math notranslate nohighlight">\(m(\tau)\)</span> a function that quantifies the relaxation
+spectrum which we assume is limited to the range <span class="math notranslate nohighlight">\(0 &lt; \tau_{1} \le \tau_{2} &lt; \infty\)</span>. We can then consider the low-frequency limit, meaning
+<span class="math notranslate nohighlight">\(\omega \tau_{2} \ll 1\)</span>, for which we find</p>
+<div class="math notranslate nohighlight">
+\[\tilde{\mu}(\omega) \approx \mathrm{i} \omega \int_{\tau_{1}}^{\tau_{2}}
+\tau m(\tau) \dd \tau, \]</div>
+<p>and hence that the effective viscosity is given by</p>
+<div class="math notranslate nohighlight">
+\[\eta = \int_{\tau_{1}}^{\tau_{2}}
+\tau m(\tau) \dd \tau.\]</div>
+<p>Similarly, at high-frequencies, <span class="math notranslate nohighlight">\(\omega \tau_{1} \gg 1\)</span>, such a material behaves
+elastically with effective modulus</p>
+<div class="math notranslate nohighlight">
+\[\mu = \int_{\tau_{1}}^{\tau_{2}}
+ m(\tau) \dd \tau.\]</div>
+<p>This shows that the effective elastic modulus and viscosity can
+still be related by the simple expression</p>
+<div class="math notranslate nohighlight">
+\[\eta = \mu \bar{\tau}, \]</div>
+<p>where we have defined the average relaxation time</p>
+<div class="math notranslate nohighlight">
+\[\bar{\tau} = \frac{\int_{\tau_{1}}^{\tau_{2}}
+\tau m(\tau) \dd \tau}{\int_{\tau_{1}}^{\tau_{2}}
+ m(\tau) \dd \tau}.\]</div>
+<p>It should be noted that the above discussion has been
+limited to <strong>linear rheologies</strong>. For sufficiently large strains or strain-rates, non-linear effects can be relevant and this
+is likely to be true for certain aspects of mantle
+dynamics. Accounting for such non-linearity adds complications
+to the above discussion, but does not alter the main points
+that  have been emphasised.</p>
+</section>
+<section id="estimates-mantle-viscosity">
+<h3>Estimates mantle viscosity<a class="headerlink" href="#estimates-mantle-viscosity" title="Link to this heading">#</a></h3>
+<p>An order of magnitude estimate on the relaxation  time
+for the Earth’s mantle can be obtained through the study of
+<strong>glacial isostatic adjustement</strong>. This is the deformation
+of the solid Earth and concomitant sea level change associated
+with the growth or melting of large ice sheets. There is not
+time to enter into this process in any detail, but observations
+linked to the previous glacial period show that the relaxation
+time for the mantle is of order <span class="math notranslate nohighlight">\(10^4\)</span> years.</p>
+<p><img alt="image info" src="../../_images/sea_level.png" /></p>
+<p><em>Fig 2. Past sea level curves from locations
+under the centre of large ice sheets during the last glacial period.
+Since the ice has melted, these regions have undergone
+significant uplift, and hence sea level fall, due to
+viscoelastic relaxation of stress. The observed response can
+be well-modelled by an exponential decay, with the
+associated time-scale providing an
+estimate for the mantle’s Maxwell time of
+order 5000 years. Figure taken from Peltier (2004)</em></p>
+<p>From our previous discussion, we know that mantle viscosity
+is related to the relaxation time through</p>
+<div class="math notranslate nohighlight">
+\[\eta = \mu \tau, \]</div>
+<p>with <span class="math notranslate nohighlight">\(\mu\)</span> an  elastic modulus. An appropriate
+value for <span class="math notranslate nohighlight">\(\mu\)</span> can be obtained from seismological models
+for the Earth, with <span class="math notranslate nohighlight">\(\mu \sim 10^{11}\)</span> Pa being a suitable
+order of magnitude estimate. Recalling that one year is
+around <span class="math notranslate nohighlight">\(10^{7}\)</span> s, we find <span class="math notranslate nohighlight">\(\eta \sim 10^{21}\)</span> Pa s.
+For comparison, this is greater than the viscosity of
+water by twenty one orders of magnitude!</p>
+<p>The study of glacial isostatic adjustment can also
+provide more detailed quantitative models
+of viscosity variations within the Earth. For example,
+it has been shown that the viscosity increases by between the
+upper and lower parts of the mantle  by around one order of
+magnitude. Such a change in viscosity is likely
+due to solid-state phase changes within the
+minerals the make up the mantle, and both
+factors have potentially important
+effects on spatial pattern of convection.
+Such details are not, however,
+vital for our present discussion.</p>
+</section>
+<section id="temperature-and-pressure-dependence-of-viscosity">
+<h3>Temperature and pressure dependence of viscosity<a class="headerlink" href="#temperature-and-pressure-dependence-of-viscosity" title="Link to this heading">#</a></h3>
+<p>The viscosity of the mantle is set principally by
+the relaxation time,  with this quantity reflecting the
+aggregate effect of a host of microphysical processes.
+The relaxation time, and hence viscosity, is known to be
+a highly
+sensitive function of temperature, <span class="math notranslate nohighlight">\(T\)</span>,  and pressure, <span class="math notranslate nohighlight">\(p\)</span>. This
+relation is complicated and not well-determined, but
+a reasonable model is given by</p>
+<div class="math notranslate nohighlight">
+\[\tau = \tau_{0} \exp\left( \frac{E_{0} + p V_{0}}{k T}\right), \]</div>
+<p>where <span class="math notranslate nohighlight">\(E_{0}\)</span> is a reference activation energy,  <span class="math notranslate nohighlight">\(V_{0}\)</span> a reference
+volume, and <span class="math notranslate nohighlight">\(k\)</span> the Boltzmann constant. For those familiar with
+statistical mechanics, the form of this expression is motivated by
+the Boltzmann distribution, and reflects the
+fact that the microphysical mechanisms require
+energy barriers to be overcome, with the
+probability that this happens being higher
+and higher temperatures.</p>
+<p>The strong temperature dependence of viscosity within
+the mantle is central to understanding the Earth’s interior dynamics
+along with related processes such as plate tectonics.
+As temperature decreases, relaxation time rises dramatically.
+Within sufficiently cool shallow parts of the Earth,
+the relaxation time can be so great  that the material
+behaves elastically over geological time. This region of the
+Earth is called the <strong>lithosphere</strong>. It is known be around 100 km thick,  comprising the Earth’s crust (which has an average thickness of about 35 km) and the upper part of the Mantle. It should be
+emphasised that the crust and mantle are compositionally distinct, with the former having, in broadest outline, formed through partial melting of the latter. The lithosphere, by contrast, is not defined in terms
+of its composition but from its long-term <strong>mechanical behaviour</strong>.</p>
+</section>
+</section>
+<section id="physical-principles-governing-mantle-convection">
+<h2>Physical principles governing mantle convection<a class="headerlink" href="#physical-principles-governing-mantle-convection" title="Link to this heading">#</a></h2>
+<p>We now review the physical principles governing convection within
+the Earth’s mantle. While the necessary partial differential equations
+are stated along with brief derivations, our emphasis is on the
+physical processes they described and on the quantification of their relative importance using <strong>scaling analysis</strong>.</p>
+<section id="conservation-of-mass">
+<h3>Conservation of mass<a class="headerlink" href="#conservation-of-mass" title="Link to this heading">#</a></h3>
+<p>Consider a sub-region <span class="math notranslate nohighlight">\(U\)</span> within the mantle. The mass of
+the fluid within the sub-region at an instant of time
+can be written</p>
+<div class="math notranslate nohighlight">
+\[\int_{U} \rho \dd V, \]</div>
+<p>with <span class="math notranslate nohighlight">\(\rho\)</span> the density. If the sub-region is fixed in space,
+its mass can change only through the flux of matter through
+its boundary, <span class="math notranslate nohighlight">\(\partial U\)</span>, and hence we can write</p>
+<div class="math notranslate nohighlight">
+\[\frac{\,\mathrm{d} }{\,\mathrm{d} t}\int_{U} \rho \dd V = -\int_{\partial U}
+\rho \hat{\mathbf{n}} \cdot \mathbf{u} \dd S, \]</div>
+<p>where <span class="math notranslate nohighlight">\(\mathbf{u}\)</span> is the velocity field, and <span class="math notranslate nohighlight">\(\hat{\mathbf{n}}\)</span>
+the outward unit normal. Using the divergence theorem, it can
+be shown that this balance law is equivalent to the local statement</p>
+<div class="math notranslate nohighlight">
+\[\frac{\partial \rho}{\partial t} + \nabla \cdot(\rho \mathbf{u}) = 0.\]</div>
+<p>Flow within a fluid is said to be <strong>incompressible</strong> if the volume of
+a region that is carried with the flow cannot change. Mathematically,
+it can be shown that this condition is equivalent to</p>
+<div class="math notranslate nohighlight">
+\[\nabla \cdot \mathbf{u} = 0.\]</div>
+<p>All real fluids are compressible to some extent, but incompressibility
+can be a useful simplifying approximation in certain problems, with
+mantle convection being one of them. The equation for conservation of mass
+then simplifies to</p>
+<div class="math notranslate nohighlight">
+\[\frac{\partial \rho}{\partial t} + \mathbf{u} \cdot \nabla \rho = 0,\]</div>
+<p>with the second term now representing the advection of the density
+along with the flow.</p>
+</section>
+<section id="conservation-of-momentum">
+<h3>Conservation of momentum<a class="headerlink" href="#conservation-of-momentum" title="Link to this heading">#</a></h3>
+<p>Let <span class="math notranslate nohighlight">\(U\)</span> again be a fixed sub-region of the mantle. The balance of linear
+momentum can be written</p>
+<div class="math notranslate nohighlight">
+\[\frac{\,\mathrm{d} }{\,\mathrm{d} t}\int_{U} \rho \mathbf{u} \dd V = 
+-\int_{\partial U} \rho \mathbf{u}\, \hat{\mathbf{n}}\cdot \mathbf{u} \dd S
++ \int_{\partial U } \bm{\sigma} \hat{\mathbf{n}}  \dd S + 
+\int_{U} \rho \mathbf{g} \dd V, \]</div>
+<p>where <span class="math notranslate nohighlight">\(\bf{\sigma}\)</span> is the stress tensor, and <span class="math notranslate nohighlight">\(\mathbf{g}\)</span> the
+acceleration due to gravity. The first term on the
+right hand side represents the advection of linear momentum along
+the flow. The second term is the total contact force on the sub-region
+from its surroundings. Finally, the final term on the right hand side represents the gravitational force on the sub-region, with this force being  generated by the totality of the Earth’s mass distribution.</p>
+<p>It should be noted that the fact that the force per unit area on
+the boundary can be expressed in terms of a stress tensor
+and the unit normal is actually a consequence of the
+balance of linear momentum, this following from an
+argument due to Cauchy. Similarly, the balance of
+angular momentum within a fluid is equivalent to the
+stress tensor being symmetric.</p>
+<p>The stress tensor within a viscous fluid can be usefully
+decomposed as</p>
+<div class="math notranslate nohighlight">
+\[\bf{\sigma} = -p \mathbf{1} + \mathbf{\tau}, \]</div>
+<p>where <span class="math notranslate nohighlight">\(p\)</span> is the pressure, and <span class="math notranslate nohighlight">\(\bf{\tau}\)</span> the devatoric stress
+which is defined through the requirement that its trace vanishes.
+Assuming, for simplicity, that the fluid is incompressible, we can
+then write</p>
+<div class="math notranslate nohighlight">
+\[\bf{\tau} = 2 \eta \dot{\mathbf{e}}, \]</div>
+<p>where <span class="math notranslate nohighlight">\(\eta\)</span> is the viscosity and <span class="math notranslate nohighlight">\(\dot{\mathbf{e}}\)</span> the
+strain-rate tensor which is defined through</p>
+<div class="math notranslate nohighlight">
+\[\dot{e}_{ij} = \frac{1}{2}\left( \frac{\partial u_{i}}{\partial x_{j}} + \frac{\partial u_{j}}{\partial x_{i}} \right).\]</div>
+<p>Using the divergence theorem and simplifying using the local
+form of mass conservation, the balance of linear momentum
+becomes</p>
+<div class="math notranslate nohighlight">
+\[\rho \frac{\partial \mathbf{u}}{\partial t} + \rho 
+\mathbf{u} \cdot \nabla \mathbf{u} + \nabla p 
+- \nabla \cdot \bf{\tau} + \rho \nabla \phi = \mathbf{0}\]</div>
+<p>where we have now expressed the gravitational acceleration
+in terms of a potential, <span class="math notranslate nohighlight">\(\phi\)</span>. This is an instance
+of the famous <strong>Navier Stokes equations</strong>.</p>
+</section>
+<section id="conservation-of-energy">
+<h3>Conservation of energy<a class="headerlink" href="#conservation-of-energy" title="Link to this heading">#</a></h3>
+<p>Conservation of thermal energy within the fluid
+can be written</p>
+<div class="math notranslate nohighlight">
+\[\frac{\,\mathrm{d}}{\,\mathrm{d} t } \int_{U} \rho C_{p} T \dd V
+= -\int_{\partial U} \rho C_{p} T \hat{\mathbf{n}} \cdot
+\mathbf{u} \dd S + \int_{\partial U} k \hat{\mathbf{n}} \cdot
+\nabla T \dd S + \int_{U} \rho H \dd V. \]</div>
+<p>Here <span class="math notranslate nohighlight">\(T\)</span> is the temperature and <span class="math notranslate nohighlight">\(C_{p}\)</span> the heat capacity per
+unit mass. The product <span class="math notranslate nohighlight">\(C_{p} T\)</span> is the thermal energy density
+per unit mass. The first term on
+the right hand side represents the transfer of thermal energy into
+the sub-region through advection with the fluid flow. The second
+term is associated with the conduction of heat as described by
+Fourier’s law, with <span class="math notranslate nohighlight">\(k\)</span> the  <strong>thermal conductivity</strong>. The final term, <span class="math notranslate nohighlight">\(H\)</span>,
+is the heat production within the fluid per unit mass. The main
+contributions to this term within the mantle are from:</p>
+<ul class="simple">
+<li><p>energy released on the decay of radioactive isotopes;</p></li>
+<li><p>viscous dissipation of mechanical energy.</p></li>
+</ul>
+<p>It will not be necessary to examine either of these terms in detail
+within this lecture.</p>
+<p>Passing in the usual manner to their local forms, the
+conservation of energy becomes</p>
+<div class="math notranslate nohighlight">
+\[\rho C_{p} \frac{\partial T}{\partial t} + \rho C_{p} \mathbf{u}\cdot
+\nabla T  - \nabla \cdot (k \nabla T) - \rho H  = 0.\]</div>
+<p>For later reference, we note that the ratio</p>
+<div class="math notranslate nohighlight">
+\[\kappa = \frac{k}{\rho C_{p}}, \]</div>
+<p>defines the <strong>thermal diffusivity</strong>.</p>
+</section>
+</section>
+<section id="scaling-analysis-of-convection-in-the-mantle">
+<h2>Scaling analysis of convection in the mantle<a class="headerlink" href="#scaling-analysis-of-convection-in-the-mantle" title="Link to this heading">#</a></h2>
+<p>The equations governing convection within the mantle
+form a complicated set of coupled non-linear partial
+differential equations. They admit no simple solutions,
+and most work in this field depends on large-scale numerical
+calculations. Nevertheless, much useful information
+can be learned about the problem using scaling analysis.
+Indeed, such an analysis can be used to identify which
+are the most important physical processes involved
+and those that can be neglected.</p>
+<section id="the-reynolds-number">
+<h3>The Reynolds number<a class="headerlink" href="#the-reynolds-number" title="Link to this heading">#</a></h3>
+<p>We first consider the relative importance of
+inertia and viscous forces within the Earth’s mantle.
+The magnitude of the first inertia term within the
+equations of motion can be estimated as:</p>
+<div class="math notranslate nohighlight">
+\[\rho \frac{\partial \mathbf{u}}{\partial t} \sim 
+\frac{\rho U}{ T}, \]</div>
+<p>where on the right <span class="math notranslate nohighlight">\(\rho\)</span> denotes a typical density,
+<span class="math notranslate nohighlight">\(U\)</span> a typical magnitude of the velocity, and <span class="math notranslate nohighlight">\(T\)</span> the
+characteristic time-scale for the flow. Here the
+symbol <span class="math notranslate nohighlight">\(\sim\)</span> should be read as meaning “approximate order
+of magnitude”. In a similar manner, we can
+scale the viscous term</p>
+<div class="math notranslate nohighlight">
+\[\nabla \cdot ( 2 \eta \dot{\bf{\epsilon}}) \sim \frac{\eta U}{L^{2}}, \]</div>
+<p>where <span class="math notranslate nohighlight">\(L\)</span> is a characteristic length-scale for the flow. Note that
+the factor of two on the left hand side is ignored because this
+does not matter to an order of magnitude. The ratio of these
+two terms defines the <em>Reynolds number</em>:</p>
+<div class="math notranslate nohighlight">
+\[\mathrm{Re} = \frac{\frac{\rho U}{ T}}{\frac{\eta U}{L^{2}} } 
+= \frac{\rho L^{2}}{\eta T}.\]</div>
+<p>To simplify, we use the fact that <span class="math notranslate nohighlight">\(U \sim L / T\)</span>, and hence</p>
+<div class="math notranslate nohighlight">
+\[\mathrm{Re}  = \frac{\rho L U}{\eta}.\]</div>
+<p>We can now use this formula to estimate the Reynolds number for the mantle. We already have an order of magnitude estimate for
+the viscosity of <span class="math notranslate nohighlight">\(10^{21}\)</span> Pa s. For the density, we can use
+the Earth’s average density which implies we
+take <span class="math notranslate nohighlight">\(\rho \sim 10^{3}\)</span> kg m <span class="math notranslate nohighlight">\(^{-3}\)</span>. For the length-scale,
+we can take the depth of the mantle which is of order <span class="math notranslate nohighlight">\(10^{6}\)</span> m.
+The only tricky thing to estimate is the typical velocity of the
+flow. To do this, we will use the speed at which tectonic plates are
+observed to move. As we discuss further in the next lecture, the
+relationship between plate tectonics and mantle convection
+is not entirely straightforward. But to an order of magnitude
+such an estimate should be acceptable. A typical plate
+speed might be of order 1 cm per year, or <span class="math notranslate nohighlight">\(10^{-9}\)</span> m s <span class="math notranslate nohighlight">\(^{-1}\)</span>.
+Putting all this together, we find</p>
+<div class="math notranslate nohighlight">
+\[\mathrm{Re} \sim \frac{10^{3} 10^{6} 10^{-9}}{10^{21}} = 10^{-21}.\]</div>
+<p>This is a tiny number, a shows that for mantle dynanmics
+inertial forces play essentially no role. Instead, at each
+instance of time, there is a near perfect balance between
+gravitational driving forces and viscous resistance.
+It therefore makes sense to simplify the Navier Stokes
+equations to</p>
+<div class="math notranslate nohighlight">
+\[ \nabla p - \nabla \cdot \bf{\tau} + \rho \nabla \phi = \mathbf{0}\]</div>
+<p>which is known as the <strong>Stokes equation</strong>.</p>
+<p>It should be commented that our analysis was based only
+on the first of the inertia terms and not <span class="math notranslate nohighlight">\(\rho \mathbf{u} \cdot
+\nabla \mathbf{u}\)</span>. If you wish, you can scale this term to see that
+it behaves identically to the inertial term we did consider.</p>
+</section>
+<section id="the-peclet-number">
+<h3>The Peclet number<a class="headerlink" href="#the-peclet-number" title="Link to this heading">#</a></h3>
+<p>Within the equation for conservation of energy, we see that
+heat can be transferred by either advection or conduction.
+The advective term can be scaled as</p>
+<div class="math notranslate nohighlight">
+\[\rho C_{p} \mathbf{u} \cdot \nabla T \sim \rho C_{p} \frac{U \Theta}{L}, \]</div>
+<p>where we note that <span class="math notranslate nohighlight">\(\Theta\)</span> is used for the magnitude of the temperature
+as we have already used <span class="math notranslate nohighlight">\(T\)</span> for the time-scale.
+For the conductive heat transfer, then have</p>
+<div class="math notranslate nohighlight">
+\[\nabla \cdot (k \nabla T) \sim k \frac{\Theta}{L^{2}}. \]</div>
+<p>Dividing the advective term by the conductive, we arrive at
+the <strong>Peclet number</strong></p>
+<div class="math notranslate nohighlight">
+\[\mathrm{Pe} = \frac{ U L }{ \kappa  }, \]</div>
+<p>where we have recalled the definition of the thermal
+diffusivity, <span class="math notranslate nohighlight">\(\kappa\)</span>. Typical values of
+<span class="math notranslate nohighlight">\(\kappa \sim 10^{-6}\)</span>  for mantle materials can be estimated
+experimentally. Combining this with our earlier estimates, we
+find</p>
+<div class="math notranslate nohighlight">
+\[\mathrm{Pe} \sim \frac{10^{-9} 10^{6}}{10^{-6}} \sim 10^{3}.\]</div>
+<p>This suggests that advective heat transport is substantially
+more important than conductive within the mantle, though the ratio is not
+so large that we can entirely discount the role of
+heat conduction. There is, however, an important physical
+consequence of having a high Peclet number. Heat conduction
+acts to smooth out sharp temperature gradients. This follows
+from Fourier’s law, which states that the conductive heat
+flux is proportional to the gradient of the temperature.
+Advection, by contrast, does not smooth temperature
+gradients to a comparable extent. For example,
+a uniform flow simply translates existing temperature
+gradients. The dominance of
+advective heat transport within the mantle means that if
+rapid changes of temperature are somehow generated, then
+they can be carried with the flow for a relatively
+long time. Looking ahead, this point is important
+in understanding the dyanmical behaviour of subducted slabs and mantle plumes.</p>
+</section>
+<section id="the-rayleigh-number">
+<h3>The Rayleigh number<a class="headerlink" href="#the-rayleigh-number" title="Link to this heading">#</a></h3>
+<p>Consider a fluid that is in both mechanical and thermal equilibrium.
+If a sub-region of the fluid has its temperature raised by an
+amount, <span class="math notranslate nohighlight">\(\Delta T\)</span>, it will experience an buoyancy force
+that scales like</p>
+<div class="math notranslate nohighlight">
+\[\rho \alpha \Delta T g L^{3}, \]</div>
+<p>where <span class="math notranslate nohighlight">\(\alpha\)</span> is the thermal expansivity, and <span class="math notranslate nohighlight">\(L\)</span> the
+the characteristic length-scale of the region. In response
+to this force, the sub-region will flow upwards. We
+can estimate its initial velocity by balancing the
+buoyancy force against that due to viscous resistance.
+To estimate the latter, we first note that the resulting
+deviatoric stress scales as</p>
+<div class="math notranslate nohighlight">
+\[\bf{\tau} \sim \frac{\eta U}{L}, \]</div>
+<p>where we have assumed that the length-scale of the flow
+is comparable to that of the sub-region. We can convert
+this into a force by multiply by the surface area of the sub-region,
+and hence the viscous resistance scales as</p>
+<div class="math notranslate nohighlight">
+\[\eta U L.\]</div>
+<p>Balancing the two forces, we find that</p>
+<div class="math notranslate nohighlight">
+\[U \sim \frac{\rho \alpha \Delta T g L^{2}, }{\eta}.\]</div>
+<p>Note that this velocity scales like <span class="math notranslate nohighlight">\(L^{2}\)</span>, and
+hence larger thermal anomalises will move much
+faster.</p>
+<p>Heat conduction will also act to lower the temperature
+anomaly within the sub-region. As it does so, the
+buoyancy force driving the flow is lessened. And hence,
+if conductive heat loss occurs sufficiently rapidly the
+flow will be suppressed. To examine this quantitatively,
+we can estimate characteristic time-scales for either
+process. The time-scale for the flow to move the
+sub-region a distance <span class="math notranslate nohighlight">\(l\)</span> is</p>
+<div class="math notranslate nohighlight">
+\[t_{a} \sim \frac{L}{U} = \frac{\eta}{\rho \alpha \Delta T g L}, \]</div>
+<p>where the subscript <span class="math notranslate nohighlight">\(a\)</span> stands for advection. To estimate the
+corresponding time-scale for conduction, we start
+from a simplified form of energy conservation</p>
+<div class="math notranslate nohighlight">
+\[\rho C_{p} \frac{\partial T}{\partial t} = \nabla \cdot(k \nabla T), \]</div>
+<p>which we can scale to obtain</p>
+<div class="math notranslate nohighlight">
+\[ \frac{\rho C_{p} \Delta T}{t_{c}} \sim \frac{k \Delta T}{L^{2}}, \]</div>
+<p>where <span class="math notranslate nohighlight">\(t_{c}\)</span> is the conductive time-scale. Solving the latter
+equation for <span class="math notranslate nohighlight">\(t_{c}\)</span>, we obtain</p>
+<div class="math notranslate nohighlight">
+\[t_{c} \sim \frac{L^{2}}{\kappa}, \]</div>
+<p>where we have again used the definition of the
+thermal diffusivity. We can now form the
+ratio of the conductive to advective time-scales,
+this defining the <strong>Rayleigh number</strong> for the problem</p>
+<div class="math notranslate nohighlight">
+\[\mathrm{Ra} = \frac{t_{c}}{t_{a}} = \frac{\rho \alpha \Delta T g L^{3}}{\kappa \eta}.\]</div>
+<p>A key observation is that the Rayleigh number’s dependence
+on the length-scale goes like <span class="math notranslate nohighlight">\(L^{3}\)</span>. This shows that
+relative importance of advection is larger for
+larger anomalies. It follows that if convective
+instabilities most readily occur at the largest
+possible length-scales.</p>
+<p>A limitation of our simple scaling analysis is that
+we cannot know how large the Rayleigh number
+need be for the onset of convection.   However, this quantity
+also occurs within   a <strong>linearised stability analysis</strong> of the
+governing equations. There is not time to
+cover these details, but they show that
+when the Rayleigh number is larger than
+some critical value, <span class="math notranslate nohighlight">\(\mathrm{Ra}_{c}\)</span>, convection will occur.
+The precise value depends on the geometry considered,
+but <span class="math notranslate nohighlight">\(\mathrm{Ra}_{c} \sim 10^{3}\)</span> is a representative value.</p>
+<p>The above analysis can now be applied to the Earth’s mantle
+to assess whether it is likely to undergo convection. In doing this,
+it makes sense  to choose the length-scale of the flow to be as large
+as possible, and so we take <span class="math notranslate nohighlight">\(L\)</span> to be the thickness
+of the mantle. Experiments on mantle minerals show
+that <span class="math notranslate nohighlight">\(\alpha \sim 10^{-5}\)</span> K <span class="math notranslate nohighlight">\(^{-1}\)</span> is an
+appropriate estimate. Determining a sensible
+value for <span class="math notranslate nohighlight">\(\Delta T\)</span>, which can be viewed as the
+temperature difference from the bottom to
+top of the mantle, is more difficult. Instead,
+we will determine what temperature difference across the
+mantle would be required for convection to occur, and
+then consider if such a value seems plausible.
+Solving  for <span class="math notranslate nohighlight">\(\Delta T\)</span> within the Rayleigh number, we find</p>
+<div class="math notranslate nohighlight">
+\[\Delta T \sim  \frac{\kappa \eta \mathrm{Ra}_{c}}{\rho \alpha g L^{3}}  \sim \frac{10^{-6} 10^{21} 10^{3}}{10^{3} 10^{-5} 10^{1} 10^{18}}\, \mathrm{K} \sim 1 \,\mathrm{K}\]</div>
+<p>Here we see that a temperature difference of order only one Kelvin would be sufficient for the mantle to convect! Given other
+geological information (volcanism, geothermal heat, radioactive heating) it is entirely implausible that the temperature difference across
+the mantle is smaller than this value, and hence convection
+must certainly occur.</p>
+<p><img alt="image info" src="../../_images/rayleigh.png" /></p>
+<p><em>Fig 3. Convection patterns of a fluid heated from below at Rayleigh number <span class="math notranslate nohighlight">\(10^{3}\)</span> , <span class="math notranslate nohighlight">\(10^{6}\)</span> , <span class="math notranslate nohighlight">\(10^{7}\)</span> , <span class="math notranslate nohighlight">\(10^{8}\)</span>. The colour
+show non-dimensional temperatures. For the lowest
+Rayleigh number, lying just above the critical value, large
+scale convection cells form that undergo a quasi-steady flow. For
+larger values of the Rayleigh number, the convective patterns
+are more complicated, involve a range of length-scales,
+and are  and strongly time-dependent. Figure taken from Ricard (2007).</em></p>
+<p>In fact, plausible estimates for the mantle’s
+Rayleigh number are typically of order <span class="math notranslate nohighlight">\(10^{6}-10^{7}\)</span>, and so around
+one thousand times larger than the critical value. At such high
+Rayleigh numbers, instabilities are not limited to the largest
+possible length-scales. Instead, complicated and time-dependent
+patterns of convection spanning a range of length-scales must occur.</p>
+</section>
+</section>
+<section id="consequences-of-convection-at-the-earth-s-surface">
+<h2>Consequences of convection at the Earth’s surface<a class="headerlink" href="#consequences-of-convection-at-the-earth-s-surface" title="Link to this heading">#</a></h2>
+<p>To conclude this lecture, we consider two
+consequences of mantle convection that are observable at the
+Earth’s surface, namely <strong>gravity anomalies</strong> and <strong>dynamic
+topography</strong>. These are not the only surface features
+linked to mantle convection, but most others on Earth are
+associated with to <strong>plate tectonics</strong>. Whether or not an
+Earth-like planet has plate tectonics, we would expect there
+to be gravity anomalies and dynamic topography linked to
+convection within its interior. Convection within the mantle is, however, not the only nor the dominant process that can produce gravity anomalies or  topography on a planet’s surface, and hence there are significant  challenges to using such observations in practice.</p>
+<section id="gravity-anomalies">
+<h3>Gravity anomalies<a class="headerlink" href="#gravity-anomalies" title="Link to this heading">#</a></h3>
+<p>If the Earth did not convect and if it was entirely fluid
+over geological time, then it would have an ellipsoidal
+equilibrium figure, with the surface being an
+equipotential of the <strong>gravity potential</strong> (i.e., the sum
+of the gravitational and centrifugal potentials).
+As we have seen, the lithosphere is sufficiently cool
+to behave elastically over geological time, with this layer
+supporting both topography and lateral density contrasts that
+have been generated by a host of processes. Moreover,
+convection within the mantle is driven by density anomalies
+whose gravitational signal can be felt at the surface,</p>
+<p>Modelling gravity anomalies  requires
+solution of Poisson’s equation for the potential, <span class="math notranslate nohighlight">\(\phi\)</span>,
+in a near spherical geometry. There is not time to
+enter into this topic deeply, and so we will summarise
+the  results so as to understand their practical implications.
+We write the density in the Earth as</p>
+<div class="math notranslate nohighlight">
+\[\rho(r,\theta,\varphi) = \rho^{(0)}(r) +
+\rho^{(1)}(r,\theta,\varphi), \]</div>
+<p>where <span class="math notranslate nohighlight">\((r,\theta,\varphi)\)</span> are spherical polar co-ordinates,
+<span class="math notranslate nohighlight">\(\rho^{(0)}\)</span> is the background density that is spherically symmetric,
+and <span class="math notranslate nohighlight">\(\rho^{(1)}\)</span> is the aspherical perturbation. Similarly,
+we express topography on internal or external boundaries
+by writing the radius of the <span class="math notranslate nohighlight">\(i\)</span>-th boundary as</p>
+<div class="math notranslate nohighlight">
+\[r(\theta,\varphi) = a_{i} + h_{i}^{(1)}(\theta,\varphi). \]</div>
+<p>Finally, the resulting gravitational potential is written</p>
+<div class="math notranslate nohighlight">
+\[\phi(r,\theta,\varphi) = \phi^{(0)}(r) +
+\phi^{(1)}(r,\theta,\varphi).\]</div>
+<p>To solve for <span class="math notranslate nohighlight">\(\phi^{(1)}\)</span> it is convenient to
+use spherical harmonic expansions, and hence we
+write</p>
+<div class="math notranslate nohighlight">
+\[\phi^{(1)}(r,\theta,\varphi) = 
+\sum_{l=1}^{\infty}\sum_{m=-l}^{l}
+\phi_{lm}(r) Y_{lm}(\theta,\varphi), \]</div>
+<p>with the <span class="math notranslate nohighlight">\(Y_{lm}\)</span> spherical harmonic function of
+degree <span class="math notranslate nohighlight">\(l\)</span> and order <span class="math notranslate nohighlight">\(m\)</span>. It can be shown that the <span class="math notranslate nohighlight">\((l,m)\)</span>-th expansion coefficient of the potential at the Earth’s surface, <span class="math notranslate nohighlight">\(r = b\)</span>, is
+equal to</p>
+<div class="math notranslate nohighlight">
+\[\phi_{lm}^{(1)}(b) = \frac{-4\pi G b}{2l+1}\left[
+    \int_{0}^{b}\rho_{lm}(s)\left(\frac{s}{b}\right)^{l+2} \dd s
+    - \sum_{i=1}^{n}[\rho^{(0)}(a_{i})]_{-}^{+} h_{i,lm}^{(1)} 
+    \left(\frac{a_{i}}{b}\right)^{l+2}
+\right], \]</div>
+<p>where <span class="math notranslate nohighlight">\([\cdot]_{-}^{+}\)</span> denotes the jump in a quantity on
+crossing a boundary in the positive <span class="math notranslate nohighlight">\(r\)</span>-direction.<br />
+Here we see an integrated contribution from the density anomaly at the
+same degree and order, along with discrete contributions
+from the topography on each boundary.</p>
+<p><img alt="image info" src="../../_images/geoid.png" /></p>
+<p><em>Fig 4. Variations in the gravitational potential at the Earth’s
+surface expressed as the equivalent <strong>geoid anomaly</strong>. The
+latter quantity can be understood as the change in the position
+of the mean sea level associated with the gravitational potential
+perturbation. In further detail, if <span class="math notranslate nohighlight">\(\phi^{(1)}\)</span> is the
+gravitational potential perturbation, then the geoid
+anomaly is defined as <span class="math notranslate nohighlight">\(-\phi^{(1)}/g\)</span> with <span class="math notranslate nohighlight">\(g\)</span> the
+average value of gravitational acceleration at the surface.
+The observed geoid anomaly reflects contributions throughout
+the whole Earth, but it is only at the longest wavelengths
+that the effects of mantle convection are be seen.</em></p>
+<p>To understand this result, we first recall
+that the degree, <span class="math notranslate nohighlight">\(l\)</span>, of a spherical harmonic can be viewed
+as a non-dimensional wavenumber. Indeed, <strong>Jean’s relation</strong>
+shows that a spherical harmonic of degree <span class="math notranslate nohighlight">\(l\)</span> on a sphere of
+radius <span class="math notranslate nohighlight">\(a\)</span> has the characteristic wavelength</p>
+<div class="math notranslate nohighlight">
+\[\lambda = \frac{2\pi a}{\sqrt{l(l+1)}}.\]</div>
+<p>Looking now at the above expression for the <span class="math notranslate nohighlight">\((l,m)\)</span>-th coefficient,
+we see that this is a weighted average of the density and topography
+coefficients at the same degree and otder, with the radial weighting function  proportional to</p>
+<div class="math notranslate nohighlight">
+\[\left(\frac{r}{b}\right)^{l+2}. \]</div>
+<p>For fixed <span class="math notranslate nohighlight">\(l\)</span>, this is an increasing function of <span class="math notranslate nohighlight">\(r\)</span>, and
+so density anomalies or boundary topography near the surface
+have a relatively larger observable effect. Moreover, as the degree is
+increased, the rate of increase of the weighting function
+with radius becomes much greater. It follows that observations of long-wavelength (e.g., of order <span class="math notranslate nohighlight">\(10^{3}\,\mathrm{km}\)</span>) gravity anomalies on the Earth can tell us about convection within the mantle. Indeed,
+such observations have been used to better determine
+the mantle’s Rayleigh number and to place firmer bounds
+on viscosity variations with depth.</p>
+</section>
+<section id="dynamic-topography">
+<h3>Dynamic topography<a class="headerlink" href="#dynamic-topography" title="Link to this heading">#</a></h3>
+<p>Convection in the mantle applies a force at the base of the
+lithosphere. In areas of upgoing flow, the lithosphere, and hence
+the Earth’s surface, is deflected upwards, and conversely in
+areas of downgoing flow. The resulting topography at the
+Earth’s surface is known as <strong>dynamic topography</strong>, with
+this term being identical to that used within oceanography
+for deflections of the sea surface linked to large-scale
+ocean currents. Note that the deflection of the
+internal and external boundaries linked to mantle
+flow contributes directly to the associated gravity anomaly.</p>
+<p>The elastic lithosphere acts as a low-pass filter on the forces applied to its base.  As a result, dynamic topography is largest at long-wavelengths and is not appreciable at scales smaller than
+the lithospheric thickness. The amplitude of dynamic topography
+can be estimated using simple scaling arguments or through
+more sophisticated modelling. The result is that amplitudes of
+order 1 km might be expected at wavelenths of 1000 km.</p>
+<p><img alt="image info" src="../../_images/dynamic_topography.png" /></p>
+<p><em>Fig 5. Observations of dynamic topography for transect
+along the margin of Western Africa. These observations
+are obtained by correcting the observed topography for
+processes such as sedimentation. The amplitude
+of the dynamic topography is 1 km, and the horizontal
+wavelength is of order 1000 km.  Figure from Holdt <em>et al.</em> (2022).</em></p>
+<p>Observations of dynamic topography can be made on the Earth,
+but the process is complicated by the need to remove other sources
+of topography. This correction is significantly easier
+within the oceans, and as a result most observational models
+are limited to this region.</p>
+</section>
+</section>
+<section id="further-reading">
+<h2>Further reading<a class="headerlink" href="#further-reading" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Turcotte, D.L. and Schubert, G., 2002. Geodynamics. Cambridge university press.</p></li>
+</ul>
+</section>
+<section id="references">
+<h2>References<a class="headerlink" href="#references" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Bhadeshia, H.K.D.H., 2003. Mechanisms and models for creep deformation and rupture.</p></li>
+<li><p>Holdt, M.C., White, N.J., Stephenson, S.N. and Conway‐Jones, B.W., 2022. Densely sampled global dynamic topographic observations and their significance. Journal of Geophysical Research: Solid Earth, 127(7), p.e2022JB024391.</p></li>
+<li><p>Peltier, W.R., 2004. Global glacial isostasy and the surface of the ice-age Earth: the ICE-5G (VM2) model and GRACE. Annu. Rev. Earth Planet. Sci., 32(1), pp.111-149.</p></li>
+<li><p>Ricard, Y., 2007. Physics of mantle convection. Treatise on geophysics, 7, pp.31-87.</p></li>
+</ul>
 </section>
 </section>
 
@@ -535,7 +1188,7 @@ k &amp;= \mathrm{time^{-1}}
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">3.5. </span>Course Overview</p>
+        <p class="prev-next-title"><span class="section-number">3.5. </span>Plate tectonics</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -555,14 +1208,34 @@ k &amp;= \mathrm{time^{-1}}
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-use-this-website">How to use this Website</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#course-structure">Course Structure</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exam-30">Exam (30%)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#computational-exam-20">Computational Exam (20%)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#policy-paper-25">Policy Paper (25%)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-report-25">Lab Report (25%)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mantle-rheology">Mantle rheology</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#end-member-behaviour">End member behaviour</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#maxwell-solids">Maxwell solids</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#more-general-viscoelastic-rheologies">More general viscoelastic rheologies</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#estimates-mantle-viscosity">Estimates mantle viscosity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#temperature-and-pressure-dependence-of-viscosity">Temperature and pressure dependence of viscosity</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#physical-principles-governing-mantle-convection">Physical principles governing mantle convection</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conservation-of-mass">Conservation of mass</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conservation-of-momentum">Conservation of momentum</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conservation-of-energy">Conservation of energy</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scaling-analysis-of-convection-in-the-mantle">Scaling analysis of convection in the mantle</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-reynolds-number">The Reynolds number</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-peclet-number">The Peclet number</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-rayleigh-number">The Rayleigh number</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#consequences-of-convection-at-the-earth-s-surface">Consequences of convection at the Earth’s surface</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gravity-anomalies">Gravity anomalies</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dynamic-topography">Dynamic topography</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#further-reading">Further reading</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
 </ul>
   </nav></div>
 

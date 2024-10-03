@@ -27,6 +27,12 @@ html:
   home_page_in_navbar: false
   navbar_number_sections: true
 
+# parse:
+#   myst_enable_extensions:
+#     # don't forget to list any other extensions you want enabled,
+#     # including those that are enabled by default!
+#     - amsmath
+
 sphinx:
   recursive_update: true
   config:
@@ -36,14 +42,17 @@ sphinx:
     mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
     mathjax3_config:
       loader:
-        load: ['[tex]/physics', '[tex]/ams', '[tex]/mhchem', '[tex]/color']
+        load: ['[tex]/physics', '[tex]/ams', '[tex]/mhchem', '[tex]/color', '[tex]/newcommand']
       tex:
-        packages: ['base', 'physics', 'ams', 'mhchem', color]
+        packages: ['base', 'physics', 'ams', 'amsmath', 'mhchem', 'color', 'newcommand']
     latex_elements:
       preamble: |
-        \newcommand{\dv}[2]{\frac{\mathrm{d}#1}{\mathrm{d}#2}}  % replaces physics.sty \dv
+        $$\newcommand{\dv}[2]{\frac{\mathrm{d}#1}{\mathrm{d}#2}}  % replaces physics.sty \dv
         \newcommand{\dd}{\mathrm{d}}  % replaces physics.sty \dd
         \newcommand{\pdv}[2]{\frac{\partial #1}{\partial #2}}  % partial derivative
+        \newcommand{\ee}{\mathrm{e}} % 
+        \newcommand{\ii}{\mathrm{i}} % 
+        \newcommand{\ddns}{\,\mathrm{d}} % $$
       pointsize: 11pt
       papersize: a4paper
     latex_logo: ./logo.png

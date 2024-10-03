@@ -20,13 +20,13 @@ If you find a problem you're not sure how to fix, either contact us directly or 
 
 ## Installing Dependencies
 
-Install `jupyter-book`, for example with `conda`:
+Install `jupyter-book`, for example with `conda`, which can be [downloaded from this site](https://www.anaconda.com/download/success):
 
 ```bash
 conda install -c conda-forge jupyter-book
 ```
 
-or `pip`:
+or, if you use `pip` to manage your Python packages:
 
 ```bash
 pip install jupyter-book
@@ -34,7 +34,7 @@ pip install jupyter-book
 
 ## Build Instructions
 
-From the `/Core-course-notes` directory, either use the `makefile`:
+To build a local version of the notes: from the `/Core-course-notes` directory, either use the `makefile`:
 
 ```bash
 make html

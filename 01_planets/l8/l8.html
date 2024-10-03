@@ -408,37 +408,39 @@ document.write(`
 </section>
 <section id="transits">
 <h2>Transits<a class="headerlink" href="#transits" title="Link to this heading">#</a></h2>
-<p>The transit of a planet is detected when the planet passes directly in front of the star blocking light from reaching the observer. The observer luminosity of the star temporarily drops whilst the orbiting planet moves across the star, as shown in Fig. <a class="reference internal" href="#fig-transit"><span class="std std-numref">Fig. 2.39</span></a>. The drop in the brightness of the star, or the flux received on Earth (<span class="math notranslate nohighlight">\(F\)</span>), is proportional to the area of the planet (<span class="math notranslate nohighlight">\(R_{\rm pl}^2\)</span>) relative to the area of the star (<span class="math notranslate nohighlight">\(R_*\)</span>):</p>
+<p>The transit of a planet is detected when the planet passes directly in front of the star blocking light from reaching the observer. The observer luminosity of the star temporarily drops whilst the orbiting planet moves across the star, as shown in <a class="reference internal" href="#fig-l8-transit"><span class="std std-numref">Fig. 2.39</span></a>. The drop in the brightness of the star, or the flux received on Earth (<span class="math notranslate nohighlight">\(F\)</span>), is proportional to the area of the planet (<span class="math notranslate nohighlight">\(R_{\rm pl}^2\)</span>) relative to the area of the star (<span class="math notranslate nohighlight">\(R_*\)</span>):</p>
 <p><span class="math notranslate nohighlight">\(F \propto \left (\frac{R_{\rm pl}}{R_*}\right)^2\)</span>.</p>
-<p>Transits can be used to find the planet’s radius, given a good knowledge of the star’s radius. Transit photometry is best suited to detecting large planets on short period orbits around small stars. Fig.&#64;\ref{fig:exoplanet_demog}  shows that most planets detected by transits (blue dots) are on short periods and that transits can detect planets smaller than Earth, so long as they are orbiting small stars. This means that the first population of terrestrial mass planets have been found around stars significantly smaller than the sun, referred to as M-dwarfs.</p>
-<figure class="align-center" id="fig-transit">
+<p>Transits can be used to find the planet’s radius, given a good knowledge of the star’s radius. Transit photometry is best suited to detecting large planets on short period orbits around small stars. The probability of a planet transiting is proportional to its radius and inversely proportion to the <strong><a class="reference internal" href="../../reference/glossary.html#term-Semi-major-axis"><span class="xref std std-term">semi-major axis</span></a></strong> of the planet’s orbit:</p>
+<p><span class="math notranslate nohighlight">\(P \sim \frac{(R_* + R_{\rm pl})}{a}.\)</span></p>
+<p><a class="reference internal" href="#fig-l8-exoplanet-demog"><span class="std std-numref">Fig. 2.40</span></a>  shows that most planets detected by transits (blue dots) are on short periods and that transits can detect planets smaller than Earth, so long as they are orbiting small stars. This means that the first population of terrestrial mass planets have been found around stars significantly smaller than the sun, referred to as M-dwarfs.</p>
+<figure class="align-center" id="fig-l8-transit">
 <a class="reference internal image-reference" href="../../_images/transit.jpg"><img alt="../../_images/transit.jpg" src="../../_images/transit.jpg" style="width: 50%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 2.39 </span><span class="caption-text">A schematic showing the dip in brightness of the star as a planet passes in front.</span><a class="headerlink" href="#fig-transit" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 2.39 </span><span class="caption-text">A schematic showing the dip in brightness of the star as a planet passes in front.</span><a class="headerlink" href="#fig-l8-transit" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<figure class="align-default" id="fig-exoplanet-demog">
+<figure class="align-default" id="fig-l8-exoplanet-demog">
 <a class="reference internal image-reference" href="../../_images/exoplanet_demog.jpg"><img alt="../../_images/exoplanet_demog.jpg" src="../../_images/exoplanet_demog.jpg" style="height: 500px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 2.40 </span><span class="caption-text">The masses and periods of exoplanet detections shown, coloured by the primary discovery method. Credit: Stefano Meschiari.</span><a class="headerlink" href="#fig-exoplanet-demog" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 2.40 </span><span class="caption-text">The masses and periods of exoplanet detections shown, coloured by the primary discovery method. Credit: Stefano Meschiari.</span><a class="headerlink" href="#fig-l8-exoplanet-demog" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="the-radial-velocity-technique">
 <h2>The Radial Velocity Technique<a class="headerlink" href="#the-radial-velocity-technique" title="Link to this heading">#</a></h2>
-<p>Planets and stars both orbit the common centre of mass of the system. As the star is in general much more massive, the centre of mass is often very close to the star, such that the difference between the frame in which the planet orbits the star and the frame in which the planet orbits the centre of mass are very similar, as shown by Fig 3. The orbit of the star around the planet-star centre of mass does, however, lead to small variations in the velocity of the star, as seen by an observer on Earth. The radial velocity detects this motion or wobble in order to infer the presence of a planet.</p>
-<p>Stellar spectra contain a range of absorption lines from species in the stellar atmosphere. The exact frequency or wavelength at which these absorption lines are seen depends on the atomic properties of the line as well as the velocity of the star. If the star is moving towards the observer, the frequency of the emission increases. This is known as a Doppler Shift. As the star moves away from the observer, the frequency of the emission decreases. By following the variation in the frequency of a range of absorption features in the stellar spectrum, the radial velocity of the star as function of time can be tracked. The radial velocity of the star 51 Peg is shown in Fig 4. The periodic change in the radial velocity is due to the star being orbited by a planet with minimum mass of 0.42 Jupiter masses on a 4.23 day orbit, as found by Mayor &amp; Queloz, 1995.</p>
-<p>The radial velocity technique is best suited to detecting massive planets on short period orbits, as shown on Fig 2. Planets can be detected on longer period orbits, where the stars have been monitored on sufficiently long timescales. The technique provides the minimum mass of the planet, as for systems inclined to the line of sight to the observer, the observed radial velocity will be decreased by a factor of sin I, where I is the inclination of the planet’s orbit to the line of sight.</p>
-<figure class="align-default" id="fig-rv">
+<p>Planets and stars both orbit the common centre of mass of the system. As the star is in general much more massive, the centre of mass is often very close to the star, such that the difference between the frame in which the planet orbits the star and the frame in which the planet orbits the centre of mass are very similar, as shown by <a class="reference internal" href="#fig-l8-rv"><span class="std std-numref">Fig. 2.41</span></a>. The orbit of the star around the planet-star centre of mass does, however, lead to small variations in the velocity of the star, as seen by an observer on Earth. The radial velocity detects this motion or wobble in order to infer the presence of a planet.</p>
+<p>Stellar spectra contain a range of absorption lines from species in the stellar atmosphere. The exact frequency or wavelength at which these absorption lines are seen depends on the atomic properties of the line as well as the velocity of the star. If the star is moving towards the observer, the frequency of the emission increases. This is known as a Doppler Shift. As the star moves away from the observer, the frequency of the emission decreases. By following the variation in the frequency of a range of absorption features in the stellar spectrum, the radial velocity of the star as function of time can be tracked. The radial velocity of the star 51 Peg is shown in <a class="reference internal" href="#fig-l8-rv51pegb"><span class="std std-numref">Fig. 2.42</span></a>. The periodic change in the radial velocity is due to the star being orbited by a planet with minimum mass of 0.42 Jupiter masses on a 4.23 day orbit, as found by Mayor &amp; Queloz, 1995.</p>
+<p>The radial velocity technique is best suited to detecting massive planets on short period orbits, as shown on <a class="reference internal" href="#fig-l8-exoplanet-demog"><span class="std std-numref">Fig. 2.40</span></a>. Planets can be detected on longer period orbits, where the stars have been monitored on sufficiently long timescales. The technique provides the minimum mass of the planet, as for systems inclined to the line of sight to the observer, the observed radial velocity will be decreased by a factor of sin I, where I is the inclination of the planet’s orbit to the line of sight.</p>
+<figure class="align-default" id="fig-l8-rv">
 <a class="reference internal image-reference" href="../../_images/rv.jpg"><img alt="../../_images/rv.jpg" src="../../_images/rv.jpg" style="width: 90%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 2.41 </span><span class="caption-text">As seen from Earth, both the star and planet orbit the common centre of mass of the system. In the star’s frame, the planet orbits the star.</span><a class="headerlink" href="#fig-rv" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 2.41 </span><span class="caption-text">As seen from Earth, both the star and planet orbit the common centre of mass of the system. In the star’s frame, the planet orbits the star.</span><a class="headerlink" href="#fig-l8-rv" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<figure class="align-center" id="fig-rv51pegb">
+<figure class="align-center" id="fig-l8-rv51pegb">
 <a class="reference internal image-reference" href="../../_images/rv51Pegb.jpg"><img alt="../../_images/rv51Pegb.jpg" src="../../_images/rv51Pegb.jpg" style="width: 50%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 2.42 </span><span class="caption-text">The phase-folded radial velocity measurements for the plaent 51 Peg b (Mayor &amp; Queloz, 1995).</span><a class="headerlink" href="#fig-rv51pegb" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 2.42 </span><span class="caption-text">The phase-folded radial velocity measurements for the plaent 51 Peg b (Mayor &amp; Queloz, 1995).</span><a class="headerlink" href="#fig-l8-rv51pegb" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -448,32 +450,32 @@ document.write(`
 <p>The astrometric signature, <span class="math notranslate nohighlight">\(\alpha\)</span>, is approximated by the ratio of planet and stellar masses (<span class="math notranslate nohighlight">\(M_{\rm pl}\)</span> and <span class="math notranslate nohighlight">\(M_*\)</span>) in solar masses, their separation, <span class="math notranslate nohighlight">\(a\)</span>, and the distance to the star, <span class="math notranslate nohighlight">\(d\)</span> :</p>
 <p><span class="math notranslate nohighlight">\( \alpha = \left (\frac{M_{\rm pl}}{M_*}\right) \left ( \frac{a}{\rm au}\right) \left (\frac{d}{\rm pc}\right)^{-1} \, \, as. \)</span></p>
 <p>Astrometry is better suited to detecting higher mass planets on longer orbital periods, which is very complimentary to other techniques. However, multiple orbits still need to be observed in order to confirm a detection. The planetary orbit must also be face-on.</p>
-<figure class="align-default" id="fig-astrometry">
+<figure class="align-default" id="fig-l8-astrometry">
 <a class="reference internal image-reference" href="../../_images/astrometry.jpg"><img alt="../../_images/astrometry.jpg" src="../../_images/astrometry.jpg" style="height: 500px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 2.43 </span><span class="caption-text">The motion on the sky of a star due to its proper motion, parallax and orbital motion due to the presence of planet (Perryman et al, 2012). (European Physical Journal H, 37, 745 (2012))</span><a class="headerlink" href="#fig-astrometry" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 2.43 </span><span class="caption-text">The motion on the sky of a star due to its proper motion, parallax and orbital motion due to the presence of planet (Perryman et al, 2012). (European Physical Journal H, 37, 745 (2012))</span><a class="headerlink" href="#fig-l8-astrometry" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="direct-imaging">
 <h2>Direct Imaging<a class="headerlink" href="#direct-imaging" title="Link to this heading">#</a></h2>
-<p>Planets are very faint objects very close to their bright host stars. In general, it is very difficult to image them directly, unless they are very bright, normally the case only for young, massive planets and can be resolved from the star. Fig 2 shows that the currently imaged planets orbit at tens of au from their host stars and our Jupiter mass and above.</p>
+<p>Planets are very faint objects very close to their bright host stars. In general, it is very difficult to image them directly, unless they are very bright, normally the case only for young, massive planets and can be resolved from the star. <a class="reference internal" href="#fig-l8-exoplanet-demog"><span class="std std-numref">Fig. 2.40</span></a> shows that the currently imaged planets orbit at tens of au from their host stars and our Jupiter mass and above.</p>
 <p>Coronographs or star-shades can be used to block the light from the star, leaving the light from the planets that can be directly detected. The key advantage of direct imaging is that it is possible to get a spectra of the planet.</p>
-<p>Fig. 6 shows an image of the planets found around the star HR 8799. This planetary system is very different to our Solar System with four planets more massive than Jupiter orbiting at tens of au.</p>
-<figure class="align-default" id="fig-di">
+<p><a class="reference internal" href="#fig-l8-di"><span class="std std-numref">Fig. 2.44</span></a> shows an image of the planets found around the star HR 8799. This planetary system is very different to our Solar System with four planets more massive than Jupiter orbiting at tens of au.</p>
+<figure class="align-default" id="fig-l8-di">
 <a class="reference internal image-reference" href="../../_images/di_hr8799.jpg"><img alt="../../_images/di_hr8799.jpg" src="../../_images/di_hr8799.jpg" style="height: 500px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 2.44 </span><span class="caption-text">HR 8799 b, c, d and e, Marois et al, 2010, Nature</span><a class="headerlink" href="#fig-di" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 2.44 </span><span class="caption-text">HR 8799 b, c, d and e, Marois et al, 2010, Nature</span><a class="headerlink" href="#fig-l8-di" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="timing">
 <h2>Timing<a class="headerlink" href="#timing" title="Link to this heading">#</a></h2>
 <p>The first exoplanets ever discovered orbited the pulsar, PSR B1257+12 (Wolszczan et al, 1992). Pulsars are extremely regular clocks and the variation in the arrival time of pulses indicated that the pulsar was orbited by 3 planets of 0.02, 4.3 and 3.9 <span class="math notranslate nohighlight">\(M_\oplus\)</span> on orbits with semi-major axis of 0.19, 0.36 and 0.46au.</p>
-<figure class="align-default" id="fig-timing">
+<figure class="align-default" id="fig-l8-timing">
 <a class="reference internal image-reference" href="../../_images/timing.jpg"><img alt="../../_images/timing.jpg" src="../../_images/timing.jpg" style="height: 500px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 2.45 </span><span class="caption-text">Regular variations in the timing of pulses indicate the presence of a planet. Image credit: Alice Hopkinson, LCO.</span><a class="headerlink" href="#fig-timing" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 2.45 </span><span class="caption-text">Regular variations in the timing of pulses indicate the presence of a planet. Image credit: Alice Hopkinson, LCO.</span><a class="headerlink" href="#fig-l8-timing" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>

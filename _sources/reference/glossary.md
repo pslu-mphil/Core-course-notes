@@ -43,6 +43,9 @@ Heterotroph
 Hill radius
     The radial distance from a planet within which its own gravitational force is dominant, e.g., in affecting the orbit of pebble-sized material passing near it.  Defined as $R_H = a(m/(M+m))^{1/3}$, where $a$ is the semi-major axis of the planet, $M$ is the mass of the star, and $m$ is the mass of the planet.
 
+Hill Sphere
+     See Hill radius
+
 Hot Jupiter
     A planet of roughly Jupiter's mass (~300 Earth masses) that is highly irradiated by its host star, and consequently has a high **{term}`equilibrium temperature`**.  These planets typically have orbital periods $<$10 days.
 

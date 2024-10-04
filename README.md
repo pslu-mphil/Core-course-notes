@@ -20,13 +20,15 @@ If you find a problem you're not sure how to fix, either contact us directly or 
 
 ## Installing Dependencies
 
-Install `jupyter-book`, for example with `conda`:
+You will need a local Python install on your computer.  If you don't already have a Python install on your computer that you are managing the packages for, then it is best to install a version you mange (rather than one that shipped with the operating system) via `conda`, downloading it [from this website](https://www.anaconda.com/download/success).
+
+Once you have a Python distribution installed, it will likely need `jupyter-book` installed separately.  To do this via `conda`:
 
 ```bash
 conda install -c conda-forge jupyter-book
 ```
 
-or `pip`:
+or, if you use `pip` to manage your Python packages:
 
 ```bash
 pip install jupyter-book
@@ -34,7 +36,7 @@ pip install jupyter-book
 
 ## Build Instructions
 
-From the `/Core-course-notes` directory, either use the `makefile`:
+To build a local version of the notes: from the `/Core-course-notes` directory, either use the `makefile`:
 
 ```bash
 make html

@@ -100,8 +100,14 @@ Radial drift
 Reducing
     A substance that has a propensity to donate electrons to another material, thereby 'reducing' it.  E.g., in placing iron metal, Fe, next to water, H$_2$O, the iron metal can reduce the water by the reaction $\text{Fe} + \text{H}_2\text{O} = \text{H}_2 + \text{FeO}$.
 
+Semi-major axis
+    The longest radius of an ellipse and mean distance of an object from its primary, e.g., a planet from its star, or satellite from its planet.
+
 Silicate
     A mineral whose major structural unit comprises Si-O bonds.  E.g., quartz, or olivine, the latter being a major constituent of shallow planetary **{term}`mantle`s**.
+
+Short lived radionuclide
+    A radioisotope that decays sufficiently rapidly that, as of today, no natural occurrence of the isotope exists, i.e., it is 'extinct'.  Notable examples include $\ce{^{26}Al}$, which drove heating and differentiation of planetesimals in the early solar system.
 
 Subduction
     The process whereby a tectonic plate is pushed into the interior of a planet.  Only known to have happened on Earth.

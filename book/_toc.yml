@@ -7,7 +7,7 @@ chapters:
   sections:
   - file: 00_intro/l0/l0
   - file: 00_intro/l1/l1
-  - file: 00_intro/l2/l2
+  # - file: 00_intro/l2/l2
   # - file: 00_intro/l3/l3
   # - file: 00_intro/l4/l4
 - file: 01_planets/intro/intro
@@ -24,20 +24,20 @@ chapters:
   - file: 01_planets/l10/l10
   - file: 01_planets/l11/l11
   - file: 01_planets/l12/l12
-- file: 02_environments/intro/intro
-  sections:
-  - file: 02_environments/l1/l1
-  - file: 02_environments/l2/l2
-  - file: 02_environments/l3/l3
-  - file: 02_environments/l4/l4
-  - file: 02_environments/l5/l5
-  - file: 02_environments/l6/l6
-  - file: 02_environments/l7/l7
-  - file: 02_environments/l8/l8
-  - file: 02_environments/l9/l9
-  - file: 02_environments/l10/l10
-  - file: 02_environments/l11/l11
-  - file: 02_environments/l12/l12
+# - file: 02_environments/intro/intro
+#   sections:
+#   - file: 02_environments/l1/l1
+#   - file: 02_environments/l2/l2
+#   - file: 02_environments/l3/l3
+#   - file: 02_environments/l4/l4
+#   - file: 02_environments/l5/l5
+#   - file: 02_environments/l6/l6
+#   - file: 02_environments/l7/l7
+#   - file: 02_environments/l8/l8
+#   - file: 02_environments/l9/l9
+#   - file: 02_environments/l10/l10
+#   - file: 02_environments/l11/l11
+#   - file: 02_environments/l12/l12
 # - file: 03_detection/intro/intro
 #   sections:
 #   - file: 03_detection/l1/l1

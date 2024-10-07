@@ -22,6 +22,9 @@ Biosignature
 Crust
     The outer, chemically distinct, layer of a planet forms from magmas ultimately derived from the planet's mantle undergoing incomplete (i.e., 'partial') melting and that melt moving towards the surface where it solidifies to crust.
 
+Differentiated
+    See **{term}`differentiation`**.
+
 Differentiation
     The process whereby a rocky planet segregates its internal structure into a **{term}`metal`**-rich core and **{term}`silicate`**-dominated mantle.  Can potentially proceed further to the formation of **{term}`crust`s** and atmospheres.
 
@@ -42,9 +45,6 @@ Heterotroph
 
 Hill radius
     The radial distance from a planet within which its own gravitational force is dominant, e.g., in affecting the orbit of pebble-sized material passing near it.  Defined as $R_H = a(m/(M+m))^{1/3}$, where $a$ is the semi-major axis of the planet, $M$ is the mass of the star, and $m$ is the mass of the planet.
-
-Hill Sphere
-     See Hill radius
 
 Hot Jupiter
     A planet of roughly Jupiter's mass (~300 Earth masses) that is highly irradiated by its host star, and consequently has a high **{term}`equilibrium temperature`**.  These planets typically have orbital periods $<$10 days.
@@ -89,7 +89,7 @@ Pebble accretion
     A regime of planetary {term}`accretion` in which aerodynamic drag enhances the rate of solid mass gain by a growing planet.  The need for aerodynamic interaction between the accreting material and the gas of the protoplanetary disk means that this accretion mechanism is only efficient for solids with a radius that moderately couples them to the flow of the gas (i.e., 'pebbles'): larger objects feel insufficient drag, whereas very small material is coupled to the gas and swept past the growing planet.
 
 Planetesimal
-    An object held together under its own self-gravity, of order kilometers to hundreds of kilometers in size.
+    An object held together under its own self-gravity, of order kilometers to hundreds of kilometers in size.  Can be **{term}`differentiated`**, or not.
 
 Protoplanetary disk
     The disk-shaped annulus of gas and dust surrounding a young star out of which planets form.  The ratio of gas to dust in protoplanetary disks is roughly 100:1 by mass, and their lifetimes are of order 10 million years.  
@@ -99,9 +99,6 @@ Radial drift
 
 Reducing
     A substance that has a propensity to donate electrons to another material, thereby 'reducing' it.  E.g., in placing iron metal, Fe, next to water, H$_2$O, the iron metal can reduce the water by the reaction $\text{Fe} + \text{H}_2\text{O} = \text{H}_2 + \text{FeO}$.
-
-Semi-major axis
-	  An orbital property of elliptical orbit. For circular orbits, the semi-major axis is equal to the orbital radius. For elliptical orbits, the semi-major axis is the distance from the centre of the ellipse to the longest end of the ellipse. 
 
 Silicate
     A mineral whose major structural unit comprises Si-O bonds.  E.g., quartz, or olivine, the latter being a major constituent of shallow planetary **{term}`mantle`s**.

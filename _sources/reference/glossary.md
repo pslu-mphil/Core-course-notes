@@ -31,6 +31,9 @@ Differentiation
 Equilibrium temperature
     The blackbody temperature of an object (planet) at equilibrium between incident and emitted electromagnetic radiation.
 
+Fugacity
+    The effective partial pressure of a gas, taking into account non-ideality (i.e., inter molecular interactions).  Often fugacities are given in bar ($\text{10^5}$ Pa), and with a reference state chosen at 1 bar, are numerically equivalent to activity (where the relationship between activity and fugacity is $a=f/f_0$, where f_0 is the reference state).
+
 Habitable
     The property of being able to host life.  Typically thought of in the context of the presence of liquid water, given the needs of life on Earth, but in principle a concept that could be generalised if more chemically physically tolerant life is discovered.  
 
@@ -71,7 +74,7 @@ Main sequence
     That period of a star's life during which it is fusing H in its core into heavier elements.  The main sequence lasts for different lengths of time according to stellar mass, with more massive stars fusing H faster and so having shorter lives.  For reference, the main sequence lifetime of our Sun will be approximately 10 billion years.
 
 Mantle
-    The rocky interior to a planet beneath its crust, typically comprising most of the non-**metal** mass of a rocky planet.
+    The rocky interior to a planet beneath its crust, typically comprising most of the non-**{term}`metal`** mass of a rocky planet.
 
 Metal 
     This is one of those words that means different things to different communities.  For astrophysicists, this can mean 'elements heavier than He', i.e., most of the periodic table.  For Earth and Planetary Scientists, 'metal' refers to material properties of matter, meaning a material like iron or iron alloys (Earth's core being a notable example), with high thermal and electrical conductivity.  
@@ -85,8 +88,14 @@ Metamorphosed
 Mid-ocean ridge
     The topographic expression of two tectonic plates pulling apart
 
+Partial pressure
+    In a mixed gas, the partial pressure is the pressure that a an individual gas in the mixture would have on its own, if it were the only gas filling the volume.  For an ideal gas, i.e., one where intermolecular forces can be ignored, then the total pressure $p$, is equal to the sum of the partial pressures, and the partial pressure of gas $i$ is given by $p_i = x_i \cdot p$, by the product of the mole fraction of the molecule in the mixed gas with the total pressure.
+
 Pebble accretion
     A regime of planetary {term}`accretion` in which aerodynamic drag enhances the rate of solid mass gain by a growing planet.  The need for aerodynamic interaction between the accreting material and the gas of the protoplanetary disk means that this accretion mechanism is only efficient for solids with a radius that moderately couples them to the flow of the gas (i.e., 'pebbles'): larger objects feel insufficient drag, whereas very small material is coupled to the gas and swept past the growing planet.
+
+Phase
+    A chemically uniform and physically distinct region of matter.  For example, a rain drop is a distinct phase compared with the air it falls through; an ice cube is a distinct phase from the water it floats on; and in a granite, each type of mineral present, quartz, feldspare etc. are distinct phases. 
 
 Planetesimal
     An object held together under its own self-gravity, of order kilometers to hundreds of kilometers in size.  Can be **{term}`differentiated`**, or not.
@@ -102,6 +111,9 @@ Reducing
 
 Semi-major axis
     The longest radius of an ellipse and mean distance of an object from its primary, e.g., a planet from its star, or satellite from its planet.
+
+Siderophile
+    An element with an affinity for moving into the metal **{term}`phase`**.  E.g., Fe, Ni, Pt.
 
 Silicate
     A mineral whose major structural unit comprises Si-O bonds.  E.g., quartz, or olivine, the latter being a major constituent of shallow planetary **{term}`mantle`s**.

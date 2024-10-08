@@ -348,7 +348,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-differentiation">What is differentiation?</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-drives-differentiation">What drives differentiation?</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#why-is-there-metal">Why is there metal?</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-oxygen-fugacity">What is oxygen fugacity?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-oxygen-fugacity-and-how-is-it-useful">What is oxygen fugacity and how is it useful?</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#heat-and-differentiation">Heat and differentiation</a><ul class="nav section-nav flex-column">
@@ -415,41 +415,67 @@ document.write(`
 </figcaption>
 </figure>
 </section>
-<section id="what-is-oxygen-fugacity">
-<h3>What is oxygen fugacity?<a class="headerlink" href="#what-is-oxygen-fugacity" title="Link to this heading">#</a></h3>
-<div class="math notranslate nohighlight" id="equation-eq-01fo2-1">
-<span class="eqno">(2.11)<a class="headerlink" href="#equation-eq-01fo2-1" title="Link to this equation">#</a></span>\[\ce{Fe^{0} + H_2O = Fe^{2+}O + H_2}\]</div>
-<div class="math notranslate nohighlight" id="equation-eq-01fo2-1">
-<span class="eqno">(2.11)<a class="headerlink" href="#equation-eq-01fo2-1" title="Link to this equation">#</a></span>\[\ce{Fe^{0} + 1/2O_2 = Fe^{2+}O}\]</div>
+<section id="what-is-oxygen-fugacity-and-how-is-it-useful">
+<h3>What is oxygen fugacity and how is it useful?<a class="headerlink" href="#what-is-oxygen-fugacity-and-how-is-it-useful" title="Link to this heading">#</a></h3>
+<p>Oxygen fugacity is a concept that will come up frequently when planetary interiors are discussed, and often in relation to how they might interact with their atmospheres.  It is just a measure of how oxidising a system is, expressed in terms of the <strong><a class="reference internal" href="../../reference/glossary.html#term-Fugacity"><span class="xref std std-term">fugacity</span></a></strong> of <span class="math notranslate nohighlight">\(\ce{O_2}\)</span> gas that the system is (or would be) in equilibrium with.  The ‘fugacity’ part of this is just talking about the effective partial pressure of the oxygen gas, ‘effective’ in the sense that because of intermolecular interactions the partial pressure might be different compared to if those interactions did not take place.   The oxygen fugacity of Earth’s 1 bar atmosphere, with ~21% oxygen, is just 0.21 bar.</p>
+<p>What the above means is that a system with a higher oxygen fugacity, or <span class="math notranslate nohighlight">\(\ce{f_{O_2}}\)</span>, is more oxidising than a system with a lower <span class="math notranslate nohighlight">\(\ce{f_{O_2}}\)</span>.  The more oxidising system might have more <span class="math notranslate nohighlight">\(\ce{CO2}\)</span> than <span class="math notranslate nohighlight">\(\ce{CO}\)</span>, more <span class="math notranslate nohighlight">\(\ce{H2O}\)</span> than <span class="math notranslate nohighlight">\(\ce{H2}\)</span>, and more <span class="math notranslate nohighlight">\(\ce{FeO}\)</span> than <span class="math notranslate nohighlight">\(\ce{Fe^{metal}}\)</span>.</p>
+<p>Often, <span class="math notranslate nohighlight">\(\ce{f_{O_2}}\)</span> is written out not as its raw fugacity but as <span class="math notranslate nohighlight">\(\ce{\log_{10}(f_{O_2})}\)</span>, because the numbers involved are so small.  Somewhat confusingly, geologists often report how oxidising a system is by comparing the <span class="math notranslate nohighlight">\(\ce{f_{O_2}}\)</span> to that of another system altogether.  The logic for this is that a lot of ‘trivial’ variation in <span class="math notranslate nohighlight">\(\ce{f_{O_2}}\)</span> is driven by variation in temperature and pressure, which if we want to see through to how oxidising a system intrinsically is, comparing it to another system with similar pressure and temperature dependence of its <span class="math notranslate nohighlight">\(\ce{f_{O_2}}\)</span> can be useful.  Such relative oxygen fugacities are often expressed as <span class="math notranslate nohighlight">\(\Delta \mathrm{&quot;reference system&quot;}\)</span>, e.g., <span class="math notranslate nohighlight">\(\Delta \mathrm{IW}\)</span> where the reference system is the equilibria between iron metal and iron oxide, which we look at below.</p>
+<p>It is useful to see how oxygen fugacity is related to chemical equilibria.  The relevant example we will explore for this lecture is the chemical equilibria between iron metal (<span class="math notranslate nohighlight">\(\ce{Fe}\)</span>) and iron oxide (<span class="math notranslate nohighlight">\(\ce{FeO}\)</span>):</p>
+<div class="math notranslate nohighlight" id="equation-eq-01fo2-2">
+<span class="eqno">(2.10)<a class="headerlink" href="#equation-eq-01fo2-2" title="Link to this equation">#</a></span>\[\ce{Fe^{0} + 1/2O_2 = Fe^{2+}O}.\]</div>
+<p>We will now rewrite this equation to show how the <span class="math notranslate nohighlight">\(\ce{f_{O_2}}\)</span> of a planet is a measure of how much iron is left in its mantle after core formation.</p>
+<p>Equation <a class="reference internal" href="#equation-eq-01fo2-2">(2.10)</a> captures the fact that the equilibrium between these two iron-containing <strong><span class="xref std std-term">phases</span></strong> must also involve a free oxygen phase, even if it is present in vanishingly small quantities.  It is important to understand that neither the <span class="math notranslate nohighlight">\(\ce{FeO}\)</span> nor the <span class="math notranslate nohighlight">\(\ce{Fe}\)</span> need to be a pure <strong><span class="xref std std-term">phases</span></strong>, for example the <span class="math notranslate nohighlight">\(\ce{FeO}\)</span> could be dissolved in a silicate liquid (a <strong><a class="reference internal" href="../../reference/glossary.html#term-Magma"><span class="xref std std-term">magma</span></a></strong>) and the <span class="math notranslate nohighlight">\(\ce{Fe}\)</span> metal could be part of a metal alloy (e.g., with Ni).</p>
+<p>To bring oxygen fugacity into this equation, we need to write out the equilibrium constant</p>
+<div class="math notranslate nohighlight" id="equation-eq-01fo2-3">
+<span class="eqno">(2.11)<a class="headerlink" href="#equation-eq-01fo2-3" title="Link to this equation">#</a></span>\[K_{eq}(T,p) = \mathrm{\frac{a_{FeO}}{a_{Fe}f_{O_2}^{1/2}}},\]</div>
+<p>where <span class="math notranslate nohighlight">\(a\)</span> denotes activity of the corresponding component, and <span class="math notranslate nohighlight">\(f_{O_2}\)</span> is the <strong><a class="reference internal" href="../../reference/glossary.html#term-Fugacity"><span class="xref std std-term">fugacity</span></a></strong> of oxygen – numerically equivalent to activity when we choose our units as bar and reference pressure as 1 bar.</p>
+<p>We can also usefully rewrite the activity terms to include things we can measure (concentrations) and things we can experimentally determine (how the concentrations map through to activity), giving</p>
+<div class="math notranslate nohighlight" id="equation-eq-01fo2-4">
+<span class="eqno">(2.12)<a class="headerlink" href="#equation-eq-01fo2-4" title="Link to this equation">#</a></span>\[a_i = x_i \cdot \gamma_i,\]</div>
+<p>where <span class="math notranslate nohighlight">\(x_i\)</span> is the mole fraction of component <span class="math notranslate nohighlight">\(i\)</span>, and <span class="math notranslate nohighlight">\(\gamma_i\)</span> is the rational activity coefficient, introduced to account for non-ideal behaviour of components (equivalent to the relationship between partial pressure and fugacity for gasses).  If we proceed by assuming these non ideal terms are not important (i.e., are close to unity), we obtain</p>
+<div class="math notranslate nohighlight" id="equation-eq-01fo2-5">
+<span class="eqno">(2.13)<a class="headerlink" href="#equation-eq-01fo2-5" title="Link to this equation">#</a></span>\[\mathrm{
+f_{O_2} = \left(\frac{x_{FeO}}{x_{Fe}K(p,T)}\right)}.\]</div>
+<p>By further assuming that the metal is pure Fe, we obtain a simple expression where now how oxidising the system is just depends on the equilibrium constant and the FeO concentration of the silicate.</p>
+<div class="math notranslate nohighlight" id="equation-eq-01fo2-6">
+<span class="eqno">(2.14)<a class="headerlink" href="#equation-eq-01fo2-6" title="Link to this equation">#</a></span>\[\mathrm{
+f_{O_2} \sim \left(\frac{x_{FeO}}{K(p,T)}\right)^2}.\]</div>
+<p>From equation <a class="reference internal" href="#equation-eq-01fo2-6">(2.14)</a>, and coming back to the question of planetary differentiation, we see that more oxidising planets have more FeO in their mantles.  In this sense then Mars, with ~17% by weight FeO in its mantle is more oxidising than Earth, with 7% by weight in its mantle.</p>
 </section>
 </section>
 <section id="heat-and-differentiation">
 <h2>Heat and differentiation<a class="headerlink" href="#heat-and-differentiation" title="Link to this heading">#</a></h2>
+<figure class="align-default" id="fig-017delt">
+<a class="reference internal image-reference" href="../../_images/delt.png"><img alt="../../_images/delt.png" src="../../_images/delt.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 2.39 </span><span class="caption-text">The temperature that accretion alone will heat bodies to as a function of their size.  Assuming no heat loss during accretion.</span><a class="headerlink" href="#fig-017delt" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <section id="heat-from-accretion">
 <h3>Heat from accretion<a class="headerlink" href="#heat-from-accretion" title="Link to this heading">#</a></h3>
 <div class="math notranslate nohighlight" id="equation-eq-01accretion-heat">
-<span class="eqno">(2.12)<a class="headerlink" href="#equation-eq-01accretion-heat" title="Link to this equation">#</a></span>\[U = -\frac{3}{5}\frac{GM^2}{R},\]</div>
+<span class="eqno">(2.15)<a class="headerlink" href="#equation-eq-01accretion-heat" title="Link to this equation">#</a></span>\[U = -\frac{3}{5}\frac{GM^2}{R},\]</div>
 <p>where <span class="math notranslate nohighlight">\(G\)</span> is the gravitational constant, <span class="math notranslate nohighlight">\(M\)</span> is the mass the planet grows to, and <span class="math notranslate nohighlight">\(R\)</span> is the radius is grows to.</p>
 </section>
 <section id="heat-from-radionuclide-decay">
 <h3>Heat from radionuclide decay<a class="headerlink" href="#heat-from-radionuclide-decay" title="Link to this heading">#</a></h3>
 <div class="math notranslate nohighlight" id="equation-eq-01dndt-radio">
-<span class="eqno">(2.13)<a class="headerlink" href="#equation-eq-01dndt-radio" title="Link to this equation">#</a></span>\[\frac{dN}{dt} = -\lambda N(t),\]</div>
+<span class="eqno">(2.16)<a class="headerlink" href="#equation-eq-01dndt-radio" title="Link to this equation">#</a></span>\[\frac{dN}{dt} = -\lambda N(t),\]</div>
 <p>where <span class="math notranslate nohighlight">\(N(t)\)</span> is the number of nuclides of a given radioisotope remaining at time <span class="math notranslate nohighlight">\(t\)</span>, and <span class="math notranslate nohighlight">\(\lambda\)</span> is the decay constant (<span class="math notranslate nohighlight">\(\text{s^-1}\)</span>).</p>
 <div class="math notranslate nohighlight" id="equation-eq-0126al">
-<span class="eqno">(2.14)<a class="headerlink" href="#equation-eq-0126al" title="Link to this equation">#</a></span>\[\ce{^{26}Al \rightarrow ^{26}Mg^* + (\epsilon, \beta^+) \rightarrow ^{26}Mg + \gamma}.\]</div>
+<span class="eqno">(2.17)<a class="headerlink" href="#equation-eq-0126al" title="Link to this equation">#</a></span>\[\ce{^{26}Al \rightarrow ^{26}Mg^* + (\epsilon, \beta^+) \rightarrow ^{26}Mg + \gamma}.\]</div>
 <p>The decay sequence of <span class="math notranslate nohighlight">\(\ce{^{26}Al}\)</span>: it first decays to an excited state of <span class="math notranslate nohighlight">\(\ce{^{26}Mg}\)</span>, emitting a positron and neutrino, the excited nucleus then decays to ground state by emitting a gamma ray (<span class="math notranslate nohighlight">\(\gamma\)</span>).</p>
 <figure class="align-default" id="fig-0126algammarays">
 <a class="reference internal image-reference" href="../../_images/26Al-gammarays_map.jpg"><img alt="../../_images/26Al-gammarays_map.jpg" src="../../_images/26Al-gammarays_map.jpg" style="width: 100%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 2.39 </span><span class="caption-text">A schematic of the decay sequence of <span class="math notranslate nohighlight">\(\ce{^{26}Al}\)</span> and a map of its associated gamma ray emission throughout the galaxy.  Emission is notably concentrated towards the galactic midplane and peaks towards the galactic centre, both regions where star formation rates are higher.  Image credit: R. Diehl, MPE, Germany.</span><a class="headerlink" href="#fig-0126algammarays" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 2.40 </span><span class="caption-text">A schematic of the decay sequence of <span class="math notranslate nohighlight">\(\ce{^{26}Al}\)</span> and a map of its associated gamma ray emission throughout the galaxy.  Emission is notably concentrated towards the galactic midplane and peaks towards the galactic centre, both regions where star formation rates are higher.  Image credit: R. Diehl, MPE, Germany.</span><a class="headerlink" href="#fig-0126algammarays" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="math notranslate nohighlight" id="equation-eq-01rad-heat">
-<span class="eqno">(2.15)<a class="headerlink" href="#equation-eq-01rad-heat" title="Link to this equation">#</a></span>\[\frac{d\Delta T}{dt} = \frac{Q(t)}{C_p},\]</div>
+<span class="eqno">(2.18)<a class="headerlink" href="#equation-eq-01rad-heat" title="Link to this equation">#</a></span>\[\frac{d\Delta T}{dt} = \frac{Q(t)}{C_p},\]</div>
 <p>where <span class="math notranslate nohighlight">\(Q(t)\)</span> is the heating rate per unit mass (<span class="math notranslate nohighlight">\(\mathrm{W\,kg^{-1}}\)</span>) and <span class="math notranslate nohighlight">\(C_p\)</span> is the isobaric heat capacity (<span class="math notranslate nohighlight">\(\mathrm{J\,Kg^{-1}\,K^{-1}}\)</span>).</p>
 <div class="math notranslate nohighlight" id="equation-eq-01total-radheat">
-<span class="eqno">(2.16)<a class="headerlink" href="#equation-eq-01total-radheat" title="Link to this equation">#</a></span>\[Q(t) = Q_0x_0\exp(-t\ln 2 / t_{1/2}),\]</div>
+<span class="eqno">(2.19)<a class="headerlink" href="#equation-eq-01total-radheat" title="Link to this equation">#</a></span>\[Q(t) = Q_0x_0\exp(-t\ln 2 / t_{1/2}),\]</div>
 <p>where <span class="math notranslate nohighlight">\(Q_0\)</span> is the heating rate (<span class="math notranslate nohighlight">\(\mathrm{W\,kg^{-1}}\)</span>) from a given radionuclide at <span class="math notranslate nohighlight">\(t=0\)</span>, <span class="math notranslate nohighlight">\(x_0\)</span> is the concentration by mass (i.e., <span class="math notranslate nohighlight">\(\mathrm{kg\,kg^{-1}}\)</span>) of that radionuclide at <span class="math notranslate nohighlight">\(t=0\)</span>, and <span class="math notranslate nohighlight">\(t_{1/2}\)</span> is the halflife of the radionuclide (<span class="math notranslate nohighlight">\(\mathrm{s}\)</span>).</p>
 </section>
 </section>
@@ -458,12 +484,18 @@ document.write(`
 <figure class="align-default" id="fig-01geo-periodic">
 <a class="reference internal image-reference" href="../../_images/geo_periodic.png"><img alt="../../_images/geo_periodic.png" src="../../_images/geo_periodic.png" style="width: 100%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 2.40 </span><span class="caption-text">A representation of the periodic table emphasising how the chemical behaviours of the elements affect their fate during planetary differentiation.  Image from <a class="reference external" href="https://doi.org/10.1007/978-3-319-39193-9_255-1">Lee, 2016</a>.</span><a class="headerlink" href="#fig-01geo-periodic" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 2.41 </span><span class="caption-text">A representation of the periodic table emphasising how the chemical behaviours of the elements affect their fate during planetary differentiation.  Image from <a class="reference external" href="https://doi.org/10.1007/978-3-319-39193-9_255-1">Lee, 2016</a>.</span><a class="headerlink" href="#fig-01geo-periodic" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>We can have maths that stands apart from the text,</p>
 <div class="math notranslate nohighlight" id="equation-eq-01d-value">
-<span class="eqno">(2.17)<a class="headerlink" href="#equation-eq-01d-value" title="Link to this equation">#</a></span>\[D_i^{1,2} = \frac{x^1_i}{x^2_i}\]</div>
+<span class="eqno">(2.20)<a class="headerlink" href="#equation-eq-01d-value" title="Link to this equation">#</a></span>\[D_i^{1,2} = \frac{x^1_i}{x^2_i}\]</div>
+<figure class="align-default" id="fig-017volatility-ele">
+<a class="reference internal image-reference" href="../../_images/volatility_ele.png"><img alt="../../_images/volatility_ele.png" src="../../_images/volatility_ele.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 2.42 </span><span class="caption-text">The fingerprint of core formation in the Earth.  The abundance of elements in the Earth’s mantle normalised to the element’s abundance of the element in the sun (with secondary normalisation to Mg to account for Earth’s lack of <span class="math notranslate nohighlight">\(\ce{H2}\)</span>), as a function of the half mass condensation temperature of the element.  Elements with an affinity for metal, <strong><a class="reference internal" href="../../reference/glossary.html#term-Siderophile"><span class="xref std std-term">siderophile</span></a></strong> elements, are strongly depleted.  From <a class="reference external" href="https://doi.org/10.2138/rmg.2024.90.08">Guimond+ 2024</a>.</span><a class="headerlink" href="#fig-017volatility-ele" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 </section>
 <section id="secondary-differentiation">
 <h2>Secondary differentiation<a class="headerlink" href="#secondary-differentiation" title="Link to this heading">#</a></h2>
@@ -521,7 +553,7 @@ document.write(`
 <figure class="align-default" id="fig-01crust-growth">
 <a class="reference internal image-reference" href="../../_images/crust_growth.png"><img alt="../../_images/crust_growth.png" src="../../_images/crust_growth.png" style="width: 70%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 2.41 </span><span class="caption-text">A classic way to look at the evolution of Earth’s continental crust is to plot the fraction that existed (typically a mass fraction normalised to its present mass, as here) as a function of time.  Clearly there is wild disagreement about when the substrate for most life on Earth arose.  Some models even posit a <em>higher</em> continental crustal mass in the past compared with today.  From <a class="reference external" href="https://doi.org/10.1098/rsta.2017.0408">Korenaga, 2018</a>.</span><a class="headerlink" href="#fig-01crust-growth" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 2.43 </span><span class="caption-text">A classic way to look at the evolution of Earth’s continental crust is to plot the fraction that existed (typically a mass fraction normalised to its present mass, as here) as a function of time.  Clearly there is wild disagreement about when the substrate for most life on Earth arose.  Some models even posit a <em>higher</em> continental crustal mass in the past compared with today.  From <a class="reference external" href="https://doi.org/10.1098/rsta.2017.0408">Korenaga, 2018</a>.</span><a class="headerlink" href="#fig-01crust-growth" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -598,7 +630,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-differentiation">What is differentiation?</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-drives-differentiation">What drives differentiation?</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#why-is-there-metal">Why is there metal?</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-oxygen-fugacity">What is oxygen fugacity?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-oxygen-fugacity-and-how-is-it-useful">What is oxygen fugacity and how is it useful?</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#heat-and-differentiation">Heat and differentiation</a><ul class="nav section-nav flex-column">

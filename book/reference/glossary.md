@@ -19,6 +19,9 @@ Autotroph
 Biosignature
     Any observable that can be attributed to the action of life, although it may not on its own be definitive evidence of life.  In this respect fossils are a biosignature, although only thought of as such as we try and push back the earliest evidence for life on Earth.  In the context of exoplanets, trace atmospheric gasses are the most frequently considered type of biosignature.  SETI's survey for radio emission from extraterrestrial technological life also a biosignature search.   
 
+Chondrite
+    A class of un-**{term}`differentiated`** meteorites, including the 'carbonaceous', 'ordinary', and 'enstatite' chondrites.  So named because of they contain chondrules, spheres of silicate mineral presumed to have grown from blobs of melt.
+
 Crust
     The outer, chemically distinct, layer of a planet forms from magmas ultimately derived from the planet's mantle undergoing incomplete (i.e., 'partial') melting and that melt moving towards the surface where it solidifies to crust.
 
@@ -82,8 +85,14 @@ Metal
 Metallicity
 	For astronomers, the metallicity of a star, refers to the metal content of that star. Iron is the element normally used to trace metallicity, with the ratio of iron to hydrogen in the star, relative to solar, used to describe the metallicity, [Fe/H]
 
+Metamorphism
+    The transformed of a rock by pressure and/or temperature into a new mineral assemblage, with possible textural modification as well, e.g., the generation of banding or shearing.
+
 Metamorphosed
-    A rock transformed by pressure and/or temperature into a new mineral assemblage, with possible textural modification as well, e.g., banding, shearing.
+    See metamorphism.
+
+Nucleosynthesis
+    The formation of elements in either primordial 'big-bang' nucleosynthesis (producing hydrogen, helium and lithium), or stellar nucleosynthesis.  The latter is now recognised to include a range of processes from nuclear fusion in stellar cores, nuetron capture in stellar envelopes, and neutron star merger events.
 
 Mid-ocean ridge
     The topographic expression of two tectonic plates pulling apart

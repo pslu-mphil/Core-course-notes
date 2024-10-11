@@ -19,6 +19,9 @@ Autotroph
 Biosignature
     Any observable that can be attributed to the action of life, although it may not on its own be definitive evidence of life.  In this respect fossils are a biosignature, although only thought of as such as we try and push back the earliest evidence for life on Earth.  In the context of exoplanets, trace atmospheric gasses are the most frequently considered type of biosignature.  SETI's survey for radio emission from extraterrestrial technological life also a biosignature search.   
 
+Bulk silicate Earth
+    The integrated composition of Earth's non-core reservoirs, i.e., atmosphere + oceans + crust + mantle.
+
 Chondrite
     A class of un-**{term}`differentiated`** meteorites, including the 'carbonaceous', 'ordinary', and 'enstatite' chondrites.  So named because of they contain chondrules, spheres of silicate mineral presumed to have grown from blobs of melt.
 
@@ -97,6 +100,9 @@ Nucleosynthesis
 Mid-ocean ridge
     The topographic expression of two tectonic plates pulling apart
 
+Partial melting
+    The process in any multi-component system whereby the solid reacts to form a liquid of one composition and a residual solid of another composition.  Added together, liquid and solid have the same composition as the whole system, by mass conservation.  The distinct physical chemical properties of the liquid and solid, however, allow differentiation to operate to produce, for example, compositionally distinct planetary crusts.
+
 Partial pressure
     In a mixed gas, the partial pressure is the pressure that a an individual gas in the mixture would have on its own, if it were the only gas filling the volume.  For an ideal gas, i.e., one where intermolecular forces can be ignored, then the total pressure $p$, is equal to the sum of the partial pressures, and the partial pressure of gas $i$ is given by $p_i = x_i \cdot p$, by the product of the mole fraction of the molecule in the mixed gas with the total pressure.
 
@@ -108,6 +114,9 @@ Phase
 
 Planetesimal
     An object held together under its own self-gravity, of order kilometers to hundreds of kilometers in size.  Can be **{term}`differentiated`**, or not.
+
+Plate tectonics
+    The movement of rigid plates across the surface of a planet, with deformation localised to their margins (e.g., subduction zones and mid-ocean ridges).
 
 Protoplanetary disk
     The disk-shaped annulus of gas and dust surrounding a young star out of which planets form.  The ratio of gas to dust in protoplanetary disks is roughly 100:1 by mass, and their lifetimes are of order 10 million years.  

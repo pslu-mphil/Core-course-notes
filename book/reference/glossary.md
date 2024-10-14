@@ -82,7 +82,10 @@ Main sequence
 Mantle
     The rocky interior to a planet beneath its crust, typically comprising most of the non-**{term}`metal`** mass of a rocky planet.
 
-Metal 
+Mantle plume
+    An buoyant upwelling of rock withing a planet's mantle, often triggering volcanism at the surface.  The buoyancy is typically driven by the upwelling being hotter than the surrounding mantle.  Such thermal upwellings originate at thermal boundary layers in the planet, e.g., at the core mantle boundary.
+
+Metal
     This is one of those words that means different things to different communities.  For astrophysicists, this can mean 'elements heavier than He', i.e., most of the periodic table.  For Earth and Planetary Scientists, 'metal' refers to material properties of matter, meaning a material like iron or iron alloys (Earth's core being a notable example), with high thermal and electrical conductivity.  
 
 Metallicity

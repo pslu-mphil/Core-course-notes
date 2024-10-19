@@ -44,7 +44,7 @@ Equilibrium temperature
     The blackbody temperature of an object (planet) at equilibrium between incident and emitted electromagnetic radiation.
 
 Fugacity
-    The effective partial pressure of a gas, taking into account non-ideality (i.e., inter molecular interactions).  Often fugacities are given in bar ($\text{10^5}$ Pa), and with a reference state chosen at 1 bar, are numerically equivalent to activity (where the relationship between activity and fugacity is $a=f/f_0$, where f_0 is the reference state).
+    The effective partial pressure of a gas, taking into account non-ideality (i.e., inter molecular interactions).  Often fugacities are given in bar ($\mathrm{10^5}$ Pa), and with a reference state chosen at 1 bar, are numerically equivalent to activity (where the relationship between activity and fugacity is $a=f/f_0$, where f_0 is the reference state).
 
 Habitable
     The property of being able to host life.  Typically thought of in the context of the presence of liquid water, given the needs of life on Earth, but in principle a concept that could be generalised if more chemically physically tolerant life is discovered.  
@@ -62,7 +62,7 @@ Hill radius
     The radial distance from a planet within which its own gravitational force is dominant, e.g., in affecting the orbit of pebble-sized material passing near it.  Defined as $R_H = a(m/(M+m))^{1/3}$, where $a$ is the semi-major axis of the planet, $M$ is the mass of the star, and $m$ is the mass of the planet.
 
 Hill sphere
-    The 3D region described by a planet's {term}`Hill radius`.
+    The 3D region described by a planet's **{term}`Hill radius`**.
 
 Hot Jupiter
     A planet of roughly Jupiter's mass (~300 Earth masses) that is highly irradiated by its host star, and consequently has a high **{term}`equilibrium temperature`**.  These planets typically have orbital periods $<$10 days.
@@ -152,7 +152,7 @@ Silicate
     A mineral whose major structural unit comprises Si-O bonds.  E.g., quartz, or olivine, the latter being a major constituent of shallow planetary **{term}`mantle`s**.
 
 Short lived radionuclide
-    A radioisotope that decays sufficiently rapidly that, as of today, no natural occurrence of the isotope exists, i.e., it is 'extinct'.  Notable examples include $\ce{^{26}Al}$, which drove heating and differentiation of planetesimals in the early solar system.
+    A radioisotope that decays sufficiently rapidly that, as of today, no natural occurrence of the isotope exists, i.e., it is 'extinct'.  Notable examples include $\mathrm{^{26}Al}$, which drove heating and differentiation of planetesimals in the early solar system.
 
 Subduction
     The process whereby a tectonic plate is pushed into the interior of a planet.  Only known to have happened on Earth.

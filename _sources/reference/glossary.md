@@ -7,6 +7,9 @@ A list of some terms used in the PSLU course.  If you see important terms being 
 Abiotic
     Deriving from physical/chemical processes without the involvement of life.
 
+Accrete
+    To gain mass.
+
 Accretion
     The process whereby an object, such as a planet, gains mass. 
 
@@ -27,6 +30,9 @@ Chondrite
 
 Crust
     The outer, chemically distinct, layer of a planet forms from magmas ultimately derived from the planet's mantle undergoing incomplete (i.e., 'partial') melting and that melt moving towards the surface where it solidifies to crust.
+
+Debris belts
+    Regions around a star containing material left over from planet formation, such as the asteroid belt in our solar system, or the [Kuiper belt](https://en.wikipedia.org/wiki/Kuiper_belt).
 
 Differentiated
     See **{term}`differentiation`**.
@@ -54,6 +60,9 @@ Heterotroph
 
 Hill radius
     The radial distance from a planet within which its own gravitational force is dominant, e.g., in affecting the orbit of pebble-sized material passing near it.  Defined as $R_H = a(m/(M+m))^{1/3}$, where $a$ is the semi-major axis of the planet, $M$ is the mass of the star, and $m$ is the mass of the planet.
+
+Hill sphere
+    The 3D region described by a planet's {term}`Hill radius`.
 
 Hot Jupiter
     A planet of roughly Jupiter's mass (~300 Earth masses) that is highly irradiated by its host star, and consequently has a high **{term}`equilibrium temperature`**.  These planets typically have orbital periods $<$10 days.
@@ -111,6 +120,9 @@ Partial pressure
 
 Pebble accretion
     A regime of planetary {term}`accretion` in which aerodynamic drag enhances the rate of solid mass gain by a growing planet.  The need for aerodynamic interaction between the accreting material and the gas of the protoplanetary disk means that this accretion mechanism is only efficient for solids with a radius that moderately couples them to the flow of the gas (i.e., 'pebbles'): larger objects feel insufficient drag, whereas very small material is coupled to the gas and swept past the growing planet.
+
+Pebble isolation mass
+    The mass a planet reaches at which point it can no longer accrete pebbles from the environment around it, having already accreted those in its immediate vicinity.
 
 Phase
     A chemically uniform and physically distinct region of matter.  For example, a rain drop is a distinct phase compared with the air it falls through; an ice cube is a distinct phase from the water it floats on; and in a granite, each type of mineral present, quartz, feldspare etc. are distinct phases. 

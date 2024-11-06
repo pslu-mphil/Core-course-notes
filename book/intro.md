@@ -31,7 +31,7 @@ How the universe made planets.
 :::
 
 :::{grid-item-card}
-:link: intro
+:link: 02_environments/intro/intro
 :link-type: doc
 :class-header: bg-light
 

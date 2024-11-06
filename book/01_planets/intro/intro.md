@@ -1,3 +1,4 @@
+(lecture_1)=
 # Origin of Planets (C1)
 
 In these 12 lectures we are going to look at how planets form.  Our search for life is centred on planets, as these provide the only known environments life is likely to form in: planets host the pressures, temperatures, and chemical conditions required for life as we understand it to emerge and survive.  An appreciation of why, how, and what planets form in the universe is thus a key first step in our search for habitable and inhabited environments.

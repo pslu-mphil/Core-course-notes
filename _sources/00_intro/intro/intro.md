@@ -1,4 +1,3 @@
-(lecture_1)=
 # Course Overview   
 ```{figure} ./figures/marsearth.jpg
 ---

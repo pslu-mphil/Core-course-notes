@@ -17,3 +17,6 @@ raw/
 
 # ignore PDF build directory
 **/pdf/*
+
+# ignore the files I open using vim
+*.swp

@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Course Overview &#8212; PSLU MPhil</title>
+    <title>Chemistry in the Atmosphere &#8212; PSLU MPhil</title>
   
   
   
@@ -337,7 +337,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Course Overview</h1>
+    <h1>Chemistry in the Atmosphere</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -347,14 +347,12 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-use-this-website">How to use this Website</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#course-structure">Course Structure</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exam-30">Exam (30%)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#computational-exam-20">Computational Exam (20%)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#policy-paper-25">Policy Paper (25%)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-report-25">Lab Report (25%)</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#photochemistry">Photochemistry</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calculation-of-photolysis-rate-coefficients">Calculation of photolysis rate coefficients</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#photolysis-of-o-2">Photolysis of O<span class="math notranslate nohighlight">\(_2\)</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chemical-reaction-networks">Chemical reaction networks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reaction-rules-for-atmospheric-chemistry">Reaction rules for atmospheric chemistry</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#simplifying-reaction-networks">Simplifying reaction networks</a></li>
 </ul>
             </nav>
         </div>
@@ -366,114 +364,158 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="course-overview">
-<span id="lecture-1"></span><h1>Course Overview<a class="headerlink" href="#course-overview" title="Link to this heading">#</a></h1>
-<blockquote class="highlights">
-<div><p><strong>Key Concepts:</strong></p>
-<ul class="simple">
-<li><p>key concepts are useful</p></li>
-<li><p>use them</p></li>
-</ul>
-</div></blockquote>
-<p>Introduce the lecture in a couple of sentences.</p>
-<section id="how-to-use-this-website">
-<h2>How to use this Website<a class="headerlink" href="#how-to-use-this-website" title="Link to this heading">#</a></h2>
-<p>This website contains summary notes to accompany each lecture of the course.
-These are divided into thematic blocks, corresponding to the four lecture blocks of the course.</p>
-<p>These notes are intended to complement the lectures; they will not contain all the material you are given in lectures and are not intended as a replacement for the lectures.
-It is essential to attend the course lectures and complete the practical components of the course if you want to do well.</p>
-</section>
-<section id="course-structure">
-<h2>Course Structure<a class="headerlink" href="#course-structure" title="Link to this heading">#</a></h2>
-<p>The course has four modules, which are here to give an example of a list:</p>
-<ul class="simple">
-<li><p>C1: The origin of planets</p></li>
-<li><p>C2: The origin of habitable environments</p></li>
-<li><p>C3: The origin and detection of life</p></li>
-<li><p>C4: Biospheres</p></li>
-</ul>
-<section id="exam-30">
-<h3>Exam (30%)<a class="headerlink" href="#exam-30" title="Link to this heading">#</a></h3>
-<p>Here we discuss the figure below, serving as a useful example <code class="xref std std-numref docutils literal notranslate"><span class="pre">fig:test_figure</span></code> of linking text to figures.</p>
-<figure class="margin-caption align-default" id="fig-test-figure">
-<img alt="../../_images/trappist_18.jpg" src="../../_images/trappist_18.jpg" />
+  <section class="tex2jax_ignore mathjax_ignore" id="chemistry-in-the-atmosphere">
+<span id="lecture-1"></span><h1>Chemistry in the Atmosphere<a class="headerlink" href="#chemistry-in-the-atmosphere" title="Link to this heading">#</a></h1>
+<section id="photochemistry">
+<h2>Photochemistry<a class="headerlink" href="#photochemistry" title="Link to this heading">#</a></h2>
+<p>The energy from the nearest star can be a key driver for the chemistry of planetary atmospheres in a solar system. Assuming that the star can be represented as a blackbody emitter, Wiens displacement law (<span class="math notranslate nohighlight">\(\lambda_{\rm max} = b/T\)</span>) can be used to predict the peak wavelength of solar radiation reaching the top of the atmosphere (TOA). As this radiation travels through the atmosphere it is either absorbed or transmitted or reflected.</p>
+<p>Molecules poses a finite number of energy levels, with the spacing between these determined by the structure and composition of the molecules/atoms. When a photon is absorbed by a molecule a number of processes occur. Essentially we are delivering energy to the molecule so the molecules increase their “energy level” with a range of consequences.</p>
+<figure class="margin-caption align-default" id="aa-f8">
+<img alt="../../_images/C3_Archibald_Figure8.jpg" src="../../_images/C3_Archibald_Figure8.jpg" />
 <figcaption>
-<p><span class="caption-text">A test figure to be replaced with real course content.</span><a class="headerlink" href="#fig-test-figure" title="Link to this image">#</a></p>
+<p><span class="caption-text">The photo processes possible for CH<span class="math notranslate nohighlight">\(_3\)</span>CHO under irradiation of UV light. After <a class="reference external" href="https://acp.copernicus.org/articles/22/929/2022/">Rowell et al., 2022</a></span><a class="headerlink" href="#aa-f8" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
+<p>Fig <code class="xref std std-numref docutils literal notranslate"><span class="pre">AA-F8</span></code> shows the processes that can occur following the absorption of a photon of light (hv) for the simple organic molecule acetaldehyde (CH<span class="math notranslate nohighlight">\(_3\)</span>CHO). On the left hand axis we see energy and on the right hand axis the photon wavelength and we see that photons with wavelengths of less than 350 nm have enough energy to go from the ground electronic state (S0) to the first excited electronic state (S1). The diagram shows us that in this case, the excited state is still a bound state – we have excited our molecule but not photo-dissociated it. However, through a process called inter system crossing (ISC) other states are accessible which can lead to rearrangement (o form the keto-enol form CH<span class="math notranslate nohighlight">\(_2\)</span>CHOH) and dissociation.</p>
 </section>
-<section id="computational-exam-20">
-<h3>Computational Exam (20%)<a class="headerlink" href="#computational-exam-20" title="Link to this heading">#</a></h3>
-<p>Here is an example of putting a margin note in, with some useful additional info</p>
-<aside class="units margin sidebar">
-<p class="sidebar-title">Units!</p>
+<section id="calculation-of-photolysis-rate-coefficients">
+<h2>Calculation of photolysis rate coefficients<a class="headerlink" href="#calculation-of-photolysis-rate-coefficients" title="Link to this heading">#</a></h2>
+<p>Atmospheric chemists commonly use the symbol <span class="math notranslate nohighlight">\(k\)</span> for a reaction rate coefficient that involves molecular “collisions” and the symbol <span class="math notranslate nohighlight">\(J\)</span> for a reaction rate coefficient for a reaction that involves the absorption of photons resulting in molecular dissociation. We call this process <strong>photolysis (photo-dissociation</strong> or <strong>photodecomposition</strong>). The rate coefficient of photolysis of a constituent, <span class="math notranslate nohighlight">\(i\)</span>, (<span class="math notranslate nohighlight">\(J_i\)</span> with units s<span class="math notranslate nohighlight">\(^{-1}\)</span>) can be written:</p>
+<div class="math notranslate nohighlight">
+\[
+J_{(i)} = \int_{\lambda = 0}^{\infty} \phi_{(i,\lambda)}F_{(\lambda)}\sigma_{(i,\lambda)} \, d\lambda
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(\phi_{(i,\lambda)}\)</span> is the <strong>quantum yield</strong> (molecule photon<span class="math notranslate nohighlight">\(^{-1}\)</span>) for photolysis (the number of reactant molecules decomposed per quantum of radiation absorbed; sometimes defined in terms of reaction pathways), <span class="math notranslate nohighlight">\(\sigma_{(i,\lambda)}\)</span>  is the wavelength dependent <strong>absorption cross-section</strong> (usually in units of cm<span class="math notranslate nohighlight">\(^2\)</span> molecule<span class="math notranslate nohighlight">\(^{-1}\)</span>) of species <span class="math notranslate nohighlight">\(i\)</span> and <span class="math notranslate nohighlight">\(F_{(\lambda)}\)</span> is the incident <strong>photon intensity</strong> at a given wavelength (photons cm<span class="math notranslate nohighlight">\(^{-2}\)</span> s<span class="math notranslate nohighlight">\(^{-1}\)</span> nm<span class="math notranslate nohighlight">\(^{-1}\)</span>).</p>
+<p>The absorption cross-section is defined by the Beer-Lambert law, which describes the attenuation of light by a homogeneous absorbing system:</p>
+<div class="math notranslate nohighlight">
+\[
+I = I_0 \exp\big(-\sigma n \ell \big)
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(I_0\)</span> and <span class="math notranslate nohighlight">\(I\)</span> are the incident and transmitted light intensities, <span class="math notranslate nohighlight">\(\ell\)</span> is the absorption path length (in cm), <span class="math notranslate nohighlight">\(n\)</span> is the concentration of absorber (molecule cm<span class="math notranslate nohighlight">\(^{-3}\)</span>), and σ is the absorption cross section (in cm<span class="math notranslate nohighlight">\(^2\)</span> per molecule).</p>
+<p>Given that the source of radiation of interest to us is the local star, we can make use of the Beer Lambert law to determine the flux of photons at a specific wavelength as a function of altitude (<span class="math notranslate nohighlight">\(z\)</span>):</p>
+<div class="math notranslate nohighlight">
+\[
+F_{\lambda}(z)= F_{\lambda} \big({\rm TOA}\big)\exp\big(-{\rm O.D.}\big)
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(F_{\lambda}(\)</span>TOA<span class="math notranslate nohighlight">\()\)</span> is the intensity of radiation (flux of photons) at the top of the atmosphere.</p>
+<p>The optical depth (O.D.) can be calculated as:</p>
+<div class="math notranslate nohighlight">
+\[
+{\rm O.D.}(\lambda) = \sum_i \sigma_{i,\lambda} \times {\rm column}_i
+\]</div>
+<p>If the star is at zenith angle <span class="math notranslate nohighlight">\(\theta\)</span>, the path length is increased by a factor <span class="math notranslate nohighlight">\(\sec(\theta)\)</span>. The optical depth thus increases rapidly as the zenith angle approaches 90<span class="math notranslate nohighlight">\(^{\circ}\)</span>. This may be important near sunrise or sunset, or at high latitudes and can result in a marked reduction in the photolysis <span class="math notranslate nohighlight">\(J\)</span> values.</p>
+<p>In principle, the O.D. depends on all (<span class="math notranslate nohighlight">\(\Sigma_i\)</span>) absorbing species at the wavelength of interest. In practice only a few species need to be considered in the calculation of <span class="math notranslate nohighlight">\(F_{\lambda}(z)\)</span>.</p>
+<figure class="margin-caption align-default" id="aa-f9">
+<img alt="../../_images/C3_Archibald_Figure9.jpg" src="../../_images/C3_Archibald_Figure9.jpg" />
+<figcaption>
+<p><span class="caption-text">Wavelength dependence of incident radiation at two altitudes (40 km and 15 km) on Earth.</span><a class="headerlink" href="#aa-f9" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="margin-caption align-default" id="aa-f10">
+<img alt="../../_images/C3_Archibald_Figure10.jpg" src="../../_images/C3_Archibald_Figure10.jpg" />
+<figcaption>
+<p><span class="caption-text">Wavelength dependence of incident radiation at five altitudes on Mars.</span><a class="headerlink" href="#aa-f10" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>These altitude dependencies of photon fluxes are important for when we come to calculate the photolysis rates of compounds in different parts of an atmosphere. Fig <code class="xref std std-numref docutils literal notranslate"><span class="pre">AA-F9</span></code> highlights that at 290 nm there is a difference of a factor of 100 in the flux of photons between 40 km and 15 km on Earth. Hence, processes requiring this wavelength of radiation will proceed much slower at 15 km than 40 km on Earth. Figure <code class="xref std std-numref docutils literal notranslate"><span class="pre">AA-F10</span></code> shows that at 200 nm there is essentially no change in the flux of photons from the top of the atmosphere to the surface of Mars.</p>
+</section>
+<section id="photolysis-of-o-2">
+<h2>Photolysis of O<span class="math notranslate nohighlight">\(_2\)</span><a class="headerlink" href="#photolysis-of-o-2" title="Link to this heading">#</a></h2>
+<p>The presence of O<span class="math notranslate nohighlight">\(_2\)</span> has a profound effect on the photochemistry of an atmosphere. O<span class="math notranslate nohighlight">\(_2\)</span> is likely to have been present in our atmosphere for the last 2 billion years, with the current mixing ratio of O<span class="math notranslate nohighlight">\(_2\)</span> roughly constant over the last 500 million years.</p>
+<figure class="margin-caption align-default" id="aa-f11">
+<img alt="../../_images/C3_Archibald_Figure11.jpg" src="../../_images/C3_Archibald_Figure11.jpg" />
+<figcaption>
+<p><span class="caption-text">The atmospheric history of O<span class="math notranslate nohighlight">\(_2\)</span> on Earth as reconstructed using geochemical proxies and machine learning (blue). After <a class="reference external" href="https://www.nature.com/articles/s41467-022-33388-5">Chen et al., 2022</a>.</span><a class="headerlink" href="#aa-f11" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>O<span class="math notranslate nohighlight">\(_2\)</span> is produced through photosynthesis and is involved in a number of biogeochemical cycles, which give rise to long lifetimes in the lower atmosphere (thousands of years). However, in the stratosphere O<span class="math notranslate nohighlight">\(_2\)</span> can absorb short <span class="math notranslate nohighlight">\(\lambda\)</span> radiation and photo-dissociate. The absorption cross section for O<span class="math notranslate nohighlight">\(_2\)</span> is shown in Fig <code class="xref std std-numref docutils literal notranslate"><span class="pre">AA-F12</span></code> and consists of some characteristic features, many named after the scientists that discovered them. The absorption cross section at <span class="math notranslate nohighlight">\(\lambda &lt; 150\)</span> nm is large but not important to O<span class="math notranslate nohighlight">\(_2\)</span> photolysis in Earth’s stratosphere owing to a lack of photons at these wavelengths. The major absorption in Earth’s stratosphere is in the Herzberg continuum (220-260 nm).</p>
+<figure class="margin-caption align-default" id="aa-f12">
+<img alt="../../_images/C3_Archibald_Figure12.jpg" src="../../_images/C3_Archibald_Figure12.jpg" />
+<figcaption>
+<p><span class="caption-text">Molecular oxygen absorption cross sections.</span><a class="headerlink" href="#aa-f12" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>If we make the assumption of unit quantum yield for photolysis of O<span class="math notranslate nohighlight">\(_2\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+{\rm O_2} + h\nu \rightarrow {\rm O(^3P) + O(^3P)}
+\]</div>
+<p>We can use the information in Fig <code class="xref std std-numref docutils literal notranslate"><span class="pre">AA-F9</span></code> and Fig <code class="xref std std-numref docutils literal notranslate"><span class="pre">AA-F12</span></code> to calculate the photolysis frequencies of O<span class="math notranslate nohighlight">\(_2\)</span> (<span class="math notranslate nohighlight">\(J_{\rm O_2}\)</span>). If we take the reciprocal of these frequencies we can then determine the life-times or time scales for photolysis. <span class="math notranslate nohighlight">\(J\)</span> values for O<span class="math notranslate nohighlight">\(_2\)</span> from the individual absorption bands and integrated over all <span class="math notranslate nohighlight">\(\lambda\)</span> are shown in Fig <code class="xref std std-numref docutils literal notranslate"><span class="pre">AA-F13</span></code>.</p>
+<figure class="margin-caption align-default" id="aa-f13">
+<img alt="../../_images/C3_Archibald_Figure13.jpg" src="../../_images/C3_Archibald_Figure13.jpg" />
+<figcaption>
+<p><span class="caption-text">Contribution of different bands to the photolysis of molecular oxygen</span><a class="headerlink" href="#aa-f13" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>As we can see from Fig <code class="xref std std-numref docutils literal notranslate"><span class="pre">AA-F13</span></code>, the lifetime of O2 with respect to photolysis varies over 5 orders of magnitude over the altitude range 100-20 km. Note that the longer wavelength Herzberg absorption is relatively more important at low altitudes while the shorter wavelengths (Schumann-Runge Bands, Schumann-Runge Continuum) are only important at high altitudes (photons at these wavelengths are absorbed high up).</p>
+</section>
+<section id="chemical-reaction-networks">
+<h2>Chemical reaction networks<a class="headerlink" href="#chemical-reaction-networks" title="Link to this heading">#</a></h2>
+<p>Now we know the processes that species undergo in an atmosphere we can start to put together a network of reactions which maps out the chemistry of an atmosphere.</p>
+<p>The development of chemical reaction networks is complex but we can break it down into a series of protocols.</p>
+<ol class="arabic simple">
+<li><p>List out all the species that are observed in an atmosphere</p></li>
+<li><p>Apply reaction rules to these species to list out the possible reactions that could take place</p></li>
+<li><p>Search kinetic databases or use theoretical approaches to determine the rate coefficients for each reaction</p></li>
+<li><p>Compare the predictions from the network with observations and refine network parameters</p></li>
+</ol>
+</section>
+<section id="reaction-rules-for-atmospheric-chemistry">
+<h2>Reaction rules for atmospheric chemistry<a class="headerlink" href="#reaction-rules-for-atmospheric-chemistry" title="Link to this heading">#</a></h2>
+<p>Reactions in an atmosphere occur through either collisions or absorption of photons.</p>
+<p>When two species collide there are a limited number of outcomes. Let’s consider an example of an A molecule colliding with a BC molecule.</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-n &amp;= \mathrm{concentration} \\
-t &amp;= \mathrm{time} \\
-a &amp;= \mathrm{concentration~time^{-1}} \\
-k &amp;= \mathrm{time^{-1}}
+\begin{align}
+\mathrm{\mathbf{Addition:}}&amp;\\
+{\rm A + BC} &amp;\rightarrow {\rm ABC}\\
+\mathrm{\mathbf{Abstraction:}}&amp;\\
+{\rm A + BC} &amp;\rightarrow {\rm AB + C}\\
+{\rm A + BC} &amp;\rightarrow {\rm AC + B}
+\end{align}
 \end{split}\]</div>
-</aside>
+<p>As our molecules get more complex (include more atoms) then the number of possible products increases considerably.</p>
+<p>For absorption of photons we can consider photolysis (breaking of bonds), excitation (increasing energy levels) or rearrangement. Let’s consider another example of a molecule ABC.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align}
+\mathrm{\mathbf{Photolysis:}}&amp;\\
+{\rm ABC} + h\nu &amp;\rightarrow {\rm A + BC}\\
+{\rm ABC} + h\nu &amp;\rightarrow {\rm AB + C}\\
+\mathrm{\mathbf{Photo-excitation:}}&amp;\\
+{\rm ABC} + h\nu &amp;\rightarrow {\rm ABC^*}\\
+{\rm ABC^*} &amp;\rightarrow {\rm ABC} + h\nu\\
+\mathrm{\mathbf{Rearrangement:}}&amp;\\
+{\rm ABC} + h\nu &amp;\rightarrow {\rm ACB}\\
+{\rm ABC} + h\nu &amp;\rightarrow {\rm BCA}\\
+{\rm ABC} + h\nu &amp;\rightarrow {\rm BAC}
+\end{align}
+\end{split}\]</div>
+<p>We won’t dwell on ionisation reactions in these lectures but note that they add considerable further complexity. Generally speaking these reactions are only of importance in the upper atmosphere of a planet.</p>
+<p>Using these rules and applying them to all the known species in an atmosphere can lead to a large number of reactions to consider in our network. The next challenge is to then simplify these networks for numerical simulation.</p>
 </section>
-<section id="policy-paper-25">
-<h3>Policy Paper (25%)<a class="headerlink" href="#policy-paper-25" title="Link to this heading">#</a></h3>
-<p>We can have maths that stands apart from the text,</p>
-<div class="math notranslate nohighlight" id="equation-eq-box-eqn">
-<span class="eqno">()<a class="headerlink" href="#equation-eq-box-eqn" title="Link to this equation">#</a></span>\[\dv{n}{t} = a - k
- n.\]</div>
-<p>Equations can be referenced in the text, for example the equation above <a class="reference internal" href="../../04_biospheres/l9/l9.html#equation-eq-box-eqn">()</a>.</p>
-<p>We can also have maths that is inline with the text (<span class="math notranslate nohighlight">\(\mathrm{mol \ L^{-1}}\)</span> or <span class="math notranslate nohighlight">\(\mathrm{M}\)</span>).</p>
-</section>
-<section id="lab-report-25">
-<h3>Lab Report (25%)<a class="headerlink" href="#lab-report-25" title="Link to this heading">#</a></h3>
-<p>We can also insert tables</p>
-<div class="pst-scrollable-table-container"><table class="table" id="coagulation-coefs">
-<caption><span class="caption-text">Example of a table.</span><a class="headerlink" href="#coagulation-coefs" title="Link to this table">#</a></caption>
-<colgroup>
-<col style="width: 28.0%" />
-<col style="width: 18.0%" />
-<col style="width: 18.0%" />
-<col style="width: 18.0%" />
-<col style="width: 18.0%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head stub"><p><span class="math notranslate nohighlight">\(d_1 \ (\mathrm{\mu m})\)</span> \ <span class="math notranslate nohighlight">\(d_2 \ (\mathrm{\mu m})\)</span></p></th>
-<th class="head"><p>0.01</p></th>
-<th class="head"><p>0.1</p></th>
-<th class="head"><p>1.0</p></th>
-<th class="head"><p>10.0</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><th class="stub"><p>0.01</p></th>
-<td><p>67</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-odd"><th class="stub"><p>0.1</p></th>
-<td><p>180</p></td>
-<td><p>8.6</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-even"><th class="stub"><p>1.0</p></th>
-<td><p>1700</p></td>
-<td><p>24</p></td>
-<td><p>3.5</p></td>
-<td></td>
-</tr>
-<tr class="row-odd"><th class="stub"><p>10.0</p></th>
-<td><p>16000</p></td>
-<td><p>220</p></td>
-<td><p>10.3</p></td>
-<td><p>3.0</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
+<section id="simplifying-reaction-networks">
+<h2>Simplifying reaction networks<a class="headerlink" href="#simplifying-reaction-networks" title="Link to this heading">#</a></h2>
+<p>Reaction networks describe how the different constituents of the atmosphere (the gases and aerosols) react. They are also sometimes called “mechanisms” as they provide a mechanism to go from some reactant molecules to some products.</p>
+<p>Consider a very simple reaction network involving seven species (A-G) undergoing three reactions:</p>
+<figure class="margin-caption align-default" id="aa-f14">
+<img alt="../../_images/C3_Archibald_Figure14.jpg" src="../../_images/C3_Archibald_Figure14.jpg" />
+<figcaption>
+<p><span class="caption-text">A schematic showing how we can go from a list of reactions (a mechanism) to a reaction network viewed as a graph. Reproduced from <a class="reference external" href="https://www.networkpages.nl/kinetics-from-networks/">NetworkPages</a>.</span><a class="headerlink" href="#aa-f14" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>As we can see from Figure <code class="xref std std-numref docutils literal notranslate"><span class="pre">AA-F14</span></code>, we can appeal to mathematical graph theory when thinking about reaction networks, with the species being nodes on the graph and the reactions being the vectors between the nodes.</p>
+<p>By considering the reaction network as a graph we can start to “work on it” to reduce the number of vectors and nodes needed to “map out” the reaction space. We won’t go into the details of this.</p>
+<p>The biggest challenge with simplifying the reaction network is that the connectivity of the network is state dependent. That is as we change the conditions under which the reactions we have listed out are taking place, some will become more or less important.</p>
+<p>Again, let’s consider an example, this time from some work from Paul and Oli.</p>
+<figure class="margin-caption align-default" id="aa-f15">
+<img alt="../../_images/C3_Archibald_Figure15.jpg" src="../../_images/C3_Archibald_Figure15.jpg" />
+<figcaption>
+<p><span class="caption-text">Reaction rates as a function of fO2 and temperature highlighting that under different conditions different reactions in the network become dominant. Modified after <a class="reference external" href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2022JE007528">Liggins et al., 2023</a>.</span><a class="headerlink" href="#aa-f15" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The overall network is shown in Figure <code class="xref std std-numref docutils literal notranslate"><span class="pre">AA-F15</span></code> on the right hand side panels and in red we can see how changing the conditions the network is subjected to change the main pathways to go from the CO reactant to the CH4 product (using bold lines and red to identify the rate limiting step).</p>
+<p>This state dependence causes a real problem for modelling the chemistry of an atmosphere and in general I would suggest that in the first instance generate as complex a network as you can and then be guided by its performance against observations before trying to simplify it.</p>
 </section>
 </section>
 
@@ -524,14 +566,12 @@ k &amp;= \mathrm{time^{-1}}
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-use-this-website">How to use this Website</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#course-structure">Course Structure</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exam-30">Exam (30%)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#computational-exam-20">Computational Exam (20%)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#policy-paper-25">Policy Paper (25%)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-report-25">Lab Report (25%)</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#photochemistry">Photochemistry</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calculation-of-photolysis-rate-coefficients">Calculation of photolysis rate coefficients</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#photolysis-of-o-2">Photolysis of O<span class="math notranslate nohighlight">\(_2\)</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chemical-reaction-networks">Chemical reaction networks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reaction-rules-for-atmospheric-chemistry">Reaction rules for atmospheric chemistry</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#simplifying-reaction-networks">Simplifying reaction networks</a></li>
 </ul>
   </nav></div>
 

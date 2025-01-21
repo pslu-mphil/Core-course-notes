@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Course Overview &#8212; PSLU MPhil</title>
+    <title>Why some chemical reactions happen &#8212; PSLU MPhil</title>
   
   
   
@@ -337,7 +337,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Course Overview</h1>
+    <h1>Why some chemical reactions happen</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -347,14 +347,7 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-use-this-website">How to use this Website</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#course-structure">Course Structure</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exam-30">Exam (30%)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#computational-exam-20">Computational Exam (20%)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#policy-paper-25">Policy Paper (25%)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-report-25">Lab Report (25%)</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#surface-crossings-and-forbidden-reactions">Surface crossings and Forbidden Reactions</a></li>
 </ul>
             </nav>
         </div>
@@ -366,114 +359,185 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="course-overview">
-<span id="lecture-1"></span><h1>Course Overview<a class="headerlink" href="#course-overview" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="why-some-chemical-reactions-happen">
+<span id="lecture-1"></span><h1>Why some chemical reactions happen<a class="headerlink" href="#why-some-chemical-reactions-happen" title="Link to this heading">#</a></h1>
+<p>Lecturer: <strong><a class="reference external" href="mailto:ajwt3&#37;&#52;&#48;cam&#46;ac&#46;uk">Dr Alex Thom</a></strong> (<a class="reference external" href="https://www.ch.cam.ac.uk">Department of Chemsitry</a>)</p>
+<hr class="docutils" />
 <blockquote class="highlights">
-<div><p><strong>Key Concepts:</strong></p>
+<div><p><strong>Learning objectives:</strong></p>
 <ul class="simple">
-<li><p>key concepts are useful</p></li>
-<li><p>use them</p></li>
+<li><p>Understand the concept of reaction rates, and kinetically and thermodynamically driven reactions.</p></li>
+<li><p>Become familiar with Potential Energy Surfaces</p></li>
+<li><p>Understand the concept of a transition state</p></li>
+<li><p>Use Transition State theory to understand what dictates the rate of a reaction</p></li>
 </ul>
-</div></blockquote>
-<p>Introduce the lecture in a couple of sentences.</p>
-<section id="how-to-use-this-website">
-<h2>How to use this Website<a class="headerlink" href="#how-to-use-this-website" title="Link to this heading">#</a></h2>
-<p>This website contains summary notes to accompany each lecture of the course.
-These are divided into thematic blocks, corresponding to the four lecture blocks of the course.</p>
-<p>These notes are intended to complement the lectures; they will not contain all the material you are given in lectures and are not intended as a replacement for the lectures.
-It is essential to attend the course lectures and complete the practical components of the course if you want to do well.</p>
-</section>
-<section id="course-structure">
-<h2>Course Structure<a class="headerlink" href="#course-structure" title="Link to this heading">#</a></h2>
-<p>The course has four modules, which are here to give an example of a list:</p>
-<ul class="simple">
-<li><p>C1: The origin of planets</p></li>
-<li><p>C2: The origin of habitable environments</p></li>
-<li><p>C3: The origin and detection of life</p></li>
-<li><p>C4: Biospheres</p></li>
-</ul>
-<section id="exam-30">
-<h3>Exam (30%)<a class="headerlink" href="#exam-30" title="Link to this heading">#</a></h3>
-<p>Here we discuss the figure below, serving as a useful example <code class="xref std std-numref docutils literal notranslate"><span class="pre">fig:test_figure</span></code> of linking text to figures.</p>
-<figure class="margin-caption align-default" id="fig-test-figure">
-<img alt="../../_images/trappist_11.jpg" src="../../_images/trappist_11.jpg" />
+<p>The goal of this lecture is to dig into some more details of how and why a chemical reaction happens.  This subject has deep theoretical foundations in statistical mechanics and can involve a lot of mathematical detail, but here I will present it with as little maths as possible. Mathematical details can be  found in more advanced textbooks.</p>
+<h2 class="rubric" id="introduction-to-rates">Introduction to rates</h2>
+<p>We will start by analysing a simple bimolecular reaction (made up from three atoms, A, B, and C, initially as molecules A and BC).</p>
+<div class="math notranslate nohighlight">
+\[\ce{A + BC -&gt; AB + C}\]</div>
+<p>You have already seen that, in isolation, after a long period of time an equilibrium is reached:</p>
+<div class="math notranslate nohighlight">
+\[\ce{A + BC &lt;=&gt; AB + C}\]</div>
+<p>Once an equilibrium has been reached, the extent of this reaction is be determined by its equilibrium constant</p>
+<div class="math notranslate nohighlight">
+\[K=\frac{a_\ce{AB} a_\ce{C}}{a_\ce{A} a_\ce{BC}} = -RT \ln \Delta_r G^\ominus\]</div>
+<p>NB the Gibbs free energy of each of the individual substances is temperature dependent, so <span class="math notranslate nohighlight">\(\Delta_r G^\ominus\)</span> will also be temperature dependent.
+The various factors which determine <span class="math notranslate nohighlight">\(\Delta_r G^\ominus\)</span> can be calculated from statistical thermodynamics from the molecular energy levels (through the partition function), and so for simple molecules, can in principle be determined computationally.  In the simple case of a gas-phase molecule, these energy levels are governed by the rotations and vibrations of the molecule and can be accurately measured by microwave and infrared spectroscopy.</p>
+<p>In the literature, you may find a common approximation replacing the activities of a substance in solution by its concentration.  This is not strictly dimensionally correct, and instead we may write
+<span class="math notranslate nohighlight">\(a_X \approx \frac{[X]}{c^0}\)</span>
+where <span class="math notranslate nohighlight">\(c^0\)</span> is a standard concentration (e.g. <span class="math notranslate nohighlight">\(\pu{1 mol dm-3}\)</span>).  This approximation is good in the low concentration limit, and we will make use of it throughout this lecture.</p>
+<p>In general, however, a system is not as a whole at equilibrium, so it is helpful to also look at the time dependence of chemical reactions, a field called chemical kinetics.  If the timescale of a reaction is fast compared to our observations, and the reaction reaches equilibrium, we say it is ‘thermodynamically controlled’.  If, however, the reaction is slow compared to observation, and we do not readily reach equilibrium, it is ‘kinetically controlled’.</p>
+<p>In gases and liquids, molecules are colliding all the time, and some of these collisions lead to a chemical reaction.
+In general collisions involving more than two molecules at a time are unlikely and we will consider the case of a bimolecular reaction.</p>
+<h2 class="rubric" id="elementary-reactions">Elementary reactions.</h2>
+<p>A complicated reaction can usually be broken down into a sequence of elementary reactions where (usually) two molecules collide to form products</p>
+<p>e.g.</p>
+<div class="math notranslate nohighlight">
+\[\ce{2NO + O2 -&gt; 2NO2}\]</div>
+<p>can be split into two elementary steps</p>
+<div class="math notranslate nohighlight">
+\[\eqalignno{
+\ce{2NO &amp;-&gt;[k_1] N2O2}    &amp;[1]\cr
+\ce{N2O2 + O2 &amp;-&gt;[k_2] 2NO2}  &amp;[2]
+}\]</div>
+<p>The rate law for an elementary step relates the rate of that reaction to the concentration of the reactants</p>
+<p>For [1] every time the reaction proceeds two molecules of <span class="math notranslate nohighlight">\(\ce{NO}\)</span> are needed (so <span class="math notranslate nohighlight">\([\ce{NO}]^2\)</span>) and 2 moles of <span class="math notranslate nohighlight">\(\ce{NO}\)</span> are used up and 1 mole of <span class="math notranslate nohighlight">\(\ce{N2O2}\)</span> is produced.<br />
+<span class="math notranslate nohighlight">\(\frac{d[\ce{NO}]}{dt} = -2 k_1 [\ce{NO}]^2\)</span>  and <span class="math notranslate nohighlight">\(\frac{d[\ce{N2O2}]}{dt}= k_1[\ce{NO}]^2\)</span>.
+For [2], e.g. <span class="math notranslate nohighlight">\(\frac{d[\ce{O2}]}{dt}= -k_2[\ce{N2O2}][\ce{O2}]\)</span>.</p>
+<p>The overall rate of reaction (e.g. <span class="math notranslate nohighlight">\(\frac{d[\ce{NO2}]}{dt}\)</span>) can be determined by coupling the individual rate equations together, and this will be explored in later lectures.
+Here we shall look at the factors which control the rates of the individual elementary reactions.</p>
+<h2 class="rubric" id="reaction-pathways">Reaction Pathways</h2>
+<p>To understand what occurs during a chemical reaction we can look at the energy of the combined system of reactants as a function of the positions of the atoms.  Even in our three-atom, two molecule system, that is far too many degrees of freedom to plot, so we will consider the simple case of one dimension, where A, B, and C are collinear, with distances, <span class="math notranslate nohighlight">\(r_\ce{AB}\)</span> and <span class="math notranslate nohighlight">\(r_\ce{BC}\)</span>.</p>
+<figure class="align-default" id="fig-abc">
+<a class="reference internal image-reference" href="../../_images/ABC.png"><img alt="../../_images/ABC.png" src="../../_images/ABC.png" style="width: 70%;" /></a>
 <figcaption>
-<p><span class="caption-text">A test figure to be replaced with real course content.</span><a class="headerlink" href="#fig-test-figure" title="Link to this image">#</a></p>
+<p><span class="caption-text">Diagram of bimolecular reaction of A and BC in collinear orientation.</span><a class="headerlink" href="#fig-abc" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-</section>
-<section id="computational-exam-20">
-<h3>Computational Exam (20%)<a class="headerlink" href="#computational-exam-20" title="Link to this heading">#</a></h3>
-<p>Here is an example of putting a margin note in, with some useful additional info</p>
-<aside class="units margin sidebar">
-<p class="sidebar-title">Units!</p>
+</div></blockquote>
+<p>It is possible to plot the ‘energy’ of the system as a function of these two coordinates.  This diagram is usually called a Potential Energy Surface (PES), as it describes the potential energy of the system as a function of the atomic positions.  (This ‘Potential energy’ of course includes the effects of chemical bonding, including the kinetic energy of the electrons.  More formally in thermodynamics, it is the ‘internal energy’, <span class="math notranslate nohighlight">\(U\)</span>.)</p>
+<figure class="align-default" id="fig-pes3d">
+<a class="reference internal image-reference" href="../../_images/PES3D.png"><img alt="../../_images/PES3D.png" src="../../_images/PES3D.png" style="width: 70%;" /></a>
+<figcaption>
+<p><span class="caption-text">A 3-dimensional plot of a Potential energy surface with coordinates <span class="math notranslate nohighlight">\(r_\ce{AB}\)</span> and <span class="math notranslate nohighlight">\(r_\ce{BC}\)</span> is too difficult to draw.</span><a class="headerlink" href="#fig-pes3d" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The reactants, if they are stable, will sit in a local minimum of the PES with a large <span class="math notranslate nohighlight">\(r_\ce{AB}\)</span> and short <span class="math notranslate nohighlight">\(r_\ce{BC}\)</span>.  (Because the molecules are themselves quantum mechanical, they don’t just sit at the minimum of this well.  Their (nuclear) wavefunction is spread over the minimum of the PES.).
+Similarly the products will sit in a different local minimum with a (probably) different energy.</p>
+<figure class="align-default" id="fig-pes2d-1">
+<a class="reference internal image-reference" href="../../_images/PES2D_1.png"><img alt="../../_images/PES2D_1.png" src="../../_images/PES2D_1.png" style="width: 70%;" /></a>
+<figcaption>
+<p><span class="caption-text">A 2-dimensional plot of the reaction space with coordinates <span class="math notranslate nohighlight">\(r_\ce{AB}\)</span> and <span class="math notranslate nohighlight">\(r_\ce{BC}\)</span>, showing the position of reactants and products.</span><a class="headerlink" href="#fig-pes2d-1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="fig-pes2d-2">
+<a class="reference internal image-reference" href="../../_images/PES2D_2.png"><img alt="../../_images/PES2D_2.png" src="../../_images/PES2D_2.png" style="width: 70%;" /></a>
+<figcaption>
+<p><span class="caption-text">A 2-dimensional contour plot of the energy in the reaction space with coordinates <span class="math notranslate nohighlight">\(r_\ce{AB}\)</span> and <span class="math notranslate nohighlight">\(r_\ce{BC}\)</span>, showing the reactants and products as local minima.</span><a class="headerlink" href="#fig-pes2d-2" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>We describe a chemical reaction by a pathway on the PES joining the reactants minimum with the products minimum.</p>
+<figure class="align-default" id="id1">
+<a class="reference internal image-reference" href="../../_images/PES2D_3.png"><img alt="../../_images/PES2D_3.png" src="../../_images/PES2D_3.png" style="width: 70%;" /></a>
+<figcaption>
+<p><span class="caption-text">A 2-dimensional contour plot of the energy in the reaction space with coordinates <span class="math notranslate nohighlight">\(r_\ce{AB}\)</span> and <span class="math notranslate nohighlight">\(r_\ce{BC}\)</span>, showing the reactants and products as local minima joined by their reaction pathway containing the transition state <span class="math notranslate nohighlight">\(\ce{ABC^\ddagger}.\)</span></span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>We can more conveniently plot the energy along the pathway from reactants to products as in the figure below.</p>
+<figure class="align-default" id="fig-pes1d">
+<a class="reference internal image-reference" href="../../_images/PES1D.png"><img alt="../../_images/PES1D.png" src="../../_images/PES1D.png" style="width: 70%;" /></a>
+<figcaption>
+<p><span class="caption-text">A plot of the energy in the against reaction coordinate, showing the highest energy point, the transition state, and the activation energy.</span><a class="headerlink" href="#fig-pes1d" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The maximum on this pathway is known as the transition state, and it is this configuration which usually dictates the speed of the reaction.</p>
+<p>The simplest model using this concept is the Arrhenius Equation, where it is assumed that to overcome the barrier for the reaction to proceed, an Activation Energy, <span class="math notranslate nohighlight">\(E_a\)</span> is required.  At a temperature, <span class="math notranslate nohighlight">\(T\)</span>, the relative likelihood of gaining activation energy <span class="math notranslate nohighlight">\(E_a\)</span> is given by the Boltzmann Factor, <span class="math notranslate nohighlight">\(\exp(-E_a/RT)\)</span>, and so the Arrhenius Equation is born:</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}
-n &amp;= \mathrm{concentration} \\
-t &amp;= \mathrm{time} \\
-a &amp;= \mathrm{concentration~time^{-1}} \\
-k &amp;= \mathrm{time^{-1}}
-\end{split}\]</div>
-</aside>
-</section>
-<section id="policy-paper-25">
-<h3>Policy Paper (25%)<a class="headerlink" href="#policy-paper-25" title="Link to this heading">#</a></h3>
-<p>We can have maths that stands apart from the text,</p>
-<div class="math notranslate nohighlight" id="equation-eq-box-eqn">
-<span class="eqno">()<a class="headerlink" href="#equation-eq-box-eqn" title="Link to this equation">#</a></span>\[\dv{n}{t} = a - k
- n.\]</div>
-<p>Equations can be referenced in the text, for example the equation above <a class="reference internal" href="../../04_biospheres/l9/l9.html#equation-eq-box-eqn">()</a>.</p>
-<p>We can also have maths that is inline with the text (<span class="math notranslate nohighlight">\(\mathrm{mol \ L^{-1}}\)</span> or <span class="math notranslate nohighlight">\(\mathrm{M}\)</span>).</p>
-</section>
-<section id="lab-report-25">
-<h3>Lab Report (25%)<a class="headerlink" href="#lab-report-25" title="Link to this heading">#</a></h3>
-<p>We can also insert tables</p>
-<div class="pst-scrollable-table-container"><table class="table" id="coagulation-coefs">
-<caption><span class="caption-text">Example of a table.</span><a class="headerlink" href="#coagulation-coefs" title="Link to this table">#</a></caption>
-<colgroup>
-<col style="width: 28.0%" />
-<col style="width: 18.0%" />
-<col style="width: 18.0%" />
-<col style="width: 18.0%" />
-<col style="width: 18.0%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head stub"><p><span class="math notranslate nohighlight">\(d_1 \ (\mathrm{\mu m})\)</span> \ <span class="math notranslate nohighlight">\(d_2 \ (\mathrm{\mu m})\)</span></p></th>
-<th class="head"><p>0.01</p></th>
-<th class="head"><p>0.1</p></th>
-<th class="head"><p>1.0</p></th>
-<th class="head"><p>10.0</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><th class="stub"><p>0.01</p></th>
-<td><p>67</p></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-odd"><th class="stub"><p>0.1</p></th>
-<td><p>180</p></td>
-<td><p>8.6</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="row-even"><th class="stub"><p>1.0</p></th>
-<td><p>1700</p></td>
-<td><p>24</p></td>
-<td><p>3.5</p></td>
-<td></td>
-</tr>
-<tr class="row-odd"><th class="stub"><p>10.0</p></th>
-<td><p>16000</p></td>
-<td><p>220</p></td>
-<td><p>10.3</p></td>
-<td><p>3.0</p></td>
-</tr>
-</tbody>
-</table>
+\[k = A e^{\frac{-E_a}{RT}}.\]</div>
+<p>Many reactions approximately fit this, though the equation it is not directly based in statistical thermodynamics.
+Instead we can use an approach called “Eyring Transition State Theory”.  We assume that the reaction proceeds through the transition state labelled <span class="math notranslate nohighlight">\(\ce{ABC}^\ddagger\)</span>.
+Since the transition state is significantly higher in energy than the reactants, relatively few collisions of <span class="math notranslate nohighlight">\(\ce{A + BC}\)</span> reach the transition state, and so we can statistically model the few that do.   This is done by assuming that the reactants and transition state are in equilibrium, with equilibrium constant <span class="math notranslate nohighlight">\(K^*\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\ce{A + BC &lt;=&gt; ABC^\ddagger -&gt; AB + C}\]</div>
+<p>Further, we assume that once a system has reached the transition state, it has a fixed rate of descending the PES to the reactants, <span class="math notranslate nohighlight">\(k_\text{1st}\)</span>.</p>
+<p>Overall therefore the rate of reaction is</p>
+<div class="math notranslate nohighlight">
+\[\text{rate} = \frac{d[\ce{AB}]}{dt} = k_1[\ce{ABC^\ddagger}].\]</div>
+<p>From the equilibrium,</p>
+<div class="math notranslate nohighlight">
+\[K^* = \frac{[\ce{ABC^\ddagger}]/c^0 }{ \left([\ce{A}]/c^0\right)  \left([\ce{B}]/c^0\right)} = c^0 \frac{[\ce{ABC^\ddagger}]}{ [\ce{A}][\ce{B}]}\]</div>
+<p>so</p>
+<div class="math notranslate nohighlight">
+\[[\ce{ABC^\ddagger}] = \frac{K^*}{c^0}[\ce{A}][\ce{B}]\]</div>
+<p>and therefore</p>
+<div class="math notranslate nohighlight">
+\[\text{rate} = k_\text{1st} \frac{K^*}{c^0} [\ce{A}][\ce{B}].\]</div>
+<p>Since the reaction is overall second order, <span class="math notranslate nohighlight">\(\text{rate} = k_\text{2nd} [\ce{A}][\ce{B}]\)</span>,
+so we may read off that <span class="math notranslate nohighlight">\(k_\text{2nd} = k_\text{1st} \frac{K^*}{c^0}\)</span>.</p>
+<p>Since the equilibrium to the transition state is thermodynamically controlled, <span class="math notranslate nohighlight">\(K^*\)</span> is determined by the free energy difference between reactants and the transition state.  Because, however, the transition state is not a local minimum, and approximation must be used which factors out the motion along the reaction co-ordinate (where is it a local maximum).  We can designate a ‘vibrational’ frequency along this co-ordinate as <span class="math notranslate nohighlight">\(\nu^\ddagger\)</span>, leading to</p>
+<div class="math notranslate nohighlight">
+\[K^* = \frac{kT}{h\nu^\ddagger} e^{-\frac{\Delta G^\ddagger}{RT}}.\]</div>
+<p>The remaining factors which determine <span class="math notranslate nohighlight">\(\Delta G^\ddagger\)</span> be calculated from computationally with calculations of both the reactants’ local minimum and the transition state structure (explicitly ignoring the vibrational mode which crosses over the transition state in the latter).</p>
+<p>All that remains is to now determine <span class="math notranslate nohighlight">\(k_\text{1st}\)</span>.  A  slight sleight of hand allows us to equate it to <span class="math notranslate nohighlight">\(\nu^\ddagger\)</span> (which is the ‘frequency’ of vibrations crossing the transition state), resulting in overall rate equation</p>
+<div class="math notranslate nohighlight">
+\[k_\text{2nd} = \frac{kT}{h c^0} e^{-\frac{\Delta G^\ddagger}{ RT}}.\]</div>
+<p>How do we interpret this?  First we may decompose the transition state free energy change into enthalpic and entropic contributions:</p>
+<div class="math notranslate nohighlight">
+\[\Delta G^\ddagger = \Delta H^\ddagger - T\Delta S^\ddagger.\]</div>
+<p>so</p>
+<div class="math notranslate nohighlight">
+\[k_\text{2nd} = \frac{kT}{h c^0} e^{\frac{\Delta S^\ddagger}{  R}} e^{-\frac{\Delta H\ddagger}{ RT}}.\]</div>
+<p>There are two sources of temperature dependence, giving rise to what looks like a disagreement with the Arrhenius Equation.
+However, if we interpret the activation energy as a temperature dependent quantity, we may attempt to match these equations (this is done via considering the partial derivative <span class="math notranslate nohighlight">\(\frac{\partial \ln{k_\text{2nd}}}{ \partial\frac{1}{T}}\)</span>), giving</p>
+<p><span class="math notranslate nohighlight">\(E_a = \Delta H^\ddagger + 2RT\)</span> for bimolecular gas phase reactions and
+<span class="math notranslate nohighlight">\(E_a = \Delta H^\ddagger + RT\)</span> for solution and unimolecular gas phase reactions.</p>
+<p><span class="math notranslate nohighlight">\(RT\)</span> is generally a relatively negligible, and <span class="math notranslate nohighlight">\(E_a\)</span> is dominated by <span class="math notranslate nohighlight">\(\Delta H^\ddagger\)</span>.
+We also see that the pre-exponential factor is both temperature dependent, and has a significant entropic component.  In the gas phase, when two molecules collide, there is a significant reduction in entropy in the transition state.  In solution-phase reactions, the free energy (and thus the enthalpy and entropy) for the transition state includes all the often very significant solvent effects, and these may act to enhance or decrease entropies of reaction.  In general if the magnitude of charges are increased (e.g. <span class="math notranslate nohighlight">\(\ce{AB -&gt; ^{\delta+}A...B^{\delta-}}\)</span>) this leads to significantly negative entropies of activation.</p>
+<section id="surface-crossings-and-forbidden-reactions">
+<h2>Surface crossings and Forbidden Reactions<a class="headerlink" href="#surface-crossings-and-forbidden-reactions" title="Link to this heading">#</a></h2>
+<p>Not all chemical reactions occur from molecules in their ground state, owing to often large activation energy barriers.  One way of overcoming this is to first excite a molecule to a higher energy electronic state, usually by the absorption of a photon.  This may then react or decompose.</p>
+<div class="math notranslate nohighlight">
+\[\eqalign{
+\ce{X + h\nu &amp;-&gt; X^*}\cr
+\ce{X^* &amp;-&gt; A + B}
+}\]</div>
+<p>This process involves two PESes: the ground state of <span class="math notranslate nohighlight">\(\ce{X}\)</span> which may have a high barrier to producing <span class="math notranslate nohighlight">\(\ce{A+B}\)</span>, and its excited state, <span class="math notranslate nohighlight">\(\ce{X^*}\)</span>, where it’s possible that making the products is even exothermic.</p>
+<p>You can envisage the PESs for such a process.</p>
+<figure class="align-default" id="fig-pes1d-excit">
+<a class="reference internal image-reference" href="../../_images/PES1D_excit.png"><img alt="../../_images/PES1D_excit.png" src="../../_images/PES1D_excit.png" style="width: 70%;" /></a>
+<figcaption>
+<p><span class="caption-text">A plot of the potential energy surfaces of ground and excited states, and a possible excited state pathway to the products.</span><a class="headerlink" href="#fig-pes1d-excit" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>In this figure a typical excited state reaction is given:</p>
+<ul class="simple">
+<li><ol class="arabic simple">
+<li><p>Molecule X in its ground state absorbs a photon and excited to its excited state PES.  Typically the molecule is no longer at a minimum of this new PES.</p></li>
+</ol>
+</li>
+<li><ol class="arabic simple" start="2">
+<li><p>The molecule relaxes to a local minimum of the PES.</p></li>
+</ol>
+</li>
+<li><ol class="arabic simple" start="3">
+<li><p>The molecule overcomes the small barrier towards the products in the excited state</p></li>
+</ol>
+</li>
+<li><ol class="arabic simple" start="4">
+<li><p>The molecule releases energy (e.g. by giving out a photon or by a collision) to move it to its ground state PES.</p></li>
+</ol>
+</li>
+<li><ol class="arabic simple" start="5">
+<li><p>The molecule moves down the ground state PES to the products.</p></li>
+</ol>
+</li>
+</ul>
+<p>In general PESs do not often cross, and instead smoothly switch character as the nuclear coordinates change.  For reactions where there are significant changes in electronic structure this can lead to signficant barriers.  Occasionally, the PESs of different electronic states will cross at a point of accidental degeneracy. Such points are known as conical intersections and are very significant in the relaxation processes of excited state reactions.<br />
+Note that in general the different spin states of atoms and molecules lie on different PESs (which can cross), and so a reaction which does not preserve spin is known as spin-forbidden.  Changing the spin state requires siginificant spin-orbit coupling, and this generally does not occur in molecules with first-row atoms, but is increasingly likely with heavier atoms.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
 </div>
-</section>
 </section>
 </section>
 
@@ -524,14 +588,7 @@ k &amp;= \mathrm{time^{-1}}
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-use-this-website">How to use this Website</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#course-structure">Course Structure</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exam-30">Exam (30%)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#computational-exam-20">Computational Exam (20%)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#policy-paper-25">Policy Paper (25%)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-report-25">Lab Report (25%)</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#surface-crossings-and-forbidden-reactions">Surface crossings and Forbidden Reactions</a></li>
 </ul>
   </nav></div>
 

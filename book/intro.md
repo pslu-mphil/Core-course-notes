@@ -42,7 +42,7 @@ How habitable environments emerged.
 :::
 
 :::{grid-item-card}
-:link: intro
+:link: 03_detection/intro/intro
 :link-type: doc
 :class-header: bg-light
 

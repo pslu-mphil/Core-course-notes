@@ -25,6 +25,9 @@ Biosignature
 Bulk silicate Earth
     The integrated composition of Earth's non-core reservoirs, i.e., atmosphere + oceans + crust + mantle.
 
+CAI
+    Calcium-aluminium rich inclusions are found in certain un-**{term}`differentiated`** meteorites (particularly carbonaceous **{term}`chondrite`**s).  These grains contain the first minerals to condense out of a cooling nebular gas, thought to occur after our Sun began to fuse hydrogen.  Age dating of these grains shows them to be the oldest solids formed in the solar system at 4.5673 billion years old [Connelly+2012](https://doi.org/10.1126/science.1226919).
+
 Chondrite
     A class of un-**{term}`differentiated`** meteorites, including the 'carbonaceous', 'ordinary', and 'enstatite' chondrites.  So named because of they contain chondrules, spheres of silicate mineral presumed to have grown from blobs of melt.
 

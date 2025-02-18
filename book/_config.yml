@@ -42,9 +42,9 @@ sphinx:
     mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
     mathjax3_config:
       loader:
-        load: ['[tex]/physics', '[tex]/ams', '[tex]/mhchem', '[tex]/color', '[tex]/newcommand']
+        load: ['[tex]/physics', '[tex]/ams', '[tex]/mhchem', '[tex]/color', '[tex]/newcommand', '[tex]/textcomp']
       tex:
-        packages: ['base', 'physics', 'ams', 'amsmath', 'mhchem', 'color', 'newcommand']
+        packages: ['base', 'physics', 'ams', 'amsmath', 'mhchem', 'color', 'newcommand', 'textcomp']
     latex_elements:
       preamble: |
         \newcommand{\dv}[2]{\frac{\mathrm{d}#1}{\mathrm{d}#2}}  % replaces physics.sty \dv

@@ -4,7 +4,7 @@ Life is inherently chemical, it must emerge from specific chemical environments,
 
 ```{figure} figures/earth_limb.png
 ---
-name: fig:earth_limb
+name: fig:c3_0_earth_limb
 figclass: margin-caption
 width: 90%
 ---
@@ -15,10 +15,10 @@ Life has transformed the chemistry of Earth's atmosphere, changing its very colo
 
 The overarching learning outcomes for this module are below, lecture-specific learning outcomes are included in the notes for each lecture.
 
-- The basics of aqueous and organic chemistry
-- The chemistry of atmospheres
-- Chemistry in astrophysical contexts
-- Understand how the chemistry of environments can be used to detect life
+- Understand the basics of aqueous and organic chemistry
+- Understand the chemistry of atmospheres
+- Understand chemistry in astrophysical contexts
+- Be familiar with how the chemistry of environments can be used to detect life
 
 **Lectures**
 ```{tableofcontents}

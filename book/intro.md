@@ -53,7 +53,7 @@ Life's origins and impact on planets.
 :::
 
 :::{grid-item-card}
-:link: intro
+:link: 04_biospheres/intro/intro
 :link-type: doc
 :class-header: bg-light
 

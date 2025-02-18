@@ -28,8 +28,14 @@ Bulk silicate Earth
 CAI
     Calcium-aluminium rich inclusions are found in certain un-**{term}`differentiated`** meteorites (particularly carbonaceous **{term}`chondrite`**s).  These grains contain the first minerals to condense out of a cooling nebular gas, thought to occur after our Sun began to fuse hydrogen.  Age dating of these grains shows them to be the oldest solids formed in the solar system at 4.5673 billion years old [Connelly+2012](https://doi.org/10.1126/science.1226919).
 
+Chemiosmosis
+    Chemiosmosis is the process of ions moving across a semipermeable membrane from a high concentration to a low concentration.
+
 Chondrite
     A class of un-**{term}`differentiated`** meteorites, including the 'carbonaceous', 'ordinary', and 'enstatite' chondrites.  So named because of they contain chondrules, spheres of silicate mineral presumed to have grown from blobs of melt.
+
+Cofactor
+    A cofactor is a non-protein chemical compound that is bound to a protein and is required for the protein's biological activity. 
 
 Crust
     The outer, chemically distinct, layer of a planet forms from magmas ultimately derived from the planet's mantle undergoing incomplete (i.e., 'partial') melting and that melt moving towards the surface where it solidifies to crust.
@@ -82,6 +88,9 @@ Igneous
 Instellation
     The amount of light received by a planet from its host star.  Units of $\text{Wm}^{-2}$.
 
+Last Universal Common Ancestor (LUCA)
+    LUCA refers to the most recent common ancestor of all current life forms on Earth. It is not the first life form but represents the final organism from which all known life evolved. LUCA is thought to have existed around 3.5-4 billion years ago and likely had a relatively complex cellular structure, including genetic material (RNA or DNA), metabolic pathways, and the ability to replicate. It serves as a key reference point in understanding the evolution of life and the shared molecular features of living organisms today.
+
 Magma
     A molten silicate liquid, possibly containing crystals and gas bubbles.
 
@@ -127,6 +136,9 @@ Pebble accretion
 Pebble isolation mass
     The mass a planet reaches at which point it can no longer accrete pebbles from the environment around it, having already accreted those in its immediate vicinity.
 
+Pentose Sugar
+    A pentose sugar is a type of sugar that contains five carbon atoms. These sugars are important building blocks in nucleic acids (DNA and RNA) and other biological molecules. The two most common pentose sugars in biology are ribose and deoxyribose.
+
 Phase
     A chemically uniform and physically distinct region of matter.  For example, a rain drop is a distinct phase compared with the air it falls through; an ice cube is a distinct phase from the water it floats on; and in a granite, each type of mineral present, quartz, feldspare etc. are distinct phases. 
 
@@ -145,6 +157,16 @@ Radial drift
 Reducing
     A substance that has a propensity to donate electrons to another material, thereby 'reducing' it.  E.g., in placing iron metal, Fe, next to water, H$_2$O, the iron metal can reduce the water by the reaction $\text{Fe} + \text{H}_2\text{O} = \text{H}_2 + \text{FeO}$.
 
+Regioselectivity 
+    Regioselectivity refers to the preference of a chemical reaction to occur at one specific position or site on a molecule when multiple reactive sites are available. In essence, it describes the tendency of the reaction to produce a particular isomer or product at a preferred location on the molecule.
+
+Retrosynthetic analysis
+    Retrosynthetic analysis is a problem-solving technique used in organic chemistry to design a synthetic pathway for complex molecules. It involves working backward from the target molecule to simpler starting materials through a series of logical steps. This method focuses on breaking down the target compound into smaller, more manageable precursor structures, called synthons, which can be derived from commercially available or easily synthesized compounds.
+
+Ribozyme
+    Ribozymes (**ribo**nucleic acid en**zymes**) are RNA molecules that can catalyse specific biochemical reactions, similar to the action of protein enzymes.
+
+
 Semi-major axis
     The longest radius of an ellipse and mean distance of an object from its primary, e.g., a planet from its star, or satellite from its planet.
 
@@ -157,8 +179,18 @@ Silicate
 Short lived radionuclide
     A radioisotope that decays sufficiently rapidly that, as of today, no natural occurrence of the isotope exists, i.e., it is 'extinct'.  Notable examples include $\mathrm{^{26}Al}$, which drove heating and differentiation of planetesimals in the early solar system.
 
+Stereoselectivity 
+    Stereoselectivity refers to the preference of a chemical reaction to produce one stereoisomer over others when multiple stereoisomers are possible. Stereoisomers have the same molecular formula and atom connectivity but differ in the spatial arrangement of atoms or groups.
+
 Subduction
     The process whereby a tectonic plate is pushed into the interior of a planet.  Only known to have happened on Earth.
+
+TCA cycle
+    The TCA cycle, also known as the Krebs cycle or Citric Acid cycle, is a key metabolic pathway that plays a central role in cellular respiration, the process by which cells extract energy from organic molecules. The TCA cycle is a series of chemical reactions that generate energy through the oxidation of acetyl-CoA (a product of carbohydrates, fats, and proteins) into carbon dioxide (CO<sub>2</sub>) and high-energy electrons that are transferred to carrier molecules (NADH and FADH<sub>2</sub>). These electrons are later used in the electron transport chain to produce ATP (adenosine triphosphate), the primary energy currency of cells.
+
+rTCA cycle
+    The rTCA cycle (or reverse TCA cycle) is a biochemical pathway that is essentially the reverse of the conventional TCA cycle. The reverse TCA cycle is a series of reactions that essentially "reverses" the steps of the TCA cycle, utilizing CO<sub>2</sub> as a carbon source to synthesize key metabolites like acetyl-CoA. This cycle is energy-consuming and is a part of carbon fixation pathways in certain organisms, meaning it is used to convert inorganic carbon (CO<sub>2</sub>) into organic compounds that can be used for growth and metabolism.
+
 
 Tectonic plate
     A rigid outer layer to a planet bounded by regions where it is being created (mid-ocean ridge), subducting, or slipping past another plate.  Only known to operate on Earth.

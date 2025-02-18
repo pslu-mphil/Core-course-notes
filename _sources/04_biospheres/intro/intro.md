@@ -9,7 +9,7 @@ name: fig:c4_0_dickinsonia
 figclass: margin-caption
 width: 90%
 ---
-The ~550 million year old imprint of one of the earliest animals, Dickinsonia.  The advent of animals represents one of the major evolutionary transitions in Earth history, as animals began to mechanically alter the environment they inhabted.  Image credit: Getty.
+The ~550 million year old imprint of one of the earliest animals, Dickinsonia.  The advent of animals represents one of the major evolutionary transitions in Earth history, as animals began to mechanically alter the environment they inhabited.  Image credit: Getty.
 ```
 
 

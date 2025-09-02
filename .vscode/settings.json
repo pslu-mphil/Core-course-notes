@@ -11,5 +11,6 @@
         "**/*latexmk": true
       },
       "latex-workshop.latex.outDir": "../pdf",
-      "latex-workshop.latex.autoClean.run": "onBuilt"
+      "latex-workshop.latex.autoClean.run": "onBuilt",
+      "makefile.configureOnOpen": false
 }

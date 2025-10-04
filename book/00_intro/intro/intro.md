@@ -3,7 +3,7 @@
 ---
 name: fig:earth_mars
 ---
-Here, we are looking through the eyes of the Curiosity Rover, out over the rim of Gale crater, through Mars's frigid atmosphere towards Earth, which is suspended in the top centre of the image.  The Moon is visible faintly below Earth.  Seeing the Curiosity rover look back at Earth emphasises that our exploration of the cosmos is necessarily rooted in the understanding of physics, chemistry and biology gleaned from Earth. Credit: NASA/JPL-Caltech/MSSS/TAMU.
+Here, we are looking through the eyes of the Curiosity Rover, out over the rim of Gale crater, through Mars's frigid atmosphere towards Earth, which is suspended in the top centre of the image.  The Moon is visible faintly below Earth.  Seeing the Curiosity rover look back at out planet emphasises that our exploration of the cosmos is necessarily rooted in the understanding of physics, chemistry and biology gleaned from Earth. Credit: NASA/JPL-Caltech/MSSS/TAMU.
 ```
 
 The PSLU core course asks two major questions:

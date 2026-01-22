@@ -88,7 +88,7 @@ Igneous
 Instellation
     The amount of light received by a planet from its host star.  Units of $\text{Wm}^{-2}$.
 
-Last Universal Common Ancestor (LUCA)
+Last Universal Common Ancestor
     LUCA refers to the most recent common ancestor of all current life forms on Earth. It is not the first life form but represents the final organism from which all known life evolved. LUCA is thought to have existed around 3.5-4 billion years ago and likely had a relatively complex cellular structure, including genetic material (RNA or DNA), metabolic pathways, and the ability to replicate. It serves as a key reference point in understanding the evolution of life and the shared molecular features of living organisms today.
 
 Magma
@@ -157,7 +157,7 @@ Radial drift
 Reducing
     A substance that has a propensity to donate electrons to another material, thereby 'reducing' it.  E.g., in placing iron metal, Fe, next to water, H$_2$O, the iron metal can reduce the water by the reaction $\text{Fe} + \text{H}_2\text{O} = \text{H}_2 + \text{FeO}$.
 
-Regioselectivity 
+Regioselectivity
     Regioselectivity refers to the preference of a chemical reaction to occur at one specific position or site on a molecule when multiple reactive sites are available. In essence, it describes the tendency of the reaction to produce a particular isomer or product at a preferred location on the molecule.
 
 Retrosynthetic analysis
@@ -179,7 +179,7 @@ Silicate
 Short lived radionuclide
     A radioisotope that decays sufficiently rapidly that, as of today, no natural occurrence of the isotope exists, i.e., it is 'extinct'.  Notable examples include $\mathrm{^{26}Al}$, which drove heating and differentiation of planetesimals in the early solar system.
 
-Stereoselectivity 
+Stereoselectivity
     Stereoselectivity refers to the preference of a chemical reaction to produce one stereoisomer over others when multiple stereoisomers are possible. Stereoisomers have the same molecular formula and atom connectivity but differ in the spatial arrangement of atoms or groups.
 
 Subduction

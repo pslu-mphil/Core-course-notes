@@ -1,6 +1,6 @@
 title: PSLU MPhil
 author: The PSLU Team
-copyright: "2025"
+copyright: "2026"
 logo: logo.png
 
 # Force re-execution of notebooks on each build.
@@ -18,9 +18,9 @@ bibtex_bibfiles:
   - references.bib
 
 # Information about where the book exists on the web
-repository:
-  url: https://pslu-mphil.github.io/Core-course-notes/  # Online location of your book
-  branch: gh_pages  # Which branch of the repository should be used when creating links (optional)
+# repository:
+#   url: https://pslu-mphil.github.io/Core-course-notes/  # Online location of your book
+#   branch: gh-pages  # Which branch of the repository should be used when creating links (optional)
 
 html:
   favicon: favicon.png
@@ -38,6 +38,8 @@ sphinx:
   config:
     html_theme_options:
       repository_provider: github
+      repository_url: https://pslu-mphil.github.io/Core-course-notes  # Online location of your book
+      repository_branch: gh-pages  # Which branch of the repository should be used when creating links (optional)
     language: en
     mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
     mathjax3_config:

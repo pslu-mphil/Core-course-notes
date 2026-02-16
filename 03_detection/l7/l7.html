@@ -1,0 +1,694 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>4.7. Atmospheric Chemistry II &#8212; PSLU MPhil</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/admonitions.css?v=ca5c1317" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=1ae7504c"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"loader": {"load": ["[tex]/physics", "[tex]/ams", "[tex]/mhchem", "[tex]/color", "[tex]/newcommand", "[tex]/textcomp"]}, "tex": {"packages": ["base", "physics", "ams", "amsmath", "mhchem", "color", "newcommand", "textcomp"]}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '03_detection/l7/l7';</script>
+    <link rel="icon" href="../../_static/favicon.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="4.8. Fundamentals of Aqueous Geochemistry I" href="../l8/l8.html" />
+    <link rel="prev" title="4.6. Atmospheric Chemistry I" href="../l6/l6.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="PSLU MPhil - Home"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="PSLU MPhil - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../00_intro/intro/intro.html">1. Course Overview</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../00_intro/l0/l0.html">Introduction to the core course</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../00_intro/l1/l1.html">Origin of Planets (C1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../00_intro/l2/l2.html">Origin of Habitable Environments (C2)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../00_intro/l3/l3.html">Origin and detection of life (C3)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../00_intro/l4/l4.html">Origin and evolution of biospheres (C4)</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../01_planets/intro/intro.html">2. Origin of Planets (C1)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l1/l1.html">2.1. Exoplanets I: Detection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l2/l2.html">2.2. Exoplanets II: Architectures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l3/l3.html">2.3. Exoplanets III: Compositions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l4/l4.html">2.4. Building blocks I: What makes the Universe habitable?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l5/l5.html">2.5. The Evolution of Stars</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l6/l6.html">2.6. The origin of the elements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l7/l7.html">2.7. Protoplanetary disks I: Formation and fragmentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l8/l8.html">2.8. Protoplanetary disks II: Transport and chemistry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l9/l9.html">2.9. Planet formation I: Accretion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l10/l10.html">2.10. Planet formation II: Differentiation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l11/l11.html">2.11. Debris disks I: Physical Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l12/l12.html">2.12. Debris Disks II: Late Delivery</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../02_environments/intro/intro.html">3. Origin of Habitable Environments (C2)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l1/l1.html">3.1. Climate homeostasis: Evidence for climate stability on Earth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l2/l2.html">3.2. Mechanisms for climate homeostasis I. What we think we understand</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l3/l3.html">3.3. Mechanisms for climate homeostasis II. Earth’s thermostat through time and the emerging view</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l4/l4.html">3.4. Planetary cycles I: Mantle Convection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l5/l5.html">3.5. Planetary cycles II: Plate tectonics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l6/l6.html">3.6. Planetary cycles III: Subduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l7/l7.html">3.7. Planetary cycles IV: Volcanism</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l8/l8.html">3.8. Mars I: Geological history</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l9/l9.html">3.9. Mars II: Climate history</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l10/l10.html">3.10. Mars III: Geophysics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l11/l11.html">3.11. Venus I: Venus Today</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l12/l12.html">3.12. Venus II: Venus Over Time</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../intro/intro.html">4. Origin and detection of life (C3)</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../l1/l1.html">4.1. Fundamentals of organic chemistry I: How atoms fit together</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l2/l2.html">4.2. Fundamentals of organic chemistry II: How molecules are different</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l3/l3.html">4.3. Fundamentals of organic chemistry III: How molecules react</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l4/l4.html">4.4. Why some chemical reactions happen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l5/l5.html">4.5. Astrochemistry: From the Insterstellar Medium to Comets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l6/l6.html">4.6. Atmospheric Chemistry I</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">4.7. Atmospheric Chemistry II</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l8/l8.html">4.8. Fundamentals of Aqueous Geochemistry I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l9/l9.html">4.9. Fundamentals of Aqueous Geochemistry II</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l10/l10.html">4.10. The Origins of Life as a Planetary Phenomenon</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l11/l11.html">4.11. Detecting Biosignatures I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l12/l12.html">4.12. Detecting Biosignatures II</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../04_biospheres/intro/intro.html">5. Biospheres (C4)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l1/l1.html">5.1. Prebiotic chemisty I: Chemical Basis for Life</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l2/l2.html">5.2. Prebiotic chemisty II: Chemical Basis for Life</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l3/l3.html">5.3. The evolution and diversity of photosynthesis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l4/l4.html">5.4. Origins of Eukaryotes (chloroplasts, mitos)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l5/l5.html">5.5. Protocell assembly</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l6/l6.html">5.6. From protocells to LUCA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l7/l7.html">5.7. Early life on Earth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l8/l8.html">5.8. Microbial ecosystems and their geobiological expression</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l9/l9.html">5.9. The evolution of complex life</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l10/l10.html">5.10. Land plant transformation of the terrestrial biosphere</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l11/l11.html">5.11. Macroevolutionary patterns on Earth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l12/l12.html">5.12. Eco-evolutionary dynamics of exoplanets</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference/glossary.html">6. Glossary</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/03_detection/l7/l7.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Atmospheric Chemistry II</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#photochemistry">Photochemistry</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calculation-of-photolysis-rate-coefficients">Calculation of photolysis rate coefficients</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#photolysis-of-o-2">Photolysis of O<span class="math notranslate nohighlight">\(_2\)</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chemical-reaction-networks">Chemical reaction networks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reaction-rules-for-atmospheric-chemistry">Reaction rules for atmospheric chemistry</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#simplifying-reaction-networks">Simplifying reaction networks</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="atmospheric-chemistry-ii">
+<span id="lecture-c3-7"></span><h1><span class="section-number">4.7. </span>Atmospheric Chemistry II<a class="headerlink" href="#atmospheric-chemistry-ii" title="Link to this heading">#</a></h1>
+<p>Professor: <strong><a class="reference external" href="mailto:ata27&#37;&#52;&#48;cam&#46;ac&#46;uk">Alex Archibald</a></strong> (<a class="reference external" href="https://www.ch.cam.ac.uk/">Yusuf Hamied Department of Chemistry</a>)</p>
+<hr class="docutils" />
+<section id="photochemistry">
+<h2>Photochemistry<a class="headerlink" href="#photochemistry" title="Link to this heading">#</a></h2>
+<p>The energy from the nearest star can be a key driver for the chemistry of planetary atmospheres in a solar system. Assuming that the star can be represented as a blackbody emitter, Wiens displacement law (<span class="math notranslate nohighlight">\(\lambda_{\rm max} = b/T\)</span>) can be used to predict the peak wavelength of solar radiation reaching the top of the atmosphere (TOA). As this radiation travels through the atmosphere it is either absorbed or transmitted or reflected.</p>
+<p>Molecules poses a finite number of energy levels, with the spacing between these determined by the structure and composition of the molecules/atoms. When a photon is absorbed by a molecule a number of processes occur. Essentially we are delivering energy to the molecule so the molecules increase their “energy level” with a range of consequences.</p>
+<figure class="margin-caption align-default" id="aa-f8">
+<img alt="../../_images/C3_Archibald_Figure8.jpg" src="../../_images/C3_Archibald_Figure8.jpg" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.59 </span><span class="caption-text">The photo processes possible for CH<span class="math notranslate nohighlight">\(_3\)</span>CHO under irradiation of UV light. After <a class="reference external" href="https://acp.copernicus.org/articles/22/929/2022/">Rowell et al., 2022</a></span><a class="headerlink" href="#aa-f8" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p><a class="reference internal" href="#aa-f8"><span class="std std-numref">Fig. 4.59</span></a> shows the processes that can occur following the absorption of a photon of light (hv) for the simple organic molecule acetaldehyde (CH<span class="math notranslate nohighlight">\(_3\)</span>CHO). On the left hand axis we see energy and on the right hand axis the photon wavelength and we see that photons with wavelengths of less than 350 nm have enough energy to go from the ground electronic state (S0) to the first excited electronic state (S1). The diagram shows us that in this case, the excited state is still a bound state – we have excited our molecule but not photo-dissociated it. However, through a process called inter system crossing (ISC) other states are accessible which can lead to rearrangement (o form the keto-enol form CH<span class="math notranslate nohighlight">\(_2\)</span>CHOH) and dissociation.</p>
+</section>
+<section id="calculation-of-photolysis-rate-coefficients">
+<h2>Calculation of photolysis rate coefficients<a class="headerlink" href="#calculation-of-photolysis-rate-coefficients" title="Link to this heading">#</a></h2>
+<p>Atmospheric chemists commonly use the symbol <span class="math notranslate nohighlight">\(k\)</span> for a reaction rate coefficient that involves molecular “collisions” and the symbol <span class="math notranslate nohighlight">\(J\)</span> for a reaction rate coefficient for a reaction that involves the absorption of photons resulting in molecular dissociation. We call this process <strong>photolysis (photo-dissociation</strong> or <strong>photodecomposition</strong>). The rate coefficient of photolysis of a constituent, <span class="math notranslate nohighlight">\(i\)</span>, (<span class="math notranslate nohighlight">\(J_i\)</span> with units s<span class="math notranslate nohighlight">\(^{-1}\)</span>) can be written:</p>
+<div class="math notranslate nohighlight">
+\[
+J_{(i)} = \int_{\lambda = 0}^{\infty} \phi_{(i,\lambda)}F_{(\lambda)}\sigma_{(i,\lambda)} \, d\lambda
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(\phi_{(i,\lambda)}\)</span> is the <strong>quantum yield</strong> (molecule photon<span class="math notranslate nohighlight">\(^{-1}\)</span>) for photolysis (the number of reactant molecules decomposed per quantum of radiation absorbed; sometimes defined in terms of reaction pathways), <span class="math notranslate nohighlight">\(\sigma_{(i,\lambda)}\)</span>  is the wavelength dependent <strong>absorption cross-section</strong> (usually in units of cm<span class="math notranslate nohighlight">\(^2\)</span> molecule<span class="math notranslate nohighlight">\(^{-1}\)</span>) of species <span class="math notranslate nohighlight">\(i\)</span> and <span class="math notranslate nohighlight">\(F_{(\lambda)}\)</span> is the incident <strong>photon intensity</strong> at a given wavelength (photons cm<span class="math notranslate nohighlight">\(^{-2}\)</span> s<span class="math notranslate nohighlight">\(^{-1}\)</span> nm<span class="math notranslate nohighlight">\(^{-1}\)</span>).</p>
+<p>The absorption cross-section is defined by the Beer-Lambert law, which describes the attenuation of light by a homogeneous absorbing system:</p>
+<div class="math notranslate nohighlight">
+\[
+I = I_0 \exp\big(-\sigma n \ell \big)
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(I_0\)</span> and <span class="math notranslate nohighlight">\(I\)</span> are the incident and transmitted light intensities, <span class="math notranslate nohighlight">\(\ell\)</span> is the absorption path length (in cm), <span class="math notranslate nohighlight">\(n\)</span> is the concentration of absorber (molecule cm<span class="math notranslate nohighlight">\(^{-3}\)</span>), and σ is the absorption cross section (in cm<span class="math notranslate nohighlight">\(^2\)</span> per molecule).</p>
+<p>Given that the source of radiation of interest to us is the local star, we can make use of the Beer Lambert law to determine the flux of photons at a specific wavelength as a function of altitude (<span class="math notranslate nohighlight">\(z\)</span>):</p>
+<div class="math notranslate nohighlight">
+\[
+F_{\lambda}(z)= F_{\lambda} \big({\rm TOA}\big)\exp\big(-{\rm O.D.}\big)
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(F_{\lambda}(\)</span>TOA<span class="math notranslate nohighlight">\()\)</span> is the intensity of radiation (flux of photons) at the top of the atmosphere.</p>
+<p>The optical depth (O.D.) can be calculated as:</p>
+<div class="math notranslate nohighlight">
+\[
+{\rm O.D.}(\lambda) = \sum_i \sigma_{i,\lambda} \times {\rm column}_i
+\]</div>
+<p>If the star is at zenith angle <span class="math notranslate nohighlight">\(\theta\)</span>, the path length is increased by a factor <span class="math notranslate nohighlight">\(\sec(\theta)\)</span>. The optical depth thus increases rapidly as the zenith angle approaches 90<span class="math notranslate nohighlight">\(^{\circ}\)</span>. This may be important near sunrise or sunset, or at high latitudes and can result in a marked reduction in the photolysis <span class="math notranslate nohighlight">\(J\)</span> values.</p>
+<p>In principle, the O.D. depends on all (<span class="math notranslate nohighlight">\(\Sigma_i\)</span>) absorbing species at the wavelength of interest. In practice only a few species need to be considered in the calculation of <span class="math notranslate nohighlight">\(F_{\lambda}(z)\)</span>.</p>
+<figure class="margin-caption align-default" id="aa-f9">
+<img alt="../../_images/C3_Archibald_Figure9.jpg" src="../../_images/C3_Archibald_Figure9.jpg" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.60 </span><span class="caption-text">Wavelength dependence of incident radiation at two altitudes (40 km and 15 km) on Earth.</span><a class="headerlink" href="#aa-f9" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="margin-caption align-default" id="aa-f10">
+<img alt="../../_images/C3_Archibald_Figure10.jpg" src="../../_images/C3_Archibald_Figure10.jpg" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.61 </span><span class="caption-text">Wavelength dependence of incident radiation at five altitudes on Mars.</span><a class="headerlink" href="#aa-f10" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>These altitude dependencies of photon fluxes are important for when we come to calculate the photolysis rates of compounds in different parts of an atmosphere. <a class="reference internal" href="#aa-f9"><span class="std std-numref">Fig. 4.60</span></a> highlights that at 290 nm there is a difference of a factor of 100 in the flux of photons between 40 km and 15 km on Earth. Hence, processes requiring this wavelength of radiation will proceed much slower at 15 km than 40 km on Earth. <a class="reference internal" href="#aa-f10"><span class="std std-numref">Fig. 4.61</span></a> shows that at 200 nm there is essentially no change in the flux of photons from the top of the atmosphere to the surface of Mars.</p>
+</section>
+<section id="photolysis-of-o-2">
+<h2>Photolysis of O<span class="math notranslate nohighlight">\(_2\)</span><a class="headerlink" href="#photolysis-of-o-2" title="Link to this heading">#</a></h2>
+<p>The presence of O<span class="math notranslate nohighlight">\(_2\)</span> has a profound effect on the photochemistry of an atmosphere. O<span class="math notranslate nohighlight">\(_2\)</span> is likely to have been present in our atmosphere for the last 2 billion years, with the current mixing ratio of O<span class="math notranslate nohighlight">\(_2\)</span> roughly constant over the last 500 million years.</p>
+<figure class="margin-caption align-default" id="aa-f11">
+<img alt="../../_images/C3_Archibald_Figure11.jpg" src="../../_images/C3_Archibald_Figure11.jpg" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.62 </span><span class="caption-text">The atmospheric history of O<span class="math notranslate nohighlight">\(_2\)</span> on Earth as reconstructed using geochemical proxies and machine learning (blue). After <a class="reference external" href="https://www.nature.com/articles/s41467-022-33388-5">Chen et al., 2022</a>.</span><a class="headerlink" href="#aa-f11" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>O<span class="math notranslate nohighlight">\(_2\)</span> is produced through photosynthesis and is involved in a number of biogeochemical cycles, which give rise to long lifetimes in the lower atmosphere (thousands of years). However, in the stratosphere O<span class="math notranslate nohighlight">\(_2\)</span> can absorb short <span class="math notranslate nohighlight">\(\lambda\)</span> radiation and photo-dissociate. The absorption cross section for O<span class="math notranslate nohighlight">\(_2\)</span> is shown in <a class="reference internal" href="#aa-f12"><span class="std std-numref">Fig. 4.63</span></a> and consists of some characteristic features, many named after the scientists that discovered them. The absorption cross section at <span class="math notranslate nohighlight">\(\lambda &lt; 150\)</span> nm is large but not important to O<span class="math notranslate nohighlight">\(_2\)</span> photolysis in Earth’s stratosphere owing to a lack of photons at these wavelengths. The major absorption in Earth’s stratosphere is in the Herzberg continuum (220-260 nm).</p>
+<figure class="margin-caption align-default" id="aa-f12">
+<img alt="../../_images/C3_Archibald_Figure12.jpg" src="../../_images/C3_Archibald_Figure12.jpg" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.63 </span><span class="caption-text">Molecular oxygen absorption cross sections.</span><a class="headerlink" href="#aa-f12" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>If we make the assumption of unit quantum yield for photolysis of O<span class="math notranslate nohighlight">\(_2\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+{\rm O_2} + h\nu \rightarrow {\rm O(^3P) + O(^3P)}
+\]</div>
+<p>We can use the information in <a class="reference internal" href="#aa-f9"><span class="std std-numref">Fig. 4.60</span></a> and <a class="reference internal" href="#aa-f12"><span class="std std-numref">Fig. 4.63</span></a> to calculate the photolysis frequencies of O<span class="math notranslate nohighlight">\(_2\)</span> (<span class="math notranslate nohighlight">\(J_{\rm O_2}\)</span>). If we take the reciprocal of these frequencies we can then determine the life-times or time scales for photolysis. <span class="math notranslate nohighlight">\(J\)</span> values for O<span class="math notranslate nohighlight">\(_2\)</span> from the individual absorption bands and integrated over all <span class="math notranslate nohighlight">\(\lambda\)</span> are shown in <a class="reference internal" href="#aa-f13"><span class="std std-numref">Fig. 4.64</span></a>.</p>
+<figure class="margin-caption align-default" id="aa-f13">
+<img alt="../../_images/C3_Archibald_Figure13.jpg" src="../../_images/C3_Archibald_Figure13.jpg" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.64 </span><span class="caption-text">Contribution of different bands to the photolysis of molecular oxygen</span><a class="headerlink" href="#aa-f13" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>As we can see from <a class="reference internal" href="#aa-f13"><span class="std std-numref">Fig. 4.64</span></a>, the lifetime of O2 with respect to photolysis varies over 5 orders of magnitude over the altitude range 100-20 km. Note that the longer wavelength Herzberg absorption is relatively more important at low altitudes while the shorter wavelengths (Schumann-Runge Bands, Schumann-Runge Continuum) are only important at high altitudes (photons at these wavelengths are absorbed high up).</p>
+</section>
+<section id="chemical-reaction-networks">
+<h2>Chemical reaction networks<a class="headerlink" href="#chemical-reaction-networks" title="Link to this heading">#</a></h2>
+<p>Now we know the processes that species undergo in an atmosphere we can start to put together a network of reactions which maps out the chemistry of an atmosphere.</p>
+<p>The development of chemical reaction networks is complex but we can break it down into a series of protocols.</p>
+<ol class="arabic simple">
+<li><p>List out all the species that are observed in an atmosphere</p></li>
+<li><p>Apply reaction rules to these species to list out the possible reactions that could take place</p></li>
+<li><p>Search kinetic databases or use theoretical approaches to determine the rate coefficients for each reaction</p></li>
+<li><p>Compare the predictions from the network with observations and refine network parameters</p></li>
+</ol>
+</section>
+<section id="reaction-rules-for-atmospheric-chemistry">
+<h2>Reaction rules for atmospheric chemistry<a class="headerlink" href="#reaction-rules-for-atmospheric-chemistry" title="Link to this heading">#</a></h2>
+<p>Reactions in an atmosphere occur through either collisions or absorption of photons.</p>
+<p>When two species collide there are a limited number of outcomes. Let’s consider an example of an A molecule colliding with a BC molecule.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align}
+\mathrm{\mathbf{Addition:}}&amp;\\
+{\rm A + BC} &amp;\rightarrow {\rm ABC}\\
+\mathrm{\mathbf{Abstraction:}}&amp;\\
+{\rm A + BC} &amp;\rightarrow {\rm AB + C}\\
+{\rm A + BC} &amp;\rightarrow {\rm AC + B}
+\end{align}
+\end{split}\]</div>
+<p>As our molecules get more complex (include more atoms) then the number of possible products increases considerably.</p>
+<p>For absorption of photons we can consider photolysis (breaking of bonds), excitation (increasing energy levels) or rearrangement. Let’s consider another example of a molecule ABC.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align}
+\mathrm{\mathbf{Photolysis:}}&amp;\\
+{\rm ABC} + h\nu &amp;\rightarrow {\rm A + BC}\\
+{\rm ABC} + h\nu &amp;\rightarrow {\rm AB + C}\\
+\mathrm{\mathbf{Photo-excitation:}}&amp;\\
+{\rm ABC} + h\nu &amp;\rightarrow {\rm ABC^*}\\
+{\rm ABC^*} &amp;\rightarrow {\rm ABC} + h\nu\\
+\mathrm{\mathbf{Rearrangement:}}&amp;\\
+{\rm ABC} + h\nu &amp;\rightarrow {\rm ACB}\\
+{\rm ABC} + h\nu &amp;\rightarrow {\rm BCA}\\
+{\rm ABC} + h\nu &amp;\rightarrow {\rm BAC}
+\end{align}
+\end{split}\]</div>
+<p>We won’t dwell on ionisation reactions in these lectures but note that they add considerable further complexity. Generally speaking these reactions are only of importance in the upper atmosphere of a planet.</p>
+<p>Using these rules and applying them to all the known species in an atmosphere can lead to a large number of reactions to consider in our network. The next challenge is to then simplify these networks for numerical simulation.</p>
+</section>
+<section id="simplifying-reaction-networks">
+<h2>Simplifying reaction networks<a class="headerlink" href="#simplifying-reaction-networks" title="Link to this heading">#</a></h2>
+<p>Reaction networks describe how the different constituents of the atmosphere (the gases and aerosols) react. They are also sometimes called “mechanisms” as they provide a mechanism to go from some reactant molecules to some products.</p>
+<p>Consider a very simple reaction network involving seven species (A-G) undergoing three reactions:</p>
+<figure class="margin-caption align-default" id="aa-f14">
+<img alt="../../_images/C3_Archibald_Figure14.jpg" src="../../_images/C3_Archibald_Figure14.jpg" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.65 </span><span class="caption-text">A schematic showing how we can go from a list of reactions (a mechanism) to a reaction network viewed as a graph. Reproduced from <a class="reference external" href="https://www.networkpages.nl/kinetics-from-networks/">NetworkPages</a>.</span><a class="headerlink" href="#aa-f14" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>As we can see from <a class="reference internal" href="#aa-f14"><span class="std std-numref">Fig. 4.65</span></a>, we can appeal to mathematical graph theory when thinking about reaction networks, with the species being nodes on the graph and the reactions being the vectors between the nodes.</p>
+<p>By considering the reaction network as a graph we can start to “work on it” to reduce the number of vectors and nodes needed to “map out” the reaction space. We won’t go into the details of this.</p>
+<p>The biggest challenge with simplifying the reaction network is that the connectivity of the network is state dependent. That is as we change the conditions under which the reactions we have listed out are taking place, some will become more or less important.</p>
+<p>Again, let’s consider an example, this time from some work from Paul and Oli.</p>
+<figure class="margin-caption align-default" id="aa-f15">
+<img alt="../../_images/C3_Archibald_Figure15.jpg" src="../../_images/C3_Archibald_Figure15.jpg" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.66 </span><span class="caption-text">Reaction rates as a function of fO2 and temperature highlighting that under different conditions different reactions in the network become dominant. Modified after <a class="reference external" href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2022JE007528">Liggins et al., 2023</a>.</span><a class="headerlink" href="#aa-f15" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The overall network is shown in <a class="reference internal" href="#aa-f15"><span class="std std-numref">Fig. 4.66</span></a> on the right hand side panels and in red we can see how changing the conditions the network is subjected to change the main pathways to go from the CO reactant to the CH4 product (using bold lines and red to identify the rate limiting step).</p>
+<p>This state dependence causes a real problem for modelling the chemistry of an atmosphere and in general I would suggest that in the first instance generate as complex a network as you can and then be guided by its performance against observations before trying to simplify it.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./03_detection/l7"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../l6/l6.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">4.6. </span>Atmospheric Chemistry I</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../l8/l8.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">4.8. </span>Fundamentals of Aqueous Geochemistry I</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#photochemistry">Photochemistry</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calculation-of-photolysis-rate-coefficients">Calculation of photolysis rate coefficients</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#photolysis-of-o-2">Photolysis of O<span class="math notranslate nohighlight">\(_2\)</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chemical-reaction-networks">Chemical reaction networks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reaction-rules-for-atmospheric-chemistry">Reaction rules for atmospheric chemistry</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#simplifying-reaction-networks">Simplifying reaction networks</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The PSLU Team
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2026.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

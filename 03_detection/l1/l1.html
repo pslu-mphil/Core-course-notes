@@ -1,0 +1,713 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>4.1. Fundamentals of organic chemistry I: How atoms fit together &#8212; PSLU MPhil</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/admonitions.css?v=ca5c1317" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=1ae7504c"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"loader": {"load": ["[tex]/physics", "[tex]/ams", "[tex]/mhchem", "[tex]/color", "[tex]/newcommand", "[tex]/textcomp"]}, "tex": {"packages": ["base", "physics", "ams", "amsmath", "mhchem", "color", "newcommand", "textcomp"]}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '03_detection/l1/l1';</script>
+    <link rel="icon" href="../../_static/favicon.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="4.2. Fundamentals of organic chemistry II: How molecules are different" href="../l2/l2.html" />
+    <link rel="prev" title="4. Origin and detection of life (C3)" href="../intro/intro.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="PSLU MPhil - Home"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="PSLU MPhil - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../00_intro/intro/intro.html">1. Course Overview</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../00_intro/l0/l0.html">Introduction to the core course</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../00_intro/l1/l1.html">Origin of Planets (C1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../00_intro/l2/l2.html">Origin of Habitable Environments (C2)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../00_intro/l3/l3.html">Origin and detection of life (C3)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../00_intro/l4/l4.html">Origin and evolution of biospheres (C4)</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../01_planets/intro/intro.html">2. Origin of Planets (C1)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l1/l1.html">2.1. Exoplanets I: Detection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l2/l2.html">2.2. Exoplanets II: Architectures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l3/l3.html">2.3. Exoplanets III: Compositions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l4/l4.html">2.4. Building blocks I: What makes the Universe habitable?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l5/l5.html">2.5. The Evolution of Stars</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l6/l6.html">2.6. The origin of the elements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l7/l7.html">2.7. Protoplanetary disks I: Formation and fragmentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l8/l8.html">2.8. Protoplanetary disks II: Transport and chemistry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l9/l9.html">2.9. Planet formation I: Accretion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l10/l10.html">2.10. Planet formation II: Differentiation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l11/l11.html">2.11. Debris disks I: Physical Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l12/l12.html">2.12. Debris Disks II: Late Delivery</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../02_environments/intro/intro.html">3. Origin of Habitable Environments (C2)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l1/l1.html">3.1. Climate homeostasis: Evidence for climate stability on Earth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l2/l2.html">3.2. Mechanisms for climate homeostasis I. What we think we understand</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l3/l3.html">3.3. Mechanisms for climate homeostasis II. Earth’s thermostat through time and the emerging view</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l4/l4.html">3.4. Planetary cycles I: Mantle Convection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l5/l5.html">3.5. Planetary cycles II: Plate tectonics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l6/l6.html">3.6. Planetary cycles III: Subduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l7/l7.html">3.7. Planetary cycles IV: Volcanism</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l8/l8.html">3.8. Mars I: Geological history</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l9/l9.html">3.9. Mars II: Climate history</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l10/l10.html">3.10. Mars III: Geophysics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l11/l11.html">3.11. Venus I: Venus Today</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l12/l12.html">3.12. Venus II: Venus Over Time</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../intro/intro.html">4. Origin and detection of life (C3)</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">4.1. Fundamentals of organic chemistry I: How atoms fit together</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l2/l2.html">4.2. Fundamentals of organic chemistry II: How molecules are different</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l3/l3.html">4.3. Fundamentals of organic chemistry III: How molecules react</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l4/l4.html">4.4. Why some chemical reactions happen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l5/l5.html">4.5. Astrochemistry: From the Insterstellar Medium to Comets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l6/l6.html">4.6. Atmospheric Chemistry I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l7/l7.html">4.7. Atmospheric Chemistry II</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l8/l8.html">4.8. Fundamentals of Aqueous Geochemistry I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l9/l9.html">4.9. Fundamentals of Aqueous Geochemistry II</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l10/l10.html">4.10. The Origins of Life as a Planetary Phenomenon</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l11/l11.html">4.11. Detecting Biosignatures I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l12/l12.html">4.12. Detecting Biosignatures II</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../04_biospheres/intro/intro.html">5. Biospheres (C4)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l1/l1.html">5.1. Prebiotic chemisty I: Chemical Basis for Life</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l2/l2.html">5.2. Prebiotic chemisty II: Chemical Basis for Life</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l3/l3.html">5.3. The evolution and diversity of photosynthesis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l4/l4.html">5.4. Origins of Eukaryotes (chloroplasts, mitos)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l5/l5.html">5.5. Protocell assembly</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l6/l6.html">5.6. From protocells to LUCA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l7/l7.html">5.7. Early life on Earth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l8/l8.html">5.8. Microbial ecosystems and their geobiological expression</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l9/l9.html">5.9. The evolution of complex life</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l10/l10.html">5.10. Land plant transformation of the terrestrial biosphere</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l11/l11.html">5.11. Macroevolutionary patterns on Earth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l12/l12.html">5.12. Eco-evolutionary dynamics of exoplanets</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference/glossary.html">6. Glossary</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/03_detection/l1/l1.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Fundamentals of organic chemistry I: How atoms fit together</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fundamentals-of-organic-chemistry-course-structure">Fundamentals of organic chemistry: Course Structure</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-atoms-fit-together">How atoms fit together</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#atoms">Atoms</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#elements">Elements</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#shapes-of-atoms-and-molecules">Shapes of atoms and molecules</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#simple-molecules">Simple molecules</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hybridisation">Hybridisation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#multiple-bonds">Multiple bonds</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="fundamentals-of-organic-chemistry-i-how-atoms-fit-together">
+<span id="lecture-c3-1"></span><h1><span class="section-number">4.1. </span>Fundamentals of organic chemistry I: How atoms fit together<a class="headerlink" href="#fundamentals-of-organic-chemistry-i-how-atoms-fit-together" title="Link to this heading">#</a></h1>
+<p>Professor: <strong><a class="reference external" href="mailto:jmg11&#37;&#52;&#48;cam&#46;ac&#46;uk">Jonathan Goodman</a></strong> (<a class="reference external" href="https://www.ch.cam.ac.uk/">Yusuf Hamied Department of Chemistry</a>)</p>
+<hr class="docutils" />
+<section id="fundamentals-of-organic-chemistry-course-structure">
+<h2>Fundamentals of organic chemistry: Course Structure<a class="headerlink" href="#fundamentals-of-organic-chemistry-course-structure" title="Link to this heading">#</a></h2>
+<p>The course has three organic chemistry lectures:</p>
+<ul class="simple">
+<li><p>Lecture 1: How atoms fit together</p></li>
+<li><p>Lecture 2: How molecules are different</p></li>
+<li><p>Lecture 3: How molecules react</p></li>
+</ul>
+</section>
+<section id="how-atoms-fit-together">
+<h2>How atoms fit together<a class="headerlink" href="#how-atoms-fit-together" title="Link to this heading">#</a></h2>
+<p><strong>Learning objectives:</strong></p>
+<ul class="simple">
+<li><p>The properties of atoms</p></li>
+<li><p>How atoms interact</p></li>
+<li><p>Building molecules from atoms</p></li>
+<li><p>How to work with organic molecules</p></li>
+</ul>
+</section>
+<section id="atoms">
+<h2>Atoms<a class="headerlink" href="#atoms" title="Link to this heading">#</a></h2>
+<p>In these three lectures, I will outline how atoms interact, focussing on the first two rows of the periodic table, and how this leads to organic chemistry. All of the life that we know about is centred around the chemistry of these few elements and so an understanding of their chemistry should provide the best available inspiration for thinking about non-terrestrial life.</p>
+<p>We will begin with atoms. We will consider  protons, neutrons and electrons and nothing else, apart from occasional flashes of light. Sub-atomic processes have little direct relevance to organic chemistry, and we will not discuss them here.</p>
+<p>Protons have a positive charge, plus one in atomic units, and electrons have a negative charge, minus one in atomic units. If we put an electron close to a proton, we might expect the electron to fall into the proton. This would greatly simplify all of chemistry. However, this does not happen.</p>
+<p>Both protons and electrons are so small that quantum effects must be taken into account. If we consider the proton as a fixed point charge, it pulls the electron in to itself. However, the electron is not a point charge, and so this compacts its wavefunction rather than collapsing into the nucleus. The process stops being energetically favourable when the energy gained by pulling the electron closer to the proton balances the energy required to further compact the wavefunction. The electron falling into the proton would  contradict Heisenberg’s uncertainty principle, as both the position and the energy of the electron would be precisely known. The square of the wavefunction gives a description of the distribution of the electron and is called an orbital.</p>
+<p>This can be analysed in terms of particles in spherical boxes with the energy of the particle being proportional to the reciprocal of the distance to the proton. This gives an expression for the wavefunction of the electron: <span class="math notranslate nohighlight">\(\Psi = e^{-r/a_0}\)</span>, where <span class="math notranslate nohighlight">\(a_0\)</span> is the Bohr radius. The Bohr radius is approximately equal to the most probable distance between the proton and the electron, but can be defined precisely as <span class="math notranslate nohighlight">\(a_0 = \frac{4\pi \epsilon_0 \hbar^2}{e^2 m_e}\)</span>. The Bohr radius is about half of an Ångstrom which is <span class="math notranslate nohighlight">\(10^{-10}\)</span> metres. Ångstrom turn out to be very useful units for considering molecules on an atomic scale. Although the Bohr radius is the most probable distance from the nucleus, the majority of electron density is outside the Bohr radius and so atoms are much less small than the Bohr radius might suggest.</p>
+<p>The expression <span class="math notranslate nohighlight">\(e^{-r/a_0}\)</span> only has a maximum at <span class="math notranslate nohighlight">\(r=0\)</span>, of course, but the probability density for the electron at a particular distance, which corresponds to the square of the wavefunction, can be multiplied by the area of a sphere of this radius to work out the total amount of electron density at this distance from the nucleus. This is called the radial distribution function, which does have a maximum.</p>
+<p><span class="math notranslate nohighlight">\(\Psi = e^{-r/a_0}\)</span> is the lowest energy wavefunction and contains no nodes. This describes the ground state of the hydrogen atom: the electron is in a standing wave with no nodes. It can be excited to higher energy states, with energies related to the number of nodes in the wavefunction. A proton is almost two thousand times heavier than an electron, and so their wavefunctions can usually be treated separately (<em>Born-Oppenheimer approximation</em>). Other wavefunctions can be constructed, orthogonal to this one and with higher energies because they contain nodes. The Laguerre polynomials describe the radial part of the wavefunction: <span class="math notranslate nohighlight">\(\Psi = e^{-r/a_0}\)</span> has no nodes, <span class="math notranslate nohighlight">\(\Psi = (2-r/a_0)e^{-r/2a_0}\)</span> has one node and <span class="math notranslate nohighlight">\(\Psi = (27-18r/a_0+2r^2/a_0^2)e^{-r/3a_0}\)</span> has two nodes. Because we are focussing on the first two rows of the periodic table, we need go no further than this.</p>
+<figure class="margin-caption align-default" id="fig-c3l3-fig1">
+<img alt="../../_images/1s_2s.png" src="../../_images/1s_2s.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.2 </span><span class="caption-text">The radial distribution functions for the wavefunctions <span class="math notranslate nohighlight">\(\Psi = e^{-r}\)</span> (orange) and <span class="math notranslate nohighlight">\(\Psi = (2-r)e^{-r/2}\)</span> (blue). The x-axis is given in bohr (the Bohr radius, <span class="math notranslate nohighlight">\(a_0\)</span>). The lowest energy  (orange) peaks at about <span class="math notranslate nohighlight">\(a_0\)</span>. s are usually sketched to include about 90 % of the electron density, which is at about <span class="math notranslate nohighlight">\(2.6 a_0\)</span> for the orange line and <span class="math notranslate nohighlight">\(9 a_0\)</span> for the blue line. Representations of s include large regions with little electron density.</span><a class="headerlink" href="#fig-c3l3-fig1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p><img alt="Figure" src="../../_images/1s.gif" />
+<img alt="Figure" src="../../_images/2s.gif" /></p>
+<figure class="margin-caption align-default" id="fig-c3l3-fig2">
+<img alt="../../_images/3s.gif" src="../../_images/3s.gif" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.3 </span><span class="caption-text">Illustrations of the three lowest energy s with no angular nodes. The box is the same size for all of them, and the surface encloses 90 % of the electron density. The first is conventionally labelled <span class="math notranslate nohighlight">\(1s\)</span> and has no nodes; the second is labelled <span class="math notranslate nohighlight">\(2s\)</span> and has one radial node; the third is <span class="math notranslate nohighlight">\(3s\)</span> and has two radial nodes.</span><a class="headerlink" href="#fig-c3l3-fig2" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Orbitals and wavefunctions can have angular nodes as well as radial nodes. These can be described by the spherical harmonics. There are three possibilities with one angular node, five with two angular nodes, and so on. For the first two rows of the periodic table, occupied orbitals have either no angular nodes or one. The three orbitals with a single angular node can be represented as dumbbells with nodes in the <span class="math notranslate nohighlight">\(x=0\)</span> plane, the <span class="math notranslate nohighlight">\(y=0\)</span> plane and the <span class="math notranslate nohighlight">\(z=0\)</span> plane. The formulae are <span class="math notranslate nohighlight">\(\Psi_z = (r/a_0)e^{-r/2a_0} cos\theta\)</span>; <span class="math notranslate nohighlight">\(\Psi_x = (r/a_0)e^{-r/2a_0} cos\theta cos\phi\)</span>; and <span class="math notranslate nohighlight">\(\Psi_y = (r/a_0)e^{-r/2a_0} cos\theta sin\phi\)</span>;</p>
+<figure class="margin-caption align-default" id="fig-c3l3-fig3">
+<img alt="../../_images/2p.gif" src="../../_images/2p.gif" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.4 </span><span class="caption-text">One of the three orbitals with no radial nodes and one angular node. The conventional label is <span class="math notranslate nohighlight">\(2p\)</span>, and the three orientations are labelled <span class="math notranslate nohighlight">\(2p_x\)</span>, <span class="math notranslate nohighlight">\(2p_y\)</span> and <span class="math notranslate nohighlight">\(2p_z\)</span>.</span><a class="headerlink" href="#fig-c3l3-fig3" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The orbitals are labelled by the principal quantum number, <span class="math notranslate nohighlight">\(n\)</span>, which takes integer values 1, 2, 3, <em>etc</em>. This number is one more than the number of nodes in the orbital. For a single electron system, as we have been discussing, <span class="math notranslate nohighlight">\(n\)</span> determines the energy of the electron in the orbital. There are four orbitals with <span class="math notranslate nohighlight">\(n = 2\)</span> and these need to be distinguished by further quantum numbers. The angular moment quantum number, <span class="math notranslate nohighlight">\(l\)</span>, takes values from <span class="math notranslate nohighlight">\(0\)</span> up to <span class="math notranslate nohighlight">\(n - 1\)</span>. So for <span class="math notranslate nohighlight">\(n = 1\)</span>, <span class="math notranslate nohighlight">\(l\)</span> must be zero. For <span class="math notranslate nohighlight">\(n = 2\)</span>, <span class="math notranslate nohighlight">\(l\)</span> can be zero or one. It might be convenient just to use these numbers, but atomic emission spectroscopy revealed in the nineteenth century series of spectral lines. George Liveing and James Dewar, at Cambridge, labelled two of these <em>sharp</em> and <em>diffuse</em>. The <em>principal</em> and <em>fundamental</em> lines were also observed, so it was natural to use the sequence of letters <em>s</em>, <em>p</em>, <em>d</em>, <em>f</em>, <em>g</em>, <em>h</em>, <em>etc</em> instead of <span class="math notranslate nohighlight">\(0\)</span>, <span class="math notranslate nohighlight">\(1\)</span>, <span class="math notranslate nohighlight">\(2\)</span>, <span class="math notranslate nohighlight">\(3\)</span>, <span class="math notranslate nohighlight">\(4\)</span>, <span class="math notranslate nohighlight">\(5\)</span>, <em>etc</em>. This leads to the labels used in <em><a class="reference internal" href="#fig-c3l3-fig2"><span class="std std-numref">Fig. 4.3</span></a></em> and <em><a class="reference internal" href="#fig-c3l3-fig3"><span class="std std-numref">Fig. 4.4</span></a></em>. As noted in <em><a class="reference internal" href="#fig-c3l3-fig3"><span class="std std-numref">Fig. 4.4</span></a></em> there are three <span class="math notranslate nohighlight">\(2p\)</span> orbitals, and these are labelled with the magnetic quantum number, <span class="math notranslate nohighlight">\(m_l\)</span>, which has values from <span class="math notranslate nohighlight">\(+l\)</span> to <span class="math notranslate nohighlight">\(-l\)</span>. For <span class="math notranslate nohighlight">\(n = 1\)</span>, <span class="math notranslate nohighlight">\(l\)</span> and <span class="math notranslate nohighlight">\(m_l\)</span> both have to be zero. For <span class="math notranslate nohighlight">\(n = 2\)</span>, <span class="math notranslate nohighlight">\(l\)</span> can be zero or one. If <span class="math notranslate nohighlight">\(l = 1\)</span> then <span class="math notranslate nohighlight">\(m_l\)</span> can be <span class="math notranslate nohighlight">\(-1\)</span>, <span class="math notranslate nohighlight">\(0\)</span>, <span class="math notranslate nohighlight">\(1\)</span>, corresponding to <span class="math notranslate nohighlight">\(2p_x\)</span>, <span class="math notranslate nohighlight">\(2p_y\)</span> and <span class="math notranslate nohighlight">\(2p_z\)</span>.</p>
+<p>The final quantum number is the spin angular momentum, <span class="math notranslate nohighlight">\(m_s\)</span>, which labels the spin of an electron. This can be either <span class="math notranslate nohighlight">\(+\frac{1}{2}\)</span> or <span class="math notranslate nohighlight">\(-\frac{1}{2}\)</span>. With these four quantum numbers, <span class="math notranslate nohighlight">\(n\)</span>, <span class="math notranslate nohighlight">\(l\)</span>, <span class="math notranslate nohighlight">\(m_l\)</span> and <span class="math notranslate nohighlight">\(m_s\)</span> we can label all orbitals.</p>
+</section>
+<section id="elements">
+<h2>Elements<a class="headerlink" href="#elements" title="Link to this heading">#</a></h2>
+<p>One proton and one electron is a hydrogen atom. Increasing the charge on the nucleus and balancing it with electrons gives the other elements. Multi-electron atoms are slightly more complicated because the low energy electrons affect the energies of the higher energy orbitals. <span class="math notranslate nohighlight">\(2s\)</span> becomes lower in energy the <span class="math notranslate nohighlight">\(2p\)</span>. Electrons occupy the lowest energy available orbital (The <em>aufbau</em> (building up) principle). If there is a choice of two orbitals with the same energy, electrons will align their spins, so far as possible (<em>Hund’s rule</em>).</p>
+<p>Elements are named by the number of protons that they have. This quantity is called the atomic number. The names are the consequences of historical and political developments, and so are complicated mixtures of ideas. For this course, we are only going to consider the first ten elements: hydrogen (H), helium (He), lithium (Li), beryllium (Be), boron (B), carbon (C), nitrogen (N), oxygen (O), fluorine (F), and neon (Ne). I have listed these in order of the number of protons that they have, going from one for hydrogen, to ten for neon. The periodic table has many more elements that these, but it turns out that the first ten are enough to create many of the molecules of terrestrial life. All sugars, nearly all amino acids, DNA and RNA (except for the occasional atom of the backbone), and most natural products comprise these elements and no others. Non-terrestrial life might be completely different, of course, but these elements are enough for most of the life that we know.</p>
+<p>The <span class="math notranslate nohighlight">\(1s\)</span> orbital can contain two electrons, because <span class="math notranslate nohighlight">\(m_s\)</span> can be either <span class="math notranslate nohighlight">\(+\frac{1}{2}\)</span> or <span class="math notranslate nohighlight">\(-\frac{1}{2}\)</span>. Hydrogen has one electron and helium has two electrons. This is the first row (period) of the periodic table. A third electron goes into the lowest empty orbital, which is <span class="math notranslate nohighlight">\(2s\)</span>. After the <span class="math notranslate nohighlight">\(2s\)</span> orbital is filled, the <span class="math notranslate nohighlight">\(2p\)</span> orbitals start to fill up. Neon (Ne, atomic number 10, ten electrons) has <span class="math notranslate nohighlight">\(1s\)</span>, <span class="math notranslate nohighlight">\(2s\)</span> and <span class="math notranslate nohighlight">\(2p\)</span> all full, so the next element starts to fill the <span class="math notranslate nohighlight">\(3s\)</span> orbital.</p>
+<figure class="margin-caption align-default" id="fig-c3l3-fig4">
+<img alt="../../_images/periodic_table_6.png" src="../../_images/periodic_table_6.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.5 </span><span class="caption-text">The fraction of the periodic table we will consider in these lectures</span><a class="headerlink" href="#fig-c3l3-fig4" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="margin-caption align-default" id="fig-c3l3-fig5">
+<img alt="../../_images/periodic_table_5.png" src="../../_images/periodic_table_5.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.6 </span><span class="caption-text">The first three rows of the periodic table. The elements are arranged in increasing order of atomic number. The third row fills up the <span class="math notranslate nohighlight">\(3s\)</span> and <span class="math notranslate nohighlight">\(3p\)</span> orbitals. It turns out that elements with partially filled orbitals with <span class="math notranslate nohighlight">\(n=3\)</span> have similar properties to elements with the same filled orbitals at the <span class="math notranslate nohighlight">\(n=2\)</span> level. Lithium (Li) and sodium (Na) have similar properties, as they both have one electron on their highest energy orbital. These similarities continue across the period.</span><a class="headerlink" href="#fig-c3l3-fig5" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>As the number of protons in the nucleus increases, the <span class="math notranslate nohighlight">\(3d\)</span> orbitals become accessible. These can hold ten electrons. It turns out that the <span class="math notranslate nohighlight">\(4s\)</span> orbitals are filled before the <span class="math notranslate nohighlight">\(3d\)</span> orbitals, so the periodic table expands as shown in Figure 6 in the fourth and fifth rows.</p>
+<figure class="margin-caption align-default" id="fig-c3l3-fig6">
+<img alt="../../_images/periodic_table_4.png" src="../../_images/periodic_table_4.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.7 </span><span class="caption-text">The periodic table with two rows of elements with partially filled <span class="math notranslate nohighlight">\(d\)</span> orbitals: the <em>transition metals</em></span><a class="headerlink" href="#fig-c3l3-fig6" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>With higher atomic numbers, the <span class="math notranslate nohighlight">\(4f\)</span> and <span class="math notranslate nohighlight">\(5f\)</span> orbitals start to fill.</p>
+<figure class="margin-caption align-default" id="fig-c3l3-fig7">
+<img alt="../../_images/periodic_table_3.png" src="../../_images/periodic_table_3.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.8 </span><span class="caption-text">The periodic table, as conventionally written, with the <span class="math notranslate nohighlight">\(f\)</span> orbitals in a separate section</span><a class="headerlink" href="#fig-c3l3-fig7" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="margin-caption align-default" id="fig-c3l3-fig8">
+<img alt="../../_images/periodic_table_2.png" src="../../_images/periodic_table_2.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.9 </span><span class="caption-text">The periodic table as might be considered more logical, with the <span class="math notranslate nohighlight">\(f\)</span> orbitals in the main sequence. The table is becoming inconveniently wide</span><a class="headerlink" href="#fig-c3l3-fig8" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p><em><a class="reference internal" href="#fig-c3l3-fig7"><span class="std std-numref">Fig. 4.8</span></a></em> and <em><a class="reference internal" href="#fig-c3l3-fig8"><span class="std std-numref">Fig. 4.9</span></a></em> show the current periodic table, stopping at element 118 Oganesson (Og). Oganesson has a half life of a fraction of a second and only a few atoms have been produced on earth. Elements with higher atomic numbers may exist, and names are ready for them (<em><a class="reference internal" href="#fig-c3l3-fig9"><span class="std std-numref">Fig. 4.10</span></a></em>).</p>
+<figure class="margin-caption align-default" id="fig-c3l3-fig9">
+<img alt="../../_images/periodic_table_1.png" src="../../_images/periodic_table_1.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.10 </span><span class="caption-text">The eighth row of the periodic table. None of these elements have been observed, so far.</span><a class="headerlink" href="#fig-c3l3-fig9" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Across the second row of the periodic table, successive atoms have an extra electron and also an extra proton in the nucleus holding the electrons in. These two effects counteract each other, and so the size of the atoms of the second row are all rather similar. Size can be defined in different ways, as the wavefunction does not suddenly stop a precise distance from the nucleus. The van der Waals radius is the radius of a hard sphere representing how close atoms can get together in the absence of a chemical bond. All of the second row elements have a van der Waals radius of approximately 1.5 Å. Hydrogen, in the first row, is rather smaller with a van der Waals radius of about 1.1 Å.</p>
+</section>
+<section id="shapes-of-atoms-and-molecules">
+<h2>Shapes of atoms and molecules<a class="headerlink" href="#shapes-of-atoms-and-molecules" title="Link to this heading">#</a></h2>
+<p>This model tells us that atoms are spheres, with electron density mainly around the nucleus and fading away at a distance from the nucleus. If atoms are sticky, squashy, spheres, then they should pack together to form molecules. This turns out to be true, some of the time.</p>
+<p>Beryllium (Be), atomic number 4, is quite rare, on a universe-wide scale, as it usually turns into heavier elements in the core of stars. Its toxicity to terrestrial life means that its use is limited on earth. In its elemental form it is a good example of a substance in which the atoms pack together as tightly as possible. On a two dimensional surface, a triangular shape is the closest packed (<em><a class="reference internal" href="#fig-c3l3-fig10"><span class="std std-numref">Fig. 4.11</span></a></em>). A second layer can be added with the new atoms in the dips in the first layer. There are only half as many atoms as dips, so a third layer can be arranged in two different ways. The third layer can be placed over the places where you can see through both the first and second layers (labelled <em>fcc</em>) or placed in the alternative dips so it is still possible to see through all of the layers (<em>hcp</em>). These two arrangements are equally close packed, very similar to each other, and distinct. Beryllium atoms choose <em>hcp</em> over <em>fcc</em>. If beryllium atoms were simply sticky spheres, the two forms would be equally likely.</p>
+<figure class="margin-caption align-default" id="fig-c3l3-fig10">
+<img alt="../../_images/fcc_hcp.png" src="../../_images/fcc_hcp.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.11 </span><span class="caption-text">Face Centred Cubic (<em>fcc</em>) and Hexagonal Close Packed (<em>hcp</em>) packing of spheres.</span><a class="headerlink" href="#fig-c3l3-fig10" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>This sort of assembly of atoms is a metallic structure. Hydrogen (H) forms a similar structure, but only at very high pressures such as those that are present in the centres of planets. The hundreds of gigapascals required for this are hard to achieve on earth. Lithium (Li) (atomic number 3) is also a metal and the atoms pack closely together. Lithium adopts a less dense arrangement called body-centred cub (<em>bcc</em>) where the atoms are at the corners of a cube with an additional lithium atom in the middle of every cube. All of the atoms are close to other atoms, but less close than they could be. These different structures illustrate the complexity of atomic interactions.</p>
+</section>
+<section id="simple-molecules">
+<h2>Simple molecules<a class="headerlink" href="#simple-molecules" title="Link to this heading">#</a></h2>
+<p>Hydrogen is a metal only at very high pressures. Under terrestrial conditions it nearly always exists as a molecule containing two hydrogen atoms. When two hydrogen atoms get close to each other, the two <span class="math notranslate nohighlight">\(1s\)</span> orbitals can interact to form two new orbitals: one with a lower energy with the electron density centred between the two nuclei, and one with a higher energy, orthogonal to the first, with the electron density outside the nuclei. The strength of the interaction depends on the overlap of the orbitals, so the atoms need to be the right distance apart. It also requires the energies of the orbitals to be similar, which is certain to be true in this case, as the orbitals are both hydrogen <span class="math notranslate nohighlight">\(1s\)</span> orbitals.</p>
+<figure class="margin-caption align-default" id="fig-c3l3-fig11">
+<img alt="../../_images/molecular_orbitals.png" src="../../_images/molecular_orbitals.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.12 </span><span class="caption-text">Two atomic orbitals interact to give two molecular orbitals, one lower in energy and one higher. The antibonding (higher) orbital is slightly further above the energy of the atomic orbitals than the bonding orbital is below it. The electrons both go into the lower energy orbital, so the overall energy of the molecule is lowered by forming a bond between the atoms. The atomic orbitals are labelled <span class="math notranslate nohighlight">\(1s\)</span> and the molecular orbitals, which have no nodes when viewed along the bond, are labelled with the Greek letter for s: <span class="math notranslate nohighlight">\(\sigma\)</span>.</span><a class="headerlink" href="#fig-c3l3-fig11" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p><em><a class="reference internal" href="#fig-c3l3-fig11"><span class="std std-numref">Fig. 4.12</span></a></em> shows that the energy of the system goes down when to hydrogen atoms interact and so there is a driving force to form an <span class="math notranslate nohighlight">\(H_2\)</span> molecule. Hydrogen can exist in a metallic state, but only at extremely high pressures so that the atoms cannot escape from each other. Helium atoms have similar orbitals, except they have two electrons instead of just one. Forming <span class="math notranslate nohighlight">\(He_2\)</span> would raise the energy of the system, and so helium exists as isolated atoms and not as a diatomic molecule. In a similar way, two hydrogen molecules do not interact to form a four-atom hydrogen system. The two bonding orbitals would interact, forming a higher and lower energy orbital. They would all be filled with electrons and so the interaction would not be favourable.</p>
+<p>If a diatomic hydrogen molecule interacts with a proton (a hydrogen cation), then there is a favourable interaction. The vacant <span class="math notranslate nohighlight">\(1s\)</span> orbital interacts with the bonding <span class="math notranslate nohighlight">\(\sigma\)</span> orbital, forming an equilateral triangle with a hydrogen atom at each vertex. This leads to a net lowering of the energy of the system. <span class="math notranslate nohighlight">\(H_3^+\)</span> is rare on earth, because it reacts with almost everything it encounters. The trihydrogen cation is probably one of the  most common ions in the universe, however, having been observed first on Jupiter and then almost everywhere else that astronomers have looked for it.</p>
+<p>All of the second row of the periodic table can form diatomic species, except beryllium which has a filled <span class="math notranslate nohighlight">\(2s\)</span> orbital just as helium has a filled <span class="math notranslate nohighlight">\(1s\)</span> orbital, and for neon, which has filled <span class="math notranslate nohighlight">\(2s\)</span> and <span class="math notranslate nohighlight">\(2p\)</span> orbitals, so all interactions lead to an increase in energy. Under terrestrial conditions, lithium, beryllium, boron and carbon prefer to form macromolecules rather than diatomics.</p>
+<p>Two hydrogens atoms interact to form diatomic <span class="math notranslate nohighlight">\(H_2\)</span>. A hydrogen and a lithium atom interact in a similar way to for LiH. The <span class="math notranslate nohighlight">\(2s\)</span> orbital on lithium is higher in energy than the <span class="math notranslate nohighlight">\(1s\)</span> orbital on hydrogen, even though lithium has a nucleus with three positive charges, so the bonding orbital is polarised towards the hydrogen. This gives the molecule a dipole, with a partial positive charge on the lithium and a partial negative charge on the hydrogen. Beryllium, whose <span class="math notranslate nohighlight">\(2s\)</span> orbital is lower in energy than lithium because of the extra positive charge on the nucleus, forms linear dihydridoberyllium. Boron, which has three electrons in the <span class="math notranslate nohighlight">\(n=2\)</span> level, interacts with three hydrogen atoms to form trigonal planar borane. All three of these molecules will interact to form larger assemblies if present in high enough concentration as they all have vacant <span class="math notranslate nohighlight">\(n=2\)</span> orbitals which can accept electrons from other molecules.</p>
+<figure class="margin-caption align-default" id="fig-c3l3-fig12">
+<img alt="../../_images/hydrides.png" src="../../_images/hydrides.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.13 </span><span class="caption-text">The hydrides of the second row elements</span><a class="headerlink" href="#fig-c3l3-fig12" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Carbon, with four <span class="math notranslate nohighlight">\(n=2\)</span> electrons, can form four bonds to hydrogen to form tetrahedral methane. The geometry arises because the bonds repel each other, and the tetrahedral shape allows them to be as far away from each other as possible. This repulsion between bonds also leads to the trigonal planar borane geometry and the linear dihydridoberyllium geometry. The energy of the <span class="math notranslate nohighlight">\(2s\)</span> orbital goes down along the second row of the periodic table as the nuclear charge increases. For carbon, the <span class="math notranslate nohighlight">\(2s\)</span> orbital is lower in energy than hydrogen’s <span class="math notranslate nohighlight">\(1s\)</span> orbital, and so the bond is slightly polarised towards the carbon.</p>
+<p>Nitrogen has five <span class="math notranslate nohighlight">\(n=2\)</span> electrons. Sharing electrons with five hydrogen atoms would give a total of ten electrons which would not all fit in the <span class="math notranslate nohighlight">\(n=2\)</span> level. The <span class="math notranslate nohighlight">\(n=3\)</span> level is much higher in energy. Nitrogen forms three bonds with hydrogen, forming ammonia. The left over pair of electrons occupy the space of a bond, and a called a <em>lone pair</em>. Ammonia is tetrahedral with one vertex missing. The lone pair is slightly bigger than a bond, as the electrons are closer to the nitrogen, on average.</p>
+<p>Oxygen forms water with two bonds to hydrogen, which are quite strongly polarised towards oxygen as the <span class="math notranslate nohighlight">\(n=2\)</span> orbitals of oxygen are lower in energy than hydrogen. Its remaining electrons form two lone pairs. This means that the partial positive charge on the hydrogens can interact favourably with the lone pairs to hold the molecules together. This is why water has a high boiling point and is liquid over quite a range of temperatures. Ammonia and hydrogen fluoride show similar effects, but to a lesser extent as they cannot form so many hydrogen-lone pair interactions, also called hydrogen bonds. Life probably requires the presence of a liquid. Water is particularly good at being a liquid, but other substances, including hydrogen fluoride, ammonia and methane may readily be available in a liquid state.</p>
+<p>Fluorine forms just one bond to hydrogen, and neon forms none.</p>
+</section>
+<section id="hybridisation">
+<h2>Hybridisation<a class="headerlink" href="#hybridisation" title="Link to this heading">#</a></h2>
+<p>The shapes of the molecules in <em><a class="reference internal" href="#fig-c3l3-fig12"><span class="std std-numref">Fig. 4.13</span></a></em> depend on the number of bonds formed and the number of lone pairs around the central atom. The molecular orbitals form by all of the <span class="math notranslate nohighlight">\(2s\)</span> and <span class="math notranslate nohighlight">\(2p\)</span> orbitals of the central atoms interacting with the <span class="math notranslate nohighlight">\(1s\)</span> orbitals of the hydrogen atoms. It is possible to calculate how this happens, and the calculations are rather complicated as there are a lot of interactions to consider. It is difficult to think about this in an intuitive way.</p>
+<p>It would be much easier if all of the orbitals interacted in pairs, and it was not necessary to consider the interaction of every orbital with every other orbital. This can be achieved, more or less, by first combining the atomic orbitals so that they point along the directions of the bonds, and then considering the interactions to form the bonds, which will be almost all with the orbital pointing in the right direction. Consider methane: it is not obvious how a spherical <span class="math notranslate nohighlight">\(2s\)</span> orbital and three perpendicular <span class="math notranslate nohighlight">\(2p\)</span> orbitals can combine to form a tetrahedron. We can note, however, that the <span class="math notranslate nohighlight">\(2p\)</span> orbitals do add up to a sphere if the expressions for the wavefunctions are squared and summed (<span class="math notranslate nohighlight">\(\Psi_x = (r/a_0)e^{-r/2a_0} cos\theta cos\phi\)</span>;  <span class="math notranslate nohighlight">\(\Psi_y = (r/a_0)e^{-r/2a_0} cos\theta sin\phi\)</span>; <span class="math notranslate nohighlight">\(\Psi_z = (r/a_0)e^{-r/2a_0} cos\theta\)</span>). The four atomic orbitals can be added together and divided equally into four to give four identical orbitals, each pointing to the vertex or a tetrahedron and together adding up to a sphere. Such orbitals are called <span class="math notranslate nohighlight">\(sp^3\)</span> hybrid orbitals, because each one contains one part of an <span class="math notranslate nohighlight">\(s\)</span> orbital and three parts of an <span class="math notranslate nohighlight">\(p\)</span> orbital. The central carbon atom of methane is often labelled as having <span class="math notranslate nohighlight">\(sp^3\)</span> hybridisation, as is the nitrogen of ammonia and the oxygen of water.</p>
+<p>Combining the <span class="math notranslate nohighlight">\(s\)</span> orbital with just two <span class="math notranslate nohighlight">\(p\)</span> orbitals gives a trigonal planar shape, with the remaining <span class="math notranslate nohighlight">\(p\)</span> orbital perpendicular to the plane of the other orbitals. The boron atom in borane is said to have <span class="math notranslate nohighlight">\(sp^2\)</span> hybridisation. If a <span class="math notranslate nohighlight">\(s\)</span> orbital is combine with just one <span class="math notranslate nohighlight">\(p\)</span> orbital, the resultant <span class="math notranslate nohighlight">\(sp\)</span> orbitals will be linear, sticking out of opposite sides of the atom. The two unhybridised <span class="math notranslate nohighlight">\(p\)</span> orbitals will be perpendicular to this line. Dihydridoberyllium is an example of a molecule with this geometry and hybridisation (<em><a class="reference internal" href="#fig-c3l3-fig12"><span class="std std-numref">Fig. 4.13</span></a></em>).</p>
+<p><em><a class="reference internal" href="#fig-c3l3-fig13"><span class="std std-numref">Fig. 4.14</span></a></em> illustrates carbon atoms in the <span class="math notranslate nohighlight">\(sp\)</span>, <span class="math notranslate nohighlight">\(sp^2\)</span> and <span class="math notranslate nohighlight">\(sp^3\)</span> hybridisation states. These are linear, trigonal planar and tetrahedral, respectively. The two unhybridised <span class="math notranslate nohighlight">\(p\)</span> orbitals that remain after the two <span class="math notranslate nohighlight">\(sp\)</span> hybrid orbitals are formed have been omitted from the figure. Similarly the one unhybridised <span class="math notranslate nohighlight">\(p\)</span> orbital has been omitted from the <span class="math notranslate nohighlight">\(sp^2\)</span> picture. To a reasonable approximation, atoms which form bonds along the directions of the hybridised bonds will interact only with one orbital, forming a <span class="math notranslate nohighlight">\(\sigma\)</span> bond in this direction and an anti-bonding <span class="math notranslate nohighlight">\(\sigma*\)</span> bond. This approximation works well for  most organic molecules and makes it possible to understand the structures of large molecules.</p>
+<figure class="margin-caption align-default" id="fig-c3l3-fig13">
+<img alt="../../_images/hybridisation.png" src="../../_images/hybridisation.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.14 </span><span class="caption-text">Hybridisation of carbon atoms</span><a class="headerlink" href="#fig-c3l3-fig13" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="multiple-bonds">
+<h2>Multiple bonds<a class="headerlink" href="#multiple-bonds" title="Link to this heading">#</a></h2>
+<p>The idea of hybridisation is useful in the analysis of other structural features. Carbon atoms can form <span class="math notranslate nohighlight">\(\sigma\)</span>-bonds to other carbon atoms, and these bonds are quite strong and so are very commonly observed. The simplest example of this is ethane, with the formula <span class="math notranslate nohighlight">\(C_2H_6\)</span>. The names of these molecules are familiar to most chemists, but structures are the most important way to convey molecular information.</p>
+<p><em><a class="reference internal" href="#fig-c3l3-fig14"><span class="std std-numref">Fig. 4.15</span></a></em> shows ethane, and also a molecule with two hydrogen atoms fewer, called ethene, and one with two more hydrogens removed called ethyne. The missing hydrogens allow the carbon atoms to have different hybridisation states. For ethene, there are two <span class="math notranslate nohighlight">\(p\)</span> orbitals next to each other, which can form a bond called a <span class="math notranslate nohighlight">\(\pi\)</span> bond, following the convention of translating Roman letters for atoms into Greek letters for bonds. For ethyne, each carbon atom now has two <span class="math notranslate nohighlight">\(p\)</span> orbitals, so two <span class="math notranslate nohighlight">\(\pi\)</span> bonds can form, making a triple bond. Multiple bonds are very common in the chemistry of carbon, but are usually less common for elements in the rows of the periodic table after two. The life that we know about makes extensive use of multiple bonding.</p>
+<figure class="margin-caption align-default" id="fig-c3l3-fig14">
+<img alt="../../_images/eth.png" src="../../_images/eth.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.15 </span><span class="caption-text">Ethane, ethene and ethyne</span><a class="headerlink" href="#fig-c3l3-fig14" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p><em><a class="reference internal" href="#fig-c3l3-fig14"><span class="std std-numref">Fig. 4.15</span></a></em> illustrates a common way of drawing molecules. The <span class="math notranslate nohighlight">\(sp^3\)</span> atoms are drawn flat, because no information is added by showing they are tetrahedral. The reader is expected to know this. For more complex molecules, the reader is also expected to know that carbon (nearly) always forms four bonds, so any that are omitted are bonds to hydrogen. Hydrogen atoms with bonds to carbon are usually omitted altogether, and the C label for carbon is also omitted. Organic chemists know that carbon is the most important element, so any unspecified atom must be carbon.</p>
+<p><em><a class="reference internal" href="#fig-c3l3-fig15"><span class="std std-numref">Fig. 4.16</span></a></em> shows molecules drawn in a standard way. The names are not important for this course; the structure is what matters. You should be able to work out how many hydrogens are missing and how they are connected to the structure. You should be able to work out which bonds are <span class="math notranslate nohighlight">\(\sigma\)</span> bonds which are  <span class="math notranslate nohighlight">\(\pi\)</span> bonds. All of the molecules are drawn flat and this represents their shape well. However, for some molecules the three-dimensional shape is important.</p>
+<figure class="margin-caption align-default" id="fig-c3l3-fig15">
+<img alt="../../_images/organicmolecules.png" src="../../_images/organicmolecules.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.16 </span><span class="caption-text">Some molecules, drawn in the conventional way</span><a class="headerlink" href="#fig-c3l3-fig15" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./03_detection/l1"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../intro/intro.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">4. </span>Origin and detection of life (C3)</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../l2/l2.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">4.2. </span>Fundamentals of organic chemistry II: How molecules are different</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fundamentals-of-organic-chemistry-course-structure">Fundamentals of organic chemistry: Course Structure</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-atoms-fit-together">How atoms fit together</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#atoms">Atoms</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#elements">Elements</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#shapes-of-atoms-and-molecules">Shapes of atoms and molecules</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#simple-molecules">Simple molecules</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hybridisation">Hybridisation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#multiple-bonds">Multiple bonds</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The PSLU Team
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2026.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

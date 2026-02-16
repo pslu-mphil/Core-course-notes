@@ -1,0 +1,647 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>3.10. Mars III: Geophysics &#8212; PSLU MPhil</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/admonitions.css?v=ca5c1317" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=1ae7504c"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '02_environments/l10/l10';</script>
+    <link rel="icon" href="../../_static/favicon.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="3.11. Venus I: Venus Today" href="../l11/l11.html" />
+    <link rel="prev" title="3.9. Mars II: Climate history" href="../l9/l9.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="PSLU MPhil - Home"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="PSLU MPhil - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../00_intro/intro/intro.html">1. Course Overview</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../00_intro/l0/l0.html">Introduction to the core course</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../00_intro/l1/l1.html">Origin of Planets (C1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../00_intro/l2/l2.html">Origin of Habitable Environments (C2)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../00_intro/l3/l3.html">Origin and detection of life (C3)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../00_intro/l4/l4.html">Origin and evolution of biospheres (C4)</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../01_planets/intro/intro.html">2. Origin of Planets (C1)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l1/l1.html">2.1. Exoplanets I: Detection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l2/l2.html">2.2. Exoplanets II: Architectures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l3/l3.html">2.3. Exoplanets III: Compositions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l4/l4.html">2.4. Building blocks I: What makes the Universe habitable?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l5/l5.html">2.5. The Evolution of Stars</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l6/l6.html">2.6. The origin of the elements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l7/l7.html">2.7. Protoplanetary disks I: Formation and fragmentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l8/l8.html">2.8. Protoplanetary disks II: Transport and chemistry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l9/l9.html">2.9. Planet formation I: Accretion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l10/l10.html">2.10. Planet formation II: Differentiation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l11/l11.html">2.11. Debris disks I: Physical Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l12/l12.html">2.12. Debris Disks II: Late Delivery</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../intro/intro.html">3. Origin of Habitable Environments (C2)</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../l1/l1.html">3.1. Climate homeostasis: Evidence for climate stability on Earth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l2/l2.html">3.2. Mechanisms for climate homeostasis I. What we think we understand</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l3/l3.html">3.3. Mechanisms for climate homeostasis II. Earth’s thermostat through time and the emerging view</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l4/l4.html">3.4. Planetary cycles I: Mantle Convection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l5/l5.html">3.5. Planetary cycles II: Plate tectonics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l6/l6.html">3.6. Planetary cycles III: Subduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l7/l7.html">3.7. Planetary cycles IV: Volcanism</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l8/l8.html">3.8. Mars I: Geological history</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l9/l9.html">3.9. Mars II: Climate history</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">3.10. Mars III: Geophysics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l11/l11.html">3.11. Venus I: Venus Today</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l12/l12.html">3.12. Venus II: Venus Over Time</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../03_detection/intro/intro.html">4. Origin and detection of life (C3)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l1/l1.html">4.1. Fundamentals of organic chemistry I: How atoms fit together</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l2/l2.html">4.2. Fundamentals of organic chemistry II: How molecules are different</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l3/l3.html">4.3. Fundamentals of organic chemistry III: How molecules react</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l4/l4.html">4.4. Why some chemical reactions happen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l5/l5.html">4.5. Astrochemistry: From the Insterstellar Medium to Comets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l6/l6.html">4.6. Atmospheric Chemistry I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l7/l7.html">4.7. Atmospheric Chemistry II</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l8/l8.html">4.8. Fundamentals of Aqueous Geochemistry I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l9/l9.html">4.9. Fundamentals of Aqueous Geochemistry II</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l10/l10.html">4.10. The Origins of Life as a Planetary Phenomenon</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l11/l11.html">4.11. Detecting Biosignatures I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l12/l12.html">4.12. Detecting Biosignatures II</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../04_biospheres/intro/intro.html">5. Biospheres (C4)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l1/l1.html">5.1. Prebiotic chemisty I: Chemical Basis for Life</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l2/l2.html">5.2. Prebiotic chemisty II: Chemical Basis for Life</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l3/l3.html">5.3. The evolution and diversity of photosynthesis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l4/l4.html">5.4. Origins of Eukaryotes (chloroplasts, mitos)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l5/l5.html">5.5. Protocell assembly</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l6/l6.html">5.6. From protocells to LUCA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l7/l7.html">5.7. Early life on Earth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l8/l8.html">5.8. Microbial ecosystems and their geobiological expression</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l9/l9.html">5.9. The evolution of complex life</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l10/l10.html">5.10. Land plant transformation of the terrestrial biosphere</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l11/l11.html">5.11. Macroevolutionary patterns on Earth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l12/l12.html">5.12. Eco-evolutionary dynamics of exoplanets</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference/glossary.html">6. Glossary</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/02_environments/l10/l10.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Mars III: Geophysics</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-history-of-geophysical-exploration-on-mars">A history of geophysical exploration on Mars</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#seismology-on-mars">Seismology on Mars</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-detection-and-location-problem">The detection and location problem</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cerberus-fossae">Cerberus Fossae</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-martian-core">The Martian core</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="mars-iii-geophysics">
+<span id="lecture-c2-10"></span><h1><span class="section-number">3.10. </span>Mars III: Geophysics<a class="headerlink" href="#mars-iii-geophysics" title="Link to this heading">#</a></h1>
+<p>Professor: <strong><a class="reference external" href="mailto:nr441&#37;&#52;&#48;cam&#46;ac&#46;uk">Nick Rawlinson</a></strong> (<a class="reference external" href="https://www.esc.cam.ac.uk">Department of Earth Sciences</a>)</p>
+<hr class="docutils" />
+<blockquote class="highlights">
+<div><p><strong>Key Concepts:</strong></p>
+<ul class="simple">
+<li><p>The geology and internal structure of Mars was not well understood prior to space missions, such as Mariner IV, which was the first flyby mission of the 1960s.</p></li>
+<li><p>With subsequent space missions that achieved orbit, landings and rover deployments, geophysical datasets that provided detailed information on topography, gravity and magnetic fields, marsquakes, surface pressure etc. became available to the scientific community.</p></li>
+<li><p>Although the Viking missions did record a few marsquakes, it wasn’t until the InSight mission in 2018 that high quality seismic recordings became available.</p></li>
+<li><p>With just one seismometer located on Mars, the detection and location of marsquakes is a challenge. However, with clear identification of body wave phases and polarization analysis, approximate location is possible.</p></li>
+<li><p>Most marsquakes were recorded from Cerberus Fossae, which was found to be an actively extending graben structure that is evidence of recent tectonics and magmatic processes in the lithosphere.</p></li>
+<li><p>The Martian core is liquid and appears to be surrounded by a thin (~150 km thick) silicate layer that is also in a liquid state.</p></li>
+</ul>
+</div></blockquote>
+<p>In this lecture, we will explore how geophysical observations of Mars have allowed us to illuminate its interior structure and processes, and provide fresh insight into the formation and evolution of terrestrial planets. Such observations come largely from space missions to Mars, which enable orbital or surface analysis of the planet. A rough timeline of the key missions will be presented below. How these observations have been used to understand the atmosphere, surface and interior of Mars will also be briefly discussed. In recent years, a significant step forwards in understanding the internal structure and dynamics of Mars was achieved through new seismic recordings from the InSight mission. Details of this mission and the earthquakes that were recorded will be presented, along with an example of how they can be used to infer the internal structure of the planet</p>
+<section id="a-history-of-geophysical-exploration-on-mars">
+<h2>A history of geophysical exploration on Mars<a class="headerlink" href="#a-history-of-geophysical-exploration-on-mars" title="Link to this heading">#</a></h2>
+<p>After the Earth and Moon, Mars is the most explored planetary body in our solar system - not just because of its proximity, but also because of its tantalising similarity to Earth. Prior to space missions to Mars, its internal structure was poorly understood, with many workers concluding that it was undifferentiated and nearly homogeneous based on moment of intertia arguments (see <a class="reference internal" href="#fig-0210figure1"><span class="std std-numref">Fig. 3.67</span></a>)</p>
+<figure class="align-default" id="fig-0210figure1">
+<img alt="../../_images/figure1.png" src="../../_images/figure1.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 3.67 </span><span class="caption-text">Density structure of the Earth and Mars according to <a class="reference external" href="https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/JZ070i012p02873">Kovach and Anderson (1965)</a>. The thick black line shows the preferred model, with the differentiated model “having too low a moment of inertia”.</span><a class="headerlink" href="#fig-0210figure1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The first successful mission to Mars was achieved by NASA with Mariner IV in mid 1965. This was a flyby mission, in which the probe passed within 10,000 km of the Martian surface. Its main contribution to science came from photos of the surface of the planet (which showed a cratered and apparently lifeless surface), but it also measured daytime temperatures and surface pressure (in the latter case, by refracting radio signals through the Martian atmosphere - a process referred to as radio occultation), which was found to be very low (6-10 millibars). Mariner IV also carried two devices designed for detecting the magnetic field of Mars. However, from distances &lt;13,000 km from the surface of the planet, no magnetic signature was detected by either instrument, a result which contrasted with that of the Earth.</p>
+<p>Mariner VI and VII followed in 1969, and found that the atmosphere of Mars was made almost entirely of carbon dioxide (98%) and had surface temperatures ranging from -73 to -125 C. An ice cap was found to exist at the south pole, which was determined to consist largely of carbon dioxide. Radio occultation provided a means to accurately measure the mass, radius and shape of Mars, which ultimately helped to refute earlier claims that the planet is undifferentiated. An interesting fact is that the total data return from Mariner VI and VII combined was only 100 Mb.</p>
+<p>The dawn of space missions to Mars also coincided with the depths of the cold war between the then Soviet Union and the United States of America. This was partly played out in space, with competing missions to the moon and Mars. In 1971, after s string of previous failures, the Soviet Union successfully launched Mars 2 and Mars 3, both of which were designed to go into orbit around Mars, send a lander to the surface, and deploy a rover. Both achieved orbit, but only Mars 3 managed a soft touchdown, after which it soon lost transmission, so the rover remained undeployed. Mars 2 successfully completed 362 orbits and sent back a large volume of data on atmospheric composition and surface temperatures. These missions were also notable for enabling the generation of surface relief maps and providing more details on gravity and magnetic fields.</p>
+<p>Following Mars 2 and 3,  a series of successful space missions that achieved orbits followed, both by the Soviet Union and United States. However, it wasn’t until Viking 1 in 1976 that a successful landing took place that was able to return useful data (<a class="reference internal" href="#fig-0210figure2"><span class="std std-numref">Fig. 3.68</span></a>). Viking 1 was able to take soil samples using a robotic arm, and take photographs of the Martian surface from close range. Viking 2 landed shortly afterwards, and was notable for its recording of Martian seismicity (Viking 1 also carried a seismometer, but it failed). However, due to wind and lander noise, it was only able to record two marsquakes.</p>
+<figure class="align-default" id="fig-0210figure2">
+<img alt="../../_images/figure2.png" src="../../_images/figure2.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 3.68 </span><span class="caption-text">Design of the Viking lander. Note that the seismometer is mounted on the lander, which resulted in high noise levels due to exposure to wind and lander noise (<a class="reference external" href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2022JE007660">Lazarewicz, 2023</a>).</span><a class="headerlink" href="#fig-0210figure2" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Following the successful Viking Missions, there was somewhat of a hiatus in Mars missions, partly due to launch and other failures, but from the 1990s onwards, missions became more regular. Those that are more notable in terms of geophysics include the Mars Global Surveyor, which carried a laser altimeter, magnetometer and device for measuring the gravitational field. These precise measurements allowed for inferences to be made about the crust and upper mantle structure beneath the martian surface (<a class="reference external" href="https://www.science.org/doi/10.1126/science.287.5459.1788">Zuber et al., 2020</a>). The Mars pathfinder mission that achieved a landing in 1997 was the first mission to successfully deploy a rover. However, from a geophysical point of view, it was the accurate measurements of the planet’s moment of inertia which lead to a rethink of planetary accretion models. A number of missions followed that included landings on Mars, including Spirit, Opportunity, Phoenix and the Mars Science laboratory. However, these were largely focused on the search for water and evidence of life. The Insight mission, which landed on the surface of Mars in November 2018, was the first mission with a geophysics focus, and will be discussed in more detail below.</p>
+</section>
+<section id="seismology-on-mars">
+<h2>Seismology on Mars<a class="headerlink" href="#seismology-on-mars" title="Link to this heading">#</a></h2>
+<p>The Insight mission represents a geophysical step-change for Mars, since it successfully deployed a 3-component broadband seismometer on the planetary surface. This instrument, called SEIS (Seismic Experiment for Interior Structure), comprises a 3-axis very broadband seismometer beneath a heavy wind and thermal shield, designed to minimise the noise caused by wind and temperature variations. The peak sample rate used was 100 sps, which limited maximum frequencies to 50 Hz.</p>
+<figure class="align-default" id="fig-0210figure3">
+<img alt="../../_images/figure3.png" src="../../_images/figure3.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 3.69 </span><span class="caption-text">Design of the InSight lander, showing the seismometer on the surface following its deployment by a robotic arm (from <a class="reference external" href="https://science.nasa.gov/mission/insight/science-instruments/">Nasa</a>).</span><a class="headerlink" href="#fig-0210figure3" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>SEIS recorded for a period of just over four years, during which time it detected 1319 marsquakes. This compares to 35,000 moonquakes detected during the Apollo missions from 1969-1977; in fact, this large number of moonquakes gave rise to the expectation that more marsquakes would be discovered by InSight. Marsquakes are characterised by their dominant frequency content, from high frequency (&gt;2.4 Hz), broadband (low frequency up to 2.4 Hz) and low frequency (below 1 Hz). Event detection was found to be heavily dependent on the ambient noise conditions at the lander, with Martian autumn and winter proving particularly noisy. <a class="reference internal" href="#fig-0210figure4"><span class="std std-numref">Fig. 3.70</span></a> clearly shows that noise levels are too high during the Martian day to permit detection except for large or nearby events; similarly, noise conditions during winter months, even during the night, are such they they largely preclude detection,</p>
+<figure class="align-default" id="fig-0210figure4">
+<img alt="../../_images/figure4.png" src="../../_images/figure4.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 3.70 </span><span class="caption-text">Daily spectogram of the very broadband vertical component of SEIS from sol 72 to 1446, noting that one sol is approximately 40 minutes longer than a day on Earth. Catalogued seismic events are superimposed (from <a class="reference external" href="https://www.hou.usra.edu/meetings/lpsc2023/pdf/1940.pdf">Horleston, 2023</a>).</span><a class="headerlink" href="#fig-0210figure4" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<section id="the-detection-and-location-problem">
+<h3>The detection and location problem<a class="headerlink" href="#the-detection-and-location-problem" title="Link to this heading">#</a></h3>
+<p>With just one seismometer, the detection problem becomes harder, but the location problem may at first seem impossible, unless there was complementary evidence e.g. space-based detection of an impact. On Earth, large national and global networks are routinely used for detecting and locating earthquakes, and it is well recognised that at least three seismometers are needed to achieve a well-constrained location, with noise and other factors including seismic model accuracy contributing to location uncertainty. If an arrival consisted of a single impulse on all components, then indeed location would be out of the question. But seismic waves are elastic waves that exhibit particle motion in all direction, and whether on Mars or Earth, they travel through a heterogeneous structure that adds to their complexity.</p>
+<p><a class="reference internal" href="#fig-0210figure5"><span class="std std-numref">Fig. 3.71</span></a> shows a distant earthquake recorded by a single 3-component broadband seismometer on Earth. It is easy to see that it contains a huge amount of information. P-waves and S-waves are compressional and transverse waves, respectively, which travel through the body of the Earth, They can reflect, refract and mode convert at a boundary according to Snell’s law to produce multiple paths. If there is a reasonably accurate model of P-wave and S-wave speed for Mars, then it is relatively straightforward to match these phase arrival times to model predictions, which would yield a constraint on epicentral distance. It turns out that such models were available even before InSight landed on Mars, and although seismic recordings enabled improvement, they were a reasonable approximation (based on radial estimates of density, composition and pressure). In terms of backazimuth location (orientation from the receiver to the earthquake), this can be estimated from the polarization of arriving seismic energy. A clear example in <a class="reference internal" href="#fig-0210figure5"><span class="std std-numref">Fig. 3.71</span></a> is shown by the surface waves, with Rayleigh waves appearing on the radial component (direction between the source and receiver) and vertical component, while faster-arriving Love waves appear on the transverse component (direction perpendicular to the radial component in the horizontal plane).</p>
+<figure class="align-default" id="fig-0210figure5">
+<img alt="../../_images/figure5.png" src="../../_images/figure5.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 3.71 </span><span class="caption-text">A three-component broadband seismogram from a distant Earthquake recorded on Earth. The body wave portion (lower amplitude first arriving wavetrains) of the seismogram contains many distinct arrivals. Large amplitude surface waves can be seen to trail the body waves (from <a class="reference external" href="https://www.cambridge.org/core/journals/geological-magazine/article/abs/stein-s-wysession-m-2003-an-introduction-to-seismology-earthquakes-and-earth-structure-xi-498-pp-oxford-blackwell-science-price-3495-us-7995-paperback-isbn-0-865-42078-5/2D9B98356D8C3BBD06237141303A04A2">Stein and Wysession, 2003</a>).</span><a class="headerlink" href="#fig-0210figure5" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>As such, the complete location problem is potentialy solvable given a 3-component seismogram recorded at a single location; the main limitation will be on accuracy. If later arriving body wave phases, such as pP are available, control of depth can actually be quite good; however, if these so-called depth-sensitive phases are not present, then depth constraints will likely be poor. <a class="reference internal" href="#fig-0210figure6"><span class="std std-numref">Fig. 3.72</span></a> shows a range of body wave path signatures for the  Earth, and the accompanying move-out curves, which illustrate how their arrival time varies with epicentral distance. It is easy to see from this that provided several body wave phases are present in a seismogram, determining an approximate epicentral distance is not difficult.</p>
+<figure class="align-default" id="fig-0210figure6">
+<img alt="../../_images/figure6.png" src="../../_images/figure6.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 3.72 </span><span class="caption-text">Left: Path signatures of various body wave phases in the Earth. Middle: Corresponding traveltime curves for a source at the surface; Right: Corresponding traveltime curves for a source at 600 km depth.  (from <a class="reference external" href="https://www.cambridge.org/core/journals/geological-magazine/article/abs/stein-s-wysession-m-2003-an-introduction-to-seismology-earthquakes-and-earth-structure-xi-498-pp-oxford-blackwell-science-price-3495-us-7995-paperback-isbn-0-865-42078-5/2D9B98356D8C3BBD06237141303A04A2">Stein and Wysession, 2003</a>).</span><a class="headerlink" href="#fig-0210figure6" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>While surface wave polarization can be used to determine source backazimuth, body wave polarization methods tend to be used in practice (<a class="reference external" href="https://www.sciencedirect.com/science/article/abs/pii/S0031920199000552">Frohlich and Pulliam, 1999</a>), for example using the polarization of the P-wave arrival and its coda, which often are easiest to identify on a seismogram and are not contaminated by other phases. Similar methods tended to be used with InSight data - for example, <a class="reference external" href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2021JE007067">Drilleau et al. 2022</a> computed backazimuth under the assumption that in this direction, the expectation is that energy is maximum, and the correlation coefficient and instantaneous phase between vertical and horiztonal components is negative and minimum.</p>
+<p>Apart from having to rely on data from just a single seismometer, another challenge for earthquake location on Mars is the intense scattering observed in marsquakes records. This results in the smoothing of impulsive arrivals and the generation of long coda, which reduces the number of clear P- and S-wave arrivals.</p>
+<p>InSight was also able to detect meteoroid airbursts and impacts, despite initial expectations that it may be challenging, with prelaunch estimates ranging from 1-10/year for impacts and 10-200/year for airbursts.  In the first year, no impacts were detected, whereas in the second year, 6 impacts were detected. <a class="reference internal" href="#fig-0210figure7"><span class="std std-numref">Fig. 3.73</span></a> shows a map of Mars seismicity, as detected by InSight. The significant uncertainty in location (given by the black lines) is to be expected, given that data from only a single seismometer is used.</p>
+<figure class="align-default" id="fig-0210figure7">
+<img alt="../../_images/figure7.png" src="../../_images/figure7.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 3.73 </span><span class="caption-text">Location of Marsquakes as determined from data collected by the InSight mission. The orange triangle indicates the location of the lander. Black ellipses indicate location uncertainty associated with the low frequency family of events. Purple symbols indicate locations of events that were determined to be impacts (diamonds are large impacts, while circles are small impacts close to the lander). The white circle denotes the location of a cluster of high frequency events. The dashed white line indicates an angular distance of 90 degrees from the lander. Inset: CMT focal mechanisms for events in the neighbourhood of Cerberus Fossae (from <a class="reference external" href="https://www.annualreviews.org/content/journals/10.1146/annurev-earth-031621-073318">Lognonne et al., 2023</a>).</span><a class="headerlink" href="#fig-0210figure7" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The distribution of marsquakes during the operational period of SEIS is irregular, but one consideration is that smaller events are more easily detected close to the lander, as implied by <a class="reference internal" href="#fig-0210figure8"><span class="std std-numref">Fig. 3.74</span></a>, which shows the complete set of marsquakes plotted as a function of epicentral distance from the lander and moment magnitude.</p>
+<figure class="align-default" id="fig-0210figure8">
+<img alt="../../_images/figure8.png" src="../../_images/figure8.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 3.74 </span><span class="caption-text">Marsquakes plotted in terms of moment magnitude as a function of epicentral distance from the lander. Two of the larger events, S1000a and S1094b are impacts. Note the size of the uncertainty in both epicentral distance and moment magnitude (from <a class="reference external" href="https://www.annualreviews.org/content/journals/10.1146/annurev-earth-031621-073318">Lognonne et al., 2023</a>).</span><a class="headerlink" href="#fig-0210figure8" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="cerberus-fossae">
+<h3>Cerberus Fossae<a class="headerlink" href="#cerberus-fossae" title="Link to this heading">#</a></h3>
+<p>The largest concentration of marsquakes occurs in the nieghbourhood of Cerberus Fossae, and is likely a reflection of ongoing tectonic activity. It lies approximately 1,200-2,300 km east of the lander, and appears to be a dyke-induced graben system, or a system of collapsed and widened volcanic fissures, which produces an elongated depression. Active volcanism in the region is thought to have ended less than 10 Ma. Based on ths distribution of seismicity, their frequency content and moment release, <a class="reference external" href="https://www.nature.com/articles/s41550-022-01803-y">Stahler et al., 2022</a> conclude that Cerberus Fossae is still actively opening under the influence of an extensional stress regime located in a warm source region beneath. They propose that shallow seismicity from high frequency events is created by ruptures at shallow depth due to the graben structure itself (see <a class="reference internal" href="#fig-0210figure9"><span class="std std-numref">Fig. 3.75</span></a>). More broadly, they conclude that lithospheric compression is not the dominant driver of contemporary tectonics on Mars.</p>
+<figure class="align-default" id="fig-0210figure9">
+<img alt="../../_images/figure9.png" src="../../_images/figure9.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 3.75 </span><span class="caption-text">Relationship between active opening of Cerberus Fossae and seismicity recorded by InSight (From <a class="reference external" href="https://www.nature.com/articles/s41550-022-01803-y">Stahler et al., 2022</a>).</span><a class="headerlink" href="#fig-0210figure9" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="the-martian-core">
+<h3>The Martian core<a class="headerlink" href="#the-martian-core" title="Link to this heading">#</a></h3>
+<p>Largely using marsquake seismicity recorded by InSight, there has been a whole raft of papers that have studied the structure of the Martian interior from crust to core. The radius and composition of the core has been a key topic, particularly in light of the difficulties in determining these parameters prior to InSight. In a recent study, <a class="reference external" href="https://www.nature.com/articles/s41586-023-06586-4">Khan et al. 2023</a> used core-sensitive body waves generated by low frequency marsquakes and meteor impacts to make inferences about the state and composition of the Martian core. They found that the best fit to the data and prior information of the thermoelastic properties of liquid iron-rich alloys require that a fully molten silicate layer, about 150 km thick, wraps itself around a smaller, denser liquid core of radius 1,675 km. The core is determined to contain 85—91 wt% iron-nickel and 9—15 wt% light elements, primarily sulfur, carbon, oxygen and hydrogen. <a class="reference internal" href="#fig-0210figure10"><span class="std std-numref">Fig. 3.76</span></a> provides a summary of these results, including the path signatures used to help determine the presence of a molten silicate layer.</p>
+<figure class="align-default" id="fig-0210figure10">
+<img alt="../../_images/figure10.png" src="../../_images/figure10.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 3.76 </span><span class="caption-text">a: P-wave, S-wave and density profiles obtained from inversion. For comparison, black solid and dashed lines represent the range of core profiles determined previously using SKS phases. b: Body wave ray path geometry for all events used in the study. Colour bar denotes ray path density. c: Inverted molten silicate layer (LSL) properties. d: Inverted core properties. Blue and orange shaded distributions on top and to the right of c and d indicate sampled probability distributions for the various parameters shown in the plots (From <a class="reference external" href="https://www.nature.com/articles/s41586-023-06586-4">Khan et al. 2023</a>).</span><a class="headerlink" href="#fig-0210figure10" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./02_environments/l10"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../l9/l9.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">3.9. </span>Mars II: Climate history</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../l11/l11.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">3.11. </span>Venus I: Venus Today</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-history-of-geophysical-exploration-on-mars">A history of geophysical exploration on Mars</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#seismology-on-mars">Seismology on Mars</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-detection-and-location-problem">The detection and location problem</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cerberus-fossae">Cerberus Fossae</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-martian-core">The Martian core</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The PSLU Team
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2026.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

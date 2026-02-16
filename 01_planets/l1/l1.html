@@ -1,0 +1,674 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>2.1. Exoplanets I: Detection &#8212; PSLU MPhil</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/admonitions.css?v=ca5c1317" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=1ae7504c"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"loader": {"load": ["[tex]/physics", "[tex]/ams", "[tex]/mhchem", "[tex]/color", "[tex]/newcommand", "[tex]/textcomp"]}, "tex": {"packages": ["base", "physics", "ams", "amsmath", "mhchem", "color", "newcommand", "textcomp"]}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '01_planets/l1/l1';</script>
+    <link rel="icon" href="../../_static/favicon.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="2.2. Exoplanets II: Architectures" href="../l2/l2.html" />
+    <link rel="prev" title="2. Origin of Planets (C1)" href="../intro/intro.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="PSLU MPhil - Home"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="PSLU MPhil - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../00_intro/intro/intro.html">1. Course Overview</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../00_intro/l0/l0.html">Introduction to the core course</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../00_intro/l1/l1.html">Origin of Planets (C1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../00_intro/l2/l2.html">Origin of Habitable Environments (C2)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../00_intro/l3/l3.html">Origin and detection of life (C3)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../00_intro/l4/l4.html">Origin and evolution of biospheres (C4)</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../intro/intro.html">2. Origin of Planets (C1)</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">2.1. Exoplanets I: Detection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l2/l2.html">2.2. Exoplanets II: Architectures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l3/l3.html">2.3. Exoplanets III: Compositions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l4/l4.html">2.4. Building blocks I: What makes the Universe habitable?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l5/l5.html">2.5. The Evolution of Stars</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l6/l6.html">2.6. The origin of the elements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l7/l7.html">2.7. Protoplanetary disks I: Formation and fragmentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l8/l8.html">2.8. Protoplanetary disks II: Transport and chemistry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l9/l9.html">2.9. Planet formation I: Accretion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l10/l10.html">2.10. Planet formation II: Differentiation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l11/l11.html">2.11. Debris disks I: Physical Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l12/l12.html">2.12. Debris Disks II: Late Delivery</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../02_environments/intro/intro.html">3. Origin of Habitable Environments (C2)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l1/l1.html">3.1. Climate homeostasis: Evidence for climate stability on Earth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l2/l2.html">3.2. Mechanisms for climate homeostasis I. What we think we understand</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l3/l3.html">3.3. Mechanisms for climate homeostasis II. Earth’s thermostat through time and the emerging view</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l4/l4.html">3.4. Planetary cycles I: Mantle Convection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l5/l5.html">3.5. Planetary cycles II: Plate tectonics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l6/l6.html">3.6. Planetary cycles III: Subduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l7/l7.html">3.7. Planetary cycles IV: Volcanism</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l8/l8.html">3.8. Mars I: Geological history</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l9/l9.html">3.9. Mars II: Climate history</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l10/l10.html">3.10. Mars III: Geophysics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l11/l11.html">3.11. Venus I: Venus Today</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l12/l12.html">3.12. Venus II: Venus Over Time</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../03_detection/intro/intro.html">4. Origin and detection of life (C3)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l1/l1.html">4.1. Fundamentals of organic chemistry I: How atoms fit together</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l2/l2.html">4.2. Fundamentals of organic chemistry II: How molecules are different</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l3/l3.html">4.3. Fundamentals of organic chemistry III: How molecules react</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l4/l4.html">4.4. Why some chemical reactions happen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l5/l5.html">4.5. Astrochemistry: From the Insterstellar Medium to Comets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l6/l6.html">4.6. Atmospheric Chemistry I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l7/l7.html">4.7. Atmospheric Chemistry II</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l8/l8.html">4.8. Fundamentals of Aqueous Geochemistry I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l9/l9.html">4.9. Fundamentals of Aqueous Geochemistry II</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l10/l10.html">4.10. The Origins of Life as a Planetary Phenomenon</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l11/l11.html">4.11. Detecting Biosignatures I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l12/l12.html">4.12. Detecting Biosignatures II</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../04_biospheres/intro/intro.html">5. Biospheres (C4)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l1/l1.html">5.1. Prebiotic chemisty I: Chemical Basis for Life</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l2/l2.html">5.2. Prebiotic chemisty II: Chemical Basis for Life</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l3/l3.html">5.3. The evolution and diversity of photosynthesis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l4/l4.html">5.4. Origins of Eukaryotes (chloroplasts, mitos)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l5/l5.html">5.5. Protocell assembly</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l6/l6.html">5.6. From protocells to LUCA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l7/l7.html">5.7. Early life on Earth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l8/l8.html">5.8. Microbial ecosystems and their geobiological expression</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l9/l9.html">5.9. The evolution of complex life</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l10/l10.html">5.10. Land plant transformation of the terrestrial biosphere</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l11/l11.html">5.11. Macroevolutionary patterns on Earth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l12/l12.html">5.12. Eco-evolutionary dynamics of exoplanets</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference/glossary.html">6. Glossary</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/01_planets/l1/l1.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Exoplanets I: Detection</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-concepts">Key Concepts:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transits">Transits</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-radial-velocity-technique">The Radial Velocity Technique</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#astrometry">Astrometry</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#direct-imaging">Direct Imaging</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#timing">Timing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#further-reading">Further Reading:</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="exoplanets-i-detection">
+<span id="lecture-c1-1"></span><h1><span class="section-number">2.1. </span>Exoplanets I: Detection<a class="headerlink" href="#exoplanets-i-detection" title="Link to this heading">#</a></h1>
+<p>Professor: <strong><a class="reference external" href="mailto:abonsor&#37;&#52;&#48;ast&#46;cam&#46;ac&#46;uk">Amy Bonsor</a></strong> (<a class="reference external" href="https://www.ast.cam.ac.uk">IoA</a>)</p>
+<hr class="docutils" />
+<blockquote class="highlights">
+<div><p><strong>Learning objectives:</strong></p>
+<ul class="simple">
+<li><p>Methods of exoplanet detection and how they work</p>
+<ul>
+<li><p>Radial velocity</p></li>
+<li><p>Transit</p></li>
+<li><p>Astrometry</p></li>
+<li><p>Direct imaging</p></li>
+<li><p>Microlensing</p></li>
+</ul>
+</li>
+</ul>
+</div></blockquote>
+<section id="key-concepts">
+<h2>Key Concepts:<a class="headerlink" href="#key-concepts" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>exoplanets are generally detected by indirect methods, including radial velocity technique, transits, astrometry, direct imaging, timing and microlensing</p></li>
+<li><p>Most of the Solar System planets, except Jupiter, lie beyond the capabilities of current methods</p></li>
+<li><p>In general, close-in, massive planets are the easiest to detect, with a few caveats for individual methods</p></li>
+</ul>
+</section>
+<section id="transits">
+<h2>Transits<a class="headerlink" href="#transits" title="Link to this heading">#</a></h2>
+<p>The transit of a planet is detected when the planet passes directly in front of the star blocking light from reaching the observer. The observer luminosity of the star temporarily drops whilst the orbiting planet moves across the star, as shown in <a class="reference internal" href="#fig-l8-transit"><span class="std std-numref">Fig. 2.1</span></a>. The drop in the brightness of the star, or the flux received on Earth (<span class="math notranslate nohighlight">\(F\)</span>), is proportional to the area of the planet (<span class="math notranslate nohighlight">\(R_{\rm pl}^2\)</span>) relative to the area of the star (<span class="math notranslate nohighlight">\(R_*\)</span>):</p>
+<p><span class="math notranslate nohighlight">\(F \propto \left (\frac{R_{\rm pl}}{R_*}\right)^2\)</span>.</p>
+<p>Transits can be used to find the planet’s radius, given a good knowledge of the star’s radius. Transit photometry is best suited to detecting large planets on short period orbits around small stars. The probability of a planet transiting is proportional to its radius and inversely proportion to the <strong><a class="reference internal" href="../../reference/glossary.html#term-Semi-major-axis"><span class="xref std std-term">semi-major axis</span></a></strong> of the planet’s orbit:</p>
+<p><span class="math notranslate nohighlight">\(P \sim \frac{(R_* + R_{\rm pl})}{a}.\)</span></p>
+<p><a class="reference internal" href="#fig-l8-exoplanet-demog"><span class="std std-numref">Fig. 2.2</span></a>  shows that most planets detected by transits (blue dots) are on short periods and that transits can detect planets smaller than Earth, so long as they are orbiting small stars. This means that the first population of terrestrial mass planets have been found around stars significantly smaller than the sun, referred to as M-dwarfs.</p>
+<figure class="align-center" id="fig-l8-transit">
+<a class="reference internal image-reference" href="../../_images/transit.jpg"><img alt="../../_images/transit.jpg" src="../../_images/transit.jpg" style="width: 50%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 2.1 </span><span class="caption-text">A schematic showing the dip in brightness of the star as a planet passes in front.</span><a class="headerlink" href="#fig-l8-transit" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="fig-l8-exoplanet-demog">
+<a class="reference internal image-reference" href="../../_images/exoplanet_demog.jpg"><img alt="../../_images/exoplanet_demog.jpg" src="../../_images/exoplanet_demog.jpg" style="height: 500px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 2.2 </span><span class="caption-text">The masses and periods of exoplanet detections shown, coloured by the primary discovery method. Credit: Stefano Meschiari.</span><a class="headerlink" href="#fig-l8-exoplanet-demog" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="the-radial-velocity-technique">
+<h2>The Radial Velocity Technique<a class="headerlink" href="#the-radial-velocity-technique" title="Link to this heading">#</a></h2>
+<p>Planets and stars both orbit the common centre of mass of the system. As the star is in general much more massive, the centre of mass is often very close to the star, such that the difference between the frame in which the planet orbits the star and the frame in which the planet orbits the centre of mass are very similar, as shown by <a class="reference internal" href="#fig-l8-rv"><span class="std std-numref">Fig. 2.3</span></a>. The orbit of the star around the planet-star centre of mass does, however, lead to small variations in the velocity of the star, as seen by an observer on Earth. The radial velocity detects this motion or wobble in order to infer the presence of a planet.</p>
+<p>Stellar spectra contain a range of absorption lines from species in the stellar atmosphere. The exact frequency or wavelength at which these absorption lines are seen depends on the atomic properties of the line as well as the velocity of the star. If the star is moving towards the observer, the frequency of the emission increases. This is known as a Doppler Shift. As the star moves away from the observer, the frequency of the emission decreases. By following the variation in the frequency of a range of absorption features in the stellar spectrum, the radial velocity of the star as function of time can be tracked. The radial velocity of the star 51 Peg is shown in <a class="reference internal" href="#fig-l8-rv51pegb"><span class="std std-numref">Fig. 2.4</span></a>. The periodic change in the radial velocity is due to the star being orbited by a planet with minimum mass of 0.42 Jupiter masses on a 4.23 day orbit, as found by Mayor &amp; Queloz, 1995.</p>
+<p>The radial velocity technique is best suited to detecting massive planets on short period orbits, as shown on <a class="reference internal" href="#fig-l8-exoplanet-demog"><span class="std std-numref">Fig. 2.2</span></a>. Planets can be detected on longer period orbits, where the stars have been monitored on sufficiently long timescales. The technique provides the minimum mass of the planet, as for systems inclined to the line of sight to the observer, the observed radial velocity will be decreased by a factor of sin I, where I is the inclination of the planet’s orbit to the line of sight.</p>
+<figure class="align-default" id="fig-l8-rv">
+<a class="reference internal image-reference" href="../../_images/rv.jpg"><img alt="../../_images/rv.jpg" src="../../_images/rv.jpg" style="width: 90%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 2.3 </span><span class="caption-text">As seen from Earth, both the star and planet orbit the common centre of mass of the system. In the star’s frame, the planet orbits the star.</span><a class="headerlink" href="#fig-l8-rv" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="fig-l8-rv51pegb">
+<a class="reference internal image-reference" href="../../_images/rv51Pegb.jpg"><img alt="../../_images/rv51Pegb.jpg" src="../../_images/rv51Pegb.jpg" style="width: 50%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 2.4 </span><span class="caption-text">The phase-folded radial velocity measurements for the plaent 51 Peg b (Mayor &amp; Queloz, 1995).</span><a class="headerlink" href="#fig-l8-rv51pegb" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The radial velocity of a star is related to the trajectory of the star about the star-planet common centre of mass. If we consider the definition of the centre of mass, we can relate the orbital radius of the star, <span class="math notranslate nohighlight">\(r_*\)</span>, to the planet-star separation, <span class="math notranslate nohighlight">\(a\)</span>:</p>
+<p><span class="math notranslate nohighlight">\( r_* = a \frac{M_p}{M_p + M_*} \)</span>,</p>
+<p>where <span class="math notranslate nohighlight">\(M_p\)</span> is the planet mass and <span class="math notranslate nohighlight">\(M_*\)</span> is the stellar mass.</p>
+<p>If the star is on a circular orbit, its velocity can be related to its period, <span class="math notranslate nohighlight">\(P\)</span> by:</p>
+<p><span class="math notranslate nohighlight">\( v_*= \frac{ 2\pi r_*} {P}\)</span>,</p>
+<p>which is simplified as:</p>
+<p><span class="math notranslate nohighlight">\( v_*= \frac{ 2\pi a} {P}\frac{M_p}{M_* + M_p}\)</span>.</p>
+<p>From Kepler’s third law:</p>
+<p><span class="math notranslate nohighlight">\(a^3 = \frac{G(M_* + M_p) P^2}{4\pi^2}.\)</span></p>
+<p>Thus, the stellar velocity can be expressed as:</p>
+<p><span class="math notranslate nohighlight">\( v_* = \left ( \frac{2\pi G }{P}\right)^{1/3} \frac{M_p}{(M_* + M_p)^{2/3}}. \)</span></p>
+<p>For an observer on Earth, who is inclined at an angle, <span class="math notranslate nohighlight">\(I\)</span> to the star-planet orbital plane, the observed velocity is <span class="math notranslate nohighlight">\(v_* \sin I\)</span>. Including an eccentricity of the orbit, <span class="math notranslate nohighlight">\(e\)</span>, the radial velocity semi-amplitude, <span class="math notranslate nohighlight">\(K\)</span> can be expressed as:</p>
+<p><span class="math notranslate nohighlight">\( K = \left ( \frac{2\pi G }{P}\right)^{1/3} \frac{M_p \sin I }{(M_* + M_p)^{2/3}}\frac{1}{\sqrt{1-e^2}}\)</span>.</p>
+</section>
+<section id="astrometry">
+<h2>Astrometry<a class="headerlink" href="#astrometry" title="Link to this heading">#</a></h2>
+<p>Astrometry finds planets by precisely measuring the position of the star and looking for periodic shifts due to the orbit of the star around the common centre of mass for the planet-star system. The precision required to find planets is very high, however, the Gaia space mission is anticipated to find hundreds of exoplanets using astrometry.</p>
+<p>The astrometric signature, <span class="math notranslate nohighlight">\(\alpha\)</span>, is approximated by the ratio of planet and stellar masses (<span class="math notranslate nohighlight">\(M_{\rm pl}\)</span> and <span class="math notranslate nohighlight">\(M_*\)</span>) in solar masses, their separation, <span class="math notranslate nohighlight">\(a\)</span>, and the distance to the star, <span class="math notranslate nohighlight">\(d\)</span> :</p>
+<p><span class="math notranslate nohighlight">\( \alpha = \left (\frac{M_{\rm pl}}{M_*}\right) \left ( \frac{a}{\rm au}\right) \left (\frac{d}{\rm pc}\right)^{-1} \, \, as. \)</span></p>
+<p>Astrometry is better suited to detecting higher mass planets on longer orbital periods, which is very complimentary to other techniques. However, multiple orbits still need to be observed in order to confirm a detection. The planetary orbit must also be face-on.</p>
+<figure class="align-default" id="fig-l8-astrometry">
+<a class="reference internal image-reference" href="../../_images/astrometry.jpg"><img alt="../../_images/astrometry.jpg" src="../../_images/astrometry.jpg" style="height: 500px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 2.5 </span><span class="caption-text">The motion on the sky of a star due to its proper motion, parallax and orbital motion due to the presence of planet (Perryman et al, 2012). (European Physical Journal H, 37, 745 (2012))</span><a class="headerlink" href="#fig-l8-astrometry" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="direct-imaging">
+<h2>Direct Imaging<a class="headerlink" href="#direct-imaging" title="Link to this heading">#</a></h2>
+<p>Planets are very faint objects very close to their bright host stars. In general, it is very difficult to image them directly, unless they are very bright, normally the case only for young, massive planets and can be resolved from the star. <a class="reference internal" href="#fig-l8-exoplanet-demog"><span class="std std-numref">Fig. 2.2</span></a> shows that the currently imaged planets orbit at tens of au from their host stars and our Jupiter mass and above.</p>
+<p>Coronographs or star-shades can be used to block the light from the star, leaving the light from the planets that can be directly detected. The key advantage of direct imaging is that it is possible to get a spectra of the planet.</p>
+<p><a class="reference internal" href="#fig-l8-di"><span class="std std-numref">Fig. 2.6</span></a> shows an image of the planets found around the star HR 8799. This planetary system is very different to our Solar System with four planets more massive than Jupiter orbiting at tens of au.</p>
+<figure class="align-default" id="fig-l8-di">
+<a class="reference internal image-reference" href="../../_images/di_hr8799.jpg"><img alt="../../_images/di_hr8799.jpg" src="../../_images/di_hr8799.jpg" style="height: 500px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 2.6 </span><span class="caption-text">HR 8799 b, c, d and e, Marois et al, 2010, Nature</span><a class="headerlink" href="#fig-l8-di" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="timing">
+<h2>Timing<a class="headerlink" href="#timing" title="Link to this heading">#</a></h2>
+<p>The first exoplanets ever discovered orbited the pulsar, PSR B1257+12 (Wolszczan et al, 1992). Pulsars are extremely regular clocks and the variation in the arrival time of pulses indicated that the pulsar was orbited by 3 planets of 0.02, 4.3 and 3.9 <span class="math notranslate nohighlight">\(M_\oplus\)</span> on orbits with semi-major axis of 0.19, 0.36 and 0.46au.</p>
+<figure class="align-default" id="fig-l8-timing">
+<a class="reference internal image-reference" href="../../_images/timing.jpg"><img alt="../../_images/timing.jpg" src="../../_images/timing.jpg" style="height: 500px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 2.7 </span><span class="caption-text">Regular variations in the timing of pulses indicate the presence of a planet. Image credit: Alice Hopkinson, LCO.</span><a class="headerlink" href="#fig-l8-timing" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="references">
+<h2>References<a class="headerlink" href="#references" title="Link to this heading">#</a></h2>
+<p><a class="reference external" href="https://doi.org/10.1038/378355a0">Mayor, Michael; Queloz, Didier (1995). “A Jupiter-mass companion to a solar-type star”. Nature. 378 (6555): 355–359.</a></p>
+<p><a class="reference external" href="https://doi.org/10.1140/epjh/e2012-30039-4">Perryman M., 2012, EPJH, 37, 745.</a></p>
+<p><a class="reference external" href="https://doi.org/10.1038/355145a0">Wolszczan A., Frail D.~A., 1992, Nature, 355, 145.</a></p>
+</section>
+<section id="further-reading">
+<h2>Further Reading:<a class="headerlink" href="#further-reading" title="Link to this heading">#</a></h2>
+<p><a class="reference external" href="https://exoplanets.nasa.gov/alien-worlds/ways-to-find-a-planet/">NASA Exoplanets: 5 ways to find a planet</a></p>
+<p><a class="reference external" href="https://sci.esa.int/web/exoplanets/-/60655-detection-methods">ESA Exoplanets</a></p>
+<p><a class="reference external" href="https://idiscover.lib.cam.ac.uk/permalink/f/t9gok8/44CAM_ALMA21503492650003606">Methods of detecting exoplanets: 1st advanced school on exoplanetary science/Valeria Bozza, Luigi Mancini, Alessandro Sozzetti (editors), Springer 2016</a></p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./01_planets/l1"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../intro/intro.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">2. </span>Origin of Planets (C1)</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../l2/l2.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">2.2. </span>Exoplanets II: Architectures</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-concepts">Key Concepts:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transits">Transits</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-radial-velocity-technique">The Radial Velocity Technique</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#astrometry">Astrometry</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#direct-imaging">Direct Imaging</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#timing">Timing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#further-reading">Further Reading:</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The PSLU Team
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2026.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

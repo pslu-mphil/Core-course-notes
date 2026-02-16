@@ -1,0 +1,756 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>3.2. Mechanisms for climate homeostasis I. What we think we understand &#8212; PSLU MPhil</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/admonitions.css?v=ca5c1317" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=1ae7504c"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"loader": {"load": ["[tex]/physics", "[tex]/ams", "[tex]/mhchem", "[tex]/color", "[tex]/newcommand", "[tex]/textcomp"]}, "tex": {"packages": ["base", "physics", "ams", "amsmath", "mhchem", "color", "newcommand", "textcomp"]}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '02_environments/l2/l2';</script>
+    <link rel="icon" href="../../_static/favicon.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="3.3. Mechanisms for climate homeostasis II. Earth’s thermostat through time and the emerging view" href="../l3/l3.html" />
+    <link rel="prev" title="3.1. Climate homeostasis: Evidence for climate stability on Earth" href="../l1/l1.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="PSLU MPhil - Home"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="PSLU MPhil - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../00_intro/intro/intro.html">1. Course Overview</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../00_intro/l0/l0.html">Introduction to the core course</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../00_intro/l1/l1.html">Origin of Planets (C1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../00_intro/l2/l2.html">Origin of Habitable Environments (C2)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../00_intro/l3/l3.html">Origin and detection of life (C3)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../00_intro/l4/l4.html">Origin and evolution of biospheres (C4)</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../01_planets/intro/intro.html">2. Origin of Planets (C1)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l1/l1.html">2.1. Exoplanets I: Detection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l2/l2.html">2.2. Exoplanets II: Architectures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l3/l3.html">2.3. Exoplanets III: Compositions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l4/l4.html">2.4. Building blocks I: What makes the Universe habitable?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l5/l5.html">2.5. The Evolution of Stars</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l6/l6.html">2.6. The origin of the elements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l7/l7.html">2.7. Protoplanetary disks I: Formation and fragmentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l8/l8.html">2.8. Protoplanetary disks II: Transport and chemistry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l9/l9.html">2.9. Planet formation I: Accretion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l10/l10.html">2.10. Planet formation II: Differentiation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l11/l11.html">2.11. Debris disks I: Physical Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l12/l12.html">2.12. Debris Disks II: Late Delivery</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../intro/intro.html">3. Origin of Habitable Environments (C2)</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../l1/l1.html">3.1. Climate homeostasis: Evidence for climate stability on Earth</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">3.2. Mechanisms for climate homeostasis I. What we think we understand</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l3/l3.html">3.3. Mechanisms for climate homeostasis II. Earth’s thermostat through time and the emerging view</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l4/l4.html">3.4. Planetary cycles I: Mantle Convection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l5/l5.html">3.5. Planetary cycles II: Plate tectonics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l6/l6.html">3.6. Planetary cycles III: Subduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l7/l7.html">3.7. Planetary cycles IV: Volcanism</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l8/l8.html">3.8. Mars I: Geological history</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l9/l9.html">3.9. Mars II: Climate history</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l10/l10.html">3.10. Mars III: Geophysics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l11/l11.html">3.11. Venus I: Venus Today</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l12/l12.html">3.12. Venus II: Venus Over Time</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../03_detection/intro/intro.html">4. Origin and detection of life (C3)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l1/l1.html">4.1. Fundamentals of organic chemistry I: How atoms fit together</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l2/l2.html">4.2. Fundamentals of organic chemistry II: How molecules are different</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l3/l3.html">4.3. Fundamentals of organic chemistry III: How molecules react</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l4/l4.html">4.4. Why some chemical reactions happen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l5/l5.html">4.5. Astrochemistry: From the Insterstellar Medium to Comets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l6/l6.html">4.6. Atmospheric Chemistry I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l7/l7.html">4.7. Atmospheric Chemistry II</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l8/l8.html">4.8. Fundamentals of Aqueous Geochemistry I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l9/l9.html">4.9. Fundamentals of Aqueous Geochemistry II</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l10/l10.html">4.10. The Origins of Life as a Planetary Phenomenon</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l11/l11.html">4.11. Detecting Biosignatures I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l12/l12.html">4.12. Detecting Biosignatures II</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../04_biospheres/intro/intro.html">5. Biospheres (C4)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l1/l1.html">5.1. Prebiotic chemisty I: Chemical Basis for Life</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l2/l2.html">5.2. Prebiotic chemisty II: Chemical Basis for Life</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l3/l3.html">5.3. The evolution and diversity of photosynthesis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l4/l4.html">5.4. Origins of Eukaryotes (chloroplasts, mitos)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l5/l5.html">5.5. Protocell assembly</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l6/l6.html">5.6. From protocells to LUCA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l7/l7.html">5.7. Early life on Earth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l8/l8.html">5.8. Microbial ecosystems and their geobiological expression</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l9/l9.html">5.9. The evolution of complex life</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l10/l10.html">5.10. Land plant transformation of the terrestrial biosphere</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l11/l11.html">5.11. Macroevolutionary patterns on Earth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l12/l12.html">5.12. Eco-evolutionary dynamics of exoplanets</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference/glossary.html">6. Glossary</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/02_environments/l2/l2.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Mechanisms for climate homeostasis I. What we think we understand</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-carbon-cycle-and-climate">The Carbon Cycle and Climate</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#carbon-consumption-through-silicate-weathering">Carbon Consumption Through Silicate Weathering</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#carbon-consumption-through-carbonate-weathering">Carbon Consumption Through Carbonate Weathering</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-net-carbon-transfer-of-carbonate-and-silicate-weathering">The Net Carbon Transfer of Carbonate and Silicate Weathering</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#non-calcium-bearing-silicates">Non-Calcium Bearing Silicates</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-weathering-and-transfer-of-organic-matter">The weathering and transfer of organic matter</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-strength-of-the-weathering-feedback">The strength of the weathering feedback</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#effect-of-temperature">Effect of temperature</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#supply-of-material-and-erosion-rates">Supply of material and erosion rates</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#runoff-and-rainfall">Runoff and rainfall</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dissolution-in-the-real-world">Dissolution in the real world</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#weathering-hot-spots-in-the-modern-day">Weathering hot-spots in the modern day</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="mechanisms-for-climate-homeostasis-i-what-we-think-we-understand">
+<span id="lecture-c2-2"></span><h1><span class="section-number">3.2. </span>Mechanisms for climate homeostasis I. What we think we understand<a class="headerlink" href="#mechanisms-for-climate-homeostasis-i-what-we-think-we-understand" title="Link to this heading">#</a></h1>
+<p>Professor: <strong><a class="reference external" href="mailto:ett20&#37;&#52;&#48;cam&#46;ac&#46;uk">Ed Tipper</a></strong> (<a class="reference external" href="https://www.esc.cam.ac.uk">Earth Sciences</a>)</p>
+<hr class="docutils" />
+<blockquote class="highlights">
+<div><p><strong>Learning Objectives:</strong></p>
+<ul class="simple">
+<li><p>The Long-Term Carbon Cycle and Climate</p></li>
+<li><p>Silicate and Carbonate Weathering and Carbon Consumption</p></li>
+<li><p>The Organic Carbon Cycle</p></li>
+<li><p>The Silicate Weathering Feedback:  Earth’s Thermostat?</p></li>
+<li><p>Controls on Silicate Weathering, and Modern <span class="math notranslate nohighlight">\(\sf CO_2\)</span> Hotspots</p></li>
+</ul>
+</div></blockquote>
+<p>Maintaining an equable climate over most of the Earth’s history implies a negative feedback which regulates atmospheric <span class="math notranslate nohighlight">\(\sf CO_2\)</span>, a key greenhouse gas.    Something prevented Earth from becoming a runaway greenhouse like Venus, despite the continuous magmatic degassing over time [remember than Venus doesn’t have plate tectonics].   Silicate weathering and carbonate formation (temperature and precipitation dependent)  and coupled burial of organic carbon have been cited as the major negative climate feedbacks.  This lecture will discuss the textbook view of the negative climate feedback that is commonly referred to as Earth’s thermostat.</p>
+<section id="the-carbon-cycle-and-climate">
+<h2>The Carbon Cycle and Climate<a class="headerlink" href="#the-carbon-cycle-and-climate" title="Link to this heading">#</a></h2>
+<p>The carbon cycle operates over a number of different time-scales.  On short time-scales the major fluxes are photosynthesis and respiration, and exchange between the surface of the ocean and the atmosphere.  On longer time-scales, deeper pools of carbon exchange with the atmosphere.  On very long time-scales (<span class="math notranslate nohighlight">\(\sf 10^6\)</span>yrs), mineral weathering coupled to carbonate precipitation and the oxidation and burial of organic matter are thought to mediate the levels of atmospheric <span class="math notranslate nohighlight">\(\sf CO_2\)</span>.  In turn this removal of <span class="math notranslate nohighlight">\(\sf CO_2\)</span> probably stabilise long-term climate. <a class="reference external" href="https://rock.geosociety.org/net/gsatoday/archive/9/11/pdf/i1052-5173-9-11-1.pdf">Berner, 1999</a> provides a nice simple readable summary.  In the context of current environmental change, the fluxes associated with weathering are small but recent estimates of the total carbon transfer through weathering and erosion are about 20% of the current increase in atmospheric <span class="math notranslate nohighlight">\(\sf CO_2\)</span>.</p>
+<p>Importantly, weathering is sensitive to climate.  As temperature increases and the hydrological cycle intensifies, the attendant weathering fluxes of carbon should also increase with the current changing climate. The <a class="reference external" href="https://www.ipcc.ch/report/ar6/wg1/downloads/report/IPCC_AR6_WGI_FullReport_small.pdf">IPCC report, 2021</a>  provides a detailed summary.  A basic summary of both the long and short-term carbon cycle is illustrated in <a class="reference internal" href="#fig-gaillardet-galy-c-cycle"><span class="std std-numref">Fig. 3.17</span></a>.</p>
+<div class="full-width docutils">
+<figure class="full-width align-default" id="fig-gaillardet-galy-c-cycle">
+<a class="reference internal image-reference" href="../../_images/C_cycle_Gaillardet_silicate_carb_organic_sinks.png"><img alt="../../_images/C_cycle_Gaillardet_silicate_carb_organic_sinks.png" src="../../_images/C_cycle_Gaillardet_silicate_carb_organic_sinks.png" style="width: 900px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 3.17 </span><span class="caption-text">Summary of the carbon cycle, modified from <a class="reference external" href="https://www.science.org/doi/10.1126/science.1159279">Gaillardet and Galy 2008</a></span><a class="headerlink" href="#fig-gaillardet-galy-c-cycle" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="carbon-consumption-through-silicate-weathering">
+<h2>Carbon Consumption Through Silicate Weathering<a class="headerlink" href="#carbon-consumption-through-silicate-weathering" title="Link to this heading">#</a></h2>
+<p>Dissolving <span class="math notranslate nohighlight">\(\sf CO_2\)</span> in water gives carbonic acid (Equation <a class="reference internal" href="#equation-eq-carb-acid">(3.2)</a>).  All rain is mildly acidic naturally though this can be aggravated by pollution.  Much, but not all weathering takes place in soil environments where <span class="math notranslate nohighlight">\(\sf pCO_2\)</span> in the soil pore waters can be much higher than atmospheric levels because of the respiration of decaying organic matter.</p>
+<div class="tip admonition">
+<p class="admonition-title">Formation of carbonic acid though <span class="math notranslate nohighlight">\(\sf CO_2\)</span> dissolution in water</p>
+<div class="math notranslate nohighlight" id="equation-eq-carb-acid">
+<span class="eqno">(3.2)<a class="headerlink" href="#equation-eq-carb-acid" title="Link to this equation">#</a></span>\[\sf CO_2+H_2O\rightleftharpoons H_2CO_3  \rightleftharpoons H^+ +HCO_3^-\]</div>
+</div>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>Note the importance of life.  How did this work before there was life on the planet?</p>
+</aside>
+<p>The acidity of soil waters can therefore be high.  This acidity is easily neutralised by the dissolution of silicate minerals <a class="reference internal" href="#equation-eq-ca-sil-short">(3.3)</a> illustrates this schematically), and the conversion of carbonic acid to bicarbonate.  This bicarbonate that makes up most of the alkalinity of natural waters with a neutral pH gets transferred to the oceans where it can have a residence time of tens of thousands of years.</p>
+<div class="tip admonition">
+<p class="admonition-title">Silicate weathering: Carbon sink through dissolution</p>
+<div class="math notranslate nohighlight" id="equation-eq-ca-sil-short">
+<span class="eqno">(3.3)<a class="headerlink" href="#equation-eq-ca-sil-short" title="Link to this equation">#</a></span>\[\sf 2CO_2 + 3H_2O+ CaAl_2Si_2O_8 \Rightarrow Ca^{2+}_{aq} +2HCO_3^- +Al_2Si_2O_5(OH)_4\]</div>
+</div>
+</section>
+<section id="carbon-consumption-through-carbonate-weathering">
+<h2>Carbon Consumption Through Carbonate Weathering<a class="headerlink" href="#carbon-consumption-through-carbonate-weathering" title="Link to this heading">#</a></h2>
+<p>On time-scales of thousands to tens of thousands of years, carbonate weathering transfers carbon to the hydrosphere from the atmosphere where it can be stored for the residence time of dissolved inorganic carbon (mostly in the oceans).  This may be important because carbonate weathering has faster reaction kinetics than silicate weathering <a class="reference internal" href="#fig-marsyandi-carb-sil"><span class="std std-numref">Fig. 3.18</span></a>.  Carbonate rocks are ubiquitous and there are some, largely unrecognised signs that carbonate weathering may already be responding to anthropogenic global change.</p>
+<div class="tip admonition">
+<p class="admonition-title">Carbonate weathering: Carbon sink through dissolution</p>
+<div class="math notranslate nohighlight" id="equation-eq-ca-carb-short">
+<span class="eqno">(3.4)<a class="headerlink" href="#equation-eq-ca-carb-short" title="Link to this equation">#</a></span>\[\sf H_2O+CO_2+CaCO_3 \Rightarrow Ca^{2+} +2HCO_3-\]</div>
+</div>
+<figure class="align-default" id="fig-marsyandi-carb-sil">
+<a class="reference internal image-reference" href="../../_images/Marsy_carb_sil.png"><img alt="../../_images/Marsy_carb_sil.png" src="../../_images/Marsy_carb_sil.png" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 3.18 </span><span class="caption-text">Schematic diagram illustrating the different sensitivities of carbonate and silicate weathering to seasonal changes in runoff.</span><a class="headerlink" href="#fig-marsyandi-carb-sil" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="the-net-carbon-transfer-of-carbonate-and-silicate-weathering">
+<h2>The Net Carbon Transfer of Carbonate and Silicate Weathering<a class="headerlink" href="#the-net-carbon-transfer-of-carbonate-and-silicate-weathering" title="Link to this heading">#</a></h2>
+<p>On the time-scale of mineral dissolution (both carbonate and silicate), carbon is clearly moved from the atmosphere (where it contributes to the green-house effect) to the hydrosphere, where the is no contribution to the green-house effect.  On <span class="math notranslate nohighlight">\(\sf 10^6\)</span>-<span class="math notranslate nohighlight">\(10^7\)</span>yr time-scales (typically referred to as geological time-scales) carbon gets transferred from the hydrosphere back to rock via the following reactions.</p>
+<div class="tip admonition">
+<p class="admonition-title">Formation of biogenic carbonate (limestone) from the products of silicate weathering</p>
+<p>The dissolution products of silicate weathering combine to make calcium carbonate:</p>
+<div class="math notranslate nohighlight" id="equation-eq-carbonate-from-silicate">
+<span class="eqno">(3.5)<a class="headerlink" href="#equation-eq-carbonate-from-silicate" title="Link to this equation">#</a></span>\[\sf Ca^{2+}_{aq} +2HCO_3^- +Al_2Si_2O_5(OH)_4 \Rightarrow CaCO_3+CO_2+H_2O+Al_2Si_2O_5(OH)_4\]</div>
+</div>
+<p>In most text-books, the net reaction of silicate mineral dissolution combined with biogenic carbonate precipitation is usually simplified to <a class="reference internal" href="#equation-eq-urey">(3.6)</a>:</p>
+<div class="tip admonition">
+<p class="admonition-title">Urey reactions (silicate)</p>
+<div class="math notranslate nohighlight" id="equation-eq-urey">
+<span class="eqno">(3.6)<a class="headerlink" href="#equation-eq-urey" title="Link to this equation">#</a></span>\[\sf 2CO_2+H_2O+CaSiO_3 \Rightarrow CaCO_3+CO_2+SiO_2+H_2O\]</div>
+</div>
+<p>The overall result of <a class="reference internal" href="#equation-eq-urey">(3.6)</a> is that for every 2 moles of <span class="math notranslate nohighlight">\(\sf CO_2\)</span> that are consumed at the mineral dissolution stage, only one mole is consumed as calcium carbonate in the geological record.</p>
+<p>In contrast, the products of the carbonate weathering reaction combine to make biogenic carbonate as follows:</p>
+<div class="tip admonition">
+<p class="admonition-title">Urey reactions (carbonate)</p>
+<div class="math notranslate nohighlight" id="equation-eq-ureycarb">
+<span class="eqno">(3.7)<a class="headerlink" href="#equation-eq-ureycarb" title="Link to this equation">#</a></span>\[\sf CaCO_3+CO_2+H_2O \Rightarrow Ca^{2+}+2HCO_3^-\Rightarrow CaCO_3+CO_2+H_2O\]</div>
+</div>
+<p>In this case, over long time-scales, there is no net consumption of <span class="math notranslate nohighlight">\(\sf CO_2\)</span> since for every mole of <span class="math notranslate nohighlight">\(\sf CO_2\)</span> consumed during dissolutuion, one mole of <span class="math notranslate nohighlight">\(\sf CO_2\)</span> is released during carbonate precipitation.</p>
+</section>
+<section id="non-calcium-bearing-silicates">
+<h2>Non-Calcium Bearing Silicates<a class="headerlink" href="#non-calcium-bearing-silicates" title="Link to this heading">#</a></h2>
+<p>The reactions so far only include Ca-bearing silicate minerals.  This is because Ca readily combines with the carbonate ion to form Ca-carbonate.</p>
+<p>In theory, the weathering of Mg, Na and K silicates should also lead to the drawdown of <span class="math notranslate nohighlight">\(\sf CO_2\)</span>.  However, since it is almost impossible to form Na and K carbonates in nature, they will not form a carbon sink on long time-scales.  Mg may be removed by the formation of Mg-carbonates such as dolomite.  However, the geological record shows a highly variable proportion of dolomite to total carbonate over geological time <a class="reference internal" href="#fig-dolomite"><span class="std std-numref">Fig. 3.19</span></a>.  Some workers have argued that there has been very little dolomite formation in the last 60Ma and also that a significant proportion of the dolomite in the geological record is secondary (produced through diagenesis) and not primary (though whether this matters for the long term carbon cycle is another matter).   However, it is thought that the weathering of Mg silicates probably does contribute significantly to the drawdown of <span class="math notranslate nohighlight">\(\sf CO_2\)</span> via an exchange with Ca during hydrothermal circulation at mid-ocean ridges.  Hydrothermal fluids are highly depleted in Mg but enriched in Ca, and it is thought that there is a stoichiometric exchange of Mg for Ca, which in turn can form Ca carbonate drawing down <span class="math notranslate nohighlight">\(\sf CO_2\)</span> over million year time-scales [We will return to hydrothermal circulation in the next lecture.].</p>
+<figure class="margin align-default" id="fig-dolomite">
+<a class="reference internal image-reference" href="../../_images/Given+wilk.png"><img alt="../../_images/Given%2Bwilk.png" src="../../_images/Given%2Bwilk.png" style="width: 250px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 3.19 </span><span class="caption-text">The abundance of dolomite (<span class="math notranslate nohighlight">\(\sf Mg_{0.5},Ca_{0.5}CO_3\)</span>) in the geological record.</span><a class="headerlink" href="#fig-dolomite" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="the-weathering-and-transfer-of-organic-matter">
+<h2>The weathering and transfer of organic matter<a class="headerlink" href="#the-weathering-and-transfer-of-organic-matter" title="Link to this heading">#</a></h2>
+<p>The long-term transfer of organic carbon from the continents to the oceans, either as modern biospheric organic carbon (<span class="math notranslate nohighlight">\(\sf OC_{biospheric}\)</span>) or in the form of the oxidation of fossil organic carbon (referred to as <span class="math notranslate nohighlight">\(\sf OC_{Petro}\)</span>) is a  major sub-cycle of the total carbon cycle, affecting both <span class="math notranslate nohighlight">\(\sf CO_2\)</span> and <span class="math notranslate nohighlight">\(\sf O_2\)</span>.    The transfer and burial of organic matter in sediments represents a net excess of photosynthesis over respiration and can be represented by the schematic reaction normally applied to photosynthesis.   To complete the organic sub-cycle, <span class="math notranslate nohighlight">\(\sf O_2\)</span> is consumed and <span class="math notranslate nohighlight">\(\sf CO_2\)</span> produced by the oxidation of organic matter in old sediments exposed to weathering on land.</p>
+<div class="tip admonition">
+<p class="admonition-title">Organic carbon burial)</p>
+<div class="math notranslate nohighlight" id="equation-eq-c-org-burial">
+<span class="eqno">(3.8)<a class="headerlink" href="#equation-eq-c-org-burial" title="Link to this equation">#</a></span>\[\sf CO_2 + H_2O \Rightarrow CH_2O + O_2\]</div>
+</div>
+<p>Organic matter is eroded and transported as particulate organic carbon (POC) within the suspended sediment in rivers.  This transfer can result in the  release or consumption of <span class="math notranslate nohighlight">\(\sf CO_2\)</span>, depending on the source of the POC and its fate during sedimentary processes.  For example, 70-85%\  of the POC buried in the Bengal Fan is biospheric, and carbon has been removed from the atmosphere for millions of years.     Alternatively, if the POC is mainly derived from sedimentary rocks (e.g. organic matter from shales), then this can be oxidised during transport, releasing <span class="math notranslate nohighlight">\(\sf CO_2\)</span> back to the atmosphere after millions of years of storage.  This reaction also schematically represents the overall process of the thermal breakdown of organic matter, followed by the degassing to the surface of reduced carbon-containing gases (exemplified by <span class="math notranslate nohighlight">\(\sf CH4\)</span>) and their rapid oxidation to <span class="math notranslate nohighlight">\(\sf CO_2\)</span> by atmospheric <span class="math notranslate nohighlight">\(\sf O_2\)</span>.</p>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>Humans are accelerating this natural reaction by the burning of fossil fuels.</p>
+</aside>
+<div class="tip admonition">
+<p class="admonition-title">Organic carbon oxidation)</p>
+<div class="math notranslate nohighlight" id="equation-eq-c-org-oxidation">
+<span class="eqno">(3.9)<a class="headerlink" href="#equation-eq-c-org-oxidation" title="Link to this equation">#</a></span>\[\sf CH_2O + O_2 \Rightarrow CO_2 + H_2O\]</div>
+</div>
+</section>
+<section id="the-strength-of-the-weathering-feedback">
+<h2>The strength of the weathering feedback<a class="headerlink" href="#the-strength-of-the-weathering-feedback" title="Link to this heading">#</a></h2>
+<p>The generic reactions for the dissolution of silicate and carbonate minerals remove of <span class="math notranslate nohighlight">\(\sf CO_2\)</span> (a key greenhouse gas) from the atmosphere.   The dissolution rates of minerals are dependent on temperature, runoff, and supply of material through erosion.</p>
+<section id="effect-of-temperature">
+<h3>Effect of temperature<a class="headerlink" href="#effect-of-temperature" title="Link to this heading">#</a></h3>
+<p>Reaction rates are dependent on temperature, typically though the Arrhenius expression of the form:</p>
+<div class="math notranslate nohighlight" id="equation-eq-arrhenius">
+<span class="eqno">(3.10)<a class="headerlink" href="#equation-eq-arrhenius" title="Link to this equation">#</a></span>\[\rm k=A_F\cdot \exp{\left(\frac{-E_a}{RT}\right)}\]</div>
+<p>where <span class="math notranslate nohighlight">\(k\)</span> is a rate constant,  <span class="math notranslate nohighlight">\(E_a\)</span> is an activation energy which is always positive.</p>
+<p>An example of this is shown for the dissolution of quartz and amorphous silica <a class="reference internal" href="#fig-arrhenius"><span class="std std-numref">Fig. 3.20</span></a>.</p>
+<figure class="margin align-default" id="fig-arrhenius">
+<a class="reference internal image-reference" href="../../_images/Rimstidt_plot_handout.png"><img alt="../../_images/Rimstidt_plot_handout.png" src="../../_images/Rimstidt_plot_handout.png" style="width: 250px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 3.20 </span><span class="caption-text">Example of the temperature dependence of mineral dissolution rates (in this case quartz and amorphous silica).</span><a class="headerlink" href="#fig-arrhenius" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="supply-of-material-and-erosion-rates">
+<h3>Supply of material and erosion rates<a class="headerlink" href="#supply-of-material-and-erosion-rates" title="Link to this heading">#</a></h3>
+<p>No chemical reaction can proceed without reactants, no matter what the temperature.  In the context of chemical weathering, reactants are supplied via mechanical erosion that 1) supplies sediment into the weathering reactor, and 2) grinds the material up by mechanical abrasion into finer particles that react more rapidly with a greater surface area.  Erosion rates are highest in mountain belts such as the Himalaya which are thought to play an important global role in controlling the supply of solutes to the hydrosphere [and removing carbon from the atmosphere, more of that later].  The physical mechanisms that supply sediment are important.  The Himalaya is a monsoonal region and erosion rates are highest at times of greatest rainfall.  Stream power is the amount of energy the water in a river or stream is exerting on the sides and bottom of the river.  Stream power is the product of  the density of the water, the acceleration of the water due to gravity, the volume of water flowing through the river, and the slope of that water. There are other mechanisms of erosion that are important in mountainous regions, such as landsides (sometimes driven by earthquakes), or glaciers.</p>
+<figure class="margin-caption align-default" id="fig-gaillardet-erosion">
+<a class="reference internal image-reference" href="../../_images/Gaillardet_erosion_white.png"><img alt="../../_images/Gaillardet_erosion_white.png" src="../../_images/Gaillardet_erosion_white.png" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 3.21 </span><span class="caption-text">Example of the dependence on the total weathering flux (arbitrary units) on erosion rates (arbitrary units) in the world’s largest rivers.  <a class="reference external" href="https://doi.org/10.1016/S0009-2541(99)00031-5">Data from: Gaillardet, 1999</a>.</span><a class="headerlink" href="#fig-gaillardet-erosion" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="runoff-and-rainfall">
+<h3>Runoff and rainfall<a class="headerlink" href="#runoff-and-rainfall" title="Link to this heading">#</a></h3>
+<p>Runoff exerts a two-fold control on the flux of elements released to the hydrosphere.  Firstly, it increases erosion rates as discussed above.  Secondly, it dilutes waters, under-saturating them, driving them further from equilibrium and increasing the driving force for mineral dissolution.  There is a clear global control between runoff and weathering flux <a class="reference internal" href="#fig-gaillardetrowhite"><span class="std std-numref">Fig. 3.22</span></a>.</p>
+<figure class="margin-caption align-default" id="fig-gaillardetrowhite">
+<a class="reference internal image-reference" href="../../_images/Gaillardet_RO_white.png"><img alt="../../_images/Gaillardet_RO_white.png" src="../../_images/Gaillardet_RO_white.png" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 3.22 </span><span class="caption-text">Example of the dependence on the total weathering flux (arbitrary units) on runoff (arbitrary units) in the world’s largest rivers.  <a class="reference external" href="https://doi.org/10.1016/S0009-2541(99)00031-5">Data from: Gaillardet, 1999</a>.</span><a class="headerlink" href="#fig-gaillardetrowhite" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="dissolution-in-the-real-world">
+<h3>Dissolution in the real world<a class="headerlink" href="#dissolution-in-the-real-world" title="Link to this heading">#</a></h3>
+<p>In practice, dissolution rates depend on a range of factors which act together, erosion, temperature, runoff, acidity, secondary mineral formation <a class="reference internal" href="#fig-triangle2"><span class="std std-numref">Fig. 3.23</span></a>.</p>
+<div class="full-width docutils">
+<figure class="full-width align-default" id="fig-triangle2">
+<a class="reference internal image-reference" href="../../_images/triangle2.png"><img alt="../../_images/triangle2.png" src="../../_images/triangle2.png" style="width: 900px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 3.23 </span><span class="caption-text">Schematic showing the key controls on mineral dissolution rates.</span><a class="headerlink" href="#fig-triangle2" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<p>Ultimately, without the supply of material, the other factors cannot be important.</p>
+</section>
+<section id="weathering-hot-spots-in-the-modern-day">
+<h3>Weathering hot-spots in the modern day<a class="headerlink" href="#weathering-hot-spots-in-the-modern-day" title="Link to this heading">#</a></h3>
+<div class="full-width docutils">
+<figure class="full-width align-default" id="fig-hartmann-hotspots">
+<a class="reference internal image-reference" href="../../_images/Hartmann_hotspots.png"><img alt="../../_images/Hartmann_hotspots.png" src="../../_images/Hartmann_hotspots.png" style="width: 900px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 3.24 </span><span class="caption-text">Estimates of the modern day spatial distribution of carbon consumption via silicate weathering in the present day from <a class="reference external" href="https://doi.org/10.1016/j.gloplacha.2009.07.007">Hartmann et al., 2009</a>.</span><a class="headerlink" href="#fig-hartmann-hotspots" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+<p>The factors that control chemical weathering lead to carbon removal hotspots.  What limits the total amount of removal of <span class="math notranslate nohighlight">\(\sf CO_2\)</span> from the atmosphere via weathering?  Provided that there are sufficient reactants delivered into the weathering zone</p>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>The weathering zone (or soil) is commonly referred to as the critical zone.</p>
+</aside>
+<p>by erosion, the fundamental limit on <span class="math notranslate nohighlight">\(\sf CO_2\)</span> removal is the dissolution rate of minerals.  This is said to be a kinetic limit or a weathering limit.  In the case where there is a limited supply of minerals via erosion, the weathering regime is said to be supply-limited or transport limited.  This has major implications for the strength of the silicate weathering feedback, Earth’s thermostat.</p>
+<div class="full-width docutils">
+<figure class="full-width align-default" id="fig-west-kinetic-limit">
+<a class="reference internal image-reference" href="../../_images/West_Geology.png"><img alt="../../_images/West_Geology.png" src="../../_images/West_Geology.png" style="width: 900px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 3.25 </span><span class="caption-text">Conceptualisation of the intensity of the weathering feedback as a function of runoff, temperature and supply of material through erosion from <a class="reference external" href="https://doi.org/10.1130/G33041.1">West et al, 2012</a>.</span><a class="headerlink" href="#fig-west-kinetic-limit" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./02_environments/l2"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../l1/l1.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">3.1. </span>Climate homeostasis: Evidence for climate stability on Earth</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../l3/l3.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">3.3. </span>Mechanisms for climate homeostasis II. Earth’s thermostat through time and the emerging view</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-carbon-cycle-and-climate">The Carbon Cycle and Climate</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#carbon-consumption-through-silicate-weathering">Carbon Consumption Through Silicate Weathering</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#carbon-consumption-through-carbonate-weathering">Carbon Consumption Through Carbonate Weathering</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-net-carbon-transfer-of-carbonate-and-silicate-weathering">The Net Carbon Transfer of Carbonate and Silicate Weathering</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#non-calcium-bearing-silicates">Non-Calcium Bearing Silicates</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-weathering-and-transfer-of-organic-matter">The weathering and transfer of organic matter</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-strength-of-the-weathering-feedback">The strength of the weathering feedback</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#effect-of-temperature">Effect of temperature</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#supply-of-material-and-erosion-rates">Supply of material and erosion rates</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#runoff-and-rainfall">Runoff and rainfall</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dissolution-in-the-real-world">Dissolution in the real world</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#weathering-hot-spots-in-the-modern-day">Weathering hot-spots in the modern day</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The PSLU Team
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2026.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

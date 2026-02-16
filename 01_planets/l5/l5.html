@@ -1,0 +1,812 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>2.5. The Evolution of Stars &#8212; PSLU MPhil</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/admonitions.css?v=ca5c1317" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=1ae7504c"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"loader": {"load": ["[tex]/physics", "[tex]/ams", "[tex]/mhchem", "[tex]/color", "[tex]/newcommand", "[tex]/textcomp"]}, "tex": {"packages": ["base", "physics", "ams", "amsmath", "mhchem", "color", "newcommand", "textcomp"]}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '01_planets/l5/l5';</script>
+    <link rel="icon" href="../../_static/favicon.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="2.6. The origin of the elements" href="../l6/l6.html" />
+    <link rel="prev" title="2.4. Building blocks I: What makes the Universe habitable?" href="../l4/l4.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="PSLU MPhil - Home"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="PSLU MPhil - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../00_intro/intro/intro.html">1. Course Overview</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../00_intro/l0/l0.html">Introduction to the core course</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../00_intro/l1/l1.html">Origin of Planets (C1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../00_intro/l2/l2.html">Origin of Habitable Environments (C2)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../00_intro/l3/l3.html">Origin and detection of life (C3)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../00_intro/l4/l4.html">Origin and evolution of biospheres (C4)</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../intro/intro.html">2. Origin of Planets (C1)</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../l1/l1.html">2.1. Exoplanets I: Detection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l2/l2.html">2.2. Exoplanets II: Architectures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l3/l3.html">2.3. Exoplanets III: Compositions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l4/l4.html">2.4. Building blocks I: What makes the Universe habitable?</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">2.5. The Evolution of Stars</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l6/l6.html">2.6. The origin of the elements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l7/l7.html">2.7. Protoplanetary disks I: Formation and fragmentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l8/l8.html">2.8. Protoplanetary disks II: Transport and chemistry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l9/l9.html">2.9. Planet formation I: Accretion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l10/l10.html">2.10. Planet formation II: Differentiation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l11/l11.html">2.11. Debris disks I: Physical Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l12/l12.html">2.12. Debris Disks II: Late Delivery</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../02_environments/intro/intro.html">3. Origin of Habitable Environments (C2)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l1/l1.html">3.1. Climate homeostasis: Evidence for climate stability on Earth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l2/l2.html">3.2. Mechanisms for climate homeostasis I. What we think we understand</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l3/l3.html">3.3. Mechanisms for climate homeostasis II. Earth’s thermostat through time and the emerging view</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l4/l4.html">3.4. Planetary cycles I: Mantle Convection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l5/l5.html">3.5. Planetary cycles II: Plate tectonics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l6/l6.html">3.6. Planetary cycles III: Subduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l7/l7.html">3.7. Planetary cycles IV: Volcanism</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l8/l8.html">3.8. Mars I: Geological history</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l9/l9.html">3.9. Mars II: Climate history</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l10/l10.html">3.10. Mars III: Geophysics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l11/l11.html">3.11. Venus I: Venus Today</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l12/l12.html">3.12. Venus II: Venus Over Time</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../03_detection/intro/intro.html">4. Origin and detection of life (C3)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l1/l1.html">4.1. Fundamentals of organic chemistry I: How atoms fit together</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l2/l2.html">4.2. Fundamentals of organic chemistry II: How molecules are different</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l3/l3.html">4.3. Fundamentals of organic chemistry III: How molecules react</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l4/l4.html">4.4. Why some chemical reactions happen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l5/l5.html">4.5. Astrochemistry: From the Insterstellar Medium to Comets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l6/l6.html">4.6. Atmospheric Chemistry I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l7/l7.html">4.7. Atmospheric Chemistry II</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l8/l8.html">4.8. Fundamentals of Aqueous Geochemistry I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l9/l9.html">4.9. Fundamentals of Aqueous Geochemistry II</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l10/l10.html">4.10. The Origins of Life as a Planetary Phenomenon</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l11/l11.html">4.11. Detecting Biosignatures I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l12/l12.html">4.12. Detecting Biosignatures II</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../04_biospheres/intro/intro.html">5. Biospheres (C4)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l1/l1.html">5.1. Prebiotic chemisty I: Chemical Basis for Life</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l2/l2.html">5.2. Prebiotic chemisty II: Chemical Basis for Life</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l3/l3.html">5.3. The evolution and diversity of photosynthesis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l4/l4.html">5.4. Origins of Eukaryotes (chloroplasts, mitos)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l5/l5.html">5.5. Protocell assembly</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l6/l6.html">5.6. From protocells to LUCA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l7/l7.html">5.7. Early life on Earth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l8/l8.html">5.8. Microbial ecosystems and their geobiological expression</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l9/l9.html">5.9. The evolution of complex life</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l10/l10.html">5.10. Land plant transformation of the terrestrial biosphere</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l11/l11.html">5.11. Macroevolutionary patterns on Earth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l12/l12.html">5.12. Eco-evolutionary dynamics of exoplanets</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference/glossary.html">6. Glossary</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/01_planets/l5/l5.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>The Evolution of Stars</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-hertzsprung-russell-diagram">The Hertzsprung–Russell Diagram</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stellar-types">Stellar Types</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#structure-equations">Structure Equations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#equation-of-state">Equation of state</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#energy-transport-by-radiation">Energy Transport by Radiation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#convection">Convection</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#energy-generation">Energy Generation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-main-sequence">The Main Sequence</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stellar-evolution">Stellar Evolution</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stellar-remnants">Stellar Remnants</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="the-evolution-of-stars">
+<span id="lecture-c1-5"></span><h1><span class="section-number">2.5. </span>The Evolution of Stars<a class="headerlink" href="#the-evolution-of-stars" title="Link to this heading">#</a></h1>
+<p>Professor: <strong><a class="reference external" href="mailto:cat&#37;&#52;&#48;ast&#46;ac&#46;uk">Christopher Tout</a></strong> (<a class="reference external" href="https://www.ast.cam.ac.uk">IoA</a>)</p>
+<hr class="docutils" />
+<blockquote class="highlights">
+<div><p><strong>Learning objectives:</strong></p>
+<ul class="simple">
+<li><p>The basic physics of stars illustrated by the structure equations.</p></li>
+<li><p>The factors driving stellar evolution: nuclear burning and mixing, convection.</p></li>
+<li><p>The respective evolutionary trajectories of low-, intermediate- and high-mass stars.</p></li>
+<li><p>Outcomes of stellar death: supernovae, white dwarfs, neutron stars and black holes.</p></li>
+</ul>
+</div></blockquote>
+<p>Stars appear to be of different brightness and colour.  Knowing their
+distance we can place them in a Hertzsprung–Russell diagram that
+plots luminosity as a function of surface effective temperature.
+Stars then fall into distinct groups and evolve from one to another.
+We shall examine the physics that determines the structure of stars
+and thence their position in this diagram.  There are two structure
+equations that describe conservation of mass and hydrostatic
+equilibrium.  These are linked by an equation of state that relates
+pressure to temperature density and composition.  To close the system
+two more equations are required for heat transport and energy
+generation.  These equations determine the structure of a star.
+Stellar evolution is driven primarily by nuclear burning that changes the
+composition over time.  Towards the end of a star’s life, mass loss in
+stellar winds becomes increasingly important.  We shall discuss the
+evolution of a typical <span class="math notranslate nohighlight">\(5\,M_\odot\)</span> star.</p>
+<section id="the-hertzsprung-russell-diagram">
+<h2>The Hertzsprung–Russell Diagram<a class="headerlink" href="#the-hertzsprung-russell-diagram" title="Link to this heading">#</a></h2>
+<figure class="align-default" id="fig-stars">
+<a class="reference internal image-reference" href="../../_images/stars.jpg"><img alt="../../_images/stars.jpg" src="../../_images/stars.jpg" style="height: 500px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 2.27 </span><span class="caption-text">Stars vary in brightness and colour</span><a class="headerlink" href="#fig-stars" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Knowing the distance to a star we can measure its absolute luminosity <span class="math notranslate nohighlight">\(L\)</span>.
+Stars are almost black bodies so define an effective temperature
+<span class="math notranslate nohighlight">\(T_{\rm eff}\)</span> such that</p>
+<p><span class="math notranslate nohighlight">\(L = 4\pi\sigma R^2T_{\rm eff}^4.\)</span></p>
+<p>Effective temperature can be determined from colour</p>
+<figure class="align-default" id="fig-hrscheme">
+<a class="reference internal image-reference" href="../../_images/hrscheme.jpg"><img alt="../../_images/hrscheme.jpg" src="../../_images/hrscheme.jpg" style="height: 500px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 2.28 </span><span class="caption-text">A Hertzsprung–Russell Diagram showing various groups of
+stars that show up as distinct groups.</span><a class="headerlink" href="#fig-hrscheme" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>stars that show up as distinct groups.</p>
+<p>Now</p>
+<p><span class="math notranslate nohighlight">\(\log L = 2\log R + 4\log T_{\rm eff} + \rm const\)</span></p>
+<p>so loci of constant radius are straight lines in the H–R diagram with
+radius increasing towards the top right.</p>
+<section id="stellar-types">
+<h3>Stellar Types<a class="headerlink" href="#stellar-types" title="Link to this heading">#</a></h3>
+<p><strong>Main Sequence</strong> – the most populated region on which the Sun lies</p>
+<p><strong>Red Giants</strong> – a well populated area of large red stars</p>
+<p><strong>White Dwarfs</strong> – Faint small stars</p>
+<p><strong>AGB Stars</strong> – asymptotic giant branch stars, a more luminous sequence
+slightly offset from the red giants</p>
+<p><strong>subgiants</strong> – a sparsely populated group between the main sequence and
+giant branch</p>
+<p><strong>Super Giants</strong> – bright large stars spanning blue to red found in young
+star clusters</p>
+<p><strong>Red Clump</strong> – an increased population at the base of the AGB</p>
+<p><strong>Horizontal Branch</strong> – a similarly luminous set of stars extending
+bluewards from the red clump</p>
+<p>Through steallr modelling we now have a good qualitative understanding
+of how stars evolve in an H–R diagram.</p>
+</section>
+</section>
+<section id="structure-equations">
+<h2>Structure Equations<a class="headerlink" href="#structure-equations" title="Link to this heading">#</a></h2>
+<figure class="align-default" id="fig-structure">
+<a class="reference internal image-reference" href="../../_images/structure.jpg"><img alt="../../_images/structure.jpg" src="../../_images/structure.jpg" style="height: 500px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 2.29 </span><span class="caption-text">Structure Eqautions.</span><a class="headerlink" href="#fig-structure" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Conservation of mass</p>
+<p><span class="math notranslate nohighlight">\({{\rm d}m\over{\rm d}r} = 4\pi r^2\rho\)</span></p>
+<p>and hydrostatic equilibrium</p>
+<p><span class="math notranslate nohighlight">\({{\rm d}P\over{\rm d}r} = -\rho g = -{Gm\rho\over r^2}.\)</span></p>
+</section>
+<section id="equation-of-state">
+<h2>Equation of state<a class="headerlink" href="#equation-of-state" title="Link to this heading">#</a></h2>
+<p>To relate pressure and density we must take into account temperature <span class="math notranslate nohighlight">\(T\)</span>
+and composition as well.</p>
+<p><span class="math notranslate nohighlight">\(P = P_{\rm i} + P_{\rm e} + P_{\rm r}.\)</span></p>
+<p>Ion pressure is typically perfect gas and can include electrons
+(gas pressure <span class="math notranslate nohighlight">\(P_{\rm g} = P_{\rm i} + P_{\rm e}\)</span>) at low enough density.</p>
+<p><span class="math notranslate nohighlight">\(P_i = {\rho kT\over \mu m_{\rm H}},\)</span></p>
+<p>where <span class="math notranslate nohighlight">\(k\)</span> is Boltzmann’s constant, <span class="math notranslate nohighlight">\(m_{\rm H}\)</span> is the mass of a
+hydrogen atom and <span class="math notranslate nohighlight">\(\mu\)</span> is the mean molecular weight.  When electrons
+are included</p>
+<p><span class="math notranslate nohighlight">\({1\over\mu}\approx 2X + {3\over 4}Y + {1\over 2}Z,\)</span></p>
+<p>where <span class="math notranslate nohighlight">\(X\)</span> is the mass fraction of hydrogen, <span class="math notranslate nohighlight">\(Y\)</span> that of helium and <span class="math notranslate nohighlight">\(Z\)</span>
+that of everything else, often called metals.  Changes in <span class="math notranslate nohighlight">\(\mu\)</span> drive
+evolution.</p>
+<p><span class="math notranslate nohighlight">\(P_{\rm e}\)</span> is electron degeneracy pressure, a quantum mechanical
+effect.  The Heisenberg uncertainty principle, that we cannot know the
+position and velocity of a particle at the same time, means that as
+electrons are squeezed into smaller and smaller volumes the must move
+faster.  This requires work and so exerts a pressure.</p>
+<p>Radiation pressure</p>
+<p><span class="math notranslate nohighlight">\(P_{\rm r} = {1\over 3}aT^4,\)</span></p>
+<p>where <span class="math notranslate nohighlight">\(a\)</span> is the radiation constant, is important in hot regions of
+massive stars.</p>
+</section>
+<section id="energy-transport-by-radiation">
+<h2>Energy Transport by Radiation<a class="headerlink" href="#energy-transport-by-radiation" title="Link to this heading">#</a></h2>
+<p>Suppose a photon typically moves a distance <span class="math notranslate nohighlight">\(\lambda\)</span>, its mean free path,
+between emission and absorption or scattering.  Consider two surfaces
+in a star separated by <span class="math notranslate nohighlight">\(\lambda\)</span> with one slightly hotter, by <span class="math notranslate nohighlight">\(\delta
+T\)</span>.  Both emit energy as black bodies.</p>
+<figure class="align-default" id="fig-rad">
+<a class="reference internal image-reference" href="../../_images/rad.jpg"><img alt="../../_images/rad.jpg" src="../../_images/rad.jpg" style="height: 500px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 2.30 </span><span class="caption-text">Radiation transport.</span><a class="headerlink" href="#fig-rad" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>There is a net radiation flux <span class="math notranslate nohighlight">\(\delta F\)</span> from the hotter to the cooler
+surface.  In a spherical star this amounts to a local luminosity</p>
+<p><span class="math notranslate nohighlight">\(L_r = 4\pi r^2\delta F.\)</span></p>
+<p>Now</p>
+<p><span class="math notranslate nohighlight">\(\delta F \approx -4\sigma T^3\delta T\)</span></p>
+<p>and we can relate <span class="math notranslate nohighlight">\(\delta T\)</span> to the temperature gradient</p>
+<p><span class="math notranslate nohighlight">\(\delta T = \lambda{{\rm d}T\over{\rm d}r}.\)</span></p>
+<p>We also relate <span class="math notranslate nohighlight">\(\lambda\)</span> to the opacity <span class="math notranslate nohighlight">\(\kappa\)</span>,
+the cross-section per unit mass of stellar material so that</p>
+<p><span class="math notranslate nohighlight">\(\rho\kappa\lambda = 1.\)</span></p>
+<p>Combining everything and using <span class="math notranslate nohighlight">\(\sigma = ac/4\)</span>, where <span class="math notranslate nohighlight">\(c\)</span> is the speed
+of light, we arrive at</p>
+<p><span class="math notranslate nohighlight">\({{\rm d}T\over{\rm d}r} = {-\kappa\rho L_r\over 4\pi acr^2T^3}.\)</span></p>
+<p>This is almost correct but we have negelected the fact that photons
+don’t necessarily travel directly between the surfaces and should also
+have integrated over all photon paths.  Had we done so we would arrive
+at</p>
+<p><span class="math notranslate nohighlight">\({{\rm d}T\over{\rm d}r} = {-3\kappa\rho L_r\over 16\pi acr^2T^3}.\)</span></p>
+<p>Sources of opacity include electron scattering, absorption by
+electrons around ions, molecular absorption etc.</p>
+</section>
+<section id="convection">
+<h2>Convection<a class="headerlink" href="#convection" title="Link to this heading">#</a></h2>
+<p>When the temperature gradient is large energy can be transported by
+bulk motion of the fluid.  Consider displacing an element of fluid
+upwards against gravity in the star.</p>
+<figure class="align-default" id="fig-cnv">
+<a class="reference internal image-reference" href="../../_images/conv.jpg"><img alt="../../_images/conv.jpg" src="../../_images/conv.jpg" style="height: 500px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 2.31 </span><span class="caption-text">Convection</span><a class="headerlink" href="#fig-cnv" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The element must remain in pressure equilibrium with its surroundings
+but does not immediately give up its heat.  It behaves adiabatically
+and so its temperature and density adjust.  If the element is then
+less dense than its surroundings it continues to rise carrying energy
+with it until it eventually disipates at some larger radius.  Stellar
+material must be unstable to convection if its radiative temperature
+gradient</p>
+<p><span class="math notranslate nohighlight">\(\nabla_{\rm rad} = {3\kappa PL_r\over 16\pi acGT^4m} &gt; \nabla_{\rm
+ad} = \left({\partial\log T\over\partial\log P}\right)_S,\)</span></p>
+<p>its adiabatic temperature gradient, at constant entropy <span class="math notranslate nohighlight">\(S\)</span>.  In
+general convection is very efficient so that convective zones in stars
+are isentropic with temperature gradient equal to adiabatic
+throughout.  Importantly composition is mixed in convective zones.</p>
+</section>
+<section id="energy-generation">
+<h2>Energy Generation<a class="headerlink" href="#energy-generation" title="Link to this heading">#</a></h2>
+<p>Figure 5: Energy generation.</p>
+<figure class="align-default" id="fig-energy">
+<a class="reference internal image-reference" href="../../_images/energy.jpg"><img alt="../../_images/energy.jpg" src="../../_images/energy.jpg" style="height: 500px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 2.32 </span><span class="caption-text">Energy generation</span><a class="headerlink" href="#fig-energy" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The stellar luminosity is generated at a rate <span class="math notranslate nohighlight">\(\epsilon\)</span> per unit
+mass.  So</p>
+<p><span class="math notranslate nohighlight">\({{\rm d}L_r\over{\rm d}r} = 4\pi r^2\rho\epsilon.\)</span></p>
+<p><strong>Nuclear reactions</strong> – the major source of energy in a star.  The mass
+of a helium nucleus is slightly less than four protons plus two
+electrons so nuclear fusion creates energy from matter.  For reactions
+to take place we require both the high end of the particle energy
+distribution and quantum mechanical tunelling.  As a result reactions
+are very temperature sensitive and so tend to be thermostatically
+controlled, around <span class="math notranslate nohighlight">\(2\times 10^7\,\)</span>K for hydrogen burning and
+<span class="math notranslate nohighlight">\(10^8\,\)</span>K for helium burning.</p>
+<p><strong>Gravitational contraction</strong> – in the absence of nuclear reactions
+pressure support is lost and a star gradually contracts releasing
+gravitational energy.  This is importnat during star formation.</p>
+<p><strong>Neutrino losses</strong> – some energy is always lost by neutrinos during
+fusion but at high denisities and temperatures neutrinos can be
+spontaneously produced.  For instance very high energy photons can
+spontaneously create an electron and positron pair.  Normally these
+anihilate to form another photon but rarely a neutrino and an
+antineutrino.  Neutrinos have a tiny cross-section to stellar material
+and so escape from the star extracting energy.</p>
+</section>
+<section id="the-main-sequence">
+<h2>The Main Sequence<a class="headerlink" href="#the-main-sequence" title="Link to this heading">#</a></h2>
+<p>Approximately luminosity</p>
+<p><span class="math notranslate nohighlight">\(L_{\rm MS} \propto M^3\)</span></p>
+<p>while available fuel</p>
+<p><span class="math notranslate nohighlight">\(E_{\rm tot} \propto M\)</span></p>
+<p>so lifetime
+<span class="math notranslate nohighlight">\(\tau_{\rm MS} \propto M^{-2}.\)</span></p>
+<p>The remaining lifetime is about <span class="math notranslate nohighlight">\(0.1\tau_{\rm MS}\)</span>.
+For the Sun <span class="math notranslate nohighlight">\(\tau_{\rm MS}\)</span> is about <span class="math notranslate nohighlight">\(10\,\)</span>Gyr.</p>
+</section>
+<section id="stellar-evolution">
+<h2>Stellar Evolution<a class="headerlink" href="#stellar-evolution" title="Link to this heading">#</a></h2>
+<figure class="align-default" id="fig-evol">
+<a class="reference internal image-reference" href="../../_images/fighr5m.png"><img alt="../../_images/fighr5m.png" src="../../_images/fighr5m.png" style="height: 500px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 2.33 </span><span class="caption-text">The evolution of a <span class="math notranslate nohighlight">\(5\,M_\odot\)</span> star.</span><a class="headerlink" href="#fig-evol" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>1 – zero age main sequence, <span class="math notranslate nohighlight">\(t = 0\)</span>, <span class="math notranslate nohighlight">\(X = 0.7\)</span> throughout, convective core burning</p>
+<p>2 – <span class="math notranslate nohighlight">\(X_{\rm c} = 0.029\)</span>, <span class="math notranslate nohighlight">\(t = 100\,\)</span>Myr star contracts a bit</p>
+<p>3 – <span class="math notranslate nohighlight">\(X_{\rm c} = 0\)</span>, shell burning begins</p>
+<p>4 – <span class="math notranslate nohighlight">\(M_{\rm c} = 0.63\)</span> gas pressure can no longer support the isothermal core</p>
+<p>5 – Hertzsprung gap, sub-giant phase, rapid evolution</p>
+<p>6 – base of the giant branch, a deep convective envelope dredges into the old core</p>
+<p>7 – core helium burning begins non-degenerately</p>
+<p>8 to 10 – core helium burning, the red clump</p>
+<p>10 – helium shell burning begins, the AGB</p>
+<p>11 – second dredge up, burning shells become very close</p>
+<p>12 – thermal pulses</p>
+<p>13 – Degenerate carbon ignition, real stars lose their envelope
+before this to expose a carbon/oxygen white dwarf.</p>
+<p>A <span class="math notranslate nohighlight">\(1\,M_\odot\)</span> star evolves similarly except that a) main-sequence
+hydrogen burning is radiative, b) helium ignites degenerately in a
+thermonuclear runaway, the helium flash, and c) there is no second dredge
+up.</p>
+<p>Massive stars, above <span class="math notranslate nohighlight">\(15\,M_\odot\)</span> ignite helium in the Hertzsprung
+gap.</p>
+<section id="stellar-remnants">
+<h3>Stellar Remnants<a class="headerlink" href="#stellar-remnants" title="Link to this heading">#</a></h3>
+<p>The final stages of a star’s life are a competition between nuclear
+burning and mass loss.  Removal of a star’s envelope ends its life.</p>
+<p><span class="math notranslate nohighlight">\(M &lt; 0.9\,M_\odot\)</span> – envelope lost on the RGB – He white dwarf
+<span class="math notranslate nohighlight">\(0.9 &lt; M/M_\odot &lt; 8\)</span> – on the AGB – CO white dwarf
+<span class="math notranslate nohighlight">\(8 &lt; M/M_\odot &lt; 8.5\)</span> – on the SAGB – ONeMg white dwarf</p>
+<p><span class="math notranslate nohighlight">\(8.5 &lt; M/M_\odot &lt; 25\)</span> – iron core reaches the Chandrasekhar mass –
+neutron star</p>
+<p><span class="math notranslate nohighlight">\(M &gt; 25\,M_\odot\)</span> – envelope lost during core helium burning – naked
+helium star – neutron star or black hole</p>
+<p>Evolution can be very different when a star has a close companion.</p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./01_planets/l5"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../l4/l4.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">2.4. </span>Building blocks I: What makes the Universe habitable?</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../l6/l6.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">2.6. </span>The origin of the elements</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-hertzsprung-russell-diagram">The Hertzsprung–Russell Diagram</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stellar-types">Stellar Types</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#structure-equations">Structure Equations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#equation-of-state">Equation of state</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#energy-transport-by-radiation">Energy Transport by Radiation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#convection">Convection</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#energy-generation">Energy Generation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-main-sequence">The Main Sequence</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stellar-evolution">Stellar Evolution</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stellar-remnants">Stellar Remnants</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The PSLU Team
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2026.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

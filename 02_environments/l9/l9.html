@@ -1,0 +1,668 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>3.9. Mars II: Climate history &#8212; PSLU MPhil</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/admonitions.css?v=ca5c1317" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=1ae7504c"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '02_environments/l9/l9';</script>
+    <link rel="icon" href="../../_static/favicon.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="3.10. Mars III: Geophysics" href="../l10/l10.html" />
+    <link rel="prev" title="3.8. Mars I: Geological history" href="../l8/l8.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="PSLU MPhil - Home"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="PSLU MPhil - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../00_intro/intro/intro.html">1. Course Overview</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../00_intro/l0/l0.html">Introduction to the core course</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../00_intro/l1/l1.html">Origin of Planets (C1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../00_intro/l2/l2.html">Origin of Habitable Environments (C2)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../00_intro/l3/l3.html">Origin and detection of life (C3)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../00_intro/l4/l4.html">Origin and evolution of biospheres (C4)</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../01_planets/intro/intro.html">2. Origin of Planets (C1)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l1/l1.html">2.1. Exoplanets I: Detection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l2/l2.html">2.2. Exoplanets II: Architectures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l3/l3.html">2.3. Exoplanets III: Compositions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l4/l4.html">2.4. Building blocks I: What makes the Universe habitable?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l5/l5.html">2.5. The Evolution of Stars</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l6/l6.html">2.6. The origin of the elements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l7/l7.html">2.7. Protoplanetary disks I: Formation and fragmentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l8/l8.html">2.8. Protoplanetary disks II: Transport and chemistry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l9/l9.html">2.9. Planet formation I: Accretion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l10/l10.html">2.10. Planet formation II: Differentiation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l11/l11.html">2.11. Debris disks I: Physical Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l12/l12.html">2.12. Debris Disks II: Late Delivery</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../intro/intro.html">3. Origin of Habitable Environments (C2)</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../l1/l1.html">3.1. Climate homeostasis: Evidence for climate stability on Earth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l2/l2.html">3.2. Mechanisms for climate homeostasis I. What we think we understand</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l3/l3.html">3.3. Mechanisms for climate homeostasis II. Earth’s thermostat through time and the emerging view</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l4/l4.html">3.4. Planetary cycles I: Mantle Convection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l5/l5.html">3.5. Planetary cycles II: Plate tectonics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l6/l6.html">3.6. Planetary cycles III: Subduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l7/l7.html">3.7. Planetary cycles IV: Volcanism</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l8/l8.html">3.8. Mars I: Geological history</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">3.9. Mars II: Climate history</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l10/l10.html">3.10. Mars III: Geophysics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l11/l11.html">3.11. Venus I: Venus Today</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l12/l12.html">3.12. Venus II: Venus Over Time</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../03_detection/intro/intro.html">4. Origin and detection of life (C3)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l1/l1.html">4.1. Fundamentals of organic chemistry I: How atoms fit together</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l2/l2.html">4.2. Fundamentals of organic chemistry II: How molecules are different</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l3/l3.html">4.3. Fundamentals of organic chemistry III: How molecules react</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l4/l4.html">4.4. Why some chemical reactions happen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l5/l5.html">4.5. Astrochemistry: From the Insterstellar Medium to Comets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l6/l6.html">4.6. Atmospheric Chemistry I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l7/l7.html">4.7. Atmospheric Chemistry II</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l8/l8.html">4.8. Fundamentals of Aqueous Geochemistry I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l9/l9.html">4.9. Fundamentals of Aqueous Geochemistry II</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l10/l10.html">4.10. The Origins of Life as a Planetary Phenomenon</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l11/l11.html">4.11. Detecting Biosignatures I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l12/l12.html">4.12. Detecting Biosignatures II</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../04_biospheres/intro/intro.html">5. Biospheres (C4)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l1/l1.html">5.1. Prebiotic chemisty I: Chemical Basis for Life</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l2/l2.html">5.2. Prebiotic chemisty II: Chemical Basis for Life</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l3/l3.html">5.3. The evolution and diversity of photosynthesis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l4/l4.html">5.4. Origins of Eukaryotes (chloroplasts, mitos)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l5/l5.html">5.5. Protocell assembly</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l6/l6.html">5.6. From protocells to LUCA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l7/l7.html">5.7. Early life on Earth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l8/l8.html">5.8. Microbial ecosystems and their geobiological expression</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l9/l9.html">5.9. The evolution of complex life</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l10/l10.html">5.10. Land plant transformation of the terrestrial biosphere</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l11/l11.html">5.11. Macroevolutionary patterns on Earth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l12/l12.html">5.12. Eco-evolutionary dynamics of exoplanets</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference/glossary.html">6. Glossary</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/02_environments/l9/l9.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Mars II: Climate history</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#constraints-on-climate-from-the-martian-geological-record">Constraints on climate from the Martian geological record</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-climate-of-early-mars">The climate of early Mars</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrating-climate-scenarios-with-geological-data">Integrating climate scenarios with geological data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#further-reading">Further reading</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="mars-ii-climate-history">
+<span id="lecture-c2-9"></span><h1><span class="section-number">3.9. </span>Mars II: Climate history<a class="headerlink" href="#mars-ii-climate-history" title="Link to this heading">#</a></h1>
+<p>Professor: <strong><a class="reference external" href="mailto:njt41&#37;&#52;&#48;cam&#46;ac&#46;uk">Nick Tosca</a></strong> (<a class="reference external" href="https://www.esc.cam.ac.uk">Department of Earth Sciences</a>)</p>
+<hr class="docutils" />
+<blockquote class="highlights">
+<div><p><strong>Learning objectives:</strong></p>
+<ul class="simple">
+<li><p>Major characteristics of the Martian geological record and their implications for the early Martian climate</p></li>
+<li><p>The nature of the Martian climate problem, and why significant greenhouse warming was required on early Mars</p></li>
+<li><p>Proposed mechanisms for long-term and short-term warming of the early Martian surface and their consistency with geological observations</p></li>
+</ul>
+</div></blockquote>
+<p>The goal of this lecture is to discuss ways in which geological data may be reconciled with models of atmospheric and climate evolution on early Mars.</p>
+<section id="constraints-on-climate-from-the-martian-geological-record">
+<h2>Constraints on climate from the Martian geological record<a class="headerlink" href="#constraints-on-climate-from-the-martian-geological-record" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>The last two decades of Mars exploration have shown that the planet preserves spatially extensive sedimentary rocks exposed at many locations across the Martian surface. In general, this record is older than any remaining rocks preserved on Earth and the data indicate that the degree of preservation is exceptional, with many examples nearly 4 billion years old sharing characteristics with recently deposited sediments on Earth.</p></li>
+<li><p>The reason for the age and degree of preservation of sedimentary rocks on Mars is because, unlike the Earth, the planet apparently lacked any large-scale mechanism for continuously recycling much of the upper crust (e.g., plate tectonics). This is likely to have resulted in fundamental differences in the timing and nature of planetary-scale volatile cycling.</p></li>
+<li><p>Ancient sedimentary rocks have been examined in detail by rover missions in three instances, which are briefly reviewed below. Each of these examples place constraints on climate, but their absolute ages are poorly known. Additional observations, derived largely from orbital data, also place constraints on climate and are briefly reviewed below.</p></li>
+</ul>
+<figure class="align-default" id="fig-0210mclennan">
+<a class="reference internal image-reference" href="../../_images/McLennan.png"><img alt="../../_images/McLennan.png" src="../../_images/McLennan.png" style="width: 100%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 3.63 </span><span class="caption-text">Topographic map of Mars showing locations of likely sedimentary rocks from orbital images from the HiRISE (white dots) and MOC instruments (black dots). Numbered yellow circles correspond to the following stratigraphic sections: (1) Gale Crater, (2) Meridiani Planum, (3) Nili Fossae (near Jezero Crater), (4) Uzboi-Ladon systems, (5) Arabia Terra, (6) Martha Vallis, (7) Interior layered deposits of Valles Marineris.  Credit: McLennan, S. M., Grotzinger, J. P., Hurowitz, J. A. &amp; Tosca, N. J. The Sedimentary Cycle on Early Mars. Annu. Rev. Earth Planet. Sci. 47, 1–28 (2019).</span><a class="headerlink" href="#fig-0210mclennan" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p><strong>Sedimentary rocks at Meridiani Planum</strong></p>
+<ul class="simple">
+<li><p>In 2003, the <em>Opportunity</em> rover (one of two which were part of the MER mission) discovered layered sedimentary rocks exposed within impact craters at Meridiani Planum; these are distributed across the region at the km-scale.</p></li>
+<li><p>The sedimentary rocks were classified largely as sandstones, with a number of sedimentary structures that indicated they were emplaced by wind, and some, within the upper portion of the sedimentary succession, indicating that they were deposited in the presence of flowing water (the key features here are the presence of a <a class="reference external" href="https://photojournal.jpl.nasa.gov/jpeg/PIA03279.jpg">certain geometry of cross-stratification</a>, or the shape and angle of sedimentary bedding relative to grain size).</p></li>
+<li><p>These rocks were found to be composed of about 50% chemically-weathered basaltic material and 50% salt minerals dominated by Mg- and Fe-sulfates (which are highly soluble, attesting to the presence of concentrated brines), including Fe-oxide minerals such as goethite and hematite. One of these Fe-sulfate minerals was identified through Mossbauer spectroscopy as jarosite (KFe<sub>3</sub>(SO<sub>4</sub>)<sub>2</sub>(OH)<sub>6</sub>) which, based on equilibrium relationships with the Fe-oxides, is only stable at low temperature in an aqueous solution at pH between ~2-4.</p></li>
+<li><p>The rocks also exhibit a number of features that show that the original sediments were influenced by a regionally-extensive groundwater table that fluctuated up and down several times over the course of sediment accumulation.</p></li>
+<li><p>The absolute age of the sedimentary rocks is not well constrained but cratering statistics indicate ages of ~3.7-3.5 Ga (latest Noachian to early Hesperian)</p></li>
+<li><p>The subsequent identification of regionally-extensive sedimentary rocks containing sulfate minerals by the OMEGA infrared spectrometer aboard the Mars Express orbiter gave rise to hypotheses that the early Martian surface was commonly characterised by acidic fluids (though note that only the Fe-sulfate minerals place pH constraints; other sulfate minerals are not pH-dependent).</p></li>
+</ul>
+<figure class="margin-caption align-default" id="fig-mer">
+<a class="reference internal image-reference" href="../../_images/MER.jpeg"><img alt="../../_images/MER.jpeg" src="../../_images/MER.jpeg" style="width: 100%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 3.64 </span><span class="caption-text">Sulfate-rich aeolian sedimentary rocks exposed within Victoria Crater, Meridiani Planum.  Credit: NASA/JPL/Caltech.</span><a class="headerlink" href="#fig-mer" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p><strong>Sedimentary rocks at Gale Crater</strong></p>
+<ul class="simple">
+<li><p>In 2012, the <em>Curiosity</em> Rover landed at <a class="reference external" href="https://science.nasa.gov/resource/a-guide-to-gale-crater/">Gale Crater</a>, which contained a significant accumulation of sedimentary rocks in a central mound (which is thought to have been significantly eroded since initial deposition). Gale Crater is thought to have formed at ~3.8-3.6 Ga, with sedimentary rocks deposited before ~3.3-3.1 Ga (i.e., early Hesperian).</p></li>
+<li><p>The rocks were found to be dominated by mudstones and sandstones and, based on geological relationships and sedimentology, interpreted to have been deposited in a system of alluvial fans that developed as rivers deposited sediments into a shallow lake system (perhaps including the development of more than one lake).</p></li>
+<li><p>The rocks are composed largely of basaltic material but exhibit chemical trends that indicate negligible chemical weathering (i.e., highly soluble elements have not been leached or fractionated from igneous minerals). The presence of clay minerals and the absence of salt minerals at the base of the succession indicated deposition in relatively dilute water at near-neutral pH (because clay minerals are unstable at pH values outside this range). Together, regional changes in sedimentary mineralogy were interpreted to indicate that the shallow lake system exhibited <a class="reference external" href="https://www.science.org/doi/10.1126/science.aah6849">redox stratification</a>, with anoxic conditions developed in the deepest portion of the lake, and more oxic conditions developed in shallower settings.</p></li>
+<li><p>The rocks exhibit a number of features which indicate that, similar to sedimentary rocks at Meridiani Planum, they were influenced by a regional groundwater table after deposition. These features include an increased abundance of magnetite, which is thought to have <a class="reference external" href="https://www.nature.com/articles/s41561-018-0203-8">formed from pore water after sediment deposition</a>, as well as Ca-sulfate-filled fractures.</p></li>
+</ul>
+<p><strong>Sedimentary rocks at Jezero Crater</strong></p>
+<ul class="simple">
+<li><p>The <em>Perseverance</em> Rover landed in 2021 and is currently exploring <a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S0012821X16306215">Jezero Crater</a>, a crater that hosts an eroded delta deposit with clear evidence that sediments were deposited through a river system incised through the crater rim.</p></li>
+<li><p>Rocks comprising the deltaic deposit exhibit inclined sedimentary rocks which indicate that deltas advanced into a lake as sediments accumulated. The uppermost delta deposit includes rocks comprised of much larger clasts and even boulders, implying deposition by high-energy floods. Together, the data indicate hydrologic activity in a stable lake environment and a transition to higher-energy short-duration episodes of deposition.</p></li>
+<li><p>Delta rocks are composed largely of material physically eroded from the highlands to the NW of Jezero Crater, which includes igneous minerals and small amounts of Fe-Ca carbonate and poorly crystalline Fe-Mg silicate (together suggesting near neutral pH conditions). Fe- and Mg-sulfate minerals also occur in some strata, indicating episodes of drying and desiccation of a substantial portion of the water comprising the lake.</p></li>
+</ul>
+<p><strong>Orbital geological and mineralogical analysis</strong></p>
+<ul class="simple">
+<li><p>In addition to rover missions, a number of orbiters have conducted high-resolution imaging combined with spectroscopic analysis across much of the rest of the planet. These data indicate that sedimentary rocks have formed in ancient sedimentary rocks as vast sheets which can be correlated up to hundreds of kilometers. These data also indicate that sediment transport through rivers and deposition within lake systems was a dominant feature, with lake-dominated deposits occurring frequently in addition to alluvial fan settings.</p></li>
+<li><p>Spectroscopic analysis also indicated that a variety of <a class="reference external" href="https://geo.libretexts.org/Bookshelves/Geology/Environmental_Geology_(Earle)/10%3A_Weathering_Soil_and_Clay_Minerals/10.05%3A_Clay_Minerals">clay minerals</a> are present in ancient rocks at the Martian surface. In particular, these data revealed an abundance of Fe/Mg-rich clay minerals primarily identified as nontronite and Mg-saponite, which appear to occur in crustal material exposed in craters, but also within material filling impact basins and as components within sedimentary rocks. Chlorites are also observed in material exhumed by impact cratering, and in several instances are associated with prehnite, zeolites, silica polymorphs, illite/muscovite, and lesser amounts of serpentine; these particular minerals, especially when observed together, indicate hydrothermal conditions. Kaolinite and Al-rich smectites appear less abundant in these data but do occur sporadically in craters and in sedimentary units overlying strata containing Fe/Mg-smectite. The origin of this latter observation has proven controversial but one hypothesis is formation through substantial leaching of cations through chemical weathering.</p></li>
+<li><p>Orbital analysis indicates that rocks rich in sulfate minerals, including the Meridiani Planum example investigated by the <em>Opportunity</em> Rover, appear to be confined to a few regions at the surface, rather than evenly distributed across the entire planet.</p></li>
+<li><p>A more extensive catalogue of geological features, mainly identified from orbit, that constrain climate parameters such as aridity, temperature, and timescale, are discussed by <a class="reference external" href="https://link.springer.com/article/10.1007/s11214-018-0575-5">Kite (2019)</a>.</p></li>
+</ul>
+<figure class="align-default" id="fig-minerals">
+<a class="reference internal image-reference" href="../../_images/minerals.png"><img alt="../../_images/minerals.png" src="../../_images/minerals.png" style="width: 100%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 3.65 </span><span class="caption-text">Global distribution of the major classes of minerals that require the presence of liquid water to form. Credit: Ehlmann, B. L. &amp; Edwards, C. S. Mineralogy of the Martian Surface. Annu. Rev. Earth Planet. Sci. 42, 291–315 (2014).</span><a class="headerlink" href="#fig-minerals" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p><strong>Summary of geological constraints on climate:</strong></p>
+<ul class="simple">
+<li><p>In general, its clear that liquid water modified surface features on ancient Mars and drove the formation of several different minerals, largely in the late Noachian.</p></li>
+<li><p>Orbital data show that much of the earliest crust contains clay minerals which reflect generally near neutral pH, but because clay minerals can form across a wide range of conditions (and temperatures), including, for example, formation through deep crustal hydrothermal systems, it is currently unclear how this observation constrains climate.</p></li>
+<li><p><em>In-situ</em> data from rovers indicate that sedimentary systems developed for substantial time intervals at the martian surface but some indicate very limited chemical weathering, which could occur under climates across a range of aridities and surface temperatures</p></li>
+<li><p>The abundance of sulfate minerals in some strata has been interpreted to indicate large-scale aridification, with some regions of the ancient martian surface more prone to climate-driven evaporation.</p></li>
+<li><p>In general, carbonate minerals are rarely exposed within Mars’s crust, which presents a conundrum. CO<sub>2</sub> is expected to have dominated early atmospheres and is the major constituent in Mars’s thin 6 mbar atmosphere today. A variety of hypotheses have been proposed, but general expectations from geochemistry predict a larger abundance of carbonate minerals than observed currently.</p></li>
+</ul>
+</section>
+<section id="the-climate-of-early-mars">
+<h2>The climate of early Mars<a class="headerlink" href="#the-climate-of-early-mars" title="Link to this heading">#</a></h2>
+<p><strong>The Martian faint young sun problem</strong></p>
+<ul class="simple">
+<li><p>The early sun was less luminous than today (about 75% of its current luminosity at 3.8 Ga) because hydrogen burning leads to increases in heat production within the core; this causes the rate of fusion, and thus luminosity, to increase over time.</p></li>
+<li><p>Mars’s semimajor axis is equal to 1.524 AU, so it receives about 43% of the solar energy that Earth does.</p></li>
+<li><p>Combined, these factors indicate that the equilibrium temperature would be 210 K (assuming planetary albedo of zero), which requires a minimum greenhouse effect of 65 K (double that of Earth today). Together, this has presented a major problem for understanding the early Martian climate, especially given an extensive geological record indicating the presence of liquid water (though the distribution of that liquid water in time and space is relatively unconstrained).</p></li>
+</ul>
+<p><strong>Greenhouse gases</strong></p>
+<ul class="simple">
+<li><p>One important constraint on how the surface of early Mars could have been warmed above the freezing point of H<sub>2</sub>O is the conclusion that a CO<sub>2</sub>-H<sub>2</sub>O atmosphere could not have sufficiently warmed the surface by itself. The reasons for this are because increasing atmospheric CO<sub>2</sub> concentration leads to more scattering and increases in planetary albedo. In addition, CO<sub>2</sub> condenses into clouds at low temperatures, which in turn leads to a reduced greenhouse effect at the surface.</p></li>
+</ul>
+<figure class="align-default" id="fig-climate">
+<a class="reference internal image-reference" href="../../_images/climate.png"><img alt="../../_images/climate.png" src="../../_images/climate.png" style="width: 100%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 3.66 </span><span class="caption-text">(a) Temperature-pressure profile for the early Martian atmosphere assuming a surface pressure of 2 bar. The dashed line indicates calculation including the effects of CO2 condensation, which weakens the greenhouse effect. (b) Surface temperature versus pressure produced from a clear-sky 1D radiative-convective climate model for several values of solar luminosity relative to the present day. Dashed line shows saturation vapour pressure of CO2. Credit: Wordsworth, R. D. The Climate of Early Mars. Annu Rev Earth Pl Sc 44, 381–408 (2016).</span><a class="headerlink" href="#fig-climate" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<ul class="simple">
+<li><p>Many gases that may have contributed to the greenhouse effect on early Mars have been investigated, including:</p>
+<ul>
+<li><p>CH<sub>4</sub>: Methane is not an effective warming agent on early Mars because of absorption effects as a function of temperature.</p></li>
+<li><p>Ammonia and carbonyl sulfide: both are potentially stronger greenhouse gases but are photochemically unstable in the martian atmosphere and lack obvious formation mechanisms.</p></li>
+<li><p>SO<sub>2</sub>/H<sub>2</sub>S: SO<sub>2</sub> is photolyzed in the Martian atmosphere which limits its lifetime to under a few hundred years. Increases in SO<sub>2</sub> also result in aerosol formation and scattering, which raises planetary albedo and produces a cooling effect rather than warming.</p></li>
+<li><p>H<sub>2</sub>: In CO<sub>2</sub>-dominated atmospheres, H<sub>2</sub> concentrations of up to a few mol percent lead to collision induced absorption (CIA), or the molecular interactions between pairs of atmospheric species and electromagnetic radiation. This has been shown to produce sufficient surface warming on early Mars, but lifetimes of H<sub>2</sub>-rich atmospheres are limited (on the order of 10^5^ years) due to H<sub>2</sub> escape rates which tend to be relatively rapid.</p>
+<ul>
+<li><p>Some have suggested that H<sub>2</sub> could have been supplied by volcanism, but this requires very reducing conditions within the Martian mantle which generally lead to low outgassed CO<sub>2</sub> concentrations. In theory, this problem could be reconciled if C concentrations in the mantle were generally higher than thought, but this has not been strongly constrained.</p></li>
+<li><p><a class="reference external" href="https://www.science.org/doi/full/10.1126/sciadv.add8472">Serpentinization</a>, or the reaction between H<sub>2</sub>O and olivine-rich rocks to produce serpentine minerals +/- magnetite, (hydr)oxides and H<sub>2</sub>, could have been an efficient mechanism. Geochemical considerations of serpentinizing more Fe-rich Martian olivine (compared to olivine in the Earth’s mantle) indicate that H<sub>2</sub> production could have been more efficient on Mars, and the dominant serpentine mineral produced as a result may be present across extensive intervals of the martian surface (but is identical to an Fe-rich smectite mineral, complicating its unique identification); it is also present in serpentinized Martian meteorites and in Gale Crater sedimentary rocks.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="integrating-climate-scenarios-with-geological-data">
+<h2>Integrating climate scenarios with geological data<a class="headerlink" href="#integrating-climate-scenarios-with-geological-data" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>There are several climate scenarios through which geological data from Mars can be reconciled. This is crucially dependent on the relative ages of climate-sensitive geological features, which are difficult to precisely constrain at present. One possibility is that early Mars experienced <a class="reference external" href="https://www.nature.com/articles/s41561-021-00701-8">several climate swings/fluctuations</a> through its history, which would imply that some climate-sensitive geological features occurred within discrete temporal intervals. Another interpretation is that the Martian climate was spatially and temporally variable, and thus climate-sensitive features need not correlate in age.</p></li>
+<li><p>One conclusion appears relatively certain: over the long-term, most of Mars’s surface water was eventually <a class="reference external" href="https://www.science.org/doi/full/10.1126/science.abc7717">locked into the crust</a> through reactions between water and rock. The timing of this can be estimated by examining D/H isotopic ratios in ancient Martian crustal (hydrated) materials and the current Martian atmosphere. Available data indicate that most of the Martian surface water budget was locked away very early, which carries significant implications for long-term planetary habitability. This in turn may relate to the lack of an efficient mechanism to recycle water within the Martian crust (like plate tectonics) possibly because Mars is small and thus may cooled relatively quickly compared to the Earth.</p></li>
+</ul>
+</section>
+<section id="further-reading">
+<h2>Further reading<a class="headerlink" href="#further-reading" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Ehlmann, B. L. &amp; Edwards, C. S. Mineralogy of the Martian Surface. <em>Annu. Rev. Earth Planet. Sci.</em> 42, 291–315 (2014).</p></li>
+<li><p>Hurowitz, J. A. et al. Redox stratification of an ancient lake in Gale crater, Mars. <em>Science</em> 356, (2017).</p></li>
+<li><p>Kite, E. S. Geologic Constraints on Early Mars Climate, <em>Space Sci. Rev.</em>, 215 (2019).</p></li>
+<li><p>Kite, E. S. &amp; Conway, S. Geological evidence for multiple climate transitions on Early Mars.<em>Nat. Geosci.</em> 17, 10–19 (2024).</p></li>
+<li><p>McLennan, S. M., Grotzinger, J. P., Hurowitz, J. A. &amp; Tosca, N. J. The Sedimentary Cycle on Early Mars. <em>Annu. Rev. Earth Planet. Sci.</em> 47, 1–28 (2019).</p></li>
+<li><p>Scheller, E. L., Ehlmann, B. L., Hu, R., Adams, D. J. &amp; Yung, Y. L. Long-term drying of Mars by sequestration of ocean-scale volumes of water in the crust. <em>Science</em> 372, 56–62 (2021).</p></li>
+<li><p>Tutolo, B. M. &amp; Tosca, N. J. Observational constraints on the process and products of Martian serpentinization. <em>Sci. Adv.</em> 9, eadd8472 (2023).</p></li>
+<li><p>Wordsworth, R. et al. A coupled model of episodic warming, oxidation and geochemical transitions on early Mars. <em>Nat. Geosci.</em> 14, 127–132 (2021).</p></li>
+<li><p>Wordsworth, R. D. The Climate of Early Mars. <em>Annu Rev Earth Pl Sc</em> 44, 381–408 (2016).</p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./02_environments/l9"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../l8/l8.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">3.8. </span>Mars I: Geological history</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../l10/l10.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">3.10. </span>Mars III: Geophysics</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#constraints-on-climate-from-the-martian-geological-record">Constraints on climate from the Martian geological record</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-climate-of-early-mars">The climate of early Mars</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrating-climate-scenarios-with-geological-data">Integrating climate scenarios with geological data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#further-reading">Further reading</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The PSLU Team
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2026.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

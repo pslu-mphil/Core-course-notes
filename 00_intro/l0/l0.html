@@ -1,0 +1,678 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Introduction to the core course &#8212; PSLU MPhil</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/admonitions.css?v=ca5c1317" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=1ae7504c"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"loader": {"load": ["[tex]/physics", "[tex]/ams", "[tex]/mhchem", "[tex]/color", "[tex]/newcommand", "[tex]/textcomp"]}, "tex": {"packages": ["base", "physics", "ams", "amsmath", "mhchem", "color", "newcommand", "textcomp"]}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '00_intro/l0/l0';</script>
+    <link rel="icon" href="../../_static/favicon.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Origin of Planets (C1)" href="../l1/l1.html" />
+    <link rel="prev" title="1. Course Overview" href="../intro/intro.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="PSLU MPhil - Home"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="PSLU MPhil - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../intro/intro.html">1. Course Overview</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Introduction to the core course</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l1/l1.html">Origin of Planets (C1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l2/l2.html">Origin of Habitable Environments (C2)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l3/l3.html">Origin and detection of life (C3)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../l4/l4.html">Origin and evolution of biospheres (C4)</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../01_planets/intro/intro.html">2. Origin of Planets (C1)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l1/l1.html">2.1. Exoplanets I: Detection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l2/l2.html">2.2. Exoplanets II: Architectures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l3/l3.html">2.3. Exoplanets III: Compositions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l4/l4.html">2.4. Building blocks I: What makes the Universe habitable?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l5/l5.html">2.5. The Evolution of Stars</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l6/l6.html">2.6. The origin of the elements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l7/l7.html">2.7. Protoplanetary disks I: Formation and fragmentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l8/l8.html">2.8. Protoplanetary disks II: Transport and chemistry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l9/l9.html">2.9. Planet formation I: Accretion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l10/l10.html">2.10. Planet formation II: Differentiation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l11/l11.html">2.11. Debris disks I: Physical Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../01_planets/l12/l12.html">2.12. Debris Disks II: Late Delivery</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../02_environments/intro/intro.html">3. Origin of Habitable Environments (C2)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l1/l1.html">3.1. Climate homeostasis: Evidence for climate stability on Earth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l2/l2.html">3.2. Mechanisms for climate homeostasis I. What we think we understand</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l3/l3.html">3.3. Mechanisms for climate homeostasis II. Earth’s thermostat through time and the emerging view</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l4/l4.html">3.4. Planetary cycles I: Mantle Convection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l5/l5.html">3.5. Planetary cycles II: Plate tectonics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l6/l6.html">3.6. Planetary cycles III: Subduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l7/l7.html">3.7. Planetary cycles IV: Volcanism</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l8/l8.html">3.8. Mars I: Geological history</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l9/l9.html">3.9. Mars II: Climate history</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l10/l10.html">3.10. Mars III: Geophysics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l11/l11.html">3.11. Venus I: Venus Today</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_environments/l12/l12.html">3.12. Venus II: Venus Over Time</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../03_detection/intro/intro.html">4. Origin and detection of life (C3)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l1/l1.html">4.1. Fundamentals of organic chemistry I: How atoms fit together</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l2/l2.html">4.2. Fundamentals of organic chemistry II: How molecules are different</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l3/l3.html">4.3. Fundamentals of organic chemistry III: How molecules react</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l4/l4.html">4.4. Why some chemical reactions happen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l5/l5.html">4.5. Astrochemistry: From the Insterstellar Medium to Comets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l6/l6.html">4.6. Atmospheric Chemistry I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l7/l7.html">4.7. Atmospheric Chemistry II</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l8/l8.html">4.8. Fundamentals of Aqueous Geochemistry I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l9/l9.html">4.9. Fundamentals of Aqueous Geochemistry II</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l10/l10.html">4.10. The Origins of Life as a Planetary Phenomenon</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l11/l11.html">4.11. Detecting Biosignatures I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_detection/l12/l12.html">4.12. Detecting Biosignatures II</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../04_biospheres/intro/intro.html">5. Biospheres (C4)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l1/l1.html">5.1. Prebiotic chemisty I: Chemical Basis for Life</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l2/l2.html">5.2. Prebiotic chemisty II: Chemical Basis for Life</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l3/l3.html">5.3. The evolution and diversity of photosynthesis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l4/l4.html">5.4. Origins of Eukaryotes (chloroplasts, mitos)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l5/l5.html">5.5. Protocell assembly</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l6/l6.html">5.6. From protocells to LUCA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l7/l7.html">5.7. Early life on Earth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l8/l8.html">5.8. Microbial ecosystems and their geobiological expression</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l9/l9.html">5.9. The evolution of complex life</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l10/l10.html">5.10. Land plant transformation of the terrestrial biosphere</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l11/l11.html">5.11. Macroevolutionary patterns on Earth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../04_biospheres/l12/l12.html">5.12. Eco-evolutionary dynamics of exoplanets</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference/glossary.html">6. Glossary</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/00_intro/l0/l0.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Introduction to the core course</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-drake-equation">The Drake equation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#r-the-mean-rate-of-star-formation"><span class="math notranslate nohighlight">\(R_*\)</span>, the mean rate of star formation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#f-p-the-fraction-of-stars-hosting-planets"><span class="math notranslate nohighlight">\(f_p\)</span>, the fraction of stars hosting planets</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#n-e-the-number-of-planets-per-star-capable-of-hosting-life"><span class="math notranslate nohighlight">\(n_e\)</span>, the number of planets per star capable of hosting life</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#f-l-the-fraction-of-habitable-planets-developing-life"><span class="math notranslate nohighlight">\(f_l\)</span>, the fraction of habitable planets developing life</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#f-i-and-f-c-the-fraction-of-biospheres-that-develop-intelligence-and-communication"><span class="math notranslate nohighlight">\(f_i\)</span> and <span class="math notranslate nohighlight">\(f_c\)</span>, the fraction of biospheres that develop ‘intelligence’ and communication</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#l-the-mean-communication-timescale"><span class="math notranslate nohighlight">\(L\)</span>, the mean communication timescale</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-relevant-is-the-drake-equation">How relevant is the Drake equation?</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="introduction-to-the-core-course">
+<span id="lecture-c0-0"></span><h1>Introduction to the core course<a class="headerlink" href="#introduction-to-the-core-course" title="Link to this heading">#</a></h1>
+<p>Course Director: <strong><a class="reference external" href="mailto:shorttle&#37;&#52;&#48;ast&#46;cam&#46;ac&#46;uk">Oliver Shorttle</a></strong> (<a class="reference external" href="https://www.ast.cam.ac.uk">IoA</a>, <a class="reference external" href="https://esc.cam.ac.uk">Department of Earth Sciences</a>)</p>
+<hr class="docutils" />
+<p>The core courses follow a narrative arc, from the formation of planets (<a class="reference internal" href="../../01_planets/intro/intro.html"><span class="std std-doc">C1</span></a>), through to the establishment of <strong><a class="reference internal" href="../../reference/glossary.html#term-Habitable"><span class="xref std std-term">habitable</span></a></strong> environments (<a class="reference internal" href="../../02_environments/intro/intro.html"><span class="std std-doc">C2</span></a>), how the chemistry of water and atmospheres on planets might enable life to arise (<a class="reference internal" href="../../03_detection/intro/intro.html"><span class="std std-doc">C3</span></a>), and, finally, to life as an ecological and planetary scale phenomenon (<a class="reference internal" href="../../04_biospheres/intro/intro.html"><span class="std std-doc">C4</span></a>).</p>
+<p>We will motivate the structure of the core course by here considering the Drake equation, that famous expression of how likely we are to find life in the Universe.</p>
+<blockquote class="highlights">
+<div><p><strong>Learning objectives from the Core Course:</strong></p>
+<ul class="simple">
+<li><p>Gain a fluency in the key topics relevant to planetary science and life in the Universe from across disciplines.  In particular:</p>
+<ul>
+<li><p>The key processes forming planets;</p></li>
+<li><p>The important processes maintaining planetary habitability;</p></li>
+<li><p>The astrochemistry and geochemistry that gave rise to life and might enable us to detect it on planets; and,</p></li>
+<li><p>How life operates at scales from the chemical to the ecological to shape environments.</p></li>
+</ul>
+</li>
+<li><p>The multitudinous factors, from the Universe’s physical constants to whether a planet has a moon, that life’s emergence may be contingent upon.</p></li>
+</ul>
+<p><strong>Learning objectives: Core course introduction</strong>x</p>
+<ul class="simple">
+<li><p>The formulation of the Drake equation (<a class="reference external" href="https://idiscover.lib.cam.ac.uk/permalink/f/t9gok8/44CAM_ALMA51671124270003606">Drake, 1965</a>).</p></li>
+<li><p>How parameters in the Drake equation have been and can be constrained, and the assumptions required to find these constraints.</p></li>
+<li><p>The limits of the Drake equation’s use.</p></li>
+</ul>
+</div></blockquote>
+<section id="the-drake-equation">
+<h2>The Drake equation<a class="headerlink" href="#the-drake-equation" title="Link to this heading">#</a></h2>
+<p>The Drake equation is:</p>
+<div class="math notranslate nohighlight" id="equation-eq-drake">
+<span class="eqno">(1.1)<a class="headerlink" href="#equation-eq-drake" title="Link to this equation">#</a></span>\[N_c = R_* \cdot f_p \cdot n_e \cdot f_l \cdot f_i \cdot f_c \cdot L,\]</div>
+<p>where <span class="math notranslate nohighlight">\(N_c\)</span> is the <em>mean</em> number of communicative civilizations in the galaxy, <span class="math notranslate nohighlight">\(R_*\)</span> is the <em>rate</em> of start formation, <span class="math notranslate nohighlight">\(f_p\)</span> is the fraction of stars hosting planets, <span class="math notranslate nohighlight">\(n_e\)</span> is the mean number of planets per start capable of supporting life, <span class="math notranslate nohighlight">\(f_l\)</span> is the fraction of those potentially habitable planets on which life emerges, <span class="math notranslate nohighlight">\(f_i\)</span> is the fraction of those inhabited planets where intelligence develops, <span class="math notranslate nohighlight">\(f_c\)</span> is the fraction of ‘intelligent’ civilisations that develop communication, and <span class="math notranslate nohighlight">\(L\)</span> is the mean communication timescale.</p>
+<p>Now, many legitimate criticisms have been levied against the Drake equation (e.g., <a class="reference external" href="https://doi.org/10.1016/j.actaastro.2009.07.010">Alm’ar, 2011</a>; <a class="reference external" href="https://doi.org/10.1016/j.actaastro.2009.11.019">Smith, 2011</a>).  However, this expression remains useful for at least two reasons.  First, as an example of how we might like to combine insights from across disciplines to address a common and fundamental question; in this case, the likelihood of receiving communications from other intelligent life in the galaxy.  Second, it focusses attention on what we need to know to better understand our chances of success in searching for life.  Both of these principles are at the heart of the PSLU course.</p>
+<p>Importantly, the specific parameters the Drake equation includes are, unlike when Drake first wrote down the equation, now partially constrained by observation.  We therefore know better than ever before at least some of the relevant information to predict life’s prevalence in the galaxy.</p>
+<p>In this section we summarise some of what we know about the parameters of the Drake equation, which from left to right map conveniently onto our Core Course journey from astrophysics, Earth sciences, chemistry, through to biology.</p>
+<section id="r-the-mean-rate-of-star-formation">
+<h3><span class="math notranslate nohighlight">\(R_*\)</span>, the mean rate of star formation<a class="headerlink" href="#r-the-mean-rate-of-star-formation" title="Link to this heading">#</a></h3>
+<p>This is the first parameter in the Drake equation and the first to have a reliable estimate.  The key to our knowledge of this parameter is that it is a direct observation of stars, and unlike planets, stars are bright (see <a class="reference internal" href="#fig-00planet-star-sed"><span class="std std-numref">Fig. 1.2</span></a> for a comparison between the light emitted from solar system planets compared to the Sun).</p>
+<figure class="align-default" id="fig-00planet-star-sed">
+<a class="reference internal image-reference" href="../../_images/planet_star_sed.png"><img alt="../../_images/planet_star_sed.png" src="../../_images/planet_star_sed.png" style="width: 60%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 1.2 </span><span class="caption-text">A spectra showing the relative flux (of photons) coming from the Sun and solar system planets.  Across the spectrum, the Sun is at least 4 orders of magnitude brighter than the solar system planets, and in the case of Earth nearly 10 orders of magnitude brighter.  This represents the fundamental challenge to direct observation of Earth-sized planets around other stars: the light of the planet is overwhelmed by the light coming from the star.  Credit: <a class="reference external" href="https://doi.org/10.1364/AO.55.00D173">Galan+2016</a>.</span><a class="headerlink" href="#fig-00planet-star-sed" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The rate of star formation can be estimated from the brightest stars.  The brightest stars are large, with high surface temperatures (called ‘O or B’ type stars in <a class="reference external" href="https://upload.wikimedia.org/wikipedia/commons/3/37/Stellar_Classification_Chart.png">stellar classification</a>).  Importantly, these stars have short lives, possibly of only a few tens of millions of years.  This is in contrast to what will be the Sun’s approximately 10 billion year lifetime.  As a result, these high-mass stars will be present only in galactic regions actively forming stars.  Their brightness makes them the easiest to observe, even when in other galaxies.  So, we can use massive stars to probe the rate of formation in our galaxy and beyond, provided their rate of formation can be linked to the rate of formation of lower mass stars – if we can do this, then the total rate of star formation can be estimated.  This link between stellar occurrence rate and mass is known as the ‘initial mass function’ (<a class="reference internal" href="#fig-00imf"><span class="std std-numref">Fig. 1.3</span></a>).</p>
+<figure class="margin-caption align-default" id="fig-00imf">
+<img alt="../../_images/imf.jpg" src="../../_images/imf.jpg" />
+<figcaption>
+<p><span class="caption-number">Fig. 1.3 </span><span class="caption-text">A representation of the ‘initial mass function’.  Smaller stars are significantly more abundant that larger stars in the galaxy.  Credit: LASP, U Colorado Boulder.</span><a class="headerlink" href="#fig-00imf" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>With confidence that you can extrapolate from massive stars to the frequency of (the more nuerous) lower mass stars with the initial mass function, then massive stars allow star formation rates to be estimated in the galaxy and even in distant galaxies.  <a class="reference internal" href="#fig-00antennae-galaxies-xl"><span class="std std-numref">Fig. 1.4</span></a> illustrates this beautifully, with the bright blue regions of the Antennae galaxies recording the birth environment of tens of thousands of new stars</p>
+<figure class="align-default" id="fig-00antennae-galaxies-xl">
+<img alt="../../_images/Antennae_galaxies_xl.jpg" src="../../_images/Antennae_galaxies_xl.jpg" />
+<figcaption>
+<p><span class="caption-number">Fig. 1.4 </span><span class="caption-text">The Antennae galaxies imaged by the Hubble Space Telescope.  These galaxies are undergoing merger, triggering massive star formation.  These areas show up as blue in these images, as they are illuminated by young massive and short lived O/B stars.  In contrast, the two older regions show up as orange in these images, hosting older and cooler stars.  Credit: NASA, ESA, and the Hubble Heritage Team (STScI/AURA)-ESA/Hubble Collaboration.</span><a class="headerlink" href="#fig-00antennae-galaxies-xl" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>In summary then, the rate of star formation is something that we can see in our own galaxy today and even observe in distant galaxies.  Given the star formation rate affects the gross spectral properties of a galaxy, it is something we can even then reconstruct going back in time through the history of the Universe, as we look to more distant, and therefore older, galaxies.  <a class="reference internal" href="../../01_planets/intro/intro.html"><span class="std std-doc">C1 ‘The origins of planets’</span></a> will go into more detail on these topics.</p>
+</section>
+<section id="f-p-the-fraction-of-stars-hosting-planets">
+<h3><span class="math notranslate nohighlight">\(f_p\)</span>, the fraction of stars hosting planets<a class="headerlink" href="#f-p-the-fraction-of-stars-hosting-planets" title="Link to this heading">#</a></h3>
+<p>For a long time the fraction of stars hosting planets was completely unknown.  This picture was overturned first with the discovery of planets around a neutron star (<a class="reference external" href="https://doi.org/10.1038/355145a0">Wolszczan &amp; Frail, 1992</a>), and then with the discovery of a Jupiter mass planet orbiting a <strong><a class="reference internal" href="../../reference/glossary.html#term-Main-sequence"><span class="xref std std-term">main sequence</span></a></strong> star (<a class="reference external" href="https://doi.org/10.1038/378355a0">Mayor &amp; Queloz, 1995</a>).  However, it was some time later before good statistics were obtained on the occurrence of planets around stars.  Even today, the limitations in sensitivity of our observation methods mean we cannot provide reliable estimates for the occurrence rate of all planets around all types of star: overall, our surveys are biased to discovering shorter period planets, that are more massive, around smaller stars.  Earth itself, orbiting a G type star, remains a challenge to discover with current technology, and hence to quantify the frequency of.</p>
+<p>Nonetheless, we now know planets are extremely common.  <a class="reference internal" href="#fig-00m-period"><span class="std std-numref">Fig. 1.5</span></a> is a recent summary of discovered exoplanets, of which there are now over 5000.</p>
+<figure class="align-default" id="fig-00m-period">
+<img alt="../../_images/m_period.png" src="../../_images/m_period.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 1.5 </span><span class="caption-text">Here we see the distribution of discovered exoplanets, coloured according to discovery method.  Looking to the 1 Earth mass - 1 earth year portion of the diagram, you can see there is a sparsity of data, reflecting limitations of observation rather than a known dearth of planets.  Conversely, massive planets are present in this plot far in excess of their occurrence rate in nature.  You can try making these plots yourself through the <a class="reference external" href="https://exoplanetarchive.ipac.caltech.edu/index.html">NASA exoplanet archive</a>.  Credit: NASA exoplanet archive.</span><a class="headerlink" href="#fig-00m-period" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p><a class="reference internal" href="#fig-00m-period"><span class="std std-numref">Fig. 1.5</span></a> does not in and of itself tell us about the planet occurrence rate – although many stars have been observed for signs of accompanying planets, we need to be fortunate for the planet to show up in the star’s light (see <a class="reference internal" href="../../01_planets/intro/intro.html"><span class="std std-doc">C1 ‘The origins of planets’</span></a> for more information on planetary detection methods).   Instead, statistical extrapolation is required from the discovered population to the true underlying population.  This is possible because many of the factors dictating whether a planet is discovered or not are well understood.</p>
+<p>Accounting for these biases in discovery, plots such as <a class="reference internal" href="#fig-00occurrence"><span class="std std-numref">Fig. 1.6</span></a> can be produced.  If we are simply interested in the occurrence rate of planets of any sort around stars, then this plot suggests that it is likely all stars have planets.  Importantly, what is <em>not</em> clear from this plot is whether any of these planets are habitable.  You can see from the legend that the period range investigated goes down to 0.5 days; for reference, Mercury, with no atmosphere to insulate it, has a dayside surface temperature of ~700 K and is on an 88 day orbit.  Many of the planets that stars <em>do</em> have will be obligate uninhabitable no matter how we stretch our imaginations of what life can tolerate… but this is a question for the next parameter in the Drake equation.</p>
+<figure class="align-default" id="fig-00occurrence">
+<img alt="../../_images/occurrence.png" src="../../_images/occurrence.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 1.6 </span><span class="caption-text">The occurrence rate of planets across a wide range of planetary radii and over two period ranges (short period, black; long(er) period, red).  Note that neither of these period ranges include the orbital period of Earth.  The broad patten is of significantly higher planet occurrence rates for smaller planets.  This estimate is for FGK-type stars.  From <a class="reference external" href="https://doi.org/10.3847/1538-3881/ab31ab">Hsu+2019</a>.</span><a class="headerlink" href="#fig-00occurrence" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p><a class="reference internal" href="../../01_planets/intro/intro.html"><span class="std std-doc">C1 ‘The origins of planets’</span></a> will go into more detail on many of the topics on planet discovery covered here.</p>
+</section>
+<section id="n-e-the-number-of-planets-per-star-capable-of-hosting-life">
+<h3><span class="math notranslate nohighlight">\(n_e\)</span>, the number of planets per star capable of hosting life<a class="headerlink" href="#n-e-the-number-of-planets-per-star-capable-of-hosting-life" title="Link to this heading">#</a></h3>
+<p>Now we begin to leave the realm of the known.  The fundamental challenge with estimating the number of planets per star capable of hosting life, as with many of those parameters remaining, is that it requires us to know something general about life as a phenomenon.  Achieving this seems far off, given we are unable to agree on a definition of life, and even whether a definition is useful, e.g., <a class="reference external" href="https://doi.org/10.1080/073911012010524998">Szostak, 2012</a>.</p>
+<p>The problem becomes more tractable if we think about Earth-like life, C-H-N-O-P-S-based and requiring liquid water.  In this case, it is the water phase diagram that places the tightest constraints on life’s preferred pressure/temperature range.  With water available in its biologically-essential liquid form over a relatively narrow window at Earth’s surface pressure.  In this framework we are looking for the occurrence rate of planets in the liquid-water <strong><a class="reference internal" href="../../reference/glossary.html#term-Habitable-zone"><span class="xref std std-term">habitable zone</span></a></strong> around stars, which is something we might be able to estimate (see above, the fraction of stars hosting planets) and <a class="reference internal" href="#fig-00hab-zone"><span class="std std-numref">Fig. 1.7</span></a>).</p>
+<figure class="margin-caption align-default" id="fig-00hab-zone">
+<img alt="../../_images/hab_zone.png" src="../../_images/hab_zone.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 1.7 </span><span class="caption-text">Habitable zone planet discoveries through time. Note, in many cases these are massive planets. Credit: <a class="reference external" href="http://www.hzgallery.org/index.html">Habitable Zone Gallery</a>.</span><a class="headerlink" href="#fig-00hab-zone" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The number of planets per star capable of hosting life is a parameter that crosses content in <a class="reference internal" href="../../01_planets/intro/intro.html"><span class="std std-doc">C1 ‘The origins of planets’</span></a>, with planet formation clearly being critical for whether a habitable planet emerges, and also <a class="reference internal" href="../../02_environments/intro/intro.html"><span class="std std-doc">C2 ‘The origins of habitable environments’</span></a>, where the processes underpinning planetary habitability are looked at in more detail.  In principle, as the ability to host life is predicated on the life itself, this really is a parameter that reaches into content in <a class="reference internal" href="../../03_detection/intro/intro.html"><span class="std std-doc">C3</span></a> and <a class="reference internal" href="../../04_biospheres/intro/intro.html"><span class="std std-doc">C4</span></a> as well.</p>
+</section>
+<section id="f-l-the-fraction-of-habitable-planets-developing-life">
+<h3><span class="math notranslate nohighlight">\(f_l\)</span>, the fraction of habitable planets developing life<a class="headerlink" href="#f-l-the-fraction-of-habitable-planets-developing-life" title="Link to this heading">#</a></h3>
+<p>To move onto this parameter we need to carry a definition of habitability with us, and so an implicit assumption of the chemical physical conditions life requires.  For practical purposes, we will continue in the liquid-water habitable zone paradigm.  Although this is something you might want to question.</p>
+<p>The frequency of habitable planets that go on to develop life is a fascinating question, one that reaches to the heart of whether the emergence of life on Earth is a one-off or an inevitability given clement conditions at a planet’s surface.  Standing where we are, not having a complete origin of life scenario (seeming in fact far from it), life’s emergence appears fantastically complex and unlikely.  However, once the chemistry is worked out, maybe we will view it more as chemical necessity.</p>
+<p>Lacking a chemically complete origin of life scenario, there are two observational fronts on which we could in principle make progress with the question of the frequency of inhabited planets:</p>
+<ol class="arabic simple">
+<li><p>Solar system exploration: The most immediate prospect for discovering whether there was an independent origin of life scenario in the solar system is our exploration of Mars.  Recent observations have found curious features on the surface of martian rocks (see <a class="reference internal" href="#fig-00leopard-spots"><span class="std std-numref">Fig. 1.8</span></a>; <a class="reference external" href="https://doi.org/10.1038/s41586-025-09413-0">Hurowitz+2025</a>), which would superficially be consistent with microbial activity.  Ultimately, only sample return to Earth will be able to resolve this question.  However, we now have abundant evidence that Mars had at least transient wet periods in its history (e.g., see <a class="reference internal" href="../../02_environments/intro/intro.html"><span class="std std-doc">C2</span></a>, and <a class="reference external" href="https://doi.org/10.1038/s41561-021-00701-8">Wordsworth+2021</a>).</p></li>
+<li><p><strong><a class="reference internal" href="../../reference/glossary.html#term-Biosignature"><span class="xref std std-term">Biosignature</span></a></strong> searches on exoplanets: trace atmospheric constituents may indicate the presence of life, such as ozone on Earth.  These are rarely on their own unambiguous evidence of life, and context is essential: the phosphine molecule, which on Venus led to the suggestion of life being present to produce it (<a class="reference external" href="https://doi.org/10.1038/s41550-020-1174-4">Greaves+2021</a>), on Jupiter is a stable constituent of the atmosphere, with no life required (<a class="reference external" href="https://doi.org/10.1126/science.190.4211.274">Prinn &amp; Lewis 1975</a>).  If with present or future observatories a biosignature anomaly is persistently associated with habitable zone planets, it may be enough to convince the community that life is present and frequently occurring on suitable planets.</p></li>
+</ol>
+<figure class="margin-caption align-default" id="fig-00leopard-spots">
+<img alt="../../_images/leopard_spots.png" src="../../_images/leopard_spots.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 1.8 </span><span class="caption-text">Leopard spots on a martian rock.  Signs of life? Image: NASA/ JPL-Caltech/ MSSS.</span><a class="headerlink" href="#fig-00leopard-spots" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The frequency of habitable planets that go on to develop life is a parameter that could be thought about through Core Course material in <a class="reference internal" href="../../02_environments/intro/intro.html"><span class="std std-doc">C2</span></a> (where we consider the geological history and exploration of Mars), <a class="reference internal" href="../../03_detection/intro/intro.html"><span class="std std-doc">C3</span></a> (where we think about detecting life), and <a class="reference internal" href="../../04_biospheres/intro/intro.html"><span class="std std-doc">C4</span></a> (where we consider the history of life on Earth).</p>
+</section>
+<section id="f-i-and-f-c-the-fraction-of-biospheres-that-develop-intelligence-and-communication">
+<h3><span class="math notranslate nohighlight">\(f_i\)</span> and <span class="math notranslate nohighlight">\(f_c\)</span>, the fraction of biospheres that develop ‘intelligence’ and communication<a class="headerlink" href="#f-i-and-f-c-the-fraction-of-biospheres-that-develop-intelligence-and-communication" title="Link to this heading">#</a></h3>
+<p>These two parameters take us now far beyond what even hypothetical and outstanding discoveries in the solar system, such as evidence of ancient life on Mars, could tell us about.  The only prospect for having informed insight into these numbers is for the <a class="reference external" href="https://www.seti.org/">SETI</a> programme to be successful.</p>
+</section>
+<section id="l-the-mean-communication-timescale">
+<h3><span class="math notranslate nohighlight">\(L\)</span>, the mean communication timescale<a class="headerlink" href="#l-the-mean-communication-timescale" title="Link to this heading">#</a></h3>
+<p>The mean communicative timescale for a civilisation is also unknown a priori.  However, our own history is interesting in this regard.  Radio broadcasts began only just over a century ago, but we are already moving away from using isotropically emitted radio frequency broadcasts to focussed communication, using satellite and fibre optic connections.   If the kind of radio signals that propagate isotropically into the galaxy are only a short-lived technological stage, then this mean timescale may be very short, and the chance of finding technological life by this means correspondingly small.</p>
+</section>
+</section>
+<section id="how-relevant-is-the-drake-equation">
+<h2>How relevant is the Drake equation?<a class="headerlink" href="#how-relevant-is-the-drake-equation" title="Link to this heading">#</a></h2>
+<p>Given the previous sections, it is clear we are not in a position to fully evaluate the Drake equation and obtain a value of <span class="math notranslate nohighlight">\(N_c\)</span>, the mean number of communicative civilisations in the galaxy, without significant, and essentially completely unconstrained, assumptions.  However, we work with numbers like <span class="math notranslate nohighlight">\(N_c\)</span> frequently as scientists, it is just the Drake equation asks too general a question we cannot fully resolve.  For example, if instead we ask ‘how large a volume of space (centred on Earth) do we need to survey to find 10 <strong><a class="reference internal" href="../../reference/glossary.html#term-Hot-Jupiter"><span class="xref std std-term">hot Jupiter</span></a>s</strong>?’, then we are asking a question much like the Drake equation, but now one that is fully tractable given present information.  What is more, this question, and ones like it, are exactly the types of questions you would ask if you were proposing an observing campaign: it is critical to know that the observing resource you request will deliver the science result.</p>
+<p>So, it is not that the type of question is wrong, just that the amount of information required to answer it in this form makes it intractable.  Just by removing a couple of terms from the Drake equation <a class="reference internal" href="#equation-eq-drake">(1.1)</a>, it becomes more relevant to a general search for life in the Universe – we might settle in the first instance for the life we are searching for not being ‘intelligent’, giving</p>
+<div class="math notranslate nohighlight" id="equation-eq-drake2">
+<span class="eqno">(1.2)<a class="headerlink" href="#equation-eq-drake2" title="Link to this equation">#</a></span>\[N_l = R_* \cdot f_p \cdot n_e \cdot f_l \cdot L_s.\]</div>
+<p>Here, we have dropped the most problematic terms from <a class="reference internal" href="#equation-eq-drake">(1.1)</a>: the propensity for life to become ‘intelligent’ and communicative.  We are then left with an expression evaluating to give <span class="math notranslate nohighlight">\(N_l\)</span>, the mean number of life-hosting planets in the galaxy, and instead asking that we now know <span class="math notranslate nohighlight">\(L_s\)</span>, the mean longevity of life on a planet.</p>
+<p>The term that is most unknown in this expression is <span class="math notranslate nohighlight">\(f_l\)</span>.  However, the final term has now become something that we might venture more of an opinion on than the mean communicative timescale, <span class="math notranslate nohighlight">\(L\)</span>.</p>
+<p>Life on Earth has shown remarkable resilience since its emergence &gt; 3.5 Ga, surviving near global glaciations, major asteroid impacts, and numerous large outpourings of magma.  Over this period, life has also been hugely diverse, evolving from single cell, to multicellular, to the macrobiota that covers most of Earth’s continents today.  All these types of life have proven resilient to large perturbations of their environments, even as species have gone extinct.  More on this in the Core Course’s final module.</p>
+<p>Life on Earth suggests that once established, and provided the planetary climate remains within habitable bounds somewhere on its surface, life will survive in refugia, radiating outwards when conditions allow.  Having a sense of values for <span class="math notranslate nohighlight">\(R_*\)</span>, <span class="math notranslate nohighlight">\(f_p\)</span>, and <span class="math notranslate nohighlight">\(n_e\)</span> from astronomical observations, <span class="math notranslate nohighlight">\(f_l\)</span> stands out as the parameter with most potential to cause <span class="math notranslate nohighlight">\(N_l\)</span> to evaluate to a small number.</p>
+<p>How would you re-write the Drake equation and evaluate it for the search for life in the Universe?</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./00_intro/l0"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../intro/intro.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">1. </span>Course Overview</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../l1/l1.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Origin of Planets (C1)</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-drake-equation">The Drake equation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#r-the-mean-rate-of-star-formation"><span class="math notranslate nohighlight">\(R_*\)</span>, the mean rate of star formation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#f-p-the-fraction-of-stars-hosting-planets"><span class="math notranslate nohighlight">\(f_p\)</span>, the fraction of stars hosting planets</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#n-e-the-number-of-planets-per-star-capable-of-hosting-life"><span class="math notranslate nohighlight">\(n_e\)</span>, the number of planets per star capable of hosting life</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#f-l-the-fraction-of-habitable-planets-developing-life"><span class="math notranslate nohighlight">\(f_l\)</span>, the fraction of habitable planets developing life</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#f-i-and-f-c-the-fraction-of-biospheres-that-develop-intelligence-and-communication"><span class="math notranslate nohighlight">\(f_i\)</span> and <span class="math notranslate nohighlight">\(f_c\)</span>, the fraction of biospheres that develop ‘intelligence’ and communication</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#l-the-mean-communication-timescale"><span class="math notranslate nohighlight">\(L\)</span>, the mean communication timescale</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-relevant-is-the-drake-equation">How relevant is the Drake equation?</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The PSLU Team
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2026.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

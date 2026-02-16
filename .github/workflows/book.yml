@@ -27,7 +27,7 @@ jobs:
     # Build the book
     - name: Build the book
       run: |
-        jupyter-book build --builder html --all --verbose book/
+        jupyter-book build --all --verbose book/
     # Push the book's HTML to github-pages
     - name: Push to github-pages
       uses: peaceiris/actions-gh-pages@v3.6.1

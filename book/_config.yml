@@ -38,7 +38,7 @@ sphinx:
   config:
     html_theme_options:
       repository_provider: github
-      repository_url: https://pslu-mphil.github.io/Core-course-notes  # Online location of your book
+      repository_url: https://pslu-mphil.github.io/Core-course-notes/  # Online location of your book
       repository_branch: gh-pages  # Which branch of the repository should be used when creating links (optional)
     language: en
     mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js

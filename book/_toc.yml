@@ -3,14 +3,14 @@ root: intro
 options:
   numbered: 2
 chapters:
-- file: 00_intro/intro/intro
+- file: 00_intro/
   sections:
   - file: 00_intro/l0/l0
   - file: 00_intro/l1/l1
   - file: 00_intro/l2/l2
   - file: 00_intro/l3/l3
   - file: 00_intro/l4/l4
-- file: 01_planets/intro/intro
+- file: 01_planets/
   sections:
   - file: 01_planets/l1/l1
   - file: 01_planets/l2/l2
@@ -24,7 +24,7 @@ chapters:
   - file: 01_planets/l10/l10
   - file: 01_planets/l11/l11
   - file: 01_planets/l12/l12
-- file: 02_environments/intro/intro
+- file: 02_environments/
   sections:
   - file: 02_environments/l1/l1
   - file: 02_environments/l2/l2
@@ -38,7 +38,7 @@ chapters:
   - file: 02_environments/l10/l10
   - file: 02_environments/l11/l11
   - file: 02_environments/l12/l12
-- file: 03_detection/intro/intro
+- file: 03_detection/
   sections:
   - file: 03_detection/l1/l1
   - file: 03_detection/l2/l2
@@ -52,7 +52,7 @@ chapters:
   - file: 03_detection/l10/l10
   - file: 03_detection/l11/l11
   - file: 03_detection/l12/l12
-- file: 04_biospheres/intro/intro
+- file: 04_biospheres/
   sections:
   - file: 04_biospheres/l1/l1
   - file: 04_biospheres/l2/l2

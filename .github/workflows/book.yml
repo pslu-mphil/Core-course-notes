@@ -1,8 +1,12 @@
 name: deploy-book
 
-# Only run this when the master branch changes
+# Deploy when main changes; on pull requests, build only (see the guard on the
+# deploy step below) so a PR is checked without touching the live site.
 on:
   push:
+    branches:
+    - main
+  pull_request:
     branches:
     - main
 
@@ -30,8 +34,11 @@ jobs:
     - name: Build the book
       run: |
         jupyter-book build book/
-    # Push the book's HTML to github-pages
+    # Push the book's HTML to github-pages.
+    # Guarded: without this, opening a pull request would publish that branch
+    # to the live site.
     - name: Push to github-pages
+      if: github.event_name == 'push' && github.ref == 'refs/heads/main'
       # v3.6.1
       uses: peaceiris/actions-gh-pages@v3
       with:

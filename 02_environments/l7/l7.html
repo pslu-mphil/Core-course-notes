@@ -58,7 +58,7 @@
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>window.MathJax = {"loader": {"load": ["[tex]/physics", "[tex]/ams", "[tex]/mhchem", "[tex]/color", "[tex]/newcommand", "[tex]/textcomp"]}, "tex": {"packages": ["base", "physics", "ams", "amsmath", "mhchem", "color", "newcommand", "textcomp"]}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script>window.MathJax = {"loader": {"load": ["[tex]/physics", "[tex]/ams", "[tex]/mhchem", "[tex]/color", "[tex]/newcommand", "[tex]/textcomp"]}, "tex": {"packages": ["base", "physics", "ams", "amsmath", "mhchem", "color", "newcommand", "textcomp", "configmacros"], "macros": {"ee": "\\mathrm{e}", "ii": "\\mathrm{i}", "ddns": "\\,\\mathrm{d}"}}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = '02_environments/l7/l7';</script>
     <link rel="icon" href="../../_static/favicon.png"/>
@@ -471,12 +471,12 @@ document.write(`
 <p>Volcanoes produce ash, gases and aerosols which may contain soluble metal salts including elements such as Pb, Se, As, Hg and Bi. Very fine particulate matter less than 10 microns in dimension is a hazard to human health and when combined with toxic elements the health implications are very poorly understood. Volcanic gas plumes can impact groundwater and agriculture when plumes deposit soluble salts via rain. Many volcanoes emit large quantities of SO<sub>2</sub> gas, which may be oxidised to sulfate and sulfuric acid, i.e. acid rain. In Hawaii, this phenomenon is referred to as ‘vog’ or volcanic smog, and there are local systems in place to forecast when human populations may be impacted due to ongoing eruptions and wind direction.</p>
 <p>Thick ash fall can lead to plant death if the plant’s ability to take up minerals and photosynthesis is impaired. Over longer timescales (100s years) however, volcanic ash weathers and absorbs organic carbon, making fertile soils. The weathering process draws down atmospheric CO<sub>2</sub> through the reactions:</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}\begin{align}
-\ce{CO2 + H2O &amp;\rightarrow H2CO3}\\
-\ce{&amp;\rightarrow HCO3- + H+}\\
-\ce{CaSiO3 + 2H+ &amp;\rightarrow Ca2+ + H2O + SiO2}\\
-\ce{Ca2+ + HCO3- &amp;\rightarrow CaCO3 + H2O + CO2}
-\end{align}\end{split}\]</div>
+\[\begin{split}\begin{aligned}
+\ce{CO2 + H2O} &amp;\ce{-&gt; H2CO3}\\
+&amp;\ce{-&gt; HCO3- + H+}\\
+\ce{CaSiO3 + 2H+} &amp;\ce{-&gt; Ca2+ + H2O + SiO2}\\
+\ce{Ca2+ + HCO3-} &amp;\ce{-&gt; CaCO3 + H2O + CO2}
+\end{aligned}\end{split}\]</div>
 <p>It has been recognised that sometimes lava flows or ash fall into the sea can lead to phytoplankton blooms, by disrupting water flow and/or introducing Fe and other elements. A good example is the phytoplankton bloom that was recently observed offshore Hawaii during the 2018 East Rift zone eruption of Kilauea, where lava flowed into the sea, causing upwelling of deep, nutrient-rich water.</p>
 </section>
 <section id="volcanic-outgassing-produced-our-secondary-atmosphere">

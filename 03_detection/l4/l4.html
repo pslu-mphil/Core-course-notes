@@ -58,7 +58,7 @@
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>window.MathJax = {"loader": {"load": ["[tex]/physics", "[tex]/ams", "[tex]/mhchem", "[tex]/color", "[tex]/newcommand", "[tex]/textcomp"]}, "tex": {"packages": ["base", "physics", "ams", "amsmath", "mhchem", "color", "newcommand", "textcomp"]}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script>window.MathJax = {"loader": {"load": ["[tex]/physics", "[tex]/ams", "[tex]/mhchem", "[tex]/color", "[tex]/newcommand", "[tex]/textcomp"]}, "tex": {"packages": ["base", "physics", "ams", "amsmath", "mhchem", "color", "newcommand", "textcomp", "configmacros"], "macros": {"ee": "\\mathrm{e}", "ii": "\\mathrm{i}", "ddns": "\\,\\mathrm{d}"}}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = '03_detection/l4/l4';</script>
     <link rel="icon" href="../../_static/favicon.png"/>
@@ -429,12 +429,12 @@ document.write(`
 \[\ce{A + BC &lt;=&gt; AB + C}\]</div>
 <p>Once an equilibrium has been reached, the extent of this reaction is be determined by its equilibrium constant</p>
 <div class="math notranslate nohighlight">
-\[K=\frac{a_\ce{AB} a_\ce{C}}{a_\ce{A} a_\ce{BC}} = -RT \ln \Delta_r G^\ominus\]</div>
+\[K=\frac{a_{\ce{AB}} a_{\ce{C}}}{a_{\ce{A}} a_{\ce{BC}}} = \exp{-\Delta_r G^\ominus/(RT)}\]</div>
 <p>NB the Gibbs free energy of each of the individual substances is temperature dependent, so <span class="math notranslate nohighlight">\(\Delta_r G^\ominus\)</span> will also be temperature dependent.
 The various factors which determine <span class="math notranslate nohighlight">\(\Delta_r G^\ominus\)</span> can be calculated from statistical thermodynamics from the molecular energy levels (through the partition function), and so for simple molecules, can in principle be determined computationally.  In the simple case of a gas-phase molecule, these energy levels are governed by the rotations and vibrations of the molecule and can be accurately measured by microwave and infrared spectroscopy.</p>
 <p>In the literature, you may find a common approximation replacing the activities of a substance in solution by its concentration.  This is not strictly dimensionally correct, and instead we may write
 <span class="math notranslate nohighlight">\(a_X \approx \frac{[X]}{c^0}\)</span>
-where <span class="math notranslate nohighlight">\(c^0\)</span> is a standard concentration (e.g. <span class="math notranslate nohighlight">\(\pu{1 mol dm-3}\)</span>).  This approximation is good in the low concentration limit, and we will make use of it throughout this lecture.</p>
+where <span class="math notranslate nohighlight">\(c^0\)</span> is a standard concentration (e.g. <span class="math notranslate nohighlight">\(\mathrm{1\ mol\ dm^{-3}}\)</span>).  This approximation is good in the low concentration limit, and we will make use of it throughout this lecture.</p>
 <p>In general, however, a system is not as a whole at equilibrium, so it is helpful to also look at the time dependence of chemical reactions, a field called chemical kinetics.  If the timescale of a reaction is fast compared to our observations, and the reaction reaches equilibrium, we say it is ‘thermodynamically controlled’.  If, however, the reaction is slow compared to observation, and we do not readily reach equilibrium, it is ‘kinetically controlled’.</p>
 <p>In gases and liquids, molecules are colliding all the time, and some of these collisions lead to a chemical reaction.
 In general collisions involving more than two molecules at a time are unlikely and we will consider the case of a bimolecular reaction.</p>
@@ -445,10 +445,10 @@ In general collisions involving more than two molecules at a time are unlikely a
 \[\ce{2NO + O2 -&gt; 2NO2}\]</div>
 <p>can be split into two elementary steps</p>
 <div class="math notranslate nohighlight">
-\[\eqalignno{
-\ce{2NO &amp;-&gt;[k_1] N2O2}    &amp;[1]\cr
-\ce{N2O2 + O2 &amp;-&gt;[k_2] 2NO2}  &amp;[2]
-}\]</div>
+\[\begin{split}\begin{aligned}
+\ce{2NO} &amp;\ce{-&gt;[k_1] N2O2}    &amp;[1]\\
+\ce{N2O2 + O2} &amp;\ce{-&gt;[k_2] 2NO2}  &amp;[2]
+\end{aligned}\end{split}\]</div>
 <p>The rate law for an elementary step relates the rate of that reaction to the concentration of the reactants</p>
 <p>For [1] every time the reaction proceeds two molecules of <span class="math notranslate nohighlight">\(\ce{NO}\)</span> are needed (so <span class="math notranslate nohighlight">\([\ce{NO}]^2\)</span>) and 2 moles of <span class="math notranslate nohighlight">\(\ce{NO}\)</span> are used up and 1 mole of <span class="math notranslate nohighlight">\(\ce{N2O2}\)</span> is produced.<br />
 <span class="math notranslate nohighlight">\(\frac{d[\ce{NO}]}{dt} = -2 k_1 [\ce{NO}]^2\)</span>  and <span class="math notranslate nohighlight">\(\frac{d[\ce{N2O2}]}{dt}= k_1[\ce{NO}]^2\)</span>.
@@ -456,7 +456,7 @@ For [2], e.g. <span class="math notranslate nohighlight">\(\frac{d[\ce{O2}]}{dt}
 <p>The overall rate of reaction (e.g. <span class="math notranslate nohighlight">\(\frac{d[\ce{NO2}]}{dt}\)</span>) can be determined by coupling the individual rate equations together, and this will be explored in later lectures.
 Here we shall look at the factors which control the rates of the individual elementary reactions.</p>
 <h2 class="rubric" id="reaction-pathways">Reaction Pathways</h2>
-<p>To understand what occurs during a chemical reaction we can look at the energy of the combined system of reactants as a function of the positions of the atoms.  Even in our three-atom, two molecule system, that is far too many degrees of freedom to plot, so we will consider the simple case of one dimension, where A, B, and C are collinear, with distances, <span class="math notranslate nohighlight">\(r_\ce{AB}\)</span> and <span class="math notranslate nohighlight">\(r_\ce{BC}\)</span>.</p>
+<p>To understand what occurs during a chemical reaction we can look at the energy of the combined system of reactants as a function of the positions of the atoms.  Even in our three-atom, two molecule system, that is far too many degrees of freedom to plot, so we will consider the simple case of one dimension, where A, B, and C are collinear, with distances, <span class="math notranslate nohighlight">\(r_{\ce{AB}}\)</span> and <span class="math notranslate nohighlight">\(r_{\ce{BC}}\)</span>.</p>
 <figure class="align-default" id="fig-abc">
 <a class="reference internal image-reference" href="../../_images/ABC.png"><img alt="../../_images/ABC.png" src="../../_images/ABC.png" style="width: 70%;" />
 </a>
@@ -470,23 +470,23 @@ Here we shall look at the factors which control the rates of the individual elem
 <a class="reference internal image-reference" href="../../_images/PES3D.png"><img alt="../../_images/PES3D.png" src="../../_images/PES3D.png" style="width: 70%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 4.37 </span><span class="caption-text">A 3-dimensional plot of a Potential energy surface with coordinates <span class="math notranslate nohighlight">\(r_\ce{AB}\)</span> and <span class="math notranslate nohighlight">\(r_\ce{BC}\)</span> is too difficult to draw.</span><a class="headerlink" href="#fig-pes3d" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 4.37 </span><span class="caption-text">A 3-dimensional plot of a Potential energy surface with coordinates <span class="math notranslate nohighlight">\(r_{\ce{AB}}\)</span> and <span class="math notranslate nohighlight">\(r_{\ce{BC}}\)</span> is too difficult to draw.</span><a class="headerlink" href="#fig-pes3d" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<p>The reactants, if they are stable, will sit in a local minimum of the PES with a large <span class="math notranslate nohighlight">\(r_\ce{AB}\)</span> and short <span class="math notranslate nohighlight">\(r_\ce{BC}\)</span>.  (Because the molecules are themselves quantum mechanical, they don’t just sit at the minimum of this well.  Their (nuclear) wavefunction is spread over the minimum of the PES.).
+<p>The reactants, if they are stable, will sit in a local minimum of the PES with a large <span class="math notranslate nohighlight">\(r_{\ce{AB}}\)</span> and short <span class="math notranslate nohighlight">\(r_{\ce{BC}}\)</span>.  (Because the molecules are themselves quantum mechanical, they don’t just sit at the minimum of this well.  Their (nuclear) wavefunction is spread over the minimum of the PES.).
 Similarly the products will sit in a different local minimum with a (probably) different energy.</p>
 <figure class="align-default" id="fig-pes2d-1">
 <a class="reference internal image-reference" href="../../_images/PES2D_1.png"><img alt="../../_images/PES2D_1.png" src="../../_images/PES2D_1.png" style="width: 70%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 4.38 </span><span class="caption-text">A 2-dimensional plot of the reaction space with coordinates <span class="math notranslate nohighlight">\(r_\ce{AB}\)</span> and <span class="math notranslate nohighlight">\(r_\ce{BC}\)</span>, showing the position of reactants and products.</span><a class="headerlink" href="#fig-pes2d-1" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 4.38 </span><span class="caption-text">A 2-dimensional plot of the reaction space with coordinates <span class="math notranslate nohighlight">\(r_{\ce{AB}}\)</span> and <span class="math notranslate nohighlight">\(r_{\ce{BC}}\)</span>, showing the position of reactants and products.</span><a class="headerlink" href="#fig-pes2d-1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <figure class="align-default" id="fig-pes2d-2">
 <a class="reference internal image-reference" href="../../_images/PES2D_2.png"><img alt="../../_images/PES2D_2.png" src="../../_images/PES2D_2.png" style="width: 70%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 4.39 </span><span class="caption-text">A 2-dimensional contour plot of the energy in the reaction space with coordinates <span class="math notranslate nohighlight">\(r_\ce{AB}\)</span> and <span class="math notranslate nohighlight">\(r_\ce{BC}\)</span>, showing the reactants and products as local minima.</span><a class="headerlink" href="#fig-pes2d-2" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 4.39 </span><span class="caption-text">A 2-dimensional contour plot of the energy in the reaction space with coordinates <span class="math notranslate nohighlight">\(r_{\ce{AB}}\)</span> and <span class="math notranslate nohighlight">\(r_{\ce{BC}}\)</span>, showing the reactants and products as local minima.</span><a class="headerlink" href="#fig-pes2d-2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>We describe a chemical reaction by a pathway on the PES joining the reactants minimum with the products minimum.</p>
@@ -494,7 +494,7 @@ Similarly the products will sit in a different local minimum with a (probably) d
 <a class="reference internal image-reference" href="../../_images/PES2D_3.png"><img alt="../../_images/PES2D_3.png" src="../../_images/PES2D_3.png" style="width: 70%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 4.40 </span><span class="caption-text">A 2-dimensional contour plot of the energy in the reaction space with coordinates <span class="math notranslate nohighlight">\(r_\ce{AB}\)</span> and <span class="math notranslate nohighlight">\(r_\ce{BC}\)</span>, showing the reactants and products as local minima joined by their reaction pathway containing the transition state <span class="math notranslate nohighlight">\(\ce{ABC^\ddagger}.\)</span></span><a class="headerlink" href="#fig-pes2d-3" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 4.40 </span><span class="caption-text">A 2-dimensional contour plot of the energy in the reaction space with coordinates <span class="math notranslate nohighlight">\(r_{\ce{AB}}\)</span> and <span class="math notranslate nohighlight">\(r_{\ce{BC}}\)</span>, showing the reactants and products as local minima joined by their reaction pathway containing the transition state <span class="math notranslate nohighlight">\(\ce{ABC^{\ddagger}}.\)</span></span><a class="headerlink" href="#fig-pes2d-3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>We can more conveniently plot the energy along the pathway from reactants to products as in the figure below.</p>
@@ -513,17 +513,17 @@ Similarly the products will sit in a different local minimum with a (probably) d
 Instead we can use an approach called “Eyring Transition State Theory”.  We assume that the reaction proceeds through the transition state labelled <span class="math notranslate nohighlight">\(\ce{ABC}^\ddagger\)</span>.
 Since the transition state is significantly higher in energy than the reactants, relatively few collisions of <span class="math notranslate nohighlight">\(\ce{A + BC}\)</span> reach the transition state, and so we can statistically model the few that do.   This is done by assuming that the reactants and transition state are in equilibrium, with equilibrium constant <span class="math notranslate nohighlight">\(K^*\)</span>.</p>
 <div class="math notranslate nohighlight">
-\[\ce{A + BC &lt;=&gt; ABC^\ddagger -&gt; AB + C}\]</div>
+\[\ce{A + BC &lt;=&gt; ABC^{\ddagger} -&gt; AB + C}\]</div>
 <p>Further, we assume that once a system has reached the transition state, it has a fixed rate of descending the PES to the reactants, <span class="math notranslate nohighlight">\(k_\text{1st}\)</span>.</p>
 <p>Overall therefore the rate of reaction is</p>
 <div class="math notranslate nohighlight">
-\[\text{rate} = \frac{d[\ce{AB}]}{dt} = k_1[\ce{ABC^\ddagger}].\]</div>
+\[\text{rate} = \frac{d[\ce{AB}]}{dt} = k_1[\ce{ABC^{\ddagger}}].\]</div>
 <p>From the equilibrium,</p>
 <div class="math notranslate nohighlight">
-\[K^* = \frac{[\ce{ABC^\ddagger}]/c^0 }{ \left([\ce{A}]/c^0\right)  \left([\ce{B}]/c^0\right)} = c^0 \frac{[\ce{ABC^\ddagger}]}{ [\ce{A}][\ce{B}]}\]</div>
+\[K^* = \frac{[\ce{ABC^{\ddagger}}]/c^0 }{ \left([\ce{A}]/c^0\right)  \left([\ce{B}]/c^0\right)} = c^0 \frac{[\ce{ABC^{\ddagger}}]}{ [\ce{A}][\ce{B}]}\]</div>
 <p>so</p>
 <div class="math notranslate nohighlight">
-\[[\ce{ABC^\ddagger}] = \frac{K^*}{c^0}[\ce{A}][\ce{B}]\]</div>
+\[[\ce{ABC^{\ddagger}}] = \frac{K^*}{c^0}[\ce{A}][\ce{B}]\]</div>
 <p>and therefore</p>
 <div class="math notranslate nohighlight">
 \[\text{rate} = k_\text{1st} \frac{K^*}{c^0} [\ce{A}][\ce{B}].\]</div>
@@ -552,10 +552,10 @@ We also see that the pre-exponential factor is both temperature dependent, and h
 <h2>Surface crossings and Forbidden Reactions<a class="headerlink" href="#surface-crossings-and-forbidden-reactions" title="Link to this heading">#</a></h2>
 <p>Not all chemical reactions occur from molecules in their ground state, owing to often large activation energy barriers.  One way of overcoming this is to first excite a molecule to a higher energy electronic state, usually by the absorption of a photon.  This may then react or decompose.</p>
 <div class="math notranslate nohighlight">
-\[\eqalign{
-\ce{X + h\nu &amp;-&gt; X^*}\cr
-\ce{X^* &amp;-&gt; A + B}
-}\]</div>
+\[\begin{split}\begin{aligned}
+\ce{X + h\nu} &amp;\ce{-&gt; X^*}\\
+\ce{X^*} &amp;\ce{-&gt; A + B}
+\end{aligned}\end{split}\]</div>
 <p>This process involves two PESes: the ground state of <span class="math notranslate nohighlight">\(\ce{X}\)</span> which may have a high barrier to producing <span class="math notranslate nohighlight">\(\ce{A+B}\)</span>, and its excited state, <span class="math notranslate nohighlight">\(\ce{X^*}\)</span>, where it’s possible that making the products is even exothermic.</p>
 <p>You can envisage the PESs for such a process.</p>
 <figure class="align-default" id="fig-pes1d-excit">

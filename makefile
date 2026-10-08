@@ -15,6 +15,7 @@ pdflatex:
 # submodules, so the attribute does not resolve and the HTML -> PDF step dies with
 #     AttributeError: module 'websockets' has no attribute 'client'
 # The HTML stage succeeds first, which makes the failure look like a book problem.
-# Use `make pdf` instead.
+# pyppeteer is no longer in the requirements files, so this target will now
+# fail at import.  Use `make pdf` instead.
 pdfhtml:
 	jupyter-book build book/ --builder pdfhtml

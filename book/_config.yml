@@ -46,9 +46,16 @@ sphinx:
       loader:
         load: ['[tex]/physics', '[tex]/ams', '[tex]/mhchem', '[tex]/color', '[tex]/newcommand', '[tex]/textcomp']
       tex:
-        packages: ['base', 'physics', 'ams', 'amsmath', 'mhchem', 'color', 'newcommand', 'textcomp']
+        packages: ['base', 'physics', 'ams', 'amsmath', 'mhchem', 'color', 'newcommand', 'textcomp', 'configmacros']  # configmacros is what makes `macros:` below take effect
+        macros:
+          ee: '\mathrm{e}'  # mirrors the LaTeX preamble definition
+          ii: '\mathrm{i}'  # mirrors the LaTeX preamble definition
+          ddns: '\,\mathrm{d}'  # mirrors the LaTeX preamble definition
     latex_elements:
       preamble: |
+        \usepackage{mhchem}  % replaces MathJax [tex]/mhchem: \ce (no \pu in LaTeX mhchem)
+        \providecommand{\lt}{<}  % MathJax-only macro, undefined in LaTeX
+        \providecommand{\gt}{>}  % MathJax-only macro, undefined in LaTeX
         \newcommand{\dv}[2]{\frac{\mathrm{d}#1}{\mathrm{d}#2}}  % replaces physics.sty \dv
         \newcommand{\dd}{\mathrm{d}}  % replaces physics.sty \dd
         \newcommand{\pdv}[2]{\frac{\partial #1}{\partial #2}}  % partial derivative

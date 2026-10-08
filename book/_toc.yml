@@ -1,70 +1,81 @@
 format: jb-book
 root: intro
-options:
-  numbered: 2
-chapters:
-- file: 00_intro/intro/intro
-  sections:
-  - file: 00_intro/l0/l0
-  - file: 00_intro/l1/l1
-  - file: 00_intro/l2/l2
-  - file: 00_intro/l3/l3
-  - file: 00_intro/l4/l4
-- file: 01_planets/intro/intro
-  sections:
-  - file: 01_planets/l1/l1
-  - file: 01_planets/l2/l2
-  - file: 01_planets/l3/l3
-  - file: 01_planets/l4/l4
-  - file: 01_planets/l5/l5
-  - file: 01_planets/l6/l6
-  - file: 01_planets/l7/l7
-  - file: 01_planets/l8/l8
-  - file: 01_planets/l9/l9
-  - file: 01_planets/l10/l10
-  - file: 01_planets/l11/l11
-  - file: 01_planets/l12/l12
-- file: 02_environments/intro/intro
-  sections:
-  - file: 02_environments/l1/l1
-  - file: 02_environments/l2/l2
-  - file: 02_environments/l3/l3
-  - file: 02_environments/l4/l4
-  - file: 02_environments/l5/l5
-  - file: 02_environments/l6/l6
-  - file: 02_environments/l7/l7
-  - file: 02_environments/l8/l8
-  - file: 02_environments/l9/l9
-  - file: 02_environments/l10/l10
-  - file: 02_environments/l11/l11
-  - file: 02_environments/l12/l12
-- file: 03_detection/intro/intro
-  sections:
-  - file: 03_detection/l1/l1
-  - file: 03_detection/l2/l2
-  - file: 03_detection/l3/l3
-  - file: 03_detection/l4/l4
-  - file: 03_detection/l5/l5
-  - file: 03_detection/l6/l6
-  - file: 03_detection/l7/l7
-  - file: 03_detection/l8/l8
-  - file: 03_detection/l9/l9
-  - file: 03_detection/l10/l10
-  - file: 03_detection/l11/l11
-  - file: 03_detection/l12/l12
-- file: 04_biospheres/intro/intro
-  sections:
-  - file: 04_biospheres/l1/l1
-  - file: 04_biospheres/l2/l2
-  - file: 04_biospheres/l3/l3
-  - file: 04_biospheres/l4/l4
-  - file: 04_biospheres/l5/l5
-  - file: 04_biospheres/l6/l6
-  - file: 04_biospheres/l7/l7
-  - file: 04_biospheres/l8/l8
-  - file: 04_biospheres/l9/l9
-  - file: 04_biospheres/l10/l10
-  - file: 04_biospheres/l11/l11
-  - file: 04_biospheres/l12/l12
-- file: reference/glossary
+
+parts:
+
+# Front matter: unnumbered, so the chapters below start at 1.
+- numbered: false
+  chapters:
+  - file: 00_intro/intro/intro
+    sections:
+    - file: 00_intro/l0/l0
+    - file: 00_intro/l1/l1
+    - file: 00_intro/l2/l2
+    - file: 00_intro/l3/l3
+    - file: 00_intro/l4/l4
+
+# Course chapters: numbered 1-4, matching the 01_ .. 04_ directory prefixes.
+- numbered: 2
+  chapters:
+  - file: 01_planets/intro/intro
+    sections:
+    - file: 01_planets/l1/l1
+    - file: 01_planets/l2/l2
+    - file: 01_planets/l3/l3
+    - file: 01_planets/l4/l4
+    - file: 01_planets/l5/l5
+    - file: 01_planets/l6/l6
+    - file: 01_planets/l7/l7
+    - file: 01_planets/l8/l8
+    - file: 01_planets/l9/l9
+    - file: 01_planets/l10/l10
+    - file: 01_planets/l11/l11
+    - file: 01_planets/l12/l12
+  - file: 02_environments/intro/intro
+    sections:
+    - file: 02_environments/l1/l1
+    - file: 02_environments/l2/l2
+    - file: 02_environments/l3/l3
+    - file: 02_environments/l4/l4
+    - file: 02_environments/l5/l5
+    - file: 02_environments/l6/l6
+    - file: 02_environments/l7/l7
+    - file: 02_environments/l8/l8
+    - file: 02_environments/l9/l9
+    - file: 02_environments/l10/l10
+    - file: 02_environments/l11/l11
+    - file: 02_environments/l12/l12
+  - file: 03_detection/intro/intro
+    sections:
+    - file: 03_detection/l1/l1
+    - file: 03_detection/l2/l2
+    - file: 03_detection/l3/l3
+    - file: 03_detection/l4/l4
+    - file: 03_detection/l5/l5
+    - file: 03_detection/l6/l6
+    - file: 03_detection/l7/l7
+    - file: 03_detection/l8/l8
+    - file: 03_detection/l9/l9
+    - file: 03_detection/l10/l10
+    - file: 03_detection/l11/l11
+    - file: 03_detection/l12/l12
+  - file: 04_biospheres/intro/intro
+    sections:
+    - file: 04_biospheres/l1/l1
+    - file: 04_biospheres/l2/l2
+    - file: 04_biospheres/l3/l3
+    - file: 04_biospheres/l4/l4
+    - file: 04_biospheres/l5/l5
+    - file: 04_biospheres/l6/l6
+    - file: 04_biospheres/l7/l7
+    - file: 04_biospheres/l8/l8
+    - file: 04_biospheres/l9/l9
+    - file: 04_biospheres/l10/l10
+    - file: 04_biospheres/l11/l11
+    - file: 04_biospheres/l12/l12
+
+# Reference material: unnumbered.
+- numbered: false
+  chapters:
+  - file: reference/glossary
 # - file: reference/symbols

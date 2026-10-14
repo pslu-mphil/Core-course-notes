@@ -22,6 +22,10 @@ Autotroph
 Biosignature
     Any observable that can be attributed to the action of life, although it may not on its own be definitive evidence of life.  In this respect fossils are a biosignature, although only thought of as such as we try and push back the earliest evidence for life on Earth.  In the context of exoplanets, trace atmospheric gasses are the most frequently considered type of biosignature.  SETI's survey for radio emission from extraterrestrial technological life also a biosignature search.   
 
+Blackbody
+     A blackbody is an idealised physical object that absorbs all incident electromagnetic radiation at every wavelength and every angle of incidence, with zero reflectance and zero transmittance. In thermal equilibrium (i.e. at a given constant temperature),  the amount of light emitted is the same as the amount of light absorbed; thus a blackbody is also a perfect emitter. 
+
+
 Bulk silicate Earth
     The integrated composition of Earth's non-core reservoirs, i.e., atmosphere + oceans + crust + mantle.
 
